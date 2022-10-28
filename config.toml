@@ -1,4 +1,3 @@
-# Replace the TailBliss info with your site.
 baseURL = "https://tailbliss.netlify.app/"
 title = "TailBliss"
 

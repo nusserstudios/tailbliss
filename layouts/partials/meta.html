@@ -8,7 +8,7 @@
 <meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="{{ if ne .URL "/" }}{{ .Title }} &middot; {{ end }}{{ .Site.Title }}" />
+<meta property="og:title" content="{{ .Site.Title }}" />
 <meta property="og:description"
       content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
