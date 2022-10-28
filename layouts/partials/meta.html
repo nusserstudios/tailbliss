@@ -1,9 +1,18 @@
 <title itemprop="name">{{if .IsHome}} {{ $.Site.Params.description }} | {{ .Title }}
     {{else}} {{ .Title }} | {{ .Site.Title }} {{end}}
 </title>
-<meta name="description" content="{{ .Params.description }}" />
-<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ if ne .URL "/" }}{{ .Title }} &middot; {{ end }}{{ .Site.Title }}" />
+<meta property="og:description"
+      content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:locale" content="en">
+{{ if .Params.og_image }}
+<meta property="og:image" content="{{ .Params.og_image | relURL }}" />
+<meta property="og:image:secure_url" content="{{ .Params.og_image | absURL }}" />
+{{ else }}
+<meta property="og:image" content="{{ .Site.Params.og_image | relURL }}" />
+<meta property="og:image:secure_url" content="{{ .Site.Params.og_image | absURL }}" />
+{{ end }}
+<meta property="og:type" content="website" />
