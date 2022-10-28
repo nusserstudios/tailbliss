@@ -1,6 +1,5 @@
 [build]
 publish = "public"
-command = "yarn build"
 
 [context.production.environment]
 HUGO_VERSION = "0.105.0"
