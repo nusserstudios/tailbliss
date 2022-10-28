@@ -1,3 +1,4 @@
+# Replace the TailBliss info with your site.
 baseURL = "https://tailbliss.netlify.app/"
 title = "TailBliss"
 
@@ -18,10 +19,10 @@ enableInlineShortcodes = true
   authorimage = "../assets/images/global/author.webp"
   github = "https://github.com/nusserstudios"
   facebook = "https://facebook.com/nusserstudios"
-  og_image = ""
+  og_image = "/images/tailbliss-cover.png"
   sitename = "TailBliss"
   twitter = "@nusserstudios"
-  description = "TailBliss Hugo Starter Theme Built on Tailwind CSS and Alpine.js."
+  description = "TailBliss is Hugo Starter Theme Built on Tailwind CSS and Alpine.js."
 
 [markup]
   [markup.goldmark]
