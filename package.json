@@ -1,0 +1,39 @@
+{
+  "name": "hugo-alpinejs-tailwindcss-starter",
+  "version": "1.0.0",
+  "description": "Hugo + Alpine.js + TailwindCSS",
+  "main": "index.js",
+  "dependencies": {
+    "alpinejs": "^3.10.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.7",
+    "autoprefixer": "^10.4.12",
+    "concurrently": "^7.4.0",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.2.1",
+    "alpinejs": "^3.10.5"
+  },
+  "scripts": {
+    "start": "concurrently npm:watch:*",
+    "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
+    "watch:hugo": "hugo server",
+    "build": "hugo --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4044ever/Hugo-Tailwind-3.0.git"
+  },
+  "keywords": [
+    "hugo",
+    "tailwind",
+    "tailwindcss"
+  ],
+  "author": "NusserStudios",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/nusserstudios/hugo-twcss-alpine/issues"
+  },
+  "homepage": "https://github.com/nusserstudios/hugo-twcss-alpine"
+}

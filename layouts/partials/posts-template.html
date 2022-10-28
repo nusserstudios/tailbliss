@@ -1,0 +1,59 @@
+<div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50">
+    <div class="px-4 not-prose">
+        <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
+            {{ range .Paginator.Pages }}
+            <div
+                 class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
+                {{ with .Params.image }}
+                {{ with resources.Get . }}
+                {{ $postimage := (.Resize "405x webp").RelPermalink }}
+                <img src="{{ $postimage }}" class="object-fill overflow-hidden rounded-t-lg"
+                     width="100%" height="" />
+                {{ end }}
+                {{ end }}
+                <div class="p-6">
+                    <div class="flex-1">
+                        <a href="{{.Permalink}}"
+                           class="block mt-2 text-2xl font-black text-gray-900 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-500 hover:underline">
+                            {{.Title}}
+                        </a>
+                        <p class="mt-3 text-base text-gray-900 dark:text-gray-300">
+                            {{ .Params.summary }}
+                        </p>
+                    </div>
+                    <div class="flex pt-6 font-medium text-indigo-600 text-md">
+                        <span class="pr-2 font-black">Tags:</span>
+                        <a href="{{ .Page.RelPermalink }}"
+                           class="inline-flex items-center rounded-md bg-indigo-400 px-2.5 py-0.5 text-sm font-medium text-white capitalize">{{ .Params.tags }}</a>
+                    </div>
+                    <div class="flex items-center mt-6">
+                        <div class="flex-shrink-0">
+                            <a href="#">
+                                <span class="sr-only">{{ .Params.author }}</span>
+                                {{ with .Params.authorimage }}
+                                {{ with resources.Get . }}
+                                {{ $authorimage := (.Resize "400x webp").RelPermalink }}
+                                <img class="w-10 h-10 rounded-full" src="{{ $authorimage }}" alt="">
+                                {{ end }}
+                                {{ end }}
+
+                            </a>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900 dark:text-gray-300">
+                                <a href="#" class="hover:underline">{{ .Params.author }}</a>
+                            </p>
+                            <div class="flex space-x-1 text-sm text-gray-500">
+                                <time datetime="2020-02-12">{{.Date.Format "2006-01-02"}}</time>
+                                <span aria-hidden="true">&middot;</span>
+                                <span>{{ math.Round (div (countwords .Content) 220.0) }} min
+                                    read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>

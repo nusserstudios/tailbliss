@@ -1,0 +1,28 @@
+/* assets */ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+font-family: ui-sans-serif,
+system-ui,
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+Apple Color Emoji,
+Segoe UI Emoji,
+NotoColorEmoji,
+Segoe UI Symbol,
+Android Emoji,
+EmojiSymbols;
+/* Custom CSS */
+
+.prose :where(h1):not(:where([class~="not-prose"] *)) {
+    color: white !important;
+}
+
+/* Custom CSS end */

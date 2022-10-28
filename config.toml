@@ -1,0 +1,56 @@
+baseURL = "https://example.com"
+title = "TailBliss"
+
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
+paginate = 9
+darkmode_js = ["assets/js/darkmode.js"]
+
+enableInlineShortcodes = true
+
+[params]
+  author = "Nusser Studios"
+  authorimage = "../assets/images/global/author.webp"
+  github = "https://github.com/nusserstudios"
+  facebook = "https://facebook.com/nusserstudios"
+  og_image = ""
+  sitename = "TailBliss"
+  twitter = "@nusserstudios"
+  description = "TailBliss Hugo Starter Theme Built on Tailwind CSS and Alpine.js."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[taxonomies]
+  category = "Categories"
+  tag = "Tags"
+
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true

@@ -1,0 +1,56 @@
+{{ $pag := $.Paginator }}
+{{ if gt $pag.TotalPages 1 }}
+{{ $.Scratch.Set "dot_rendered" false }}
+
+<nav class="flex items-center justify-center px-4 sm:px-0">
+    <div class="flex flex-1 w-0">
+        <div class="mx-auto border-t-2 border-indigo-300">
+            <!-- Don't show on 1st and 2nd page -->
+            {{ if and (ne $pag.PageNumber 1) (ne $pag.PageNumber 2) }}
+            <a href="{{ $pag.First.URL }}" rel="first"
+                class="inline-flex items-center px-4 pt-4 text-lg font-black text-indigo-600 dark:text-indigo-400">«
+                First</a>
+            {{ end }}
+
+            {{ if $pag.HasPrev  }}
+            <a href="{{ $pag.Prev.URL }}" rel="prev"
+                class="inline-flex items-center px-4 pt-4 text-lg font-black text-indigo-600 dark:text-indigo-400">‹
+                Prev</a>
+            {{ end }}
+
+            {{ range $pag.Pagers }}
+            {{ if eq . $pag }}
+            <!-- Current Page -->
+            <a class="font-black page-item active"><a href="{{ .URL }}"
+                    class="inline-flex items-center px-4 pt-4 text-lg font-medium text-indigo-600 dark:text-indigo-400">{{ .PageNumber }}</a>
+            </a>
+            {{ else if and (ge .PageNumber (sub $pag.PageNumber 2)) (le .PageNumber (add $pag.PageNumber 2)) }}
+            {{ $.Scratch.Set "dot_rendered" false }}
+            <!-- Render prev 2 page and next 2 pages -->
+            <a class="page-item"><a href="{{ .URL }}"
+                    class="inline-flex items-center px-4 pt-4 text-lg font-medium text-indigo-600 dark:text-indigo-400">{{ .PageNumber }}</a>
+            </a>
+            {{ else if eq ($.Scratch.Get "dot_rendered") false }}
+            <!-- render skip pages -->
+            {{ $.Scratch.Set "dot_rendered" true }}
+            <a class="page-item disabled"><a
+                    class="inline-flex items-center px-4 pt-4 text-lg font-medium text-indigo-600 dark:text-indigo-400">...</a>
+            </a>
+            {{ end }}
+            {{ end }}
+
+            {{ if $pag.HasNext }}
+            <a class="page-item"><a href="{{ $pag.Next.URL }}" rel="next"
+                    class="inline-flex items-center px-4 pt-4 text-lg font-black text-indigo-600 dark:text-indigo-400">Next
+                    ›</a></a>
+            {{ end }}
+
+            <!-- Don't show on last and 2nd last page -->
+            {{ if and (ne $pag.PageNumber $pag.TotalPages) ((ne $pag.PageNumber (sub $pag.TotalPages 1))) }}
+            <a class="page-item"><a href="{{ $pag.Last.URL }}" rel="last"
+                    class="inline-flex items-center px-4 pt-4 text-lg font-black text-indigo-600 dark:text-indigo-400">Last
+                    »</a></a>
+            {{ end }}
+        </div>
+</nav>
+{{ end }}

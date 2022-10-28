@@ -1,0 +1,15 @@
+{{define "main"}}
+  <article>
+    <header class="mb-4 bg-indigo-600">
+      <span class="py-96">
+        <h1 class="py-16 text-5xl font-black text-center text-white capitalize">
+          {{ .Title }}
+        </h1>
+      </span>
+    </header>
+    <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+    <div class="max-w-2xl pt-4 pb-16 mx-auto prose pb dark:prose-invert dark:text-white">
+      {{.Content}}
+    </div>
+  </article>
+{{end}}
