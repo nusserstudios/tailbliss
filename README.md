@@ -1,4 +1,4 @@
-
+![Tailbliss](https://tailbliss.netlify.app/images/tailbliss-full-blue.png)
 
 # TailBliss
 Hugo + TailwindCSS 3.2.0 + Alpine.js for Hacktoberfest
@@ -19,6 +19,13 @@ TailBlis is an opinionated Hugo Starter with Tailwind CSS 3.2 and Alpine.js
 
 **npm run start** will run two commands parallel:  
 `npx tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch`
+
+Has paginated Categories and Tags. Markdown files will automatically convert images put into `/assets` folder to .webp images. 
+
+## Image shortcodes for webp as well.
+{{< imgh src="img-name.jpg" alt="Place alt text here." >}}
+
+Made with ❤️ by NUSSER STUDIOS.
 
 
 
