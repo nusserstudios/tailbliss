@@ -2480,10 +2480,6 @@ video {
   height: 1.25rem;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
 .h-full {
   height: 100%;
 }
@@ -3712,6 +3708,10 @@ EmojiSymbols;
     margin-right: auto;
   }
 
+  .sm\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .sm\:mb-6 {
     margin-bottom: 1.5rem;
   }
@@ -3736,20 +3736,12 @@ EmojiSymbols;
     margin-left: 0.75rem;
   }
 
-  .sm\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .sm\:block {
     display: block;
   }
 
   .sm\:flex {
     display: flex;
-  }
-
-  .sm\:h-96 {
-    height: 24rem;
   }
 
   .sm\:h-2\/3 {
@@ -3862,10 +3854,6 @@ EmojiSymbols;
 
   .md\:ml-2 {
     margin-left: 0.5rem;
-  }
-
-  .md\:mb-0 {
-    margin-bottom: 0px;
   }
 
   .md\:inline {
