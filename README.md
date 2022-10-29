@@ -25,7 +25,6 @@ Has paginated Categories and Tags. Markdown files will automatically convert ima
 ## Image shortcodes for webp as well.
 {{< imgh src="img-name.jpg" alt="Place alt text here." >}}
 
-Made with ❤️ by NUSSER STUDIOS.
+<a href="https://www.buymeacoffee.com/nusserstudios" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="nusserstudios" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
-
+Made for Hacktoberfest, with ❤️ by NusserStudios.
