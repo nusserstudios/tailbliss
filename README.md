@@ -3,7 +3,7 @@
 # TailBliss
 Hugo + TailwindCSS 3.2.0 + Alpine.js for Hacktoberfest
 
-TailBlis is an opinionated Hugo Starter with Tailwind CSS 3.2 and Alpine.js with light/dark modes.
+TailBliss is an opinionated Hugo Starter with Tailwind CSS 3.2 and Alpine.js with light/dark modes.
 
 **Install to VS Code with:**  
 `git clone git@github.com:nusserstudios/hugo-twcss-alpine.git your-name`  
