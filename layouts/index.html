@@ -67,7 +67,7 @@
                     <div class="relative pt-64 pb-10 overflow-hidden shadow-xl rounded-2xl">
                         {{ $missionimage := resources.Get "images/pages/our-mission.png" }}
                         {{ with $missionimage }}
-                        {{ with .Resize (printf "%dx%d webp q80" .Width .Height) }}
+                        {{ with .Resize (printf "%dx%d webp q50" .Width .Height) }}
                         <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
                              class="absolute inset-0 object-cover w-full h-full" />
                         {{ end }}>
