@@ -1,6 +1,6 @@
 {
-  "name": "hugo-alpinejs-tailwindcss-starter",
-  "version": "1.0.0",
+  "name": "TailBliss",
+  "version": "0.1.0",
   "description": "Hugo + Alpine.js + TailwindCSS",
   "main": "index.js",
   "dependencies": {
