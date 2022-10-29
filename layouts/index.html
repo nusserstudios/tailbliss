@@ -1,61 +1,44 @@
 {{ define "main" }}
 <main>
-    <div class="py-8 bg-gradient-to-br from-indigo-800 via-indigo-500 to-blue-800 h-max">
-        <div class="max-w-full mx-auto lg:px-8">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-12 lg:place-items-center">
-                <div class="p-6 mx-auto text-center lg:max-w-xl lg:px-0 lg:text-left">
-                    <div class="block py-4 mx-auto max-w-ful">
-                        <h1
-                            class="mt-2 text-6xl font-black tracking-tight text-white md:text-6xl xl:text-8xl drop-shadow-lg">
-                            <span class="text-white xl:block">TailBliss</span>
-                        </h1>
-                        <h2 class="py-1.5 text-4xl font-light text-gray-900 md:text-5xl">
-                            Super Fast, and Flexible
-                        </h2>
-                    </div>
-                    <div class="block max-w-xl pt-8 mx-auto text-center md:text-left">
-                        <a href="https://github.com/nusserstudios/tailbliss"
-                           class="inline-flex mx-auto space-x-4 sm:text-center">
-                            <span class="rounded bg-gray-50 px-2.5 py-1 text-sm font-bold text-indigo-800">
-                                What's new
-                            </span>
-                            <span class="inline-flex items-center space-x-1 text-sm font-medium text-white">
-                                <span>Just shipped version 0.1.0</span>
-                                <!-- Heroicon name: mini/chevron-right -->
-                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                     fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                          d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                                          clip-rule="evenodd" />
-                                </svg>
-                            </span>
-                        </a>
-                        <p class="mx-auto mt-3 text-base text-gray-300 sm:mt-5 md:text-lg">
-                            A Hugo theme built with love, using TailwindCSS 3, Apline.JS, and Hugo
-                            Pipes. Images are optimized for use with Hugo Pipes and converted to
-                            WebP format. So load it up with high ressolution images in the /assets
-                            folder, and Hugo will optimize them for you.
-                        </p>
-                        <a href="/prose"
-                           class="text-white bg-gray-900 hover:font-bold hover:text-gray-900 hover:bg-slate-200 focus:ring-4 focus:outline-none focus:ring-slate-200/40 font-semibold rounded-lg text-xl px-5 py-2.5 text-center inline-flex items-center mt-6 group transition-colors">
-                            Get Started
-                            <svg class="w-5 h-5 ml-2 -mr-1 group-hover:ml-3" fill="currentColor" viewBox="0 0 20 20"
-                                 xmlns="http://www.w3.org/2000/svg">
+    <div class="bg-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto">
+            <div class="grid items-center gap-8 mb-8 lg:gap-12 lg:grid-cols-12">
+                <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">
+                    <h1
+                        class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
+                        TailBliss</h1>
+                    <h2 class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
+                        Super Fast, and Flexible
+                    </h2>
+                    <a href="https://github.com/nusserstudios/tailbliss"
+                       class="inline-flex py-4 mx-auto space-x-4 sm:text-center">
+                        <span class="rounded bg-gray-50 px-2.5 py-1 text-sm font-bold text-gray-900">
+                            What's new
+                        </span>
+                        <span
+                              class="inline-flex items-center space-x-1 text-sm font-medium text-gray-800 dark:text-white">
+                            <span>Just shipped version 0.1.0</span>
+                            <!-- Heroicon name: mini/chevron-right -->
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                 fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd"
-                                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                      clip-rule="evenodd"></path>
+                                      d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                      clip-rule="evenodd" />
                             </svg>
-                        </a>
-                    </div>
+                        </span>
+                    </a>
+                    <p
+                       class="max-w-xl mx-auto mb-6 font-normal text-gray-900 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
+                        A Hugo theme built with love, using TailwindCSS 3, Apline.JS, and Hugo
+                        Pipes. Images are optimized for use with Hugo Pipes for WebP format.</p>
                 </div>
-                <div class="relative pb-16 md:pb-0 lg:m-0 lg:px-0">
-                    <div class="max-w-full p-6 mx-auto">
-                        <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
-                        <video autoplay loop muted poster="/images/home-rocket-indigo.webp" class="rounded-lg sm:mb-16">
-                            <source src="https://cloud.nusserstudios.com/video/tailbliss-home-rocket-indigo.mp4"
-                                    type="video/mp4" />
-                        </video>
-                    </div>
+                <div class="col-span-6">
+                    <video autoplay loop muted poster="/images/home-rocket-indigo.webp"
+                           class="w-full h-64 max-w-xl mx-auto sm:h-96">
+                        <source src="https://cloud.nusserstudios.com/video/tailbliss-home-rocket-indigo.mp4"
+                                type="video/mp4" class="rounded-lg" />
+                    </video>
+
                 </div>
             </div>
         </div>
@@ -64,7 +47,7 @@
     <!-- More main page content here... -->
 
     <!-- Testimonial/stats section -->
-    <div class="relative my-4 md:mt-20">
+    <div class="relative my-4">
         <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
             <div class="relative sm:py-8 lg:py-0">
                 <div aria-hidden="true" class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
