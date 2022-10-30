@@ -11,7 +11,7 @@ TailBliss is an opinionated Hugo Starter with Tailwind CSS 3.2 and Alpine.js wit
 ### With NPM 
 `npm install`
 ### With Yarn
-yarn
+`yarn`
 
 **To start developing:**
 ### With NPM 
