@@ -21,7 +21,7 @@ facebook = "https://facebook.com/nusserstudios"
 og_image = "/images/tailbliss-cover.png"
 sitename = "TailBliss"
 twitter = "@nusserstudios"
-description = "TailBliss is Hugo Starter Theme Built on Tailwind CSS and Alpine.js."
+description = "TailBliss is Hugo Starter"
 
 [markup]
 [markup.goldmark]
