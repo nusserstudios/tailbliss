@@ -4,16 +4,7 @@ date: 2021-12-18T11:10:36+08:00
 draft: false
 language: en
 description: About Us
----
-__Advertisement :smile:__
-
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
-
-You will like those projects!
-
+featured_image: ../assets/images/featured/featured-img-placeholder.png
 ---
 
 # h1 Heading :blush:

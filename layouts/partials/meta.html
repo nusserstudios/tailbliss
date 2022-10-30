@@ -1,7 +1,7 @@
 <title itemprop="name">{{if .IsHome}} {{ $.Site.Params.description }} | {{ .Title }}
     {{else}} {{ .Title }} | {{ .Site.Title }} {{end}}
 </title>
-<meta name="description" content="{{ .Params.description }}" />
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
 <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
