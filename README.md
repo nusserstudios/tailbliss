@@ -8,21 +8,21 @@ TailBliss is an opinionated Hugo Starter with Tailwind CSS 3.2 and Alpine.js wit
 **Install to VS Code with:**  
 `git clone git@github.com:nusserstudios/hugo-twcss-alpine.git your-name`
 
-### With NPM 
+##### Install with NPM 
 `npm install`
-### With Yarn
+##### Install with Yarn
 `yarn`
 
 **To start developing:**
-### With NPM 
+##### Develop with NPM 
 `npm run start`
-### With Yarn
+##### Develop with Yarn
 `yarn start`
 
 **To generate the site HTML:**
-### With NPM 
+##### Build with NPM 
 `npm run build`
-### With Yarn
+##### Build with Yarn
 `yarn build`
 
 **npm run start** will run two commands parallel:  
