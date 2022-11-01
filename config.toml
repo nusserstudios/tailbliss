@@ -1,4 +1,4 @@
-baseURL = "tailbliss-site-hu4oh48b9-nusserstudios.vercel.app"
+baseURL = "https://tailbliss.vercel.app/"
 title = "TailBliss"
 
 languageCode = "en-us"
