@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "Hugo + Alpine.js + TailwindCSS",
   "main": "index.js",
-  "dependencies": {
-    "alpinejs": "^3.10.5"
-  },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.7",
     "autoprefixer": "^10.4.12",
@@ -23,17 +20,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/4044ever/Hugo-Tailwind-3.0.git"
+    "url": "git+https://github.com/nusserstudios/tailbliss.git"
   },
   "keywords": [
     "hugo",
     "tailwind",
-    "tailwindcss"
+    "tailwindcss",
+    "alpinejs",
+    "light/dark mode",
+    "hugo blog",
+    "categories",
+    "tags"
   ],
   "author": "NusserStudios",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/nusserstudios/hugo-twcss-alpine/issues"
+    "url": "https://github.com/nusserstudios/tailbliss/issues"
   },
-  "homepage": "https://github.com/nusserstudios/hugo-twcss-alpine"
+  "homepage": "https://github.com/nusserstudios/tailbliss"
 }

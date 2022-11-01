@@ -35,4 +35,11 @@ Has paginated Categories and Tags. Markdown files will automatically convert ima
 
 <a href="https://www.buymeacoffee.com/nusserstudios" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
+## Credits
+4044ever - Original Theme
+https://github.com/4044ever/Hugo-Tailwind-3.0.git
+
+Jan Heise - Alpine.js Navbar
+https://github.com/jan-heise/responsive-navbar-with-dropdown
+
 Made for Hacktoberfest, with ❤️ by NusserStudios.
