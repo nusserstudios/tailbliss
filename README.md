@@ -1,4 +1,4 @@
-![Tailbliss]((static/images/tailbliss-full-blue.png)
+![Tailbliss](static/images/tailbliss-full-blue.png)
 
 # TailBliss
 Hugo + TailwindCSS 3.2.0 + Alpine.js for Hacktoberfest
