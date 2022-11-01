@@ -2436,14 +2436,6 @@ video {
   margin-top: -18rem;
 }
 
-.mb-1\.5 {
-  margin-bottom: 0.375rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -2614,14 +2606,6 @@ video {
 
 .max-w-none {
   max-width: none;
-}
-
-.max-w-6xl {
-  max-width: 72rem;
-}
-
-.max-w-screen-lg {
-  max-width: 1024px;
 }
 
 .flex-1 {
@@ -3082,16 +3066,12 @@ video {
   padding-bottom: 4rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .pt-2 {
   padding-top: 0.5rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-left {
