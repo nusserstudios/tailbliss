@@ -1,4 +1,4 @@
-![Tailbliss](/images/tailbliss-full-blue.png)
+![Tailbliss]((https://github.com/nusserstudios/tailbliss/blob/main/static/images/tailbliss-full-blue.svg)
 
 # TailBliss
 Hugo + TailwindCSS 3.2.0 + Alpine.js for Hacktoberfest
