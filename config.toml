@@ -54,3 +54,9 @@ simple = false
 [privacy.youtube]
 disable = false
 privacyEnhanced = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.101.0"
+    max = "0.105.0"
