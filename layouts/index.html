@@ -33,8 +33,15 @@
                         Pipes. Images are optimized for use with Hugo Pipes for WebP format.</p>
                 </div>
                 <div class="col-span-6">
-                    <img src="/images/tailbliss-rocket-indigo.webp" width="100%" height="" alt=""
-                         class="w-full max-w-xl mx-auto rounded-lg" alt="TailBliss Hero" />
+                    {{ $hero := resources.GetMatch "images/pages/tailbliss-rocket-indigo.png" }}
+
+                    {{ $thumb := ($hero.Fill "400x400 webp q90") }}
+                    {{ $large := ($hero.Fill "576x576 webp q90") }}
+
+                    <img srcset="
+                        {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
+                        {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}"
+                         width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" />
                 </div>
             </div>
         </div>
@@ -182,18 +189,18 @@
                     </svg>
                 </div>
                 <div class="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
-                    {{ $bannerOne := resources.GetMatch "images/pages/hacktoberfest.jpg" }}
+                    {{ $heroOne := resources.GetMatch "images/pages/hacktoberfest.jpg" }}
 
-                    {{ $tiny := ($bannerOne.Fit "480x280 q80") }}
-                    {{ $small := ($bannerOne.Fit "768x280 q80") }}
-                    {{ $medium := ($bannerOne.Fit "1024x280 q80") }}
-                    {{ $large := ($bannerOne.Fit "1374x1000 q80") }}
+                    {{ $tiny := ($heroOne.Fit "480x280 q80") }}
+                    {{ $small := ($heroOne.Fit "768x280 q80") }}
+                    {{ $medium := ($heroOne.Fit "1024x280 q80") }}
+                    {{ $large := ($heroOne.Fit "1374x1000 q80") }}
 
                     <img srcset="
                         {{- with $tiny.RelPermalink -}}{{.}} 480w{{- end -}}
                         {{- with $small.RelPermalink -}}, {{.}} 768w{{- end -}}
                         {{- with $medium.RelPermalink -}}, {{.}} 1024w{{- end -}}
-                        {{- with $large.RelPermalink -}}, {{.}} 1374w{{- end -}}" src="{{ $bannerOne.RelPermalink }}"
+                        {{- with $large.RelPermalink -}}, {{.}} 1374w{{- end -}}" src="{{ $heroOne.RelPermalink }}"
                          alt="TailBliss Hacktoberfest Image"
                          class="w-full rounded-lg shadow-xl lg:h-full lg:w-auto lg:max-w-none" />
                 </div>
