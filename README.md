@@ -1,4 +1,4 @@
-![Tailbliss](https://tailbliss.netlify.app/images/tailbliss-full-blue.png)
+![Tailbliss](/images/tailbliss-full-blue.png)
 
 # TailBliss
 Hugo + TailwindCSS 3.2.0 + Alpine.js for Hacktoberfest
