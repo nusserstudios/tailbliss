@@ -1,4 +1,4 @@
-baseURL = "https://tailbliss.netlify.app/"
+baseURL = "https://tailbliss.vercel.app/"
 title = "TailBliss"
 
 languageCode = "en-us"
@@ -58,5 +58,4 @@ privacyEnhanced = true
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.101.0"
-    max = "0.105.0"
+    min = "0.105.0"
