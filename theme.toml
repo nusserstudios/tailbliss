@@ -9,8 +9,8 @@ homepage = "https://github.com/nusserstudios/tailbliss"
 # If you have a running demo of the theme.
 demosite = "https://tailbliss.netlify.app/"
 
-tags = ["blog", "tailwind", "tailwindcss", "darkmode", "lightmode", "light/dark mode"]
-features = ["blog", "categories", "webp", "tailwind3", "light/dark mode", "alpinejs"]
+tags = ["blog", "tailwind", "tailwindcss", "dark", "light", "responsive", "minimal", "portfolio", "company", "gallery", "personal" ]
+features = ["blog", "categories", "webp", "tailwind3", "alpinejs"]
 
 # If the theme has a single author
 [author]
