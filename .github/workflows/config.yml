@@ -25,10 +25,10 @@ jobs:
       # The orb install-packages step will also automatically cache them for faster future runs.
       - node/install-packages:
           # If you are using yarn, change the line below from "npm" to "yarn"
-          pkg-manager: yarn
+          pkg-manager: npm
       - run:
           name: Run tests
-          command: yarn test
+          command: yarn test && "echo Build Successful!"
 
 workflows:
   # Below is the definition of your workflow.

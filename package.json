@@ -17,7 +17,7 @@
     "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
     "watch:hugo": "hugo server",
     "build": "hugo --minify",
-    "test": "yarn"
+    "test": "hugo"
   },
   "repository": {
     "type": "git",
