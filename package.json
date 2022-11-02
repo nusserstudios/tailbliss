@@ -5,18 +5,19 @@
   "main": "index.js",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.7",
+    "alpinejs": "^3.10.5",
     "autoprefixer": "^10.4.12",
     "concurrently": "^7.4.0",
     "postcss": "^8.4.18",
     "postcss-cli": "^10.0.0",
-    "tailwindcss": "^3.2.1",
-    "alpinejs": "^3.10.5"
+    "tailwindcss": "^3.2.1"
   },
   "scripts": {
     "start": "concurrently npm:watch:*",
     "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
     "watch:hugo": "hugo server",
-    "build": "hugo --minify"
+    "build": "hugo --minify",
+    "test": "yarn"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,10 @@
     "tailwind",
     "tailwindcss",
     "alpinejs",
-    "light/dark mode",
+    "minimal",
+    "responsive",
+    "light mode",
+    "dark mode",
     "hugo blog",
     "categories",
     "tags"
@@ -37,5 +41,8 @@
   "bugs": {
     "url": "https://github.com/nusserstudios/tailbliss/issues"
   },
-  "homepage": "https://github.com/nusserstudios/tailbliss"
+  "homepage": "https://github.com/nusserstudios/tailbliss",
+  "dependencies": {
+    "test": "^3.2.1"
+  }
 }

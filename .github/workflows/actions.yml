@@ -1,6 +1,7 @@
 - name: Codecov
   uses: codecov/codecov-action@v3.1.1
-
+ with:
+    token: ${{ secrets.CODECOV_TOKEN=e4a92fad-3e79-4f89-acbc-990cb929c01c }} # not required for public repos
 on: [push, pull_request]
 jobs:
   no-deps:
