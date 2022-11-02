@@ -1,5 +1,5 @@
-name = "TailBliss"
-license = "Apache-2.0"
+name = "Tailbliss"
+license = "Apache"
 licenselink = "https://github.com/nusserstudios/tailbliss/blob/main/LICENSE"
 description = "TailBliss is an Hugo Starter with Tailwind CSS 3.2 and Alpine.js with light and dark modes. Submitted for Hacktoberfest 2022."
 
@@ -7,18 +7,19 @@ description = "TailBliss is an Hugo Starter with Tailwind CSS 3.2 and Alpine.js 
 homepage = "https://github.com/nusserstudios/tailbliss"
 
 # If you have a running demo of the theme.
-demosite = "https://tailbliss.netlify.app/"
+demosite = "https://tailbliss.netlify.app"
 
-tags = ["blog", "tailwind", "tailwindcss", "darkmode", "lightmode", "light/dark mode"]
-features = ["blog", "categories", "webp", "tailwind3", "light/dark mode", "alpinejs"]
+tags = ["blog", "tailwind", "tailwindcss", "darkmode", "lightmode"]
+features = ["blog", "categories", "webp", "tailwind3", "alpinejs"]
 
 # If the theme has a single author
 [author]
-    name = "Jeremy Nusser"
+    name = "Nusser Studios"
     homepage = "https://nusserstudios.com"
 
 # If porting an existing theme
 [original]
-  name = "Hugo-Tailwind-3.1"
-  homepage = "https://github.com/4044ever"
-  repo = "https://github.com/4044ever/Hugo-Tailwind-3.1"
+    author = "4044ever"
+    homepage = "https://github.com/4044ever"
+    repo = "https://github.com/4044ever/Hugo-Tailwind-3.1"
+
