@@ -2560,6 +2560,11 @@ video {
   width: 0px;
 }
 
+.min-w-max {
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
 .min-w-0 {
   min-width: 0px;
 }

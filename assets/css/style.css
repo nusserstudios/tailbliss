@@ -2560,11 +2560,6 @@ video {
   width: 0px;
 }
 
-.min-w-max {
-  min-width: -moz-max-content;
-  min-width: max-content;
-}
-
 .min-w-0 {
   min-width: 0px;
 }
@@ -2577,12 +2572,12 @@ video {
   max-width: 640px;
 }
 
-.max-w-xl {
-  max-width: 36rem;
-}
-
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .max-w-3xl {
@@ -2967,6 +2962,11 @@ video {
   padding-right: 0.5rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -3005,11 +3005,6 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .py-96 {
