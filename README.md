@@ -13,11 +13,11 @@
     <a href="https://codecov.io/gh/nusserstudios/tailbliss">
       <img src="https://codecov.io/gh/nusserstudios/tailbliss/branch/master/graph/badge.svg" />
     </a>
-    <a href="https://github.com/anuraghazra/github-readme-stats/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/anuraghazra/github-readme-stats?color=0088ff" />
+    <a href="https://img.shields.io/github/contributors/nusserstudios/tailblississues">
+      <img alt="Issues" src="https://img.shields.io/github/contributors/nusserstudios/tailbliss?color=0088ff" />
     </a>
     <a href="https://github.com/anuraghazra/github-readme-stats/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/anuraghazra/github-readme-stats?color=0088ff" />
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/contributors/nusserstudios/tailbliss?color=0088ff" />
     </a>
     <br />
     <br />
@@ -39,7 +39,6 @@
     <a href="https://github.com/nusserstudios/tailbliss/discussions">Ask Question</a>
   </p>
 </p>
-![Tailbliss](https://github.com/nusserstudios/tailbliss/raw/main/static/images/tailbliss-full-blue.png)
 
 # TailBliss
 Hugo + TailwindCSS 3.2.0 + Alpine.js for Hacktoberfest
