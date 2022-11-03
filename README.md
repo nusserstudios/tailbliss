@@ -7,14 +7,14 @@
     <a href="https://github.com/nusserstudios/tailbliss/actions/">
       <img alt="Tests Passing" src="https://github.com/nusserstudios/tailbliss/actions/workflows/codeql.yml/badge.svg" />
     </a>
-    <a href="https://github.com/nusserstudios/tailbliss/graphs/contributors">
-      <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/nusserstudios/tailbliss" />
+    <a href="https://github.com/nusserstudios/tailbliss/contributors">
+      <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/nusserstudios/tailbliss?color=0088ff" />
     </a>
-    <a href="https://img.shields.io/github/contributors/nusserstudios/tailblississues">
-      <img alt="Issues" src="https://img.shields.io/github/contributors/nusserstudios/tailbliss?color=0088ff" />
+    <a href="https://github.com/nusserstudios/tailbliss/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/nusserstudios/tailbliss?color=0088ff" />
     </a>
-    <a href="https://github.com/anuraghazra/github-readme-stats/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/contributors/nusserstudios/tailbliss?color=0088ff" />
+    <a href="https://github.com/nusserstudios/tailbliss/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/nusserstudios/tailbliss?color=0088ff" />
     </a>
     <br />
     <br />
@@ -32,11 +32,11 @@
   <p align="center">
     <a href="https://tailbliss.netlify.app/">View Demo</a>
     ·
-    <a href="https://github.com/nusserstudios/tailbliss/issues/new/choose">Report Bug</a>
+    <a href="https://github.com/nusserstudios/tailbliss/issues">Report Bug</a>
     ·
-    <a href="https://github.com/nusserstudios/tailbliss/issues/new/choose">Request Feature</a>
+    <a href="https://github.com/nusserstudios/tailbliss/discussions/59">Request Feature</a>
     ·
-    <a href="https://github.com/nusserstudios/tailbliss/discussions">Ask Question</a>
+    <a href="https://github.com/nusserstudios/tailbliss/discussions/categories/general">Ask Question</a>
   </p>
 </p>
 
