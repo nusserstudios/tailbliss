@@ -16,6 +16,9 @@
     <a href="https://github.com/nusserstudios/tailbliss/pulls">
       <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/nusserstudios/tailbliss?color=f97316" />
     </a>
+    <a href="https://app.netlify.com/sites/tailbliss/deploys">
+      <img alt="Netlify Deploys" src="https://api.netlify.com/api/v1/badges/2baf2850-0f9e-49ff-833b-7b1f2db19597/deploy-status" />
+    </a>
     <br />
     <br />
     <a href="https://gohugo.io/">
