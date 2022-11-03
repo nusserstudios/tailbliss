@@ -43,6 +43,10 @@
   </p>
 </p>
 
+<p align="center">
+<img src="images/tailbliss-lighthouse-11-03-22.png" alt="Tailbliss Google Lighthouse Score" />
+</p>
+
 **Install to VS Code with:**  
 `git clone git@github.com:nusserstudios/hugo-twcss-alpine.git your-name`
 
