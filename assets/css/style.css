@@ -2572,6 +2572,15 @@ video {
   max-width: 640px;
 }
 
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .max-w-xl {
   max-width: 36rem;
 }
@@ -3644,11 +3653,6 @@ EmojiSymbols;
   color: rgb(165 180 252 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-gray-100 {
-  --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
-}
-
 .dark .dark\:text-zinc-200 {
   --tw-text-opacity: 1;
   color: rgb(228 228 231 / var(--tw-text-opacity));
@@ -3914,6 +3918,11 @@ EmojiSymbols;
 
   .md\:w-6 {
     width: 1.5rem;
+  }
+
+  .md\:min-w-fit {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
   }
 
   .md\:max-w-3xl {
