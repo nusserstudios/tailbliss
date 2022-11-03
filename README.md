@@ -34,7 +34,7 @@
     ·
     <a href="https://github.com/nusserstudios/tailbliss/issues">Report Bug</a>
     ·
-    <a href="https://github.com/nusserstudios/tailbliss/discussions/59">Request Feature</a>
+    <a href="https://github.com/nusserstudios/tailbliss/discussions/categories/feature-request">Request Feature</a>
     ·
     <a href="https://github.com/nusserstudios/tailbliss/discussions/categories/general">Ask Question</a>
   </p>

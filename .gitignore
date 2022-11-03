@@ -1,2 +1,3 @@
 node_modules/
 .vercel
+yarn-error.log
