@@ -6,6 +6,8 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.7",
     "alpinejs": "^3.10.5",
+    "autoprefixer": "^10.4.13",
+    "concurrently": "^7.4.0",
     "autoprefixer": "^10.4.12",
     "concurrently": "^7.5.0",
     "postcss": "^8.4.18",
