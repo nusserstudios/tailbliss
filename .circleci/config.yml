@@ -1,9 +1,16 @@
+version: '2.1'
 orbs:
-  hugo: circleci/hugo@0.1
-version: 2.1
-workflows:
-  main:
-    jobs:
-      - hugo/build:
-          html-proofer: true
-          version: '0.105.0'
+  node: circleci/node@x.y
+jobs:
+  test:
+    executor:
+      name: node/default
+      tag: '16'
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+      - run:
+          command: yarn run test
+          name: Run YARN tests
+
