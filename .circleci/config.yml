@@ -1,0 +1,9 @@
+orbs:
+  hugo: circleci/hugo@0.1
+version: 2.1
+workflows:
+  main:
+    jobs:
+      - hugo/build:
+          html-proofer: true
+          version: '0.105.0'
