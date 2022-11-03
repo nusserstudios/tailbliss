@@ -43,8 +43,8 @@
   </p>
 </p>
 
-<p align="center">
-<img src="images/tailbliss-lighthouse-11-03-22.png" alt="Tailbliss Google Lighthouse Score" />
+<p align="center" style="padding-top: 25px; padding-bottom: 25px;">
+<img src="https://raw.githubusercontent.com/nusserstudios/tailbliss/main/images/tailbliss-lighthouse-11-03-22.png" alt="Tailbliss Google Lighthouse Score" />
 </p>
 
 **Install to VS Code with:**  
