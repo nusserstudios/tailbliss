@@ -1,3 +1,5 @@
 node_modules/
 .vercel
 yarn-error.log
+# Local Netlify folder
+.netlify
