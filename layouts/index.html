@@ -492,15 +492,16 @@
                     <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
                         {{ range (.Paginator 3).Pages }}
                         <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
-                            {{ with .Params.featured_image }}
-                            {{ with resources.Get . }}
-                            {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
                             <a href="{{.Permalink}}">
+                                {{ with .Params.featured_image }}
+                                {{ with resources.Get . }}
+                                {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
                                 <img src="{{ $postimage }}" class="object-fill overflow-hidden rounded-t-lg"
                                      width="100%" height="" loading="lazy" alt="{{ .Title }}" />
+
+                                {{ end }}
+                                {{ end }}
                             </a>
-                            {{ end }}
-                            {{ end }}
                             <div class="p-6">
                                 <div class="flex-1">
                                     <a href="{{.Permalink}}"

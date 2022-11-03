@@ -2572,6 +2572,11 @@ video {
   max-width: 640px;
 }
 
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
 .max-w-xl {
   max-width: 36rem;
 }
@@ -2606,15 +2611,6 @@ video {
 
 .max-w-none {
   max-width: none;
-}
-
-.max-w-sm {
-  max-width: 24rem;
-}
-
-.max-w-fit {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
 }
 
 .flex-1 {
@@ -3266,11 +3262,6 @@ video {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-.text-indigo-300 {
-  --tw-text-opacity: 1;
-  color: rgb(165 180 252 / var(--tw-text-opacity));
-}
-
 .text-opacity-40 {
   --tw-text-opacity: 0.4;
 }
@@ -3678,11 +3669,6 @@ EmojiSymbols;
   color: rgb(129 140 248 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-zinc-50 {
-  --tw-text-opacity: 1;
-  color: rgb(250 250 250 / var(--tw-text-opacity));
-}
-
 .dark .dark\:placeholder-gray-400::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
@@ -3875,12 +3861,6 @@ EmojiSymbols;
 }
 
 @media (min-width: 768px) {
-  @media (min-width: 640px) {
-    .md\:sm\:inline-flex {
-      display: inline-flex;
-    }
-  }
-
   .md\:sticky {
     position: sticky;
   }
@@ -3947,11 +3927,6 @@ EmojiSymbols;
 
   .md\:w-6 {
     width: 1.5rem;
-  }
-
-  .md\:min-w-min {
-    min-width: -moz-min-content;
-    min-width: min-content;
   }
 
   .md\:min-w-fit {
