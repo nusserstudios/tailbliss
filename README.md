@@ -1,7 +1,7 @@
 <p align="center" style="padding-top:20px">
  <img width="100px" src="images/logo-tailbliss-round.svg" align="center" alt="GitHub Readme Stats" />
- <h2 align="center">TailBliss</h2>
- <p align="center">A Hugo Starter template with TailWindCSS and Alpine.js.</p>
+ <h1 align="center">TailBliss</h1>
+ <p align="center">TailBliss is an opinionated Hugo Starter with Tailwind CSS 3.2 and Alpine.js with light/dark modes.</p>
 </p>
   <p align="center">
     <a href="https://github.com/nusserstudios/tailbliss/actions/">
@@ -9,9 +9,6 @@
     </a>
     <a href="https://github.com/nusserstudios/tailbliss/graphs/contributors">
       <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/nusserstudios/tailbliss" />
-    </a>
-    <a href="https://codecov.io/gh/nusserstudios/tailbliss">
-      <img src="https://codecov.io/gh/nusserstudios/tailbliss/branch/master/graph/badge.svg" />
     </a>
     <a href="https://img.shields.io/github/contributors/nusserstudios/tailblississues">
       <img alt="Issues" src="https://img.shields.io/github/contributors/nusserstudios/tailbliss?color=0088ff" />
@@ -21,16 +18,19 @@
     </a>
     <br />
     <br />
-    <a href="https://a.paddle.com/v2/click/16413/119403?link=1227">
-      <img src="https://img.shields.io/badge/Supported%20by-VSCode%20Power%20User%20%E2%86%92-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/>
+    <a href="https://gohugo.io/">
+      <img src="https://img.shields.io/badge/Hugo%20-0.105.0%20-gray.svg?colorA=c9177e&colorB=FF4088&style=for-the-badge"/>
     </a>
-    <a href="https://a.paddle.com/v2/click/16413/119403?link=2345">
-      <img src="https://img.shields.io/badge/Supported%20by-Node%20Cli.com%20%E2%86%92-gray.svg?colorA=61c265&colorB=4CAF50&style=for-the-badge"/>
+    <a href="https://tailwindcss.com/">
+      <img src="https://img.shields.io/badge/TailwindCSS%20-V3-gray.svg?colorA=0284c7&colorB=38bdf8&style=for-the-badge"/>
+    </a>
+    <a href="https://alpinejs.dev/">
+      <img src="https://img.shields.io/badge/Alpine.js%20-V3-gray.svg?colorA=68a5af&colorB=77c1d2&style=for-the-badge"/>
     </a>
   </p>
 
   <p align="center">
-    <a href="#demo">View Demo</a>
+    <a href="https://tailbliss.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/nusserstudios/tailbliss/issues/new/choose">Report Bug</a>
     ·
@@ -40,10 +40,6 @@
   </p>
 </p>
 
-# TailBliss
-Hugo + TailwindCSS 3.2.0 + Alpine.js for Hacktoberfest
-
-TailBliss is an opinionated Hugo Starter with Tailwind CSS 3.2 and Alpine.js with light/dark modes.
 
 **Install to VS Code with:**  
 `git clone git@github.com:nusserstudios/hugo-twcss-alpine.git your-name`

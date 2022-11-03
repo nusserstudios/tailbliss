@@ -1,8 +1,0 @@
-version: '2.1'
-orbs:
-  codecov: codecov/codecov@3.2.3
-workflows:
-  upload-to-codecov:
-    jobs:
-      - checkout
-      - codecov/upload
