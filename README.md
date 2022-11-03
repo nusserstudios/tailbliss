@@ -43,6 +43,9 @@
   </p>
 </p>
 
+![build](https://github.com/buttons/github-buttons/workflows/build/badge.svg)
+[![npm](https://img.shields.io/npm/v/github-buttons)](https://www.npmjs.com/github-buttons)
+[![Build Status](https://img.shields.io/github/workflow/status/mdo/github-buttons/CI/master?label=CI&logo=github)](https://github.com/mdo/github-buttons/actions?query=workflow%3ACI+branch%3Amaster)
 
 **Install to VS Code with:**  
 `git clone git@github.com:nusserstudios/hugo-twcss-alpine.git your-name`
