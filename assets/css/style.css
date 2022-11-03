@@ -2608,6 +2608,15 @@ video {
   max-width: none;
 }
 
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -3782,6 +3791,10 @@ EmojiSymbols;
     display: flex;
   }
 
+  .sm\:inline-flex {
+    display: inline-flex;
+  }
+
   .sm\:h-2\/3 {
     height: 66.666667%;
   }
@@ -3862,6 +3875,12 @@ EmojiSymbols;
 }
 
 @media (min-width: 768px) {
+  @media (min-width: 640px) {
+    .md\:sm\:inline-flex {
+      display: inline-flex;
+    }
+  }
+
   .md\:sticky {
     position: sticky;
   }
@@ -3902,6 +3921,10 @@ EmojiSymbols;
     display: flex;
   }
 
+  .md\:inline-flex {
+    display: inline-flex;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -3924,6 +3947,16 @@ EmojiSymbols;
 
   .md\:w-6 {
     width: 1.5rem;
+  }
+
+  .md\:min-w-min {
+    min-width: -moz-min-content;
+    min-width: min-content;
+  }
+
+  .md\:min-w-fit {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
   }
 
   .md\:max-w-3xl {
