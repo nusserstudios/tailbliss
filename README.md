@@ -11,10 +11,10 @@
       <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/nusserstudios/tailbliss?color=0088ff" />
     </a>
     <a href="https://github.com/nusserstudios/tailbliss/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/nusserstudios/tailbliss?color=0088ff" />
+      <img alt="Issues" src="https://img.shields.io/github/issues/nusserstudios/tailbliss?color=fc0b03" />
     </a>
     <a href="https://github.com/nusserstudios/tailbliss/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/nusserstudios/tailbliss?color=0088ff" />
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/nusserstudios/tailbliss?color=f97316" />
     </a>
     <br />
     <br />
