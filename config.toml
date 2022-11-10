@@ -10,11 +10,6 @@ enableRobotsTXT = true
 canonifyURLs = true
 paginate = 9
 darkmode_js = ["assets/js/darkmode.js"]
-minify:
-  flowbite:
-    js:
-      keepVarNames: true
-
 enableInlineShortcodes = true
 
 [params]
