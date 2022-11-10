@@ -48,7 +48,7 @@
 </p>
 
 **Install to VS Code with:**  
-`git clone git@github.com:nusserstudios/hugo-twcss-alpine.git your-name`
+`git clone git@github.com:nusserstudios/tailbliss.git your-name`
 
 ##### Install with NPM 
 `npm install`
