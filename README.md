@@ -67,6 +67,11 @@
 ##### Build with Yarn
 `yarn build`
 
+#### forms
+
+[add a contact form and publish to github pages]
+](https://fabform.io/a/create-a-static-website-with-contact-form-on-github-pages)
+
 **npm run start** will run two commands parallel:  
 `npx tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch`
 
