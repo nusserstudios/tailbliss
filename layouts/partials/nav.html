@@ -23,13 +23,13 @@
         </div>
         <nav :class="{'flex': open, 'hidden': !open}"
              class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-indigo-600 focus:bg-indigo-700 focus:outline-none focus:shadow-outline"
+            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
                 href="/about/">About</a>
-            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-indigo-600 focus:bg-indigo-700 focus:outline-none focus:shadow-outline"
+            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
                 href="/prose/">Prose</a>
             <div @click.away="open = false" class="relative" x-data="{ open: false }">
                 <button @click="open = !open"
-                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-indigo-600 focus:bg-indigo-600 focus:outline-none focus:shadow-outline">
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline">
                     <span>Categories</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                          class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -45,19 +45,19 @@
                      x-transition:leave-start="transform opacity-100 scale-100"
                      x-transition:leave-end="transform opacity-0 scale-95"
                      class="absolute right-0 z-30 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
-                    <div class="px-2 py-2 text-indigo-900 bg-white rounded-md shadow">
-                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-white focus:text-white hover:bg-indigo-600 focus:bg-indigo-600 focus:outline-none focus:shadow-outline"
+                    <div class="px-2 py-2 text-primary-900 bg-white rounded-md shadow">
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline"
                            href="/posts/">Posts</a>
-                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-white focus:text-white hover:bg-indigo-600 focus:bg-indigo-600 focus:outline-none focus:shadow-outline"
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline"
                            href="/categories/news/">News</a>
-                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-white focus:text-white hover:bg-indigo-600 focus:bg-indigo-700 focus:outline-none focus:shadow-outline"
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
                            href="/categories/blog/">Blog</a>
                     </div>
                 </div>
             </div>
             <div @click.away="open = false" class="relative" x-data="{ open: false }">
                 <button @click="open = !open"
-                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-indigo-600 focus:bg-indigo-600 focus:outline-none focus:shadow-outline">
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline">
                     <span>Dropdown</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                          class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -75,9 +75,9 @@
                      class="absolute right-0 z-30 w-full mt-2 origin-top-right md:max-w-sm md:w-screen">
                     <div class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg text-zinc-900">
                         <div class="grid grid-cols-1 gap-4">
-                            <a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-indigo-600 focus:bg-indigo-700 focus:outline-none focus:shadow-outline"
+                            <a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
                                href="#">
-                                <div class="p-3 text-white bg-indigo-600 rounded-lg group-hover:bg-gray-900">
+                                <div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
                                          class="w-4 h-4 md:h-6 md:w-6">
@@ -92,9 +92,9 @@
                                 </div>
                             </a>
 
-                            <a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-indigo-600 focus:bg-indigo-700 focus:outline-none focus:shadow-outline"
+                            <a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
                                href="#">
-                                <div class="p-3 text-white bg-indigo-600 rounded-lg group-hover:bg-gray-900">
+                                <div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
                                          class="w-4 h-4 md:h-6 md:w-6">
@@ -109,9 +109,9 @@
                                 </div>
                             </a>
 
-                            <a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-indigo-600 focus:bg-indigo-700 focus:outline-none focus:shadow-outline"
+                            <a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
                                href="#">
-                                <div class="p-3 text-white bg-indigo-600 rounded-lg group-hover:bg-gray-900">
+                                <div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
                                          class="w-4 h-4 md:h-6 md:w-6">
@@ -130,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-indigo-600 focus:bg-indigo-700 focus:outline-none focus:shadow-outline"
+            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
                href="/contact">
                 Contact
             </a>

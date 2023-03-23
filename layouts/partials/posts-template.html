@@ -16,19 +16,19 @@
                 <div class="p-6">
                     <div class="flex-1">
                         <a href="{{.Permalink}}"
-                           class="block mt-2 text-2xl font-black text-gray-900 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-500 hover:underline">
+                           class="block mt-2 text-2xl font-black text-gray-900 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-500 hover:underline">
                             {{.Title}}
                         </a>
                         <p class="mt-3 text-base text-gray-900 dark:text-gray-300">
                             {{ .Params.summary }}
                         </p>
                     </div>
-                    <div class="flex pt-6 font-medium text-indigo-600 dark:text-indigo-100 text-md">
+                    <div class="flex pt-6 font-medium text-primary-600 dark:text-primary-100 text-md">
                         <span class="pr-2 font-black">Tags:</span>
                         {{ range $elem_index, $elem_val := (.GetTerms "tags") }}
                         {{- if gt $elem_index 0 }}, {{ end -}}
                         <a href="{{ .Permalink }}"
-                           class="inline-flex items-center rounded-md bg-gray-300 hover:bg-indigo-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 capitalize">{{ .LinkTitle }}</a>
+                           class="inline-flex items-center rounded-md bg-gray-300 hover:bg-primary-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 capitalize">{{ .LinkTitle }}</a>
                         {{- end -}}
                     </div>
                     <div class="flex items-center mt-6">
