@@ -1,6 +1,6 @@
 /* assets */
 
-/* ! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -31,6 +31,7 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
 */
 
 html {
@@ -47,6 +48,8 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
 }
 
 /*
@@ -2290,10 +2293,7 @@ video {
 }
 
 .inset-0 {
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  inset: 0px;
 }
 
 .inset-y-0 {
@@ -2891,8 +2891,10 @@ video {
 }
 
 .from-primary-600 {
-  --tw-gradient-from: #3034EC;
-  --tw-gradient-to: rgb(48 52 236 / 0);
+  --tw-gradient-from: #3034EC var(--tw-gradient-from-position);
+  --tw-gradient-from-position:  ;
+  --tw-gradient-to: rgb(48 52 236 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to-position:  ;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -3418,7 +3420,7 @@ EmojiSymbols;
 
 /* Custom CSS end */
 
-.dark .dark\:prose-invert {
+:is(.dark .dark\:prose-invert) {
   --tw-prose-body: var(--tw-prose-invert-body);
   --tw-prose-headings: var(--tw-prose-invert-headings);
   --tw-prose-lead: var(--tw-prose-invert-lead);
@@ -4042,147 +4044,147 @@ EmojiSymbols;
   border-radius: 0.75rem;
 }
 
-.dark .dark\:border-gray-600 {
+:is(.dark .dark\:border-gray-600) {
   --tw-border-opacity: 1;
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
-.dark .dark\:bg-gray-700 {
+:is(.dark .dark\:bg-gray-700) {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-gray-800 {
+:is(.dark .dark\:bg-gray-800) {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-gray-900 {
+:is(.dark .dark\:bg-gray-900) {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-gray-900\/10 {
+:is(.dark .dark\:bg-gray-900\/10) {
   background-color: rgb(17 24 39 / 0.1);
 }
 
-.dark .dark\:bg-gray-900\/50 {
+:is(.dark .dark\:bg-gray-900\/50) {
   background-color: rgb(17 24 39 / 0.5);
 }
 
-.dark .dark\:bg-indigo-600 {
+:is(.dark .dark\:bg-indigo-600) {
   --tw-bg-opacity: 1;
   background-color: rgb(79 70 229 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:text-gray-200 {
+:is(.dark .dark\:text-gray-200) {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-gray-300 {
+:is(.dark .dark\:text-gray-300) {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-gray-400 {
+:is(.dark .dark\:text-gray-400) {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-gray-50 {
+:is(.dark .dark\:text-gray-50) {
   --tw-text-opacity: 1;
   color: rgb(249 250 251 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-gray-900\/60 {
+:is(.dark .dark\:text-gray-900\/60) {
   color: rgb(17 24 39 / 0.6);
 }
 
-.dark .dark\:text-primary-100 {
+:is(.dark .dark\:text-primary-100) {
   --tw-text-opacity: 1;
   color: rgb(249 249 254 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-primary-300 {
+:is(.dark .dark\:text-primary-300) {
   --tw-text-opacity: 1;
   color: rgb(174 175 248 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-primary-400 {
+:is(.dark .dark\:text-primary-400) {
   --tw-text-opacity: 1;
   color: rgb(136 139 244 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-white {
+:is(.dark .dark\:text-white) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-zinc-200 {
+:is(.dark .dark\:text-zinc-200) {
   --tw-text-opacity: 1;
   color: rgb(228 228 231 / var(--tw-text-opacity));
 }
 
-.dark .dark\:placeholder-gray-400::-moz-placeholder {
+:is(.dark .dark\:placeholder-gray-400)::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
 }
 
-.dark .dark\:placeholder-gray-400::placeholder {
+:is(.dark .dark\:placeholder-gray-400)::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
 }
 
-.dark .dark\:shadow-neutral-800\/40 {
+:is(.dark .dark\:shadow-neutral-800\/40) {
   --tw-shadow-color: rgb(30 32 36 / 0.4);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.dark .dark\:ring-gray-900\/40 {
+:is(.dark .dark\:ring-gray-900\/40) {
   --tw-ring-color: rgb(17 24 39 / 0.4);
 }
 
-.dark .dark\:hover\:bg-gray-700:hover {
+:is(.dark .dark\:hover\:bg-gray-700:hover) {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:hover\:bg-gray-900\/80:hover {
+:is(.dark .dark\:hover\:bg-gray-900\/80:hover) {
   background-color: rgb(17 24 39 / 0.8);
 }
 
-.dark .dark\:hover\:bg-indigo-700:hover {
+:is(.dark .dark\:hover\:bg-indigo-700:hover) {
   --tw-bg-opacity: 1;
   background-color: rgb(67 56 202 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:hover\:text-primary-500:hover {
+:is(.dark .dark\:hover\:text-primary-500:hover) {
   --tw-text-opacity: 1;
   color: rgb(99 102 241 / var(--tw-text-opacity));
 }
 
-.dark .dark\:focus\:border-indigo-500:focus {
+:is(.dark .dark\:focus\:border-indigo-500:focus) {
   --tw-border-opacity: 1;
   border-color: rgb(99 102 241 / var(--tw-border-opacity));
 }
 
-.dark .dark\:focus\:ring-gray-700:focus {
+:is(.dark .dark\:focus\:ring-gray-700:focus) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(55 65 81 / var(--tw-ring-opacity));
 }
 
-.dark .dark\:focus\:ring-indigo-500:focus {
+:is(.dark .dark\:focus\:ring-indigo-500:focus) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
 }
 
-.dark .dark\:focus\:ring-indigo-800:focus {
+:is(.dark .dark\:focus\:ring-indigo-800:focus) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(55 48 163 / var(--tw-ring-opacity));
 }
 
-.dark .dark\:focus\:ring-primary-900:focus {
+:is(.dark .dark\:focus\:ring-primary-900:focus) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(10 12 106 / var(--tw-ring-opacity));
 }
