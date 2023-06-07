@@ -1,0 +1,56 @@
+baseURL: 'https://tailbliss.netlify.app/'
+title: TailBliss
+languageCode: en-us
+DefaultContentLanguage: en
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
+canonifyURLs: true
+paginate: 9
+darkmode_js:
+  - assets/js/darkmode.js
+enableInlineShortcodes: true
+params:
+  author: Nusser Studios
+  authorimage: ../assets/images/global/author.webp
+  github: 'https://github.com/nusserstudios'
+  facebook: 'https://facebook.com/nusserstudios'
+  og_image: /images/tailbliss-cover.png
+  sitename: TailBliss
+  twitter: '@nusserstudios'
+  description: TailBliss is Hugo Starter
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+taxonomies:
+  category: Categories
+  tag: Tags
+privacy:
+  disqus:
+    disable: false
+  googleAnalytics:
+    anonymizeIP: true
+    disable: false
+    respectDoNotTrack: false
+    useSessionStorage: false
+  instagram:
+    disable: false
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: false
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: false
+    privacyEnhanced: true
+module:
+  hugoVersion:
+    extended: true
+    min: "0.104.0"
+  imports:
+    - path: "github.com/gohugoio/hugo-mod-jslibs-dist/alpinejs/v3"
