@@ -1,4 +1,7 @@
 node_modules/
+resources/
+public/
+.hugo_build.lock
 .vercel
 yarn-error.log
 # Local Netlify folder
