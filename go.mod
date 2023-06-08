@@ -1,4 +1,4 @@
-module github.com/nusserstudios/tailbliss
+module github.com/aleksasiriski/tailbliss
 
 go 1.20
 
