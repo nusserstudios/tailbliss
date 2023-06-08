@@ -40,12 +40,14 @@ params:
       - text: Meet our investors and advisors
         url: "#"
     logos:
-      - l1: a
-      - l1: a
-      - l1: a
-      - l1: a
-      - l1: a
-      - l1: a
+      - identifier: a
+        image: "images/global/sample-logo-white.svg"
+        alt: "a"
+      - identifier: b
+      - identifier: c
+      - identifier: d
+      - identifier: e
+      - identifier: f
   p4:
     heading: "From the blog"
     content:
