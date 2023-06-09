@@ -1,5 +1,5 @@
 baseURL: ''
-title: TailBliss
+title: TailblissSite
 languageCode: en-us
 DefaultContentLanguage: en
 enableEmoji: true
@@ -18,7 +18,7 @@ params:
   moto: "Super Fast, and Flexible"
   description: "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
   disable_theme_toggle: false
-  disable_stay_uptodate: false
+  disable_stay_uptodate: true
 
   p1:
     heading: "Our mission"
@@ -74,7 +74,6 @@ params:
     twitter:
       enabled: true
       url: '@nusserstudios'
-    
 
 menu:
   main:
@@ -180,9 +179,27 @@ privacy:
     disable: false
     privacyEnhanced: true
 
+server:
+  headers:
+    - for: /**
+      values:
+        Referrer-Policy: strict-origin-when-cross-origin
+
 module:
   hugoVersion:
     extended: true
     min: "0.104.0"
   imports:
-    - path: "github.com/gohugoio/hugo-mod-jslibs-dist/alpinejs/v3"
+    - path: github.com/nusserstudios/tailbliss
+      mounts:
+        - source: layouts
+          target: layouts
+        - source: i18n
+          target: i18n
+        - source: archetypes
+          target: archetypes
+        - source: assets
+          target: assets
+          #excludeFiles: images/* # uncomment for production
+        - source: content # comment for production
+          target: content # comment for production

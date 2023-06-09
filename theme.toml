@@ -12,6 +12,8 @@ demosite = "https://tailbliss.netlify.app/"
 tags = ["blog", "tailwind", "tailwindcss", "dark", "light", "responsive", "minimal", "portfolio", "company", "gallery", "personal" ]
 features = ["blog", "categories", "webp", "tailwind3", "alpinejs"]
 
+min_version = "0.104.0"
+
 # If the theme has a single author
 [author]
     name = "Jeremy Nusser"
@@ -20,5 +22,6 @@ features = ["blog", "categories", "webp", "tailwind3", "alpinejs"]
 # If porting an existing theme
 [original]
   name = "Hugo-Tailwind-3.1"
+  author = "4044ever"
   homepage = "https://github.com/4044ever"
   repo = "https://github.com/4044ever/Hugo-Tailwind-3.1"
