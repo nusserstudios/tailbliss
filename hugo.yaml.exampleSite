@@ -85,14 +85,19 @@ menu:
       name: About
       url: /about/
       weight: 20
-    - identifier: dropdown_categories
+    - identifier: categories
+      pre: dropdown
       name: Categories
       weight: 30
+    - identifier: dropdown
+      pre: complexdropdown
+      name: Dropdown
+      weight: 40
     - identifier: contact
       name: Contact
       url: /contact/
-      weight: 40
-  dropdown_categories:
+      weight: 50
+  categories:
     - identifier: prose
       name: Prose
       url: /prose/
@@ -101,6 +106,25 @@ menu:
       name: About
       url: /about/
       weight: 20
+  dropdown:
+    - identifier: appearance
+      pre: stars # can be stars, comments or piechart
+      name: Appearance
+      post: "Easy customization"
+      url: "#"
+      weight: 10
+    - identifier: comments
+      pre: comments # can be stars, comments or piechart
+      name: Comments
+      post: "Check your latest comments"
+      url: "#"
+      weight: 20
+    - identifier: analytics
+      pre: piechart # can be stars, comments or piechart
+      name: Analytics
+      post: "Take a look at your statistics"
+      url: "#"
+      weight: 30
   footer:
     - identifier: about
       name: About

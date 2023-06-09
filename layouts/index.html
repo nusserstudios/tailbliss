@@ -4,15 +4,15 @@
         <div class="max-w-screen-xl px-4 py-8 mx-auto">
             <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
                 <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">
-                    <h1
-                        class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
-                        {{ .Site.Title }}</h1>
+                    <h1 class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
+                        {{ .Site.Title }}
+                    </h1>
                     <h2 class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
                         {{ .Site.Params.Moto }}
                     </h2>
-                    <p
-                       class="max-w-xl mx-auto mb-6 font-normal text-gray-900 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
-                        {{ .Site.Params.Description}}</p>
+                    <p class="max-w-xl mx-auto mb-6 font-normal text-gray-900 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
+                        {{ .Site.Params.Description}}
+                    </p>
                 </div>
                 <div class="col-span-6">
                     {{ $hero := resources.GetMatch "images/pages/tailbliss-rocket-indigo.png" }}
@@ -52,7 +52,7 @@
                     <div class="relative pt-64 pb-10 overflow-hidden shadow-xl rounded-2xl">
                         {{ $p1image := resources.Get .Site.Params.P1.Image }}
                         {{ with $p1image }}
-                        {{ with .Resize (printf "%dx%d webp q80" .Width .Height) }}
+                        {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
                         <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
                              class="absolute inset-0 object-cover w-full h-full" alt="P1"
                              loading="lazy" />
@@ -117,7 +117,7 @@
                     <div class="relative pt-64 pb-10 overflow-hidden shadow-xl rounded-2xl">
                         {{ $p2image := resources.Get .Site.Params.P2.Image }}
                         {{ with $p2image }}
-                        {{ with .Resize (printf "%dx%d webp q80" .Width .Height) }}
+                        {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
                         <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
                              class="absolute inset-0 object-cover w-full h-full" alt="P2"
                              loading="lazy" />
