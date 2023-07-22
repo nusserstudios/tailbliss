@@ -5,7 +5,7 @@ DefaultContentLanguage: en
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
-canonifyURLs: true
+canonifyURLs: false
 paginate: 9
 darkmode_js:
   - assets/js/darkmode.js
@@ -41,7 +41,7 @@ params:
         url: "#"
     logos:
       - identifier: a
-        image: "images/global/sample-logo-white.svg"
+        image: "images/global/sample-logo.svg"
         alt: "a"
       - identifier: b
       - identifier: c

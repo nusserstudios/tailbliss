@@ -41,7 +41,7 @@ params:
         url: "#"
     logos:
       - identifier: a
-        image: "images/global/sample-logo-white.svg"
+        image: "images/global/sample-logo.svg"
         alt: "a"
       - identifier: b
       - identifier: c
@@ -184,5 +184,3 @@ module:
   hugoVersion:
     extended: true
     min: "0.104.0"
-  imports:
-    - path: "github.com/gohugoio/hugo-mod-jslibs-dist/alpinejs/v3"
