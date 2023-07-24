@@ -6,13 +6,11 @@
 <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="{{ .Site.Title }}" />
 <meta property="og:description"
       content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:locale" content="en">
-<meta property="og:image" content="{{ .Params.Site.BaseURL }}{{ .Site.Params.og_image | relURL }}" />
-<meta property="og:image:secure_url" content="{{ .Site.Params.og_image | absURL }}" />
-<meta property="og:type" content="website" />
+<meta property="og:image" content="{{ if .Params.featured_image }}{{ .Params.featured_image | relURL }}{{ else }}{{ .Site.Params.og_image | relURL }}{{ end }}" />
+<meta property="og:image:secure_url" content="{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ .Site.Params.og_image | absURL }}{{ end }}" />
+<meta property="og:type" content="{{if .IsHome}}website{{else}}article{{end}}" />
