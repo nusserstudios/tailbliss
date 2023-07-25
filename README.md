@@ -73,7 +73,7 @@
 Has paginated Categories and Tags. Markdown files will automatically convert images put into `/assets` folder to .webp images. 
 
 ## Image shortcodes for webp as well.
-{{< imgh src="img-name.jpg" alt="Place alt text here." >}}
+{{< imgc src="img-name.jpg" alt="Place alt text here." >}}
 
 <a href="https://www.buymeacoffee.com/nusserstudios" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
