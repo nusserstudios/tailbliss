@@ -10,7 +10,8 @@ paginate: 9
 darkmode_js:
   - assets/js/darkmode.js
 enableInlineShortcodes: true
-
+markup:
+  defaultMarkdownHandler: goldmark
 params:
   author: Nusser Studios
   authorimage: ../assets/images/global/author.webp
