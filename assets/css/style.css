@@ -2343,10 +2343,6 @@ video {
   top: 2rem;
 }
 
-.z-0 {
-  z-index: 0;
-}
-
 .z-30 {
   z-index: 30;
 }
@@ -2441,10 +2437,6 @@ video {
   margin-top: 0.25rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .mt-12 {
   margin-top: 3rem;
 }
@@ -2537,16 +2529,32 @@ video {
   height: 100%;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .max-h-12 {
   max-height: 3rem;
 }
 
-.w-0 {
-  width: 0px;
+.min-h-\[\] {
+  min-height: ;
 }
 
-.w-1\/2 {
-  width: 50%;
+.min-h-\[8rem\] {
+  min-height: 8rem;
+}
+
+.min-h-\[50\%\] {
+  min-height: 50%;
+}
+
+.min-h-\[12rem\] {
+  min-height: 12rem;
+}
+
+.w-0 {
+  width: 0px;
 }
 
 .w-10 {
@@ -2579,6 +2587,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .min-w-0 {
@@ -3175,10 +3187,6 @@ video {
 
 .leading-7 {
   line-height: 1.75rem;
-}
-
-.leading-extra-loose {
-  line-height: 2.5;
 }
 
 .leading-none {
@@ -3872,11 +3880,6 @@ EmojiSymbols;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gray-50:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-indigo-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 48 163 / var(--tw-bg-opacity));
@@ -3890,11 +3893,6 @@ EmojiSymbols;
 .hover\:bg-primary-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(48 52 236 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-primary-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(19 23 209 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-primary-800:hover {
@@ -4146,10 +4144,6 @@ EmojiSymbols;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:hover\:bg-gray-900\/80:hover) {
-  background-color: rgb(17 24 39 / 0.8);
-}
-
 :is(.dark .dark\:hover\:bg-indigo-700:hover) {
   --tw-bg-opacity: 1;
   background-color: rgb(67 56 202 / var(--tw-bg-opacity));
@@ -4256,10 +4250,6 @@ EmojiSymbols;
     max-width: 36rem;
   }
 
-  .sm\:justify-center {
-    justify-content: center;
-  }
-
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -4338,10 +4328,6 @@ EmojiSymbols;
     margin-top: 4rem;
   }
 
-  .md\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
   .md\:mt-8 {
     margin-top: 2rem;
   }
@@ -4378,10 +4364,6 @@ EmojiSymbols;
     width: 100vw;
   }
 
-  .md\:max-w-3xl {
-    max-width: 48rem;
-  }
-
   .md\:max-w-sm {
     max-width: 24rem;
   }
@@ -4410,10 +4392,6 @@ EmojiSymbols;
     justify-content: space-between;
   }
 
-  .md\:rounded-bl-lg {
-    border-bottom-left-radius: 0.5rem;
-  }
-
   .md\:px-1 {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
@@ -4424,11 +4402,6 @@ EmojiSymbols;
     padding-right: 0.375rem;
   }
 
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -4437,11 +4410,6 @@ EmojiSymbols;
   .md\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
-  }
-
-  .md\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 
   .md\:pb-0 {
@@ -4458,10 +4426,6 @@ EmojiSymbols;
 
   .md\:pt-24 {
     padding-top: 6rem;
-  }
-
-  .md\:text-left {
-    text-align: left;
   }
 
   .md\:text-4xl {
@@ -4600,10 +4564,6 @@ EmojiSymbols;
     align-items: center;
   }
 
-  .lg\:justify-start {
-    justify-content: flex-start;
-  }
-
   .lg\:gap-12 {
     gap: 3rem;
   }
@@ -4677,10 +4637,6 @@ EmojiSymbols;
     margin-bottom: 0.5rem;
   }
 
-  .xl\:inline {
-    display: inline;
-  }
-
   .xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -4689,11 +4645,6 @@ EmojiSymbols;
   .xl\:text-9xl {
     font-size: 8rem;
     line-height: 1;
-  }
-
-  .xl\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .xl\:text-xl {

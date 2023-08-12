@@ -16,11 +16,8 @@
     <a href="https://github.com/nusserstudios/tailbliss/pulls">
       <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/nusserstudios/tailbliss?color=f97316" />
     </a>
-    <a href="https://app.netlify.com/sites/tailbliss/deploys">
-      <img alt="Netlify Deploys" src="https://api.netlify.com/api/v1/badges/2baf2850-0f9e-49ff-833b-7b1f2db19597/deploy-status" />
-    </a>
-    <br />
-    <br />
+    <br>
+    <br>
     <a href="https://gohugo.io/">
       <img src="https://img.shields.io/badge/Hugo%20-0.105.0%20-gray.svg?colorA=c9177e&colorB=FF4088&style=for-the-badge"/>
     </a>
@@ -76,6 +73,10 @@ Has paginated Categories and Tags. Markdown files will automatically convert ima
 {{< imgc src="img-name.jpg" alt="Place alt text here." >}}
 
 <a href="https://www.buymeacoffee.com/nusserstudios" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
+## Form
+To use the form, visit [FormSubmit.Co](https://formsubmit.co/). Locate the contact form in "content/contact.md", and ppdate the form action with the email address you want the form to send to. <code><form action="https://formsubmit.co/your@email.com" method="POST"></code>
+
 
 ## Credits
 4044ever - Original Theme
