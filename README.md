@@ -75,7 +75,7 @@ Has paginated Categories and Tags. Markdown files will automatically convert ima
 <a href="https://www.buymeacoffee.com/nusserstudios" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 ## Form
-To use the form, visit [FormSubmit.Co](https://formsubmit.co/). Locate the contact form in "content/contact.md", and update the form action with the email address you want the form to send to. form action="https://formsubmit.co/changeme@email.com" method="POST"
+To use the form, visit [FormSubmit.Co](https://formsubmit.co/). Locate the contact form in "content/contact.md", and update the form action with the email address you want on this line: **action="https://formsubmit.co/your@email.com" method="POST"**
 
 
 ## Credits
