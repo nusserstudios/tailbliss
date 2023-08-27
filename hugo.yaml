@@ -49,8 +49,8 @@ params:
   author: Nusser Studios
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
-  moto: "Super Fast, and Flexible"
-  description: "YiVal stands at the intersection of flexibility and adaptability in the AI development landscape. Crafted meticulously for those who seek a tailored experimentation experience, it effortlessly caters to both hands-on developers and those who lean into automation."
+  moto: "⚡Build any AI application with yival⚡"
+  description: "YiVal is an GenAI-Ops framework that allows you to iteratively tune your Generative AI model metadata, params, prompts and retrieval configs all at once with your preferred choices of test dataset generation, evaluation algorithms and improvement"
   disable_theme_toggle: false
   disable_stay_uptodate: false
 
@@ -112,26 +112,33 @@ params:
 
 menu:
   main:
-    - identifier: prose
-      name: Prose
-      url: /prose/
+    - identifier: blog
+      name: blog
+      url: /posts/
       weight: 10
-    - identifier: about
-      name: About
+    - identifier: playground
+      name: playground
       url: /about/
-      weight: 20
-    - identifier: categories
-      pre: dropdown
-      name: Categories
-      weight: 30
-    - identifier: dropdown
-      pre: complexdropdown
-      name: Dropdown
-      weight: 40
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 50
+    # - identifier: about
+    #   name: About
+    #   url: /about/
+    #   weight: 20
+    # - identifier: categories
+    #   pre: dropdown
+    #   name: Categories
+    #   weight: 30
+    # - identifier: dropdown
+    #   pre: complexdropdown
+    #   name: Dropdown
+    #   weight: 40
+    # - identifier: contact
+    #   name: Contact
+    #   url: /contact/
+    #   weight: 50
+    # - identifier: posts
+    #   name: posts
+    #   url: /posts/
+    #   weight: 60
   categories:
     - identifier: prose
       name: Prose
