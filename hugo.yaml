@@ -112,11 +112,11 @@ menu:
       weight: 20
     - identifier: playground
       name: playground
-      url: /about/
+      url: /playground/
       weight: 30
     - identifier: news
       name: news
-      url: /prose/
+      url: /news/
       weight: 10
     # - identifier: about
     #   name: About
@@ -139,14 +139,18 @@ menu:
     #   url: /posts/
     #   weight: 60
   categories:
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 10
-    - identifier: about
-      name: About
-      url: /about/
+    - identifier: blog
+      name: blog
+      url: /posts/
       weight: 20
+    - identifier: playground
+      name: playground
+      url: /playground/
+      weight: 30
+    - identifier: news
+      name: news
+      url: /news/
+      weight: 10
   dropdown:
     - identifier: appearance
       pre: stars # can be stars, comments or piechart
@@ -173,11 +177,11 @@ menu:
       weight: 20
     - identifier: playground
       name: playground
-      url: /about/
+      url: /playground/
       weight: 30
     - identifier: news
       name: news
-      url: /prose/
+      url: /news/
       weight: 10
     # - identifier: about
     #   name: About
