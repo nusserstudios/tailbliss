@@ -15,9 +15,9 @@
   "scripts": {
     "start": "concurrently npm:watch:*",
     "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
-    "watch:hugo": "hugo server",
-    "build": "hugo --minify",
-    "test": "hugo"
+    "watch:hugo": "hugo server --config=hugo.yaml",
+    "build": "hugo --minify --config=hugo.yaml",
+    "test": "hugo --config=hugo.yaml"
   },
   "repository": {
     "type": "git",
