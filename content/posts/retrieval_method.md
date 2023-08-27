@@ -75,28 +75,23 @@ of it!
 
 ### **Visual Flow**
 
-```mermaid
+<div class="mermaid">
 sequenceDiagram
     participant Y as YivalFrameworks Variation Generation
     participant C as Custom Function
     participant E as Yival's Evaluator/Improver
-
     Note over Y: Start with predefined prompts from Awesome GPT prompt Git library
-
     Y->>+Y: Retrieve top 3 prompts from FAISS (Vector Database)
     Y->>+Y: Evaluate relevance of prompt with GPT-4
-
     alt None of the prompts are relevant
         Y->>+Y: Request GPT-4 to generate a new prompt
         Y-->>-Y: Obtain and use new prompt from GPT-4
     else At least one prompt is relevant
         Y-->>-Y: Select and use the most relevant prompt from GPT-4
     end
-
     Y->>C: Feed generated variation
     C-->>E: Return output to Yival's Evaluator/Improver
-
-```
+</div>
 
 This flowchart will give you a bird's-eye view of how everything connects, from
 the moment we receive a use-case to generating the perfect prompt.

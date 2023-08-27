@@ -24,12 +24,38 @@ Yival is designed with modularity at its core, providing a clear workflow to gui
 users through the stages of AIGC app development.
 
 <div class="mermaid">
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+flowchart TD
+    A[Start]
+    A --> |Data Generation| A1[Dataset]
+    A1 --> A2[DataGenerator]
+    A2 --> A3[Specific Generator]
+    A1 --> A4[DataReader]
+    A4 --> A5[Specific Reader]
+    A1 --> A6[Manual Input]
+    A1 --> |Create Combinations| B
+    B --> B1[Specific Combination Creator]
+    B --> B2[Set Combinations Manually]
+    B --> B3[List of Combinations]
+    B3 --> |Analysis| C
+    C --> C1[User's Function]
+    C --> C2[Results from Function]
+    A1 --> C1
+    C2 --> |Evaluation| D
+    D --> D1[Method 1]
+    D --> D2[Method 2]
+    D --> D3[Method 3]
+    D --> |Selection| E
+    E --> |Improvement| F
+    F --> F1[Improver]
+    F1 --> C
+    style A fill:#f9d77e,stroke:#f96e5b
+    style B fill:#a1d4c6,stroke:#f96e5b
+    style C fill:#f6c3d5,stroke:#f96e5b
+    style D fill:#b2b1cf,stroke:#f96e5b
+    style E fill:#f9efaa,stroke:#f96e5b
+    style F fill:#f2a3b3,stroke:#f96e5b
 </div>
+
 
 
 A closer look at Yival's structured components:
