@@ -1,5 +1,5 @@
 baseURL: ''
-title: TailBliss
+title: YiVal
 languageCode: en-us
 DefaultContentLanguage: en
 enableEmoji: true
@@ -50,7 +50,7 @@ params:
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
   moto: "Super Fast, and Flexible"
-  description: "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
+  description: "YiVal stands at the intersection of flexibility and adaptability in the AI development landscape. Crafted meticulously for those who seek a tailored experimentation experience, it effortlessly caters to both hands-on developers and those who lean into automation."
   disable_theme_toggle: false
   disable_stay_uptodate: false
 
