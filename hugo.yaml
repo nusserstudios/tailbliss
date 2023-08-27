@@ -98,13 +98,7 @@ params:
   social_media:
     github:
       enabled: true
-      url: 'https://github.com/nusserstudios'
-    facebook:
-      enabled: true
-      url: 'https://facebook.com/nusserstudios'
-    instagram:
-      enabled: true
-      url: 'https://instagram.com/nusserstudios'
+      url: 'https://https://github.com/YiVal/YiVal'
     twitter:
       enabled: true
       url: '@nusserstudios'
@@ -115,10 +109,15 @@ menu:
     - identifier: blog
       name: blog
       url: /posts/
-      weight: 10
+      weight: 20
     - identifier: playground
       name: playground
       url: /about/
+      weight: 30
+    - identifier: news
+      name: news
+      url: /prose/
+      weight: 10
     # - identifier: about
     #   name: About
     #   url: /about/
@@ -168,26 +167,38 @@ menu:
       url: "#"
       weight: 30
   footer:
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 10
     - identifier: blog
-      name: Blog
-      url: /categories/blog/
+      name: blog
+      url: /posts/
       weight: 20
-    - identifier: news
-      name: News
-      url: /categories/news/
+    - identifier: playground
+      name: playground
+      url: /about/
       weight: 30
-    - identifier: prose
-      name: Prose
+    - identifier: news
+      name: news
       url: /prose/
-      weight: 40
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 50
+      weight: 10
+    # - identifier: about
+    #   name: About
+    #   url: /about/
+    #   weight: 10
+    # - identifier: blog
+    #   name: Blog
+    #   url: /categories/blog/
+    #   weight: 20
+    # - identifier: news
+    #   name: News
+    #   url: /categories/news/
+    #   weight: 30
+    # - identifier: prose
+    #   name: Prose
+    #   url: /prose/
+    #   weight: 40
+    # - identifier: contact
+    #   name: Contact
+    #   url: /contact/
+    #   weight: 50
 
 markup:
   goldmark:

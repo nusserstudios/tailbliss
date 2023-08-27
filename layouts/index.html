@@ -183,7 +183,7 @@
 
 
     <!-- Sponsors section -->
-    <div class="max-w-md px-4 mx-auto md:pt-24 md:pb-16 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+    <!-- <div class="max-w-md px-4 mx-auto md:pt-24 md:pb-16 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <div class="lg:grid lg:grid-cols-2 lg:items-center lg:gap-24">
             <div class="mt-12 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
                 {{ range .Site.Params.P3.Logos }}
@@ -216,7 +216,7 @@
                 {{ end }}
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Blog section -->
     <div class="relative px-1 pt-8 pb-4 bg-transparent lg:px-8 lg:pt-12 lg:mb-4 md:mt-12">
@@ -329,6 +329,18 @@
                             </button>
                         </div>
                     </form>
+
+                    <form name="contact" netlify>
+                        <p>
+                          <label>Name <input type="text" name="name" /></label>
+                        </p>
+                        <p>
+                          <label>Email <input type="email" name="email" /></label>
+                        </p>
+                        <p>
+                          <button type="submit">Send</button>
+                        </p>
+                      </form>
                 </div>
             </div>
         </div>
