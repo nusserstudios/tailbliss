@@ -89,7 +89,7 @@ params:
   p5:
     heading: "Stay Up to Date"
     content:
-      - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque."
+      - text: "🌟Get the latest updates on YiVal, our advanced GenAI-Ops framework🌟 <br>Enter your email below and stay ahead in tuning your Generative AI models"
     action: "Send"
     label: "Email address"
     placeholder: "Enter your email"
