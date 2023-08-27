@@ -318,10 +318,10 @@
                         </p>
                         {{ end }}
                     </div>
-                    <form action="{{ .Site.Params.P5.Action }}" class="mt-12 sm:mx-auto sm:flex sm:max-w-lg" netlify>
+                    <form name="contact" action="{{ .Site.Params.P5.Action }}" class="mt-12 sm:mx-auto sm:flex sm:max-w-lg" netlify>
                         <div class="flex-1 min-w-0">
                             <label for="cta-email" class="sr-only">{{ .Site.Params.P5.Label }}</label>
-                            <input id="cta-email" type="email" class="block w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 border border-transparent rounded-md shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500" placeholder="{{ .Site.Params.P5.Placeholder }}">
+                            <input id="cta-email" name="email" type="email" class="block w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 border border-transparent rounded-md shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500" placeholder="{{ .Site.Params.P5.Placeholder }}">
                         </div>
                         <div class="mt-4 sm:mt-0 sm:ml-3">
                             <button type="submit" class="block w-full px-5 py-3 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10">
@@ -329,6 +329,7 @@
                             </button>
                         </div>
                     </form>
+                    
 
                     <!-- <form name="contact" netlify>
                         <p>
