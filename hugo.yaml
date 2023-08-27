@@ -90,7 +90,7 @@ params:
     heading: "Stay Up to Date"
     content:
       - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque."
-    action: "#"
+    action: "Send"
     label: "Email address"
     placeholder: "Enter your email"
     button: "Notify me"
