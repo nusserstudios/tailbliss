@@ -5,7 +5,7 @@
   "main": "index.js",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
-    "alpinejs": "^3.12.3",
+    "alpinejs": "^3.13.0",
     "autoprefixer": "^10.4.15",
     "concurrently": "^8.2.0",
     "postcss": "^8.4.28",
