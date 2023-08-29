@@ -106,23 +106,23 @@ params:
 
 menu:
   main:
-    - identifier: blog
+    - identifier: Blog
       name: Blog
       url: /posts/
       weight: 20
-    - identifier: playground
-      name: Playground
-      url: /playground/
+    - identifier: Demo
+      name: Demo
+      url: /demo/
       weight: 30
-    - identifier: news
+    - identifier: News
       name: News
       url: /news/
       weight: 10
-    - identifier: docs
+    - identifier: Docs
       name: Docs
       url: "https://yival.github.io/YiVal/"      
       weight: 40
-    - identifier: contact
+    - identifier: Contact
       name: Contact
       url: "mailto:yivalloveaigc@gmail.com"
       weight: 50
@@ -151,9 +151,9 @@ menu:
       name: blog
       url: /posts/
       weight: 20
-    - identifier: playground
-      name: playground
-      url: /playground/
+    - identifier: demo
+      name: demo
+      url: /demo/
       weight: 30
     - identifier: news
       name: news
@@ -183,9 +183,9 @@ menu:
       name: blog
       url: /posts/
       weight: 20
-    - identifier: playground
-      name: playground
-      url: /playground/
+    - identifier: demo
+      name: demo
+      url: /demo/
       weight: 30
     - identifier: news
       name: news
