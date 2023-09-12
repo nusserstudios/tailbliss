@@ -5,7 +5,7 @@
             <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
                 <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">
                     <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
-                        🧚‍♀️{{ .Site.Title }}
+                        {{ .Site.Title }}
                     </h1>
                     <h2 class="pb-12 text-2xl font-light text-gray-800 dark:text-gray-300 md:text-2xl">
                         {{ .Site.Params.Moto }}
@@ -78,7 +78,7 @@
                     </p>
                 </div>
                 <div class="col-span-6">
-                    {{ $hero := resources.GetMatch "images/pages/tailbliss-rocket-indigo.png" }}
+                    {{ $hero := resources.GetMatch "images/pages/yival-spirit-flip.png" }}
 
                     {{ $thumb := ($hero.Fill "400x400 webp q90") }}
                     {{ $large := ($hero.Fill "576x576 webp q90") }}
