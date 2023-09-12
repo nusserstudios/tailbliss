@@ -3,11 +3,11 @@ title: "Simplifying Prompt Generation for LLMs with Retrieval Methods"
 date: 2023-09-11T11:10:36+08:00
 draft: false
 language: en
-featured_image: ../assets/images/featured/post-retrieval-method-featured-4.png
+featured_image: ../assets/images/featured/post-retrieval-method-featured.jpg
 summary: Retrieve rich templates of prompts from existing library leveraging Yival's retrieval and refine framework.
 description: This is the description part.
 author: YiVal
-authorimage: 🧚‍♀️
+authorimage: ../assets/images/global/yival_author_img.jpeg
 categories: Blog
 tags: ['retrieval', 'faiss', 'prompt management']
 ---

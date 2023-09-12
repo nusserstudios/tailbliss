@@ -3,13 +3,13 @@ title: "Introducing Yival: Prompt Development and Experimentation Simplified"
 date: 2023-08-01T11:10:36+08:00
 draft: false
 language: en
-featured_image: ../assets/images/featured/post-yival-intro-featured-2.jpg
-summary: In this dynamic environment, Yival offers a structured yet flexible open-source framework tailored for AIGC app development and experimentation.
+featured_image: ../assets/images/featured/post-yival-intro-featured.jpg
+summary: Yival offers a structured yet flexible open-source framework tailored for AIGC app development and experimentation.
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero. Vestibulum vel convallis felis. Ut finibus lorem vestibulum lobortis rhoncus.
-# author: YiVal
-# authorimage: ../assets/images/global/author.webp
+author: YiVal
+authorimage: ../assets/images/global/yival_author_img.jpeg
 categories: Blog
-tags: Blog
+tags: ['YiVal']
 ---
 
 # **Introducing Yival: Prompt Development and Experimentation Simplified**

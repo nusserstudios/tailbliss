@@ -1,15 +1,15 @@
 ---
-title: "Showcasing Yival open source framework"
+title: "Showcasing Yival open source framework with three use cases and more"
 date: 2023-08-15T11:10:36+08:00
 draft: false
 language: en
-featured_image: ../assets/images/featured/post-demo-featured-2.jpg
-summary: Use Yival, the open source AIGC framwork in action.
+featured_image: ../assets/images/featured/post-demo-featured.jpg
+summary: Use Yival, the open source AIGC framwork in action for cases like startup company headline generations and more.
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero. Vestibulum vel convallis felis. Ut finibus lorem vestibulum lobortis rhoncus.
 author: YiVal
-authorimage: 🧚‍♀️
+authorimage: ../assets/images/global/yival_author_img.jpeg
 categories: Blog
-tags: ['Yival', 'prompting']
+tags: ['YiVal', 'prompting']
 ---
 
 # Yival Tutorial
