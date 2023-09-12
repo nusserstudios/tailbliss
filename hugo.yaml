@@ -48,9 +48,9 @@ markup:
 params:
   author: Nusser Studios
   authorimage: ../assets/images/global/author.webp
-  og_image: /images/yival-spirit.png
+  og_image: /images/yival-spirit-flip.png
   moto: "⚡AI App - Evaluate and Evolve⚡"
-  description: "YiVal is an GenAI-Ops framework that allows you to iteratively tune your Generative AI model metadata, params, prompts and retrieval configs all at once with your preferred choices of test dataset generation, evaluation algorithms and improvement strategies."
+  description: "YiVal is the enterprise-grade generative AI application development platform."
   disable_theme_toggle: true
   disable_stay_uptodate: true
 
@@ -64,7 +64,7 @@ params:
       - text: "Offering user-customizable and non-code solutions that remove the barrier to entry for commercially viable Generative AI workflows, from text creation up to novel content types currently reserved for experts."
   p2:
     heading: "Yival's Architecture"
-    image: "images/pages/system-diagram.png"
+    image: "images/pages/yival-diagram-core-bg.png"
     content:
       - text: "Yival's modular design is a guiding force in AIGC app development, encompassing data generation, combination creation, evaluation, and improvement."
       - text: "Data generation serves as the bedrock of any AIGC application, laying the foundation for innovation"
