@@ -1,5 +1,5 @@
 baseURL: ''
-title: TailBliss
+title: Scala Survey Results 2023
 languageCode: en-us
 DefaultContentLanguage: en
 enableEmoji: true
@@ -49,10 +49,18 @@ params:
   author: Nusser Studios
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
-  moto: "Super Fast, and Flexible"
-  description: "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
-  disable_theme_toggle: false
+  moto: "by Scala Center and VirtusLab"
+
+  disable_theme_toggle: true
   disable_stay_uptodate: false
+
+  data:
+    - 
+      question: "Which of the following statements describe you?"
+      id: "q0"
+    - 
+      question: "What major versions of Scala are you using?"
+      id: "q1"
 
   p1:
     heading: "Our mission"
@@ -75,7 +83,7 @@ params:
         url: "#"
     logos:
       - identifier: a
-        image: "images/global/sample-logo.svg"
+        image: "images/global/scala-spiral.png"
         alt: "a"
       - identifier: b
       - identifier: c
@@ -111,27 +119,11 @@ params:
     
 
 menu:
-  main:
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 10
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 20
-    - identifier: categories
-      pre: dropdown
-      name: Categories
-      weight: 30
-    - identifier: dropdown
-      pre: complexdropdown
-      name: Dropdown
-      weight: 40
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 50
+  # main:
+  #   - identifier: scalalang
+  #     name: scalalang.org
+  #     url: /contact/
+  #     weight: 50
   categories:
     - identifier: prose
       name: Prose

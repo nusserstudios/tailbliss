@@ -17,9 +17,12 @@
         document.documentElement.classList.remove('dark')
     }
 </script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 {{ $styles := resources.Get "/css/style.css" | postCSS }}
+{{ $stylesCustom := resources.Get "/css/custom.css" | postCSS }}
 {{ if .Site.IsServer }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+<link rel="stylesheet" href="{{ $stylesCustom.RelPermalink }}" />
 {{ else }}
 {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />

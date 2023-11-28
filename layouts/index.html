@@ -15,7 +15,7 @@
                     </p>
                 </div>
                 <div class="col-span-6">
-                    {{ $hero := resources.GetMatch "images/pages/tailbliss-rocket-indigo.png" }}
+                    {{ $hero := resources.GetMatch "images/pages/spiral-white.png" }}
 
                     {{ $thumb := ($hero.Fill "400x400 webp q90") }}
                     {{ $large := ($hero.Fill "576x576 webp q90") }}
@@ -30,209 +30,18 @@
 
     <!-- More main page content here... -->
 
-    <!-- Our mission section -->
+    {{ range .Site.Params.Data }}
     <div class="relative my-4">
-        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
-            <div class="relative sm:py-8 lg:py-0">
-                <div aria-hidden="true" class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
-                    <div class="absolute inset-y-0 w-full bg-gray-50 dark:bg-gray-900/10 right-1/2 rounded-r-3xl lg:right-72"></div><svg class="absolute -ml-3 top-8 left-1/2 lg:-right-8 lg:left-auto lg:top-12" width="404" height="392" fill="none" viewBox="0 0 404 392" loading="lazy">
-                        <defs>
-                            <pattern id="02f20b47-fd69-4224-a62a-4c9de5c763f7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                                <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-gray-900/60" fill="currentcolor"></rect>
-                            </pattern>
-                        </defs>
-                        <rect width="404" height="392" fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"></rect>
-                    </svg>
-                </div>
-                <div class="relative w-full h-auto px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:py-20">
-                    <div class="overflow-hidden shadow-xl rounded-2xl">
-                        {{ $p1image := resources.Get .Site.Params.P1.Image }}
-                        {{ with $p1image }}
-                        {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
-                        <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
-                        {{ end }}
-                        {{ end }}
-                    </div>
-                </div>
-            </div>
-            <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
-                <div class="md:pt-12 sm:pt-6 lg:pt-20">
-                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
-                        {{ .Site.Params.P1.Heading }}
-                    </h2>
-                    <div class="mt-6 text-gray-900 dark:text-white">
-                        <div class="mt-6 space-y-6 text-gray-900 dark:text-white">
-                            {{ range .Site.Params.P1.Content }}
-                            <p class="text-lg text-gray-900 dark:text-white">
-                                {{ .text }}
-                            </p>
-                            {{ end }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- JITsection -->
-    <div class="overflow-hidden sm:pt-6 lg:relative">
-        <div class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-12 lg:px-8">
-            <div>
-                <div class="md:mt-8">
-                    <div class="mt-6 sm:max-w-xl">
-                        <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl md:mt-16">
-                            {{ .Site.Params.P2.Heading }}
-                        </h2>
-                        {{ range .Site.Params.P2.Content }}
-                        <p class="pb-12 mt-6 text-lg text-gray-900 dark:text-white">
-                            {{ .text }}
-                        </p>
-                        {{ end }}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="sm:mx-auto sm:max-w-3xl sm:px-6">
-            <div class="md:py-12 sm:relative sm:mt-12 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                <div class="hidden sm:block">
-                    <div class="absolute inset-y-0 w-screen left-1/2 rounded-l-3xl bg-gray-50 dark:bg-gray-900/10 lg:left-80 lg:right-0 lg:w-full"></div><svg class="absolute -mr-3 top-8 right-1/2 lg:left-0 lg:m-0" width="404" height="392" fill="none" viewBox="0 0 404 392" loading="lazy">
-                        <defs>
-                            <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                                <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-gray-900/60" fill="currentcolor"></rect>
-                            </pattern>
-                        </defs>
-                        <rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
-                    </svg>
-                </div>
-                <div class="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
-                    {{ $p2image := resources.Get .Site.Params.P2.Image }}
-                    {{ with $p2image }}
-                    {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
-                    <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="p2" class="w-full rounded-lg shadow-xl lg:h-full lg:w-auto lg:max-w-none" loading="lazy" />
-                    {{ end }}
-                    {{ end }}
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Sponsors section -->
-    <div class="max-w-md px-4 mx-auto md:pt-24 md:pb-16 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-        <div class="lg:grid lg:grid-cols-2 lg:items-center lg:gap-24">
-            <div class="mt-12 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
-                {{ range .Site.Params.P3.Logos }}
-                <div class="flex justify-center col-span-1 px-8 py-8 bg-gray-50 dark:bg-gray-900/10">
-                    {{ if .image }}
-                    {{ $sponsor := resources.Get .image }}
-                    <img src="{{ $sponsor.RelPermalink }}" class="max-h-12 dark:invert" alt="{{ .alt }}" loading="lazy" />
-                    {{ else }}
-                    {{ $sponsor := resources.Get "images/global/sample-logo.svg" }}
-                    <img src="{{ $sponsor.RelPermalink }}" class="max-h-12 dark:invert" alt="{{ .alt }}" loading="lazy" />
-                    {{ end }}
-                </div>
-                {{ end }}
-            </div>
-            <div>
+        <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
+            <div class="md:pt-12 sm:pt-6 lg:pt-20">
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
-                    {{ .Site.Params.P3.Heading }}
+                    {{ .question }}
                 </h2>
-                {{ range .Site.Params.P3.Content }}
-                <p class="max-w-3xl mt-6 text-lg leading-7 text-gray-900 dark:text-white">
-                    {{ .text }}
-                </p>
-                {{ end }}
-                {{ range .Site.Params.P3.Links }}
-                <div class="my-6">
-                    <a href="{{ .url }}" class="text-base font-medium text-primary-400 dark:text-primary-100">
-                        {{ .text }}&nbsp&rarr;
-                    </a>
-                </div>
-                {{ end }}
+                <div id="diagram{{ .id }}" class="datadiagram"></div>
             </div>
         </div>
     </div>
-
-    <!-- Blog section -->
-    <div class="relative px-1 pt-8 pb-4 bg-transparent lg:px-8 lg:pt-12 lg:mb-4 md:mt-12">
-        <div class="absolute inset-0">
-            <div class="bg-gray-200 dark:bg-gray-900/50 h-1/3 sm:h-2/3"></div>
-        </div>
-        <div class="relative px-2 mx-auto max-w-7xl">
-            <div class="text-center">
-                <h2 class="text-3xl font-black tracking-tight text-primary-500 dark:text-primary-300 sm:text-4xl">
-                    {{ .Site.Params.P4.Heading }}
-                </h2>
-                {{ range .Site.Params.P4.Content }}
-                <p class="max-w-2xl mx-auto mt-3 text-xl text-gray-500 dark:text-gray-300 sm:mt-4">
-                    {{ .text }}
-                </p>
-                {{ end }}
-            </div>
-
-            <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50 md:px-1.5">
-                <div class="px-4 text-gray-900 dark:text-white not-prose dark:text-zinc-200">
-                    <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
-                        {{ range (.Paginator 3).Pages }}
-                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
-                            <a href="{{.Permalink}}">
-                                {{ with .Params.featured_image }}
-                                {{ with resources.Get . }}
-                                {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
-                                <img src="{{ $postimage }}" class="object-fill overflow-hidden rounded-t-lg" width="100%" height="" loading="lazy" alt="{{ .Title }}" />
-
-                                {{ end }}
-                                {{ end }}
-                            </a>
-                            <div class="p-6">
-                                <div class="flex-1">
-                                    <a href="{{.Permalink}}" class="block mt-2 text-2xl font-black text-gray-900 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-500 hover:underline">
-                                        {{ .Title }}
-                                    </a>
-                                    <p class="mt-3 text-base text-gray-900 dark:text-gray-300">
-                                        {{ .Params.summary }}
-                                    </p>
-                                </div>
-                                <div class="flex pt-6 font-medium text-primary-600 dark:text-primary-100 text-md">
-                                    <span class="pr-2 font-black">Tags:</span>
-                                    {{ range $elem_index, $elem_val := (.GetTerms "tags") }}
-                                    {{- if gt $elem_index 0 }}, {{ end -}}
-                                    <a href="{{ .Permalink }}" class="inline-flex items-center rounded-md bg-gray-300 hover:bg-primary-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 ">{{ .LinkTitle }}</a>
-                                    {{- end -}}
-                                </div>
-                                <div class="flex items-center mt-6">
-                                    <div class="flex-shrink-0">
-                                        <span class="sr-only">{{ .Params.author }}</span>
-                                        {{ with .Params.authorimage }}
-                                        {{ with resources.Get . }}
-                                        {{ $authorimage := (.Resize "400x webp").RelPermalink }}
-                                        <img class="w-10 h-10 rounded-full" src="{{ $authorimage }}" alt="">
-                                        {{ end }}
-                                        {{ end }}
-                                    </div>
-                                    <div class="pt-1 ml-3">
-                                        <p class="text-sm font-medium text-gray-900 dark:text-white">
-                                            {{ .Params.author }}
-                                        </p>
-                                        <div class="flex space-x-1 text-sm text-gray-500 dark:text-white">
-                                            <time datetime="2020-02-12">{{.Date.Format "2006-01-02"}}</time>
-                                            <span aria-hidden="true">&middot;</span>
-                                            <span>{{ math.Round (div (countwords .Content) 220.0) }}
-                                                min read</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {{ end }}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    {{ end }}
     {{ if not .Site.Params.Disable_stay_uptodate}}
     <!-- CTA section -->
     <div class="relative pb-16 mt-6">
@@ -272,5 +81,107 @@
     </div>
     {{ end }}
 
+<script>
+    (async function() {
+    console.log("XDD?")
+    const data = await d3.json({{ (resources.Get "data/questions.json").RelPermalink }})
+    console.log("xD?")
+    const QUESTIONS_NUM = {{ len .Site.Params.Data }}
+    for(let i = 0; i < QUESTIONS_NUM; i++) {
+        let question = data["data"][i]
+        console.log(question)
+
+        // Declare the chart dimensions and margins.
+        const width = 928;
+        const height = 500;
+        const marginTop = 50;
+        const marginRight = 0;
+        const marginBottom = 50;
+        const marginLeft = 80;
+
+        // append the svg object to the body of the page
+        var svg = d3.select(`#diagramq${i}`)
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .attr("viewBox", [0, 0, width, height])
+            .attr("style", "max-width: 100%; height: auto;");
+
+            // Declare the x (horizontal position) scale.
+        const x = d3.scaleBand()
+            .domain(question.answers.map((d) => d.answer))
+            .padding(0.4)
+            .range([marginLeft, width - marginRight])
+    
+        
+        // Declare the y (vertical position) scale.
+        const y = d3.scaleLinear()
+            .domain([0, 1.0])
+            .range([height - marginBottom, marginTop]);
+
+        // Add a rect for each bar.
+        svg.append("g")
+            .attr("fill", "steelblue")
+            .selectAll()
+            .data(question.answers)
+            .join("rect")
+            .attr("x", (d) => x(d.answer))
+            .attr("y", (d) => y(d.percentage))
+            .attr("height", (d) => y(0) - y(d.percentage))
+            .attr("width", x.bandwidth());
+
+        // Add the x-axis and label.
+        svg.append("g")
+            .attr("transform", `translate(0,${height - marginBottom})`)
+            .call(d3.axisBottom(x).tickSizeOuter(0))
+            .selectAll("text")
+            .call(function(t){                
+            t.each(function(d){ // for each one
+              var self = d3.select(this);
+              if(self.text().length > 23) {
+                var splitAt = 23
+                for (var i = splitAt; i < self.text().length; i++) {
+                    if (self.text().charAt(i) == " ") {
+                        splitAt = i
+                        break
+                    }
+                }
+                var s = [self.text().slice(0, splitAt), self.text().slice(splitAt)]
+                self.text(''); // clear it out
+                self.append("tspan") // insert two tspans
+                    .attr("x", 0)
+                    .attr("dy",".8em")
+                    .text(s[0]);
+                self.append("tspan")
+                    .attr("x", 0)
+                    .attr("dy","1.1em")
+                    .text(s[1]);
+              }
+            })})
+
+        // Add the y-axis and label, and remove the domain line.
+        svg.append("g")
+            .attr("transform", `translate(${marginLeft},0)`)
+            .call(d3.axisLeft(y).tickValues([0.2, 0.4, 0.6, 0.8, 1.0]).tickFormat((y) => (y * 100).toFixed() + "%"))
+            .call(g => g.append("text")
+                .attr("x", -marginLeft)
+                .attr("y", 10)
+                .attr("fill", "currentColor")
+                .attr("text-anchor", "start"))
+
+    
+        // append the bar rectangles to the svg element
+        svg.selectAll("rect")
+            .style("fill", "#FFFFFF")
+        svg.selectAll("text")
+            .attr("font-size", "18")
+            .style("fill", "#FFFFFF")
+        svg.selectAll("path")
+            .style("stroke", "#FFFFFF")
+        svg.selectAll("line")
+            .style("stroke", "#FFFFFF")
+    }
+    })();
+</script>
 </main>
 {{ end }}
