@@ -8,3 +8,4 @@ yarn-error.log
 .netlify
 yarn-error.log
 responses.csv
+assets/data/*

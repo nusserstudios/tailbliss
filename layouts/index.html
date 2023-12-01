@@ -1,187 +1,333 @@
 {{ define "main" }}
 <main>
-    <div class="bg-gray-200 dark:bg-gray-900">
-        <div class="max-w-screen-xl px-4 py-8 mx-auto">
-            <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
-                <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">
-                    <h1 class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
-                        {{ .Site.Title }}
-                    </h1>
-                    <h2 class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
-                        {{ .Site.Params.Moto }}
-                    </h2>
-                    <p class="max-w-xl mx-auto mb-6 font-normal text-gray-900 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
-                        {{ .Site.Params.Description}}
-                    </p>
-                </div>
-                <div class="col-span-6">
-                    {{ $hero := resources.GetMatch "images/pages/spiral-white.png" }}
+  <div class="bg-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl px-4 py-8 mx-auto">
+      <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
+        <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">
+          <h1
+            class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
+            {{ .Site.Title }}
+          </h1>
+          <h2 class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
+            {{ .Site.Params.Moto }}
+          </h2>
+          <p
+            class="max-w-xl mx-auto mb-6 font-normal text-gray-900 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
+            {{ .Site.Params.Description}}
+          </p>
+        </div>
+        <div class="col-span-6">
+          {{ $hero := resources.GetMatch "images/pages/spiral-white.png" }}
 
-                    {{ $thumb := ($hero.Fill "400x400 webp q90") }}
-                    {{ $large := ($hero.Fill "576x576 webp q90") }}
+          {{ $thumb := ($hero.Fill "400x400 webp q90") }}
+          {{ $large := ($hero.Fill "576x576 webp q90") }}
 
-                    <img srcset="
+          <img srcset="
                         {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
-                        {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}" width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" />
-                </div>
-            </div>
+                        {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}"
+            width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" />
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- More main page content here... -->
+  <!-- More main page content here... -->
 
-    {{ range .Site.Params.Data }}
-    <div class="relative my-4">
-        <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
-            <div class="md:pt-12 sm:pt-6 lg:pt-20">
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
-                    {{ .question }}
-                </h2>
-                <div id="diagram{{ .id }}" class="datadiagram"></div>
-            </div>
+  <!-- Our mission section -->
+  <div class="relative my-4">
+    <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
+      <div class="relative sm:py-8 lg:py-0">
+        <div aria-hidden="true" class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
+          <div class="absolute inset-y-0 w-full bg-gray-50 dark:bg-gray-900/10 right-1/2 rounded-r-3xl lg:right-72">
+          </div><svg class="absolute -ml-3 top-8 left-1/2 lg:-right-8 lg:left-auto lg:top-12" width="404" height="392"
+            fill="none" viewBox="0 0 404 392" loading="lazy">
+            <defs>
+              <pattern id="02f20b47-fd69-4224-a62a-4c9de5c763f7" x="0" y="0" width="20" height="20"
+                patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-gray-900/60" fill="currentcolor">
+                </rect>
+              </pattern>
+            </defs>
+            <rect width="404" height="392" fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"></rect>
+          </svg>
         </div>
-    </div>
-    {{ end }}
-    {{ if not .Site.Params.Disable_stay_uptodate}}
-    <!-- CTA section -->
-    <div class="relative pb-16 mt-6">
-        <div class="max-w-md mx-auto px-7 sm:max-w-3xl lg:max-w-7xl">
-            <div class="relative px-6 py-10 overflow-hidden shadow-xl bg-primary-500 rounded-2xl sm:px-12 sm:py-20">
-                <div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
-                    <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 360" loading="lazy">
-                        <path class="text-primary-600 text-opacity-40" fill="currentColor" d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z" />
-                        <path class="text-primary-600 text-opacity-40" fill="currentColor" d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z" />
-                    </svg>
-                </div>
-                <div class="relative">
-                    <div class="sm:text-center">
-                        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                            {{ .Site.Params.P5.Heading }}
-                        </h2>
-                        {{ range .Site.Params.P5.Content }}
-                        <p class="max-w-2xl mx-auto mt-6 text-lg text-primary-100">
-                            {{ .text }}
-                        </p>
-                        {{ end }}
-                    </div>
-                    <form action="{{ .Site.Params.P5.Action }}" class="mt-12 sm:mx-auto sm:flex sm:max-w-lg">
-                        <div class="flex-1 min-w-0">
-                            <label for="cta-email" class="sr-only">{{ .Site.Params.P5.Label }}</label>
-                            <input id="cta-email" type="email" class="block w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 border border-transparent rounded-md shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500" placeholder="{{ .Site.Params.P5.Placeholder }}">
-                        </div>
-                        <div class="mt-4 sm:mt-0 sm:ml-3">
-                            <button type="submit" class="block w-full px-5 py-3 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10">
-                                {{ .Site.Params.P5.Button }}
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+        <div class="relative w-full h-auto px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:py-20">
+          <div class="overflow-hidden shadow-xl rounded-2xl">
+            {{ $p1image := resources.Get .Site.Params.P1.Image }}
+            {{ with $p1image }}
+            {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
+            <img imgh src={{ (resources.Get "images/global/survey.png" ).RelPermalink }} width="{{ .Width }}"
+              height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
+            {{ end }}
+            {{ end }}
+          </div>
         </div>
+      </div>
+      <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
+        <div class="md:pt-12 sm:pt-6 lg:pt-20">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
+            Scala in 2023
+          </h2>
+          <div class="mt-6 text-gray-900 dark:text-white">
+            <div class="mt-6 space-y-6 text-gray-900 dark:text-white">
+
+              <p class="text-lg text-gray-900 dark:text-white">
+                In the Scala Survey of 2023, a comprehensive analysis was conducted to gauge the prevailing trends
+                within the Scala community. With a total of 1387 insightful responses, the survey achieved a notable
+                completion rate of 63%, reflecting a robust engagement from Scala developers and enthusiasts. The data
+                collected offers a rich tapestry of information, detailing aspects such as preferred coding patterns,
+                favorite libraries, and the overall satisfaction with Scala's ecosystem.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    {{ end }}
+  </div>
 
-<script>
-    (async function() {
-    console.log("XDD?")
-    const data = await d3.json({{ (resources.Get "data/questions.json").RelPermalink }})
-    console.log("xD?")
-    const QUESTIONS_NUM = {{ len .Site.Params.Data }}
-    for(let i = 0; i < QUESTIONS_NUM; i++) {
-        let question = data["data"][i]
-        console.log(question)
+  <div class="relative my-4 dataquestiondiv">
+    <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
+      <div class="md:pt-12 sm:pt-6 lg:pt-20">
+        <h2 class="dataquestion text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
+        </h2>
+        <div class="datadiagram"></div>
+      </div>
+    </div>
+  </div>
 
-        // Declare the chart dimensions and margins.
-        const width = 928;
-        const height = 500;
-        const marginTop = 50;
-        const marginRight = 0;
-        const marginBottom = 50;
-        const marginLeft = 80;
+  <!-- CTA section -->
+  <div class="relative pb-16 mt-6">
+    <div class="max-w-md mx-auto px-7 sm:max-w-3xl lg:max-w-7xl">
+      <div class="relative px-6 py-10 overflow-hidden shadow-xl bg-primary-500 rounded-2xl sm:px-12 sm:py-20">
+        <div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
+          <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 360" loading="lazy">
+            <path class="text-primary-600 text-opacity-40" fill="currentColor"
+              d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z" />
+            <path class="text-primary-600 text-opacity-40" fill="currentColor"
+              d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z" />
+          </svg>
+        </div>
+        <div class="relative">
+          <div class="sm:text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              {{ .Site.Params.P5.Heading }}
+            </h2>
+            {{ range .Site.Params.P5.Content }}
+            <p class="max-w-2xl mx-auto mt-6 text-lg text-primary-100">
+              {{ .text }}
+            </p>
+            {{ end }}
+          </div>
+          <form action="{{ .Site.Params.P5.Action }}" class="mt-12 sm:mx-auto sm:flex sm:max-w-lg">
+            <div class="flex-1 min-w-0">
+              <label for="cta-email" class="sr-only">{{ .Site.Params.P5.Label }}</label>
+              <input id="cta-email" type="email"
+                class="block w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 border border-transparent rounded-md shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500"
+                placeholder="{{ .Site.Params.P5.Placeholder }}">
+            </div>
+            <div class="mt-4 sm:mt-0 sm:ml-3">
+              <button type="submit"
+                class="block w-full px-5 py-3 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10">
+                {{ .Site.Params.P5.Button }}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        // append the svg object to the body of the page
-        var svg = d3.select(`#diagramq${i}`)
+  <script>
+    (async function () {
+      const data = await d3.json({{ (resources.Get "data/report.json").RelPermalink }})
+      const QUESTIONS_NUM = {{ len .Site.Params.Data }}
+      const blueprint = document.querySelector(".dataquestiondiv")
+      for (let i = 0; i < data.length; i++) {
+        const elem = blueprint.cloneNode(true)
+        elem.querySelector(".dataquestion").innerHTML = data[i]["question"]
+        elem.querySelector(".datadiagram").id = `diagramq${i}`
+        blueprint.parentNode.insertBefore(elem, blueprint.nextSibling)
+        let question = data[i]
+        if (question.tpe == "S") {
+          const limitedAnswers = question.answers.slice(0, 5)
+
+          // Declare the chart dimensions and margins.
+          const width = 928;
+          const height = 600;
+          const marginTop = 50;
+          const marginRight = 0;
+          const marginBottom = 80;
+          const marginLeft = 80;
+
+          // append the svg object to the body of the page
+          var svg = d3.select(`#diagramq${i}`)
             .append("svg")
             .attr("width", width)
             .attr("height", height)
             .attr("viewBox", [0, 0, width, height])
             .attr("style", "max-width: 100%; height: auto;");
 
-            // Declare the x (horizontal position) scale.
-        const x = d3.scaleBand()
-            .domain(question.answers.map((d) => d.answer))
+          // Declare the x (horizontal position) scale.
+          const x = d3.scaleBand()
+            .domain(limitedAnswers.map((d) => d.answer))
             .padding(0.4)
             .range([marginLeft, width - marginRight])
-    
-        
-        // Declare the y (vertical position) scale.
-        const y = d3.scaleLinear()
+
+
+          // Declare the y (vertical position) scale.
+          const y = d3.scaleLinear()
             .domain([0, 1.0])
             .range([height - marginBottom, marginTop]);
 
-        // Add a rect for each bar.
-        svg.append("g")
+          // Add a rect for each bar.
+          svg.append("g")
             .attr("fill", "steelblue")
             .selectAll()
-            .data(question.answers)
+            .data(limitedAnswers)
             .join("rect")
             .attr("x", (d) => x(d.answer))
             .attr("y", (d) => y(d.percentage))
             .attr("height", (d) => y(0) - y(d.percentage))
             .attr("width", x.bandwidth());
-
-        // Add the x-axis and label.
-        svg.append("g")
+          var additionalWidthI = 0
+          // Add the x-axis and label.
+          svg.append("g")
             .attr("transform", `translate(0,${height - marginBottom})`)
             .call(d3.axisBottom(x).tickSizeOuter(0))
             .selectAll("text")
-            .call(function(t){                
-            t.each(function(d){ // for each one
-              var self = d3.select(this);
-              if(self.text().length > 23) {
-                var splitAt = 23
-                for (var i = splitAt; i < self.text().length; i++) {
-                    if (self.text().charAt(i) == " ") {
-                        splitAt = i
-                        break
-                    }
-                }
-                var s = [self.text().slice(0, splitAt), self.text().slice(splitAt)]
-                self.text(''); // clear it out
-                self.append("tspan") // insert two tspans
-                    .attr("x", 0)
-                    .attr("dy",".8em")
-                    .text(s[0]);
-                self.append("tspan")
-                    .attr("x", 0)
-                    .attr("dy","1.1em")
-                    .text(s[1]);
-              }
-            })})
+            .call(function (t) {
+              t.each(function (d) { // for each one
+                var self = d3.select(this);
+                if (self.text().length > 20) {
 
-        // Add the y-axis and label, and remove the domain line.
-        svg.append("g")
+                  var textLeft = self.text()
+                  var splitElems = []
+                  var lines = 0
+                  while (textLeft.length > 15) {
+                    var splitAt = 12
+                    for (var i = splitAt - 3; i < textLeft.length; i++) {
+                      splitAt = i + 1
+                      if (textLeft.charAt(i) == " ") {
+                        break
+                      }
+                    }
+                    splitElems.push(textLeft.slice(0, splitAt))
+                    textLeft = textLeft.slice(splitAt)
+                    lines += 1
+                  }
+                  splitElems.push(textLeft)
+
+                  var s = [self.text().slice(0, splitAt), self.text().slice(splitAt)]
+                  self.text(''); // clear it out
+                  for (var i = 0; i < splitElems.length; i++) {
+                    self.append("tspan") // insert two tspans
+                      .attr("x", 0)
+                      .attr("dy", "1.1em")
+                      .text(splitElems[i]);
+                  }
+                }
+              })
+            })
+
+
+          // Add the y-axis and label, and remove the domain line.
+          svg.append("g")
             .attr("transform", `translate(${marginLeft},0)`)
             .call(d3.axisLeft(y).tickValues([0.2, 0.4, 0.6, 0.8, 1.0]).tickFormat((y) => (y * 100).toFixed() + "%"))
             .call(g => g.append("text")
-                .attr("x", -marginLeft)
-                .attr("y", 10)
-                .attr("fill", "currentColor")
-                .attr("text-anchor", "start"))
+              .attr("x", -marginLeft)
+              .attr("y", 10)
+              .attr("fill", "currentColor")
+              .attr("text-anchor", "start"))
 
-    
-        // append the bar rectangles to the svg element
-        svg.selectAll("rect")
+
+          // append the bar rectangles to the svg element
+          svg.selectAll("rect")
             .style("fill", "#FFFFFF")
-        svg.selectAll("text")
+          svg.selectAll("text")
             .attr("font-size", "18")
             .style("fill", "#FFFFFF")
-        svg.selectAll("path")
+          svg.selectAll("path")
             .style("stroke", "#FFFFFF")
-        svg.selectAll("line")
+          svg.selectAll("line")
             .style("stroke", "#FFFFFF")
+        } else {
+          const width = 928;
+          const marginTop = 30;
+          const marginRight = 20;
+          const marginBottom = 0;
+          const marginLeft = 30;
+
+          // Determine the series that need to be stacked.
+          const series = d3.stack()
+              .keys(d3.union(question.answers.map(d => d.answer))) // distinct series keys, in input order
+              .value(([, D], key) => (D.get(key) == undefined ? 10 : D.get(key).percentage)) // get value for each series key and stack
+              .offset(d3.stackOffsetExpand)
+            (d3.index(question.answers, d => d.subq, d => d.answer)); // group by stack then series key
+
+          console.log(series)
+          // Compute the height from the number of stacks.
+          const height = series[0].length * 25 + marginTop + marginBottom;
+
+          // Prepare the scales for positional and color encodings.
+          const x = d3.scaleLinear()
+              .domain([0, d3.max(series, d => d3.max(d, d => d[1]))])
+              .range([marginLeft, width - marginRight]);
+
+          const y = d3.scaleBand()
+              .domain(question.answers.map(d => d.answer))
+              .range([marginTop, height - marginBottom])
+              .padding(0.08);
+
+          const color = d3.scaleOrdinal()
+              .domain(series.map(d => d.key))
+              .range(d3.schemeSpectral[series.length])
+              .unknown("#ccc");
+
+          // A function to format the value in the tooltip.
+          const formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en")
+
+          // Create the SVG container.
+          const svg = d3.select(`#diagramq${i}`)
+              .attr("width", width)
+              .attr("height", height)
+              .attr("viewBox", [0, 0, width, height])
+              .attr("style", "max-width: 100%; height: auto;");
+
+          // Append a group for each series, and a rect for each element in the series.
+          svg.append("g")
+            .selectAll()
+            .data(series)
+            .join("g")
+              .attr("fill", d => color(d.key))
+            .selectAll("rect")
+            .data(D => D.map(d => (d.key = D.key, d)))
+            .join("rect")
+              .attr("x", d => x(d[0]))
+              .attr("y", d => y(d.data[0]))
+              .attr("height", y.bandwidth())
+              .attr("width", d => x(d[1]) - x(d[0]))
+            .append("title")
+              .text(d => `${d.data[0]} ${d.key}\n${formatValue(d.data[1].get(d.key) == undefined ? 0 : d.data[1].get(d.key).percentage)}`);
+
+          // Append the horizontal axis.
+          svg.append("g")
+              .attr("transform", `translate(0,${marginTop})`)
+              .call(d3.axisTop(x).ticks(width / 100, "%"))
+              .call(g => g.selectAll(".domain").remove());
+
+          // Append the vertical axis.
+          svg.append("g")
+              .attr("transform", `translate(${marginLeft},0)`)
+              .call(d3.axisLeft(y).tickSizeOuter(0))
+              .call(g => g.selectAll(".domain").remove());
+        }
     }
+
+      blueprint.remove()
     })();
-</script>
+  </script>
 </main>
 {{ end }}
