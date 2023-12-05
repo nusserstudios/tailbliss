@@ -1,0 +1,8815 @@
+[
+  {
+    "question": "How did you find out about this survey?",
+    "tpe": "S",
+    "nonEmptyResponses": 1341,
+    "answers": [
+      {
+        "subq": "How did you find out about this survey?",
+        "answer": "Twitter",
+        "count": 301,
+        "percentage": 0.224
+      },
+      {
+        "subq": "How did you find out about this survey?",
+        "answer": "Reddit",
+        "count": 278,
+        "percentage": 0.207
+      },
+      {
+        "subq": "How did you find out about this survey?",
+        "answer": "Work",
+        "count": 213,
+        "percentage": 0.159
+      },
+      {
+        "subq": "How did you find out about this survey?",
+        "answer": "Scala Days",
+        "count": 107,
+        "percentage": 0.08
+      },
+      {
+        "subq": "How did you find out about this survey?",
+        "answer": "Scala Discord",
+        "count": 59,
+        "percentage": 0.044
+      },
+      {
+        "subq": "How did you find out about this survey?",
+        "answer": "scala-lang.org blog",
+        "count": 49,
+        "percentage": 0.037
+      },
+      {
+        "subq": "Other",
+        "answer": "Mastodon",
+        "count": 44,
+        "percentage": 0.033
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala Times",
+        "count": 42,
+        "percentage": 0.031
+      },
+      {
+        "subq": "How did you find out about this survey?",
+        "answer": "LinkedIn",
+        "count": 38,
+        "percentage": 0.028
+      },
+      {
+        "subq": "How did you find out about this survey?",
+        "answer": "users.scala-lang.org",
+        "count": 19,
+        "percentage": 0.014
+      },
+      {
+        "subq": "How did you find out about this survey?",
+        "answer": "contributors.scala-lang.org",
+        "count": 6,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Other",
+        "answer": "scala times",
+        "count": 6,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala Times newsletter",
+        "count": 6,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Other",
+        "answer": "mastodon",
+        "count": 6,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Other",
+        "answer": "scalatimes.com",
+        "count": 5,
+        "percentage": 0.004
+      },
+      {
+        "subq": "How did you find out about this survey?",
+        "answer": "Hacker News",
+        "count": 5,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Other",
+        "answer": "Awesome Scala Weekly",
+        "count": 5,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Other",
+        "answer": "Friend",
+        "count": 5,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Other",
+        "answer": "ScalaTimes",
+        "count": 5,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala times",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "Typelevel Discord",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "scalatimes",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "Newsletter",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "How did you find out about this survey?",
+        "answer": "Facebook",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Medium",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Slack",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "How did you find out about this survey?",
+        "answer": "Search",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "This week in Scala",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Telegram",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "https://scalatimes.com/",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "X",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Discord",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "from colleague",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Typelevel discord",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala Times Newsletter",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "WeChat",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "scala news",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "friend",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "shared on Slack",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "JP Scala Discord community",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "from a colleague",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "colleague",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scalatime",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala news",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Fediverse",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "This week in #Scala (Oct 2, 2023)",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "thisweekinscala medium",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "My CEO sent it to us :)",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala Times mailing list",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Telegram channels",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala-Times",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "This Week in Scala",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Habr",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Awesome Scala",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Telegram channel",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "This week in Scala email",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Awesome Scala weekly",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Keynote",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala Days Madrid",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Colleague sent me",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala Ukraine Telegram Chat",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "The Awesome Scala Weekly",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "coworker sent me the link",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "\"This Week In Scala\" newsletter",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "x",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Word of mouth",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "This week in #Scala",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scalaわいわいランド (discord server)",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "no idea",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "I created it",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Work Colleague",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Friends",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "discord(my friend noticed me)",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala newsletter from SoftwareMill",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "scalatimes.com newsletter",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "medium",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "This Week in Scala by Petr Zapletal",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "fediverse",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Mail",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "scala newsletter",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Collague",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "scala chat in messagers",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Email",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Employer's internal Slack",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "ScalaCon 2022 yt, odersky",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala chat in telegram",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scalatimes",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "coworker send it to me",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "SoftwareMill newsletter",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Whatsapp",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "#ThisWeekInScala",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "This week in scala",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "email",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "SCALA TIMES",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Slack / colleague",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala Newsletter",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "https://petr-zapletal.medium.com/",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala Tines",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "This week in Scala newsletter",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Medium- Petr Zapletal",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "scala times email",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "community",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala  times",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "linked by coworker",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala Ukraine telegram channel",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Times",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "social",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "#ThisWeekInScala from Petr Zapletal",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "scala times mailing list",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Colleague",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "this week in scala",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "don't recall",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "This Week In Scala (Petr Zapletal)",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Awesome Scala mail",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala newsletter: This week in #Scala",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala Times Newsletter by Softwaremill",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "I helped to create the survey",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Work",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Local community chat",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Teammate",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Coworkers",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Zio Discord",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "t.me/scala_ukraine",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Internal post",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "from teammate",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Thisweekinscala",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Mastadon",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "emailing list \"Awesome Scala Weekly\"",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Company",
+        "count": 1,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "What is the highest level of education you have completed?",
+    "tpe": "S",
+    "nonEmptyResponses": 1375,
+    "answers": [
+      {
+        "subq": "What is the highest level of education you have completed?",
+        "answer": "Master's degree",
+        "count": 617,
+        "percentage": 0.449
+      },
+      {
+        "subq": "What is the highest level of education you have completed?",
+        "answer": "Bachelor's degree",
+        "count": 499,
+        "percentage": 0.363
+      },
+      {
+        "subq": "What is the highest level of education you have completed?",
+        "answer": "Doctoral degree",
+        "count": 97,
+        "percentage": 0.071
+      },
+      {
+        "subq": "What is the highest level of education you have completed?",
+        "answer": "Some college",
+        "count": 53,
+        "percentage": 0.039
+      },
+      {
+        "subq": "What is the highest level of education you have completed?",
+        "answer": "High school diploma",
+        "count": 47,
+        "percentage": 0.034
+      },
+      {
+        "subq": "What is the highest level of education you have completed?",
+        "answer": "Professional degree",
+        "count": 34,
+        "percentage": 0.025
+      },
+      {
+        "subq": "What is the highest level of education you have completed?",
+        "answer": "Associate degree",
+        "count": 20,
+        "percentage": 0.015
+      },
+      {
+        "subq": "What is the highest level of education you have completed?",
+        "answer": "Less than high school diploma",
+        "count": 8,
+        "percentage": 0.006
+      }
+    ]
+  },
+  {
+    "question": "How would you rate your Scala proficiency?",
+    "tpe": "S",
+    "nonEmptyResponses": 1374,
+    "answers": [
+      {
+        "subq": "How would you rate your Scala proficiency?",
+        "answer": "Advanced",
+        "count": 734,
+        "percentage": 0.534
+      },
+      {
+        "subq": "How would you rate your Scala proficiency?",
+        "answer": "Intermediate",
+        "count": 301,
+        "percentage": 0.219
+      },
+      {
+        "subq": "How would you rate your Scala proficiency?",
+        "answer": "Expert",
+        "count": 277,
+        "percentage": 0.202
+      },
+      {
+        "subq": "How would you rate your Scala proficiency?",
+        "answer": "Beginner",
+        "count": 61,
+        "percentage": 0.044
+      },
+      {
+        "subq": "How would you rate your Scala proficiency?",
+        "answer": "None",
+        "count": 1,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "How many years of experience do you have writing in Scala?",
+    "tpe": "S",
+    "nonEmptyResponses": 1380,
+    "answers": [
+      {
+        "subq": "How many years of experience do you have writing in Scala?",
+        "answer": "5-10",
+        "count": 609,
+        "percentage": 0.441
+      },
+      {
+        "subq": "How many years of experience do you have writing in Scala?",
+        "answer": "> 10",
+        "count": 313,
+        "percentage": 0.227
+      },
+      {
+        "subq": "How many years of experience do you have writing in Scala?",
+        "answer": "2-5",
+        "count": 290,
+        "percentage": 0.21
+      },
+      {
+        "subq": "How many years of experience do you have writing in Scala?",
+        "answer": "1-2",
+        "count": 118,
+        "percentage": 0.086
+      },
+      {
+        "subq": "How many years of experience do you have writing in Scala?",
+        "answer": "< 1",
+        "count": 50,
+        "percentage": 0.036
+      }
+    ]
+  },
+  {
+    "question": "What's your country/region?",
+    "tpe": "S",
+    "nonEmptyResponses": 1326,
+    "answers": [
+      {
+        "subq": "What's your country/region?",
+        "answer": "United States",
+        "count": 218,
+        "percentage": 0.164
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "United Kingdom",
+        "count": 118,
+        "percentage": 0.089
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Germany",
+        "count": 114,
+        "percentage": 0.086
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Poland",
+        "count": 113,
+        "percentage": 0.085
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "France",
+        "count": 83,
+        "percentage": 0.063
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Netherlands",
+        "count": 49,
+        "percentage": 0.037
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Spain",
+        "count": 42,
+        "percentage": 0.032
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Ukraine",
+        "count": 41,
+        "percentage": 0.031
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Switzerland",
+        "count": 39,
+        "percentage": 0.029
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Japan",
+        "count": 39,
+        "percentage": 0.029
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Canada",
+        "count": 39,
+        "percentage": 0.029
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "India",
+        "count": 26,
+        "percentage": 0.02
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Italy",
+        "count": 25,
+        "percentage": 0.019
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Sweden",
+        "count": 25,
+        "percentage": 0.019
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Australia",
+        "count": 21,
+        "percentage": 0.016
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Russia",
+        "count": 19,
+        "percentage": 0.014
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Belgium",
+        "count": 18,
+        "percentage": 0.014
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Portugal",
+        "count": 17,
+        "percentage": 0.013
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Israel",
+        "count": 16,
+        "percentage": 0.012
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Denmark",
+        "count": 15,
+        "percentage": 0.011
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "China",
+        "count": 15,
+        "percentage": 0.011
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Czech Republic",
+        "count": 13,
+        "percentage": 0.01
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Norway",
+        "count": 13,
+        "percentage": 0.01
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Romania",
+        "count": 13,
+        "percentage": 0.01
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Finland",
+        "count": 12,
+        "percentage": 0.009
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Hungary",
+        "count": 11,
+        "percentage": 0.008
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Slovakia",
+        "count": 10,
+        "percentage": 0.008
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Brazil",
+        "count": 10,
+        "percentage": 0.008
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Austria",
+        "count": 9,
+        "percentage": 0.007
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Serbia",
+        "count": 8,
+        "percentage": 0.006
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Colombia",
+        "count": 8,
+        "percentage": 0.006
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Singapore",
+        "count": 7,
+        "percentage": 0.005
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "New Zealand",
+        "count": 6,
+        "percentage": 0.005
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Greece",
+        "count": 6,
+        "percentage": 0.005
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Ireland",
+        "count": 6,
+        "percentage": 0.005
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Korea, South",
+        "count": 6,
+        "percentage": 0.005
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "South Africa",
+        "count": 6,
+        "percentage": 0.005
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Latvia",
+        "count": 5,
+        "percentage": 0.004
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Georgia",
+        "count": 5,
+        "percentage": 0.004
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Argentina",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Croatia",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Estonia",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Lithuania",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Mexico",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Turkey",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Cyprus",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "United Arab Emirates",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Uruguay",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Slovenia",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Kazakhstan",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Chile",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Luxembourg",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Faroe Islands",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Thailand",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Taiwan",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Philippines",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Bulgaria",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Malaysia",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Other",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Uzbekistan",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Algeria",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Peru",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Indonesia",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Mauritius",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Bolivia",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Cuba",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Andorra",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Vietnam",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "El Salvador",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Paraguay",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Iran",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Ecuador",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Costa Rica",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Montenegro",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Moldova",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Isle of Man",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Egypt",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Pakistan",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Venezuela",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Tunisia",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "What's your country/region?",
+        "answer": "Bosnia and Herzegovina",
+        "count": 1,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "What is the size of the company you work for?",
+    "tpe": "S",
+    "nonEmptyResponses": 1214,
+    "answers": [
+      {
+        "subq": "What is the size of the company you work for?",
+        "answer": "101-1000",
+        "count": 377,
+        "percentage": 0.311
+      },
+      {
+        "subq": "What is the size of the company you work for?",
+        "answer": "> 5000",
+        "count": 296,
+        "percentage": 0.244
+      },
+      {
+        "subq": "What is the size of the company you work for?",
+        "answer": "1001-5000",
+        "count": 155,
+        "percentage": 0.128
+      },
+      {
+        "subq": "What is the size of the company you work for?",
+        "answer": "51-100",
+        "count": 123,
+        "percentage": 0.101
+      },
+      {
+        "subq": "What is the size of the company you work for?",
+        "answer": "21-50",
+        "count": 99,
+        "percentage": 0.082
+      },
+      {
+        "subq": "What is the size of the company you work for?",
+        "answer": "11-20",
+        "count": 51,
+        "percentage": 0.042
+      },
+      {
+        "subq": "What is the size of the company you work for?",
+        "answer": "2-5",
+        "count": 50,
+        "percentage": 0.041
+      },
+      {
+        "subq": "What is the size of the company you work for?",
+        "answer": "1",
+        "count": 27,
+        "percentage": 0.022
+      },
+      {
+        "subq": "What is the size of the company you work for?",
+        "answer": "6-10",
+        "count": 21,
+        "percentage": 0.017
+      },
+      {
+        "subq": "What is the size of the company you work for?",
+        "answer": "None",
+        "count": 15,
+        "percentage": 0.012
+      }
+    ]
+  },
+  {
+    "question": "What is your yearly salary (in USD)?",
+    "tpe": "S",
+    "nonEmptyResponses": 1222,
+    "answers": [
+      {
+        "subq": "What is your yearly salary (in USD)?",
+        "answer": "50k-100k",
+        "count": 438,
+        "percentage": 0.358
+      },
+      {
+        "subq": "What is your yearly salary (in USD)?",
+        "answer": "100k-200k",
+        "count": 385,
+        "percentage": 0.315
+      },
+      {
+        "subq": "What is your yearly salary (in USD)?",
+        "answer": "Prefer not to say",
+        "count": 140,
+        "percentage": 0.115
+      },
+      {
+        "subq": "What is your yearly salary (in USD)?",
+        "answer": "> 200k",
+        "count": 119,
+        "percentage": 0.097
+      },
+      {
+        "subq": "What is your yearly salary (in USD)?",
+        "answer": "30k-50k",
+        "count": 90,
+        "percentage": 0.074
+      },
+      {
+        "subq": "What is your yearly salary (in USD)?",
+        "answer": "10k-30k",
+        "count": 36,
+        "percentage": 0.029
+      },
+      {
+        "subq": "What is your yearly salary (in USD)?",
+        "answer": "0-10k",
+        "count": 11,
+        "percentage": 0.009
+      },
+      {
+        "subq": "What is your yearly salary (in USD)?",
+        "answer": "0",
+        "count": 3,
+        "percentage": 0.002
+      }
+    ]
+  },
+  {
+    "question": "What is your job title?",
+    "tpe": "S",
+    "nonEmptyResponses": 1219,
+    "answers": [
+      {
+        "subq": "Software engineer",
+        "answer": "Software engineer",
+        "count": 716,
+        "percentage": 0.587
+      },
+      {
+        "subq": "Back-end developer",
+        "answer": "Back-end developer",
+        "count": 520,
+        "percentage": 0.427
+      },
+      {
+        "subq": "Full-stack software engineer",
+        "answer": "Full-stack software engineer",
+        "count": 211,
+        "percentage": 0.173
+      },
+      {
+        "subq": "Data engineer",
+        "answer": "Data engineer",
+        "count": 168,
+        "percentage": 0.138
+      },
+      {
+        "subq": "CTO",
+        "answer": "CTO",
+        "count": 81,
+        "percentage": 0.066
+      },
+      {
+        "subq": "Front-end developer",
+        "answer": "Front-end developer",
+        "count": 34,
+        "percentage": 0.028
+      },
+      {
+        "subq": "Researcher",
+        "answer": "Researcher",
+        "count": 34,
+        "percentage": 0.028
+      },
+      {
+        "subq": "Data scientist",
+        "answer": "Data scientist",
+        "count": 27,
+        "percentage": 0.022
+      },
+      {
+        "subq": "Compiler engineer",
+        "answer": "Compiler engineer",
+        "count": 15,
+        "percentage": 0.012
+      },
+      {
+        "subq": "Student",
+        "answer": "Student",
+        "count": 9,
+        "percentage": 0.007
+      },
+      {
+        "subq": "Other",
+        "answer": "Engineering Manager",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Systems architect",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Tech Lead",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Consultant",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Tech lead",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Architect",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Software Architect",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Senior Scientist",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "DevOps engineer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Data Architect",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Technical Lead",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Web application developer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Software developer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Programmer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Hobbist",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Senior Product Engineer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Network engineer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Engineering VP",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "integrated circuit designer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Head of customer service",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Trainee",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Lead Developer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Researcher",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "R&D",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Director of Backend Engineering",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "infrastructure",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Trader",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Staff software engineer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Systems Architect",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "System Architector",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Senior Software Engineer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Director of Engineering",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala Tech Lead",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Senior Consultant",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Engineering Lead",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Data architect",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Business Intelligence Architect",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Product Owner",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "quant developer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Quant",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Staff Engineer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Test engineer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Senior IT Architect",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "DevOps Mentor",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Principal Software Engineer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "ML architect",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Security Analyst",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Solution Architect",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Lead developer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Manager",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Professor",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Developer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Platform engineer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Quantitative Analyst",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Team Lead",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Director",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Artist",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Quant Dev",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Software Developer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Systems Analyst",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Product Marketing Manager",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "University Lecturer",
+        "count": 1,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "What industry sector do you work in?",
+    "tpe": "S",
+    "nonEmptyResponses": 1192,
+    "answers": [
+      {
+        "subq": "Programming tools",
+        "answer": "Programming tools",
+        "count": 434,
+        "percentage": 0.364
+      },
+      {
+        "subq": "Consulting & services",
+        "answer": "Consulting & services",
+        "count": 300,
+        "percentage": 0.252
+      },
+      {
+        "subq": "Finance",
+        "answer": "Finance",
+        "count": 292,
+        "percentage": 0.245
+      },
+      {
+        "subq": "E-commerce & retail",
+        "answer": "E-commerce & retail",
+        "count": 234,
+        "percentage": 0.196
+      },
+      {
+        "subq": "Entertainment",
+        "answer": "Entertainment",
+        "count": 106,
+        "percentage": 0.089
+      },
+      {
+        "subq": "Healthcare",
+        "answer": "Healthcare",
+        "count": 63,
+        "percentage": 0.053
+      },
+      {
+        "subq": "Government",
+        "answer": "Government",
+        "count": 60,
+        "percentage": 0.05
+      },
+      {
+        "subq": "News, media, blogging",
+        "answer": "News, media, blogging",
+        "count": 54,
+        "percentage": 0.045
+      },
+      {
+        "subq": "Education",
+        "answer": "Education",
+        "count": 51,
+        "percentage": 0.043
+      },
+      {
+        "subq": "Social media",
+        "answer": "Social media",
+        "count": 31,
+        "percentage": 0.026
+      },
+      {
+        "subq": "Other",
+        "answer": "Automotive",
+        "count": 7,
+        "percentage": 0.006
+      },
+      {
+        "subq": "Other",
+        "answer": "Energy",
+        "count": 6,
+        "percentage": 0.005
+      },
+      {
+        "subq": "Other",
+        "answer": "Security",
+        "count": 5,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Other",
+        "answer": "Science",
+        "count": 5,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Other",
+        "answer": "Mobility",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "Insurance",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "Travel",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "Telco",
+        "count": 3,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "Transport",
+        "count": 3,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "Adtech",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Sales",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Market Research",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Cyber security",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "agriculture",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Connectivity",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "AdTech",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Cybersecurity",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Manufacturing",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Logistics",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Transportation",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Research",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Phone Apps",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "ad tech",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "various",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Utilities",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Legal",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Saas",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "energy",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Matketing",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Logistics, Telecommunications and Passenger Transport",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Maritime IT",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "IoT",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Cyber intelligence/security",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Telecom",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "authentication",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Matierial Informatics and AI",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "classifieds",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "integrated circuit",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Energy Production/Monitoring",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "cybersecurity",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Ad Tech",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blockchain",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Science Data",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Security Engineering",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "marketing",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Cyber",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Marketplaces",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "manufactoring",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "B2B Sales Tech",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Deep sea research",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Telecommunications and Media",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Student",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Arts",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "non-profit",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Marketing",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Childcare",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Systems management",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Enterprise Sales products",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Transportation & Logistics",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Sustainability",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Media Artwork",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Fintech",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "travel",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Sales & Marketing",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Energy sector",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "UCaaS",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Gambling",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "ads system",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "CRM and Telecom",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Delivery Solutions",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "R&D",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "telco operator",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Geolocation products",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Human resources applications",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Airline",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "IT Security",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Academic research",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Games",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Logistics & Traffic",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Oceanographic Research",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Agriculture",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Freight Logistics",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "EV Charging",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "AI",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Green Energy",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Comminication",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Networking",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Legal IT tech",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Na",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Industry & Manufacturing",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Renewable Energy Utilities",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "SaaS",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Online marketing",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Cyber Security",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Travelling",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Telecommunication",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "adtech",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Agriculture Technology",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "job board",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Enterprise",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Delivery",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Digital marketing",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Renewable Energy",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Ads",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "science",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Life Sciences",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "SaaS Product",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Life Science",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Communication",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "semiconductors",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Supply chain SaaS editor",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "ISV",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Database",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Aviation",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "cyber security & data analytics",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Telecommunications",
+        "count": 1,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "What is the most common size of projects you contribute to?",
+    "tpe": "S",
+    "nonEmptyResponses": 1376,
+    "answers": [
+      {
+        "subq": "What is the most common size of projects you contribute to?",
+        "answer": "10k - 99k LOC",
+        "count": 641,
+        "percentage": 0.466
+      },
+      {
+        "subq": "What is the most common size of projects you contribute to?",
+        "answer": "> 100k LOC",
+        "count": 423,
+        "percentage": 0.307
+      },
+      {
+        "subq": "What is the most common size of projects you contribute to?",
+        "answer": "1k - 9k LOC",
+        "count": 263,
+        "percentage": 0.191
+      },
+      {
+        "subq": "What is the most common size of projects you contribute to?",
+        "answer": "< 1k LOC",
+        "count": 49,
+        "percentage": 0.036
+      }
+    ]
+  },
+  {
+    "question": "What types of programs do you use Scala most often for?",
+    "tpe": "S",
+    "nonEmptyResponses": 1377,
+    "answers": [
+      {
+        "subq": "Web / API / RPC",
+        "answer": "Web / API / RPC",
+        "count": 1204,
+        "percentage": 0.874
+      },
+      {
+        "subq": "Data processing",
+        "answer": "Data processing",
+        "count": 754,
+        "percentage": 0.548
+      },
+      {
+        "subq": "Libraries or frameworks",
+        "answer": "Libraries or frameworks",
+        "count": 669,
+        "percentage": 0.486
+      },
+      {
+        "subq": "Interactive programs",
+        "answer": "Interactive programs",
+        "count": 309,
+        "percentage": 0.224
+      },
+      {
+        "subq": "Automation/General purpose scripts",
+        "answer": "Automation/General purpose scripts",
+        "count": 281,
+        "percentage": 0.204
+      },
+      {
+        "subq": "Web frontend",
+        "answer": "Web frontend",
+        "count": 227,
+        "percentage": 0.165
+      },
+      {
+        "subq": "ML/AI",
+        "answer": "ML/AI",
+        "count": 129,
+        "percentage": 0.094
+      },
+      {
+        "subq": "Agents and daemons",
+        "answer": "Agents and daemons",
+        "count": 105,
+        "percentage": 0.076
+      },
+      {
+        "subq": "Desktop / GUI",
+        "answer": "Desktop / GUI",
+        "count": 89,
+        "percentage": 0.065
+      },
+      {
+        "subq": "DevOps",
+        "answer": "DevOps",
+        "count": 87,
+        "percentage": 0.063
+      },
+      {
+        "subq": "Games",
+        "answer": "Games",
+        "count": 50,
+        "percentage": 0.036
+      },
+      {
+        "subq": "Mobile applications",
+        "answer": "Mobile applications",
+        "count": 20,
+        "percentage": 0.015
+      },
+      {
+        "subq": "Embedded / IOT",
+        "answer": "Embedded / IOT",
+        "count": 18,
+        "percentage": 0.013
+      },
+      {
+        "subq": "Other",
+        "answer": "Compiler",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "CLI tools",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Real-time stream processing",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Protocol Development",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Generative 3D Graphics",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blockchain",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Microservices",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Automated Tests",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "complex business app",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "mathematics, physics, modeling",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Category theory",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "DSL in business layer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Compiler/toolchain",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Chisel",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "simulations",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Code/Math problems, utility scripts",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blockchain client",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Tooling",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "microservices",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "research prototypes",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "DSLs",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "CLIs",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Backend",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "CLI programms",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Artwork",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Large Enterprise infra",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Compiler Writing",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Teaching",
+        "count": 1,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "Which types of resources did you use to learn Scala?",
+    "tpe": "S",
+    "nonEmptyResponses": 1372,
+    "answers": [
+      {
+        "subq": "Official docs",
+        "answer": "Official docs",
+        "count": 1100,
+        "percentage": 0.802
+      },
+      {
+        "subq": "Books",
+        "answer": "Books",
+        "count": 1067,
+        "percentage": 0.778
+      },
+      {
+        "subq": "Online courses",
+        "answer": "Online courses",
+        "count": 974,
+        "percentage": 0.71
+      },
+      {
+        "subq": "University courses",
+        "answer": "University courses",
+        "count": 142,
+        "percentage": 0.103
+      },
+      {
+        "subq": "Bootcamps",
+        "answer": "Bootcamps",
+        "count": 45,
+        "percentage": 0.033
+      },
+      {
+        "subq": "Other",
+        "answer": "Blogs",
+        "count": 12,
+        "percentage": 0.009
+      },
+      {
+        "subq": "Other",
+        "answer": "Work",
+        "count": 6,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Other",
+        "answer": "Google",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "blogs",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "stackoverflow",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "Youtube",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "ChatGPT",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "StackOverflow",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Blog posts",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "work",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "YouTube",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Conference talks",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Learned on the job",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "On the job",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "youtube course",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "unofficial docs/presentations scalatimes",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blogs, less \"official\" videos",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Various articles",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Tutorials",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Open source colaboration",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "colleague",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Group Learning at work",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Coaching by colleagues",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Pet projects",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blogs, forums, Stackoverflow",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "self",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Discord",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Experimentation, Frustration and Perseverence",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "pet projects",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "personal interactions with other Scala people",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Browse scala code bases",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "colleagues",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "YouTube (conference, tutos)",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Unofficial online resources (tutorials, blogs, ...)",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "learned on the job mainly",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Existing code",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Webinars or conference talks",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "hacking",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Mention Discord please",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Google search",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Code katas/self learning",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Reading code",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blogs / videos",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Self",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Pairing, company events",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Unofficial docs",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "On the job experience",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "trying out",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Books, but It was 15 years ago",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Articles",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blogs, gitter",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blogs and articles",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Mentor",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "colleagues from SML",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "friends+social",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scaladays",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Company's existing codebase",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Friends",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "IntelliJ course plugin",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Podcasts",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blogs, articles",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "From colleagues",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "YouTube conference videos",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blogs, chats",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Youtube videos",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Chat Gpt",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Stack Overflow",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Colloeuges",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blogposts",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "John A De Goes",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Reading code, YouTube videos, Live online programming sessions",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Web sites",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Stack overflow and colleagues",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "youtube",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Work with no previous jvm experience",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Trying things out",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Community chat channels",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Intuition and practice",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Online blog or library documents",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "learning from colleagues",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Self taught",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "the Internet",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Discord fp servers",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "dev conf",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Internet forums, Slacks, reading source code",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Compiler Sprees",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "IRC/Gitter/Discord",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Random articles",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Work colleagues",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "teammates help",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "RockTheJVM",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Production Code",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "blogs and talks",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "D",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Metals, Neovim",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Googling, ChatGPT",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blogs, Videos",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "YouTube videos and blogs",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Library source code on github",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Pair programming",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Working with Scala",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "chatpgt + internet",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Articles and Blog Post",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Conferences",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Projects",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Reading library source code",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "AI",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "other online resources (baeldung, SO etc.)",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blog posts / Conference Talks",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Online chats like Discord, Gitter previously",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala is pretty standard, no courses necessary.",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "ScalaBay",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Gitter then, now Discord",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Websites and blogs with tutotrials or explanations",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Reading the source code of the compiler",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "on the job",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blog posts, open source",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Learning with peers and community and Pet projects",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Stairway to Scala",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "reading OSS code",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Company training, guilds, presentations",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Making individual projects in Scala",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "articles",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Reading specification",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Learning by doing",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "blog posts",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Leaening from work colleagues",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "IRC, Blogs, etc.",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "code reviewed",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Intro course at work",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blogs, Coursera",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Learning on the job",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Coursera",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "RockTheJVM Youtube",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "I explore technologies using TDD as I view it like a petri dish for experimentation. Working with skilled people as well. I don't do well in course structures as I lose attention easily when it is verbal/audio/video. Needs to be written for me to read and be able to be given time to work out pointed questions. I like theory a lot.",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blogs, playing with it, intellisense",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Mentoring",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "I just started using it",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "conference videos",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "reddit, forums, HN, blogs, papers",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Internship, Youtube",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "with colleagues",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "videos, blogs, work",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "On the job training",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Selftought",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Working on projects",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Online Blogs",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Meetups",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blog",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Haskell resources where Scala FP resources are fewer (e.g. recursion schemes)",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Actual Work Experience",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "articles, blogs",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "reading open source code",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Company training",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Coworkers",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Blog articles",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Chatgpt",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "YouTube and other online learning materials",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Akka",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Videos",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Pair Programming",
+        "count": 1,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "What other languages are you proficient in?",
+    "tpe": "S",
+    "nonEmptyResponses": 1327,
+    "answers": [
+      {
+        "subq": "Java",
+        "answer": "Java",
+        "count": 1092,
+        "percentage": 0.823
+      },
+      {
+        "subq": "Python",
+        "answer": "Python",
+        "count": 603,
+        "percentage": 0.454
+      },
+      {
+        "subq": "JavaScript",
+        "answer": "JavaScript",
+        "count": 551,
+        "percentage": 0.415
+      },
+      {
+        "subq": "TypeScript",
+        "answer": "TypeScript",
+        "count": 512,
+        "percentage": 0.386
+      },
+      {
+        "subq": "C / C++",
+        "answer": "C / C++",
+        "count": 354,
+        "percentage": 0.267
+      },
+      {
+        "subq": "Kotlin",
+        "answer": "Kotlin",
+        "count": 251,
+        "percentage": 0.189
+      },
+      {
+        "subq": "Rust",
+        "answer": "Rust",
+        "count": 239,
+        "percentage": 0.18
+      },
+      {
+        "subq": "C#",
+        "answer": "C#",
+        "count": 190,
+        "percentage": 0.143
+      },
+      {
+        "subq": "Haskell",
+        "answer": "Haskell",
+        "count": 173,
+        "percentage": 0.13
+      },
+      {
+        "subq": "Go",
+        "answer": "Go",
+        "count": 166,
+        "percentage": 0.125
+      },
+      {
+        "subq": "PHP",
+        "answer": "PHP",
+        "count": 121,
+        "percentage": 0.091
+      },
+      {
+        "subq": "Ruby",
+        "answer": "Ruby",
+        "count": 92,
+        "percentage": 0.069
+      },
+      {
+        "subq": "Clojure",
+        "answer": "Clojure",
+        "count": 63,
+        "percentage": 0.047
+      },
+      {
+        "subq": "Elixir",
+        "answer": "Elixir",
+        "count": 48,
+        "percentage": 0.036
+      },
+      {
+        "subq": "OCaml",
+        "answer": "OCaml",
+        "count": 47,
+        "percentage": 0.035
+      },
+      {
+        "subq": "Swift",
+        "answer": "Swift",
+        "count": 35,
+        "percentage": 0.026
+      },
+      {
+        "subq": "Objective C",
+        "answer": "Objective C",
+        "count": 29,
+        "percentage": 0.022
+      },
+      {
+        "subq": "F#",
+        "answer": "F#",
+        "count": 27,
+        "percentage": 0.02
+      },
+      {
+        "subq": "Other",
+        "answer": "Perl",
+        "count": 11,
+        "percentage": 0.008
+      },
+      {
+        "subq": "PureScript",
+        "answer": "PureScript",
+        "count": 10,
+        "percentage": 0.008
+      },
+      {
+        "subq": "Other",
+        "answer": "Elm",
+        "count": 7,
+        "percentage": 0.005
+      },
+      {
+        "subq": "Other",
+        "answer": "Lua",
+        "count": 6,
+        "percentage": 0.005
+      },
+      {
+        "subq": "Other",
+        "answer": "Dart",
+        "count": 5,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Other",
+        "answer": "R",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "groovy",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "Julia",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Erlang",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Smalltalk",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Delphi",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Pascal",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Forth",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Zig",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "elm",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Nim",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Other",
+        "answer": "Fortran",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Delphi / Object Pascal",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Fennel/Lua",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Odin",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "VBScript",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "fortran",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "mcfunction",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "C++",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Matlab, Bash, Fish, Lua",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "shell/bash/zsh",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Bash",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Not proficient in Scala yet",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "bash",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "CoffeeScript",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Eiffel, Delphi",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Systemverilog",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Lots :) would like to learn Zig",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "rust",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Common Lisp",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Lots, mostly older",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Standard ML",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Spark",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "X++",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Rescript",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Prolog",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Racket",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Groovy",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "emacs-lisp",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Dafny",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "AWL, SL and other PLC languages",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Pascal, Several Machine Languages",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Elm, bash,",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "perl",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Sql, julia",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Coconut",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Lisp",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Common Lisp, Scheme, Perl",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Rego",
+        "count": 1,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "Let's say that you are given the power to choose which parts of the Scala ecosystem are being improved. Please select up to 3 of the following aspects of working with Scala, you would like to see improved.",
+    "tpe": "S",
+    "nonEmptyResponses": 1355,
+    "answers": [
+      {
+        "subq": "Tooling",
+        "answer": "Tooling",
+        "count": 872,
+        "percentage": 0.644
+      },
+      {
+        "subq": "Compile/build speed",
+        "answer": "Compile/build speed",
+        "count": 711,
+        "percentage": 0.525
+      },
+      {
+        "subq": "Memory usage",
+        "answer": "Memory usage",
+        "count": 332,
+        "percentage": 0.245
+      },
+      {
+        "subq": "Scala Native",
+        "answer": "Scala Native",
+        "count": 273,
+        "percentage": 0.201
+      },
+      {
+        "subq": "Dep management",
+        "answer": "Dep management",
+        "count": 242,
+        "percentage": 0.179
+      },
+      {
+        "subq": "Binary compatibility",
+        "answer": "Binary compatibility",
+        "count": 205,
+        "percentage": 0.151
+      },
+      {
+        "subq": "CPU usage",
+        "answer": "CPU usage",
+        "count": 202,
+        "percentage": 0.149
+      },
+      {
+        "subq": "Educational materials",
+        "answer": "Educational materials",
+        "count": 190,
+        "percentage": 0.14
+      },
+      {
+        "subq": "OOTB utilities",
+        "answer": "OOTB utilities",
+        "count": 168,
+        "percentage": 0.124
+      },
+      {
+        "subq": "Metaprogramming",
+        "answer": "Metaprogramming",
+        "count": 132,
+        "percentage": 0.097
+      },
+      {
+        "subq": "Linters",
+        "answer": "Linters",
+        "count": 130,
+        "percentage": 0.096
+      },
+      {
+        "subq": "Scala.JS",
+        "answer": "Scala.JS",
+        "count": 128,
+        "percentage": 0.094
+      },
+      {
+        "subq": "Reliability",
+        "answer": "Reliability",
+        "count": 109,
+        "percentage": 0.08
+      },
+      {
+        "subq": "Using cloud services",
+        "answer": "Using cloud services",
+        "count": 83,
+        "percentage": 0.061
+      },
+      {
+        "subq": "Java interoperability",
+        "answer": "Java interoperability",
+        "count": 77,
+        "percentage": 0.057
+      },
+      {
+        "subq": "Security",
+        "answer": "Security",
+        "count": 29,
+        "percentage": 0.021
+      }
+    ]
+  },
+  {
+    "question": "Linting/code quality",
+    "tpe": "M",
+    "nonEmptyResponses": 1352,
+    "answers": [
+      {
+        "subq": "scalafmt",
+        "answer": "👍",
+        "count": 1151,
+        "percentage": 0.851
+      },
+      {
+        "subq": "Acyclic",
+        "answer": "🤷",
+        "count": 1034,
+        "percentage": 0.765
+      },
+      {
+        "subq": "Codacy",
+        "answer": "🤷",
+        "count": 897,
+        "percentage": 0.663
+      },
+      {
+        "subq": "Compiler options",
+        "answer": "👍",
+        "count": 881,
+        "percentage": 0.652
+      },
+      {
+        "subq": "Scapegoat",
+        "answer": "🤷",
+        "count": 865,
+        "percentage": 0.64
+      },
+      {
+        "subq": "Scalafix",
+        "answer": "👍",
+        "count": 713,
+        "percentage": 0.527
+      },
+      {
+        "subq": "WartRemover",
+        "answer": "🤷",
+        "count": 501,
+        "percentage": 0.371
+      },
+      {
+        "subq": "Scoverage",
+        "answer": "👍",
+        "count": 491,
+        "percentage": 0.363
+      },
+      {
+        "subq": "Scoverage",
+        "answer": "🤷",
+        "count": 463,
+        "percentage": 0.342
+      },
+      {
+        "subq": "Scalafix",
+        "answer": "✅",
+        "count": 289,
+        "percentage": 0.214
+      },
+      {
+        "subq": "WartRemover",
+        "answer": "👍",
+        "count": 278,
+        "percentage": 0.206
+      },
+      {
+        "subq": "WartRemover",
+        "answer": "✅",
+        "count": 267,
+        "percentage": 0.197
+      },
+      {
+        "subq": "Compiler options",
+        "answer": "🤷",
+        "count": 242,
+        "percentage": 0.179
+      },
+      {
+        "subq": "Scalafix",
+        "answer": "🤷",
+        "count": 211,
+        "percentage": 0.156
+      },
+      {
+        "subq": "Scoverage",
+        "answer": "✅",
+        "count": 165,
+        "percentage": 0.122
+      },
+      {
+        "subq": "Scapegoat",
+        "answer": "✅",
+        "count": 140,
+        "percentage": 0.104
+      },
+      {
+        "subq": "Codacy",
+        "answer": "✅",
+        "count": 136,
+        "percentage": 0.101
+      },
+      {
+        "subq": "Codacy",
+        "answer": "🚫",
+        "count": 133,
+        "percentage": 0.098
+      },
+      {
+        "subq": "Acyclic",
+        "answer": "✅",
+        "count": 125,
+        "percentage": 0.092
+      },
+      {
+        "subq": "WartRemover",
+        "answer": "🚫",
+        "count": 124,
+        "percentage": 0.092
+      },
+      {
+        "subq": "WartRemover",
+        "answer": "👎",
+        "count": 118,
+        "percentage": 0.087
+      },
+      {
+        "subq": "Scapegoat",
+        "answer": "🚫",
+        "count": 114,
+        "percentage": 0.084
+      },
+      {
+        "subq": "Scapegoat",
+        "answer": "👍",
+        "count": 109,
+        "percentage": 0.081
+      },
+      {
+        "subq": "Compiler options",
+        "answer": "✅",
+        "count": 104,
+        "percentage": 0.077
+      },
+      {
+        "subq": "scalafmt",
+        "answer": "✅",
+        "count": 98,
+        "percentage": 0.072
+      },
+      {
+        "subq": "Scoverage",
+        "answer": "🚫",
+        "count": 89,
+        "percentage": 0.066
+      },
+      {
+        "subq": "Acyclic",
+        "answer": "🚫",
+        "count": 81,
+        "percentage": 0.06
+      },
+      {
+        "subq": "Scoverage",
+        "answer": "👎",
+        "count": 73,
+        "percentage": 0.054
+      },
+      {
+        "subq": "Codacy",
+        "answer": "👍",
+        "count": 61,
+        "percentage": 0.045
+      },
+      {
+        "subq": "Scalafix",
+        "answer": "🚫",
+        "count": 52,
+        "percentage": 0.038
+      },
+      {
+        "subq": "Codacy",
+        "answer": "👎",
+        "count": 49,
+        "percentage": 0.036
+      },
+      {
+        "subq": "Scapegoat",
+        "answer": "👎",
+        "count": 49,
+        "percentage": 0.036
+      },
+      {
+        "subq": "scalafmt",
+        "answer": "🤷",
+        "count": 41,
+        "percentage": 0.03
+      },
+      {
+        "subq": "scalafmt",
+        "answer": "👎",
+        "count": 38,
+        "percentage": 0.028
+      },
+      {
+        "subq": "Compiler options",
+        "answer": "👎",
+        "count": 38,
+        "percentage": 0.028
+      },
+      {
+        "subq": "Scalafix",
+        "answer": "👎",
+        "count": 35,
+        "percentage": 0.026
+      },
+      {
+        "subq": "Compiler options",
+        "answer": "🚫",
+        "count": 35,
+        "percentage": 0.026
+      },
+      {
+        "subq": "Acyclic",
+        "answer": "👍",
+        "count": 28,
+        "percentage": 0.021
+      },
+      {
+        "subq": "scalafmt",
+        "answer": "🚫",
+        "count": 18,
+        "percentage": 0.013
+      },
+      {
+        "subq": "Acyclic",
+        "answer": "👎",
+        "count": 6,
+        "percentage": 0.004
+      }
+    ]
+  },
+  {
+    "question": "Build tools",
+    "tpe": "M",
+    "nonEmptyResponses": 1379,
+    "answers": [
+      {
+        "subq": "sbt",
+        "answer": "👍",
+        "count": 1168,
+        "percentage": 0.847
+      },
+      {
+        "subq": "Pants",
+        "answer": "🤷",
+        "count": 645,
+        "percentage": 0.468
+      },
+      {
+        "subq": "Mill",
+        "answer": "✅",
+        "count": 603,
+        "percentage": 0.437
+      },
+      {
+        "subq": "Maven",
+        "answer": "👎",
+        "count": 566,
+        "percentage": 0.41
+      },
+      {
+        "subq": "Ant",
+        "answer": "👎",
+        "count": 532,
+        "percentage": 0.386
+      },
+      {
+        "subq": "Ant",
+        "answer": "🚫",
+        "count": 518,
+        "percentage": 0.376
+      },
+      {
+        "subq": "scala-cli",
+        "answer": "✅",
+        "count": 476,
+        "percentage": 0.345
+      },
+      {
+        "subq": "scala-cli",
+        "answer": "👍",
+        "count": 463,
+        "percentage": 0.336
+      },
+      {
+        "subq": "Gradle",
+        "answer": "👎",
+        "count": 426,
+        "percentage": 0.309
+      },
+      {
+        "subq": "Bazel",
+        "answer": "🚫",
+        "count": 401,
+        "percentage": 0.291
+      },
+      {
+        "subq": "Gradle",
+        "answer": "🚫",
+        "count": 388,
+        "percentage": 0.281
+      },
+      {
+        "subq": "Pants",
+        "answer": "🚫",
+        "count": 385,
+        "percentage": 0.279
+      },
+      {
+        "subq": "Bazel",
+        "answer": "✅",
+        "count": 385,
+        "percentage": 0.279
+      },
+      {
+        "subq": "Bazel",
+        "answer": "🤷",
+        "count": 366,
+        "percentage": 0.265
+      },
+      {
+        "subq": "Maven",
+        "answer": "🚫",
+        "count": 360,
+        "percentage": 0.261
+      },
+      {
+        "subq": "Maven",
+        "answer": "👍",
+        "count": 258,
+        "percentage": 0.187
+      },
+      {
+        "subq": "Mill",
+        "answer": "🤷",
+        "count": 253,
+        "percentage": 0.183
+      },
+      {
+        "subq": "Gradle",
+        "answer": "👍",
+        "count": 233,
+        "percentage": 0.169
+      },
+      {
+        "subq": "Mill",
+        "answer": "🚫",
+        "count": 230,
+        "percentage": 0.167
+      },
+      {
+        "subq": "scala-cli",
+        "answer": "🤷",
+        "count": 220,
+        "percentage": 0.16
+      },
+      {
+        "subq": "Pants",
+        "answer": "✅",
+        "count": 191,
+        "percentage": 0.139
+      },
+      {
+        "subq": "Gradle",
+        "answer": "✅",
+        "count": 188,
+        "percentage": 0.136
+      },
+      {
+        "subq": "Ant",
+        "answer": "🤷",
+        "count": 164,
+        "percentage": 0.119
+      },
+      {
+        "subq": "sbt",
+        "answer": "👎",
+        "count": 149,
+        "percentage": 0.108
+      },
+      {
+        "subq": "Mill",
+        "answer": "👍",
+        "count": 148,
+        "percentage": 0.107
+      },
+      {
+        "subq": "scala-cli",
+        "answer": "🚫",
+        "count": 125,
+        "percentage": 0.091
+      },
+      {
+        "subq": "Maven",
+        "answer": "✅",
+        "count": 92,
+        "percentage": 0.067
+      },
+      {
+        "subq": "Bazel",
+        "answer": "👎",
+        "count": 88,
+        "percentage": 0.064
+      },
+      {
+        "subq": "Mill",
+        "answer": "👎",
+        "count": 77,
+        "percentage": 0.056
+      },
+      {
+        "subq": "Bazel",
+        "answer": "👍",
+        "count": 71,
+        "percentage": 0.051
+      },
+      {
+        "subq": "Gradle",
+        "answer": "🤷",
+        "count": 65,
+        "percentage": 0.047
+      },
+      {
+        "subq": "Ant",
+        "answer": "✅",
+        "count": 62,
+        "percentage": 0.045
+      },
+      {
+        "subq": "Pants",
+        "answer": "👎",
+        "count": 62,
+        "percentage": 0.045
+      },
+      {
+        "subq": "Maven",
+        "answer": "🤷",
+        "count": 42,
+        "percentage": 0.03
+      },
+      {
+        "subq": "sbt",
+        "answer": "✅",
+        "count": 32,
+        "percentage": 0.023
+      },
+      {
+        "subq": "scala-cli",
+        "answer": "👎",
+        "count": 27,
+        "percentage": 0.02
+      },
+      {
+        "subq": "Ant",
+        "answer": "👍",
+        "count": 22,
+        "percentage": 0.016
+      },
+      {
+        "subq": "sbt",
+        "answer": "🚫",
+        "count": 15,
+        "percentage": 0.011
+      },
+      {
+        "subq": "Pants",
+        "answer": "👍",
+        "count": 13,
+        "percentage": 0.009
+      },
+      {
+        "subq": "sbt",
+        "answer": "🤷",
+        "count": 3,
+        "percentage": 0.002
+      }
+    ]
+  },
+  {
+    "question": "IDEs",
+    "tpe": "M",
+    "nonEmptyResponses": 1380,
+    "answers": [
+      {
+        "subq": "IntelliJ IDEA",
+        "answer": "👍",
+        "count": 1113,
+        "percentage": 0.807
+      },
+      {
+        "subq": "Plain-text editor",
+        "answer": "🚫",
+        "count": 624,
+        "percentage": 0.452
+      },
+      {
+        "subq": "VS Code / Metals",
+        "answer": "👍",
+        "count": 604,
+        "percentage": 0.438
+      },
+      {
+        "subq": "Other Metals editor",
+        "answer": "🤷",
+        "count": 477,
+        "percentage": 0.346
+      },
+      {
+        "subq": "Other Metals editor",
+        "answer": "🚫",
+        "count": 341,
+        "percentage": 0.247
+      },
+      {
+        "subq": "VS Code / Metals",
+        "answer": "✅",
+        "count": 314,
+        "percentage": 0.228
+      },
+      {
+        "subq": "Plain-text editor",
+        "answer": "👎",
+        "count": 273,
+        "percentage": 0.198
+      },
+      {
+        "subq": "Other Metals editor",
+        "answer": "👍",
+        "count": 213,
+        "percentage": 0.154
+      },
+      {
+        "subq": "VS Code / Metals",
+        "answer": "👎",
+        "count": 210,
+        "percentage": 0.152
+      },
+      {
+        "subq": "Plain-text editor",
+        "answer": "🤷",
+        "count": 201,
+        "percentage": 0.146
+      },
+      {
+        "subq": "Other Metals editor",
+        "answer": "✅",
+        "count": 198,
+        "percentage": 0.143
+      },
+      {
+        "subq": "VS Code / Metals",
+        "answer": "🚫",
+        "count": 190,
+        "percentage": 0.138
+      },
+      {
+        "subq": "IntelliJ IDEA",
+        "answer": "👎",
+        "count": 152,
+        "percentage": 0.11
+      },
+      {
+        "subq": "Plain-text editor",
+        "answer": "👍",
+        "count": 148,
+        "percentage": 0.107
+      },
+      {
+        "subq": "IntelliJ IDEA",
+        "answer": "🚫",
+        "count": 68,
+        "percentage": 0.049
+      },
+      {
+        "subq": "Other Metals editor",
+        "answer": "👎",
+        "count": 56,
+        "percentage": 0.041
+      },
+      {
+        "subq": "IntelliJ IDEA",
+        "answer": "✅",
+        "count": 31,
+        "percentage": 0.022
+      },
+      {
+        "subq": "Plain-text editor",
+        "answer": "✅",
+        "count": 30,
+        "percentage": 0.022
+      },
+      {
+        "subq": "VS Code / Metals",
+        "answer": "🤷",
+        "count": 19,
+        "percentage": 0.014
+      },
+      {
+        "subq": "IntelliJ IDEA",
+        "answer": "🤷",
+        "count": 3,
+        "percentage": 0.002
+      }
+    ]
+  },
+  {
+    "question": "Various libraries",
+    "tpe": "M",
+    "nonEmptyResponses": 1341,
+    "answers": [
+      {
+        "subq": "woof",
+        "answer": "🤷",
+        "count": 1080,
+        "percentage": 0.805
+      },
+      {
+        "subq": "scribe",
+        "answer": "🤷",
+        "count": 1025,
+        "percentage": 0.764
+      },
+      {
+        "subq": "ciris",
+        "answer": "🤷",
+        "count": 964,
+        "percentage": 0.719
+      },
+      {
+        "subq": "ox",
+        "answer": "🤷",
+        "count": 900,
+        "percentage": 0.671
+      },
+      {
+        "subq": "ducktape",
+        "answer": "🤷",
+        "count": 893,
+        "percentage": 0.666
+      },
+      {
+        "subq": "smithy4s",
+        "answer": "🤷",
+        "count": 757,
+        "percentage": 0.565
+      },
+      {
+        "subq": "quicklens",
+        "answer": "🤷",
+        "count": 696,
+        "percentage": 0.519
+      },
+      {
+        "subq": "chimney",
+        "answer": "🤷",
+        "count": 669,
+        "percentage": 0.499
+      },
+      {
+        "subq": "pureconfig",
+        "answer": "👍",
+        "count": 594,
+        "percentage": 0.443
+      },
+      {
+        "subq": "sttp",
+        "answer": "👍",
+        "count": 590,
+        "percentage": 0.44
+      },
+      {
+        "subq": "macwire",
+        "answer": "🤷",
+        "count": 554,
+        "percentage": 0.413
+      },
+      {
+        "subq": "magnolia",
+        "answer": "🤷",
+        "count": 518,
+        "percentage": 0.386
+      },
+      {
+        "subq": "finagle",
+        "answer": "🤷",
+        "count": 509,
+        "percentage": 0.38
+      },
+      {
+        "subq": "spray",
+        "answer": "🤷",
+        "count": 484,
+        "percentage": 0.361
+      },
+      {
+        "subq": "tapir",
+        "answer": "👍",
+        "count": 470,
+        "percentage": 0.35
+      },
+      {
+        "subq": "gatling",
+        "answer": "🤷",
+        "count": 466,
+        "percentage": 0.348
+      },
+      {
+        "subq": "pureconfig",
+        "answer": "🤷",
+        "count": 410,
+        "percentage": 0.306
+      },
+      {
+        "subq": "gatling",
+        "answer": "👍",
+        "count": 405,
+        "percentage": 0.302
+      },
+      {
+        "subq": "tapir",
+        "answer": "✅",
+        "count": 370,
+        "percentage": 0.276
+      },
+      {
+        "subq": "slick",
+        "answer": "👎",
+        "count": 356,
+        "percentage": 0.265
+      },
+      {
+        "subq": "magnolia",
+        "answer": "✅",
+        "count": 352,
+        "percentage": 0.262
+      },
+      {
+        "subq": "smithy4s",
+        "answer": "✅",
+        "count": 349,
+        "percentage": 0.26
+      },
+      {
+        "subq": "finagle",
+        "answer": "🚫",
+        "count": 336,
+        "percentage": 0.251
+      },
+      {
+        "subq": "slick",
+        "answer": "👍",
+        "count": 321,
+        "percentage": 0.239
+      },
+      {
+        "subq": "sttp",
+        "answer": "🤷",
+        "count": 319,
+        "percentage": 0.238
+      },
+      {
+        "subq": "tapir",
+        "answer": "🤷",
+        "count": 304,
+        "percentage": 0.227
+      },
+      {
+        "subq": "spray",
+        "answer": "🚫",
+        "count": 289,
+        "percentage": 0.216
+      },
+      {
+        "subq": "chimney",
+        "answer": "👍",
+        "count": 277,
+        "percentage": 0.207
+      },
+      {
+        "subq": "quicklens",
+        "answer": "✅",
+        "count": 276,
+        "percentage": 0.206
+      },
+      {
+        "subq": "slick",
+        "answer": "🤷",
+        "count": 273,
+        "percentage": 0.204
+      },
+      {
+        "subq": "ox",
+        "answer": "✅",
+        "count": 263,
+        "percentage": 0.196
+      },
+      {
+        "subq": "macwire",
+        "answer": "🚫",
+        "count": 262,
+        "percentage": 0.195
+      },
+      {
+        "subq": "sttp",
+        "answer": "✅",
+        "count": 258,
+        "percentage": 0.192
+      },
+      {
+        "subq": "gatling",
+        "answer": "✅",
+        "count": 254,
+        "percentage": 0.189
+      },
+      {
+        "subq": "spray",
+        "answer": "👎",
+        "count": 254,
+        "percentage": 0.189
+      },
+      {
+        "subq": "ducktape",
+        "answer": "✅",
+        "count": 252,
+        "percentage": 0.188
+      },
+      {
+        "subq": "chimney",
+        "answer": "✅",
+        "count": 244,
+        "percentage": 0.182
+      },
+      {
+        "subq": "magnolia",
+        "answer": "👍",
+        "count": 243,
+        "percentage": 0.181
+      },
+      {
+        "subq": "finagle",
+        "answer": "✅",
+        "count": 216,
+        "percentage": 0.161
+      },
+      {
+        "subq": "macwire",
+        "answer": "✅",
+        "count": 192,
+        "percentage": 0.143
+      },
+      {
+        "subq": "macwire",
+        "answer": "👍",
+        "count": 189,
+        "percentage": 0.141
+      },
+      {
+        "subq": "quicklens",
+        "answer": "👍",
+        "count": 187,
+        "percentage": 0.139
+      },
+      {
+        "subq": "slick",
+        "answer": "🚫",
+        "count": 183,
+        "percentage": 0.136
+      },
+      {
+        "subq": "slick",
+        "answer": "✅",
+        "count": 170,
+        "percentage": 0.127
+      },
+      {
+        "subq": "pureconfig",
+        "answer": "✅",
+        "count": 152,
+        "percentage": 0.113
+      },
+      {
+        "subq": "ciris",
+        "answer": "👍",
+        "count": 141,
+        "percentage": 0.105
+      },
+      {
+        "subq": "finagle",
+        "answer": "👎",
+        "count": 141,
+        "percentage": 0.105
+      },
+      {
+        "subq": "magnolia",
+        "answer": "🚫",
+        "count": 137,
+        "percentage": 0.102
+      },
+      {
+        "subq": "spray",
+        "answer": "👍",
+        "count": 135,
+        "percentage": 0.101
+      },
+      {
+        "subq": "spray",
+        "answer": "✅",
+        "count": 122,
+        "percentage": 0.091
+      },
+      {
+        "subq": "quicklens",
+        "answer": "🚫",
+        "count": 118,
+        "percentage": 0.088
+      },
+      {
+        "subq": "tapir",
+        "answer": "🚫",
+        "count": 110,
+        "percentage": 0.082
+      },
+      {
+        "subq": "woof",
+        "answer": "✅",
+        "count": 108,
+        "percentage": 0.081
+      },
+      {
+        "subq": "sttp",
+        "answer": "🚫",
+        "count": 106,
+        "percentage": 0.079
+      },
+      {
+        "subq": "macwire",
+        "answer": "👎",
+        "count": 101,
+        "percentage": 0.075
+      },
+      {
+        "subq": "gatling",
+        "answer": "🚫",
+        "count": 100,
+        "percentage": 0.075
+      },
+      {
+        "subq": "scribe",
+        "answer": "✅",
+        "count": 99,
+        "percentage": 0.074
+      },
+      {
+        "subq": "ciris",
+        "answer": "✅",
+        "count": 93,
+        "percentage": 0.069
+      },
+      {
+        "subq": "ox",
+        "answer": "🚫",
+        "count": 91,
+        "percentage": 0.068
+      },
+      {
+        "subq": "pureconfig",
+        "answer": "🚫",
+        "count": 85,
+        "percentage": 0.063
+      },
+      {
+        "subq": "smithy4s",
+        "answer": "👍",
+        "count": 84,
+        "percentage": 0.063
+      },
+      {
+        "subq": "finagle",
+        "answer": "👍",
+        "count": 81,
+        "percentage": 0.06
+      },
+      {
+        "subq": "smithy4s",
+        "answer": "🚫",
+        "count": 81,
+        "percentage": 0.06
+      },
+      {
+        "subq": "woof",
+        "answer": "🚫",
+        "count": 74,
+        "percentage": 0.055
+      },
+      {
+        "subq": "ciris",
+        "answer": "🚫",
+        "count": 69,
+        "percentage": 0.051
+      },
+      {
+        "subq": "chimney",
+        "answer": "🚫",
+        "count": 68,
+        "percentage": 0.051
+      },
+      {
+        "subq": "ducktape",
+        "answer": "👍",
+        "count": 67,
+        "percentage": 0.05
+      },
+      {
+        "subq": "gatling",
+        "answer": "👎",
+        "count": 67,
+        "percentage": 0.05
+      },
+      {
+        "subq": "scribe",
+        "answer": "🚫",
+        "count": 67,
+        "percentage": 0.05
+      },
+      {
+        "subq": "scribe",
+        "answer": "👍",
+        "count": 67,
+        "percentage": 0.05
+      },
+      {
+        "subq": "pureconfig",
+        "answer": "👎",
+        "count": 66,
+        "percentage": 0.049
+      },
+      {
+        "subq": "ducktape",
+        "answer": "🚫",
+        "count": 61,
+        "percentage": 0.045
+      },
+      {
+        "subq": "tapir",
+        "answer": "👎",
+        "count": 50,
+        "percentage": 0.037
+      },
+      {
+        "subq": "magnolia",
+        "answer": "👎",
+        "count": 41,
+        "percentage": 0.031
+      },
+      {
+        "subq": "sttp",
+        "answer": "👎",
+        "count": 36,
+        "percentage": 0.027
+      },
+      {
+        "subq": "chimney",
+        "answer": "👎",
+        "count": 27,
+        "percentage": 0.02
+      },
+      {
+        "subq": "ox",
+        "answer": "👍",
+        "count": 17,
+        "percentage": 0.013
+      },
+      {
+        "subq": "ciris",
+        "answer": "👎",
+        "count": 14,
+        "percentage": 0.01
+      },
+      {
+        "subq": "scribe",
+        "answer": "👎",
+        "count": 13,
+        "percentage": 0.01
+      },
+      {
+        "subq": "woof",
+        "answer": "👍",
+        "count": 13,
+        "percentage": 0.01
+      },
+      {
+        "subq": "quicklens",
+        "answer": "👎",
+        "count": 11,
+        "percentage": 0.008
+      },
+      {
+        "subq": "smithy4s",
+        "answer": "👎",
+        "count": 6,
+        "percentage": 0.004
+      },
+      {
+        "subq": "ducktape",
+        "answer": "👎",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "ox",
+        "answer": "👎",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "woof",
+        "answer": "👎",
+        "count": 1,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "Testing frameworks",
+    "tpe": "M",
+    "nonEmptyResponses": 1372,
+    "answers": [
+      {
+        "subq": "ScalaTest",
+        "answer": "👍",
+        "count": 1046,
+        "percentage": 0.762
+      },
+      {
+        "subq": "Hedgehog",
+        "answer": "🤷",
+        "count": 1011,
+        "percentage": 0.737
+      },
+      {
+        "subq": "MiniTest",
+        "answer": "🤷",
+        "count": 898,
+        "percentage": 0.655
+      },
+      {
+        "subq": "weaver-test",
+        "answer": "🤷",
+        "count": 881,
+        "percentage": 0.642
+      },
+      {
+        "subq": "ScalaCheck",
+        "answer": "👍",
+        "count": 756,
+        "percentage": 0.551
+      },
+      {
+        "subq": "uTest",
+        "answer": "🤷",
+        "count": 554,
+        "percentage": 0.404
+      },
+      {
+        "subq": "JUnit",
+        "answer": "👍",
+        "count": 512,
+        "percentage": 0.373
+      },
+      {
+        "subq": "munit",
+        "answer": "🤷",
+        "count": 494,
+        "percentage": 0.36
+      },
+      {
+        "subq": "ZIO Test",
+        "answer": "🤷",
+        "count": 460,
+        "percentage": 0.335
+      },
+      {
+        "subq": "specs2",
+        "answer": "🤷",
+        "count": 414,
+        "percentage": 0.302
+      },
+      {
+        "subq": "munit",
+        "answer": "👍",
+        "count": 401,
+        "percentage": 0.292
+      },
+      {
+        "subq": "JUnit",
+        "answer": "👎",
+        "count": 346,
+        "percentage": 0.252
+      },
+      {
+        "subq": "ZIO Test",
+        "answer": "👍",
+        "count": 300,
+        "percentage": 0.219
+      },
+      {
+        "subq": "JUnit",
+        "answer": "🚫",
+        "count": 290,
+        "percentage": 0.211
+      },
+      {
+        "subq": "uTest",
+        "answer": "✅",
+        "count": 281,
+        "percentage": 0.205
+      },
+      {
+        "subq": "munit",
+        "answer": "✅",
+        "count": 261,
+        "percentage": 0.19
+      },
+      {
+        "subq": "specs2",
+        "answer": "👍",
+        "count": 256,
+        "percentage": 0.187
+      },
+      {
+        "subq": "ZIO Test",
+        "answer": "✅",
+        "count": 255,
+        "percentage": 0.186
+      },
+      {
+        "subq": "ZIO Test",
+        "answer": "🚫",
+        "count": 245,
+        "percentage": 0.179
+      },
+      {
+        "subq": "specs2",
+        "answer": "👎",
+        "count": 228,
+        "percentage": 0.166
+      },
+      {
+        "subq": "ScalaCheck",
+        "answer": "🤷",
+        "count": 222,
+        "percentage": 0.162
+      },
+      {
+        "subq": "specs2",
+        "answer": "🚫",
+        "count": 219,
+        "percentage": 0.16
+      },
+      {
+        "subq": "MiniTest",
+        "answer": "🚫",
+        "count": 212,
+        "percentage": 0.155
+      },
+      {
+        "subq": "uTest",
+        "answer": "🚫",
+        "count": 210,
+        "percentage": 0.153
+      },
+      {
+        "subq": "specs2",
+        "answer": "✅",
+        "count": 197,
+        "percentage": 0.144
+      },
+      {
+        "subq": "ScalaCheck",
+        "answer": "✅",
+        "count": 187,
+        "percentage": 0.136
+      },
+      {
+        "subq": "ScalaTest",
+        "answer": "👎",
+        "count": 186,
+        "percentage": 0.136
+      },
+      {
+        "subq": "uTest",
+        "answer": "👍",
+        "count": 179,
+        "percentage": 0.13
+      },
+      {
+        "subq": "weaver-test",
+        "answer": "✅",
+        "count": 163,
+        "percentage": 0.119
+      },
+      {
+        "subq": "weaver-test",
+        "answer": "👍",
+        "count": 141,
+        "percentage": 0.103
+      },
+      {
+        "subq": "Hedgehog",
+        "answer": "✅",
+        "count": 140,
+        "percentage": 0.102
+      },
+      {
+        "subq": "munit",
+        "answer": "🚫",
+        "count": 129,
+        "percentage": 0.094
+      },
+      {
+        "subq": "MiniTest",
+        "answer": "✅",
+        "count": 125,
+        "percentage": 0.091
+      },
+      {
+        "subq": "JUnit",
+        "answer": "✅",
+        "count": 109,
+        "percentage": 0.079
+      },
+      {
+        "subq": "Hedgehog",
+        "answer": "🚫",
+        "count": 103,
+        "percentage": 0.075
+      },
+      {
+        "subq": "weaver-test",
+        "answer": "🚫",
+        "count": 103,
+        "percentage": 0.075
+      },
+      {
+        "subq": "ScalaCheck",
+        "answer": "🚫",
+        "count": 86,
+        "percentage": 0.063
+      },
+      {
+        "subq": "ScalaTest",
+        "answer": "✅",
+        "count": 69,
+        "percentage": 0.05
+      },
+      {
+        "subq": "uTest",
+        "answer": "👎",
+        "count": 68,
+        "percentage": 0.05
+      },
+      {
+        "subq": "ScalaCheck",
+        "answer": "👎",
+        "count": 68,
+        "percentage": 0.05
+      },
+      {
+        "subq": "JUnit",
+        "answer": "🤷",
+        "count": 63,
+        "percentage": 0.046
+      },
+      {
+        "subq": "ZIO Test",
+        "answer": "👎",
+        "count": 49,
+        "percentage": 0.036
+      },
+      {
+        "subq": "ScalaTest",
+        "answer": "🚫",
+        "count": 35,
+        "percentage": 0.026
+      },
+      {
+        "subq": "MiniTest",
+        "answer": "👎",
+        "count": 30,
+        "percentage": 0.022
+      },
+      {
+        "subq": "MiniTest",
+        "answer": "👍",
+        "count": 30,
+        "percentage": 0.022
+      },
+      {
+        "subq": "Hedgehog",
+        "answer": "👍",
+        "count": 30,
+        "percentage": 0.022
+      },
+      {
+        "subq": "munit",
+        "answer": "👎",
+        "count": 26,
+        "percentage": 0.019
+      },
+      {
+        "subq": "ScalaTest",
+        "answer": "🤷",
+        "count": 23,
+        "percentage": 0.017
+      },
+      {
+        "subq": "weaver-test",
+        "answer": "👎",
+        "count": 12,
+        "percentage": 0.009
+      },
+      {
+        "subq": "Hedgehog",
+        "answer": "👎",
+        "count": 9,
+        "percentage": 0.007
+      }
+    ]
+  },
+  {
+    "question": "Front-end development",
+    "tpe": "M",
+    "nonEmptyResponses": 1312,
+    "answers": [
+      {
+        "subq": "youi",
+        "answer": "🤷",
+        "count": 1104,
+        "percentage": 0.841
+      },
+      {
+        "subq": "Calico",
+        "answer": "🤷",
+        "count": 1048,
+        "percentage": 0.799
+      },
+      {
+        "subq": "Outwatch",
+        "answer": "🤷",
+        "count": 1033,
+        "percentage": 0.787
+      },
+      {
+        "subq": "Udash",
+        "answer": "🤷",
+        "count": 999,
+        "percentage": 0.761
+      },
+      {
+        "subq": "Indigo",
+        "answer": "🤷",
+        "count": 928,
+        "percentage": 0.707
+      },
+      {
+        "subq": "Tyrian",
+        "answer": "🤷",
+        "count": 899,
+        "percentage": 0.685
+      },
+      {
+        "subq": "Slinky",
+        "answer": "🤷",
+        "count": 885,
+        "percentage": 0.675
+      },
+      {
+        "subq": "Laminar",
+        "answer": "🤷",
+        "count": 632,
+        "percentage": 0.482
+      },
+      {
+        "subq": "scalajs-react",
+        "answer": "🤷",
+        "count": 566,
+        "percentage": 0.431
+      },
+      {
+        "subq": "Laminar",
+        "answer": "✅",
+        "count": 384,
+        "percentage": 0.293
+      },
+      {
+        "subq": "scalajs-react",
+        "answer": "🚫",
+        "count": 303,
+        "percentage": 0.231
+      },
+      {
+        "subq": "scalajs-react",
+        "answer": "✅",
+        "count": 279,
+        "percentage": 0.213
+      },
+      {
+        "subq": "Tyrian",
+        "answer": "✅",
+        "count": 243,
+        "percentage": 0.185
+      },
+      {
+        "subq": "Indigo",
+        "answer": "✅",
+        "count": 214,
+        "percentage": 0.163
+      },
+      {
+        "subq": "Slinky",
+        "answer": "✅",
+        "count": 179,
+        "percentage": 0.136
+      },
+      {
+        "subq": "Slinky",
+        "answer": "🚫",
+        "count": 172,
+        "percentage": 0.131
+      },
+      {
+        "subq": "Udash",
+        "answer": "🚫",
+        "count": 170,
+        "percentage": 0.13
+      },
+      {
+        "subq": "Laminar",
+        "answer": "👍",
+        "count": 148,
+        "percentage": 0.113
+      },
+      {
+        "subq": "Outwatch",
+        "answer": "🚫",
+        "count": 137,
+        "percentage": 0.104
+      },
+      {
+        "subq": "Laminar",
+        "answer": "🚫",
+        "count": 131,
+        "percentage": 0.1
+      },
+      {
+        "subq": "youi",
+        "answer": "🚫",
+        "count": 124,
+        "percentage": 0.095
+      },
+      {
+        "subq": "Calico",
+        "answer": "✅",
+        "count": 111,
+        "percentage": 0.085
+      },
+      {
+        "subq": "Indigo",
+        "answer": "🚫",
+        "count": 111,
+        "percentage": 0.085
+      },
+      {
+        "subq": "Tyrian",
+        "answer": "🚫",
+        "count": 110,
+        "percentage": 0.084
+      },
+      {
+        "subq": "Calico",
+        "answer": "🚫",
+        "count": 108,
+        "percentage": 0.082
+      },
+      {
+        "subq": "Udash",
+        "answer": "✅",
+        "count": 106,
+        "percentage": 0.081
+      },
+      {
+        "subq": "Outwatch",
+        "answer": "✅",
+        "count": 104,
+        "percentage": 0.079
+      },
+      {
+        "subq": "scalajs-react",
+        "answer": "👍",
+        "count": 80,
+        "percentage": 0.061
+      },
+      {
+        "subq": "scalajs-react",
+        "answer": "👎",
+        "count": 71,
+        "percentage": 0.054
+      },
+      {
+        "subq": "youi",
+        "answer": "✅",
+        "count": 58,
+        "percentage": 0.044
+      },
+      {
+        "subq": "Slinky",
+        "answer": "👍",
+        "count": 46,
+        "percentage": 0.035
+      },
+      {
+        "subq": "Tyrian",
+        "answer": "👍",
+        "count": 39,
+        "percentage": 0.03
+      },
+      {
+        "subq": "Indigo",
+        "answer": "👍",
+        "count": 37,
+        "percentage": 0.028
+      },
+      {
+        "subq": "Calico",
+        "answer": "👍",
+        "count": 21,
+        "percentage": 0.016
+      },
+      {
+        "subq": "Slinky",
+        "answer": "👎",
+        "count": 15,
+        "percentage": 0.011
+      },
+      {
+        "subq": "Udash",
+        "answer": "👎",
+        "count": 13,
+        "percentage": 0.01
+      },
+      {
+        "subq": "Laminar",
+        "answer": "👎",
+        "count": 11,
+        "percentage": 0.008
+      },
+      {
+        "subq": "Outwatch",
+        "answer": "👎",
+        "count": 9,
+        "percentage": 0.007
+      },
+      {
+        "subq": "Outwatch",
+        "answer": "👍",
+        "count": 8,
+        "percentage": 0.006
+      },
+      {
+        "subq": "Udash",
+        "answer": "👍",
+        "count": 6,
+        "percentage": 0.005
+      },
+      {
+        "subq": "youi",
+        "answer": "👎",
+        "count": 5,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Tyrian",
+        "answer": "👎",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Indigo",
+        "answer": "👎",
+        "count": 2,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Calico",
+        "answer": "👎",
+        "count": 1,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "Other ecosystems",
+    "tpe": "M",
+    "nonEmptyResponses": 1376,
+    "answers": [
+      {
+        "subq": "Kafka",
+        "answer": "👍",
+        "count": 807,
+        "percentage": 0.586
+      },
+      {
+        "subq": "scalaz",
+        "answer": "🚫",
+        "count": 574,
+        "percentage": 0.417
+      },
+      {
+        "subq": "Spark",
+        "answer": "👍",
+        "count": 542,
+        "percentage": 0.394
+      },
+      {
+        "subq": "Play!",
+        "answer": "👎",
+        "count": 399,
+        "percentage": 0.29
+      },
+      {
+        "subq": "Play!",
+        "answer": "👍",
+        "count": 399,
+        "percentage": 0.29
+      },
+      {
+        "subq": "Spark",
+        "answer": "✅",
+        "count": 375,
+        "percentage": 0.273
+      },
+      {
+        "subq": "Kafka",
+        "answer": "✅",
+        "count": 367,
+        "percentage": 0.267
+      },
+      {
+        "subq": "Play!",
+        "answer": "🚫",
+        "count": 359,
+        "percentage": 0.261
+      },
+      {
+        "subq": "Spark",
+        "answer": "🚫",
+        "count": 290,
+        "percentage": 0.211
+      },
+      {
+        "subq": "scalaz",
+        "answer": "👎",
+        "count": 268,
+        "percentage": 0.195
+      },
+      {
+        "subq": "scalaz",
+        "answer": "✅",
+        "count": 245,
+        "percentage": 0.178
+      },
+      {
+        "subq": "scalaz",
+        "answer": "🤷",
+        "count": 168,
+        "percentage": 0.122
+      },
+      {
+        "subq": "Play!",
+        "answer": "✅",
+        "count": 136,
+        "percentage": 0.099
+      },
+      {
+        "subq": "Spark",
+        "answer": "👎",
+        "count": 115,
+        "percentage": 0.084
+      },
+      {
+        "subq": "Kafka",
+        "answer": "🚫",
+        "count": 112,
+        "percentage": 0.081
+      },
+      {
+        "subq": "scalaz",
+        "answer": "👍",
+        "count": 76,
+        "percentage": 0.055
+      },
+      {
+        "subq": "Play!",
+        "answer": "🤷",
+        "count": 54,
+        "percentage": 0.039
+      },
+      {
+        "subq": "Kafka",
+        "answer": "🤷",
+        "count": 42,
+        "percentage": 0.031
+      },
+      {
+        "subq": "Spark",
+        "answer": "🤷",
+        "count": 38,
+        "percentage": 0.028
+      },
+      {
+        "subq": "Kafka",
+        "answer": "👎",
+        "count": 26,
+        "percentage": 0.019
+      }
+    ]
+  },
+  {
+    "question": "Which of the following library distributions do you use?",
+    "tpe": "S",
+    "nonEmptyResponses": 931,
+    "answers": [
+      {
+        "subq": "Akka",
+        "answer": "Akka",
+        "count": 786,
+        "percentage": 0.844
+      },
+      {
+        "subq": "Pekko",
+        "answer": "Pekko",
+        "count": 231,
+        "percentage": 0.248
+      }
+    ]
+  },
+  {
+    "question": "Akka/Pekko ecosystem",
+    "tpe": "M",
+    "nonEmptyResponses": 1354,
+    "answers": [
+      {
+        "subq": "Akka/Pekko HTTP",
+        "answer": "👍",
+        "count": 503,
+        "percentage": 0.371
+      },
+      {
+        "subq": "Akka/Pekko Actors",
+        "answer": "👍",
+        "count": 488,
+        "percentage": 0.36
+      },
+      {
+        "subq": "Akka/Pekko Streams",
+        "answer": "👍",
+        "count": 473,
+        "percentage": 0.349
+      },
+      {
+        "subq": "Akka/Pekko Actors",
+        "answer": "👎",
+        "count": 377,
+        "percentage": 0.278
+      },
+      {
+        "subq": "Akka/Pekko Cluster",
+        "answer": "✅",
+        "count": 340,
+        "percentage": 0.251
+      },
+      {
+        "subq": "Akka/Pekko Persistence",
+        "answer": "✅",
+        "count": 332,
+        "percentage": 0.245
+      },
+      {
+        "subq": "Akka/Pekko Persistence",
+        "answer": "🚫",
+        "count": 326,
+        "percentage": 0.241
+      },
+      {
+        "subq": "Akka/Pekko Cluster",
+        "answer": "🚫",
+        "count": 321,
+        "percentage": 0.237
+      },
+      {
+        "subq": "Akka/Pekko HTTP",
+        "answer": "👎",
+        "count": 311,
+        "percentage": 0.23
+      },
+      {
+        "subq": "Akka/Pekko Streams",
+        "answer": "👎",
+        "count": 294,
+        "percentage": 0.217
+      },
+      {
+        "subq": "Akka/Pekko Persistence",
+        "answer": "👍",
+        "count": 253,
+        "percentage": 0.187
+      },
+      {
+        "subq": "Akka/Pekko Cluster",
+        "answer": "👍",
+        "count": 243,
+        "percentage": 0.179
+      },
+      {
+        "subq": "Akka/Pekko Streams",
+        "answer": "🚫",
+        "count": 234,
+        "percentage": 0.173
+      },
+      {
+        "subq": "Akka/Pekko Streams",
+        "answer": "✅",
+        "count": 231,
+        "percentage": 0.171
+      },
+      {
+        "subq": "Akka/Pekko HTTP",
+        "answer": "🚫",
+        "count": 225,
+        "percentage": 0.166
+      },
+      {
+        "subq": "Akka/Pekko Persistence",
+        "answer": "🤷",
+        "count": 224,
+        "percentage": 0.165
+      },
+      {
+        "subq": "Akka/Pekko Cluster",
+        "answer": "🤷",
+        "count": 224,
+        "percentage": 0.165
+      },
+      {
+        "subq": "Akka/Pekko Cluster",
+        "answer": "👎",
+        "count": 216,
+        "percentage": 0.16
+      },
+      {
+        "subq": "Akka/Pekko Actors",
+        "answer": "🚫",
+        "count": 215,
+        "percentage": 0.159
+      },
+      {
+        "subq": "Akka/Pekko Persistence",
+        "answer": "👎",
+        "count": 208,
+        "percentage": 0.154
+      },
+      {
+        "subq": "Akka/Pekko HTTP",
+        "answer": "✅",
+        "count": 194,
+        "percentage": 0.143
+      },
+      {
+        "subq": "Akka/Pekko Actors",
+        "answer": "✅",
+        "count": 193,
+        "percentage": 0.143
+      },
+      {
+        "subq": "Akka/Pekko HTTP",
+        "answer": "🤷",
+        "count": 115,
+        "percentage": 0.085
+      },
+      {
+        "subq": "Akka/Pekko Streams",
+        "answer": "🤷",
+        "count": 114,
+        "percentage": 0.084
+      },
+      {
+        "subq": "Akka/Pekko Actors",
+        "answer": "🤷",
+        "count": 76,
+        "percentage": 0.056
+      }
+    ]
+  },
+  {
+    "question": "ZIO ecosystem",
+    "tpe": "M",
+    "nonEmptyResponses": 1354,
+    "answers": [
+      {
+        "subq": "caliban",
+        "answer": "🤷",
+        "count": 566,
+        "percentage": 0.418
+      },
+      {
+        "subq": "ZIO-optics",
+        "answer": "🤷",
+        "count": 496,
+        "percentage": 0.366
+      },
+      {
+        "subq": "ZIO-sql",
+        "answer": "✅",
+        "count": 480,
+        "percentage": 0.355
+      },
+      {
+        "subq": "ZIO-schema",
+        "answer": "🤷",
+        "count": 474,
+        "percentage": 0.35
+      },
+      {
+        "subq": "ZIO-streams",
+        "answer": "✅",
+        "count": 472,
+        "percentage": 0.349
+      },
+      {
+        "subq": "ZIO",
+        "answer": "👍",
+        "count": 469,
+        "percentage": 0.346
+      },
+      {
+        "subq": "ZIO-actors",
+        "answer": "🚫",
+        "count": 454,
+        "percentage": 0.335
+      },
+      {
+        "subq": "ZIO",
+        "answer": "✅",
+        "count": 453,
+        "percentage": 0.335
+      },
+      {
+        "subq": "ZIO-prelude",
+        "answer": "🤷",
+        "count": 446,
+        "percentage": 0.329
+      },
+      {
+        "subq": "ZIO-optics",
+        "answer": "✅",
+        "count": 431,
+        "percentage": 0.318
+      },
+      {
+        "subq": "ZIO-actors",
+        "answer": "✅",
+        "count": 429,
+        "percentage": 0.317
+      },
+      {
+        "subq": "ZIO-http",
+        "answer": "✅",
+        "count": 426,
+        "percentage": 0.315
+      },
+      {
+        "subq": "ZIO-quill",
+        "answer": "✅",
+        "count": 424,
+        "percentage": 0.313
+      },
+      {
+        "subq": "ZIO-schema",
+        "answer": "✅",
+        "count": 417,
+        "percentage": 0.308
+      },
+      {
+        "subq": "ZIO-json",
+        "answer": "✅",
+        "count": 416,
+        "percentage": 0.307
+      },
+      {
+        "subq": "ZIO-sql",
+        "answer": "🤷",
+        "count": 402,
+        "percentage": 0.297
+      },
+      {
+        "subq": "ZIO-actors",
+        "answer": "🤷",
+        "count": 392,
+        "percentage": 0.29
+      },
+      {
+        "subq": "ZIO-config",
+        "answer": "✅",
+        "count": 387,
+        "percentage": 0.286
+      },
+      {
+        "subq": "ZIO-prelude",
+        "answer": "✅",
+        "count": 378,
+        "percentage": 0.279
+      },
+      {
+        "subq": "ZIO-config",
+        "answer": "🤷",
+        "count": 378,
+        "percentage": 0.279
+      },
+      {
+        "subq": "ZIO-sql",
+        "answer": "🚫",
+        "count": 358,
+        "percentage": 0.264
+      },
+      {
+        "subq": "caliban",
+        "answer": "✅",
+        "count": 344,
+        "percentage": 0.254
+      },
+      {
+        "subq": "ZIO-quill",
+        "answer": "🚫",
+        "count": 344,
+        "percentage": 0.254
+      },
+      {
+        "subq": "ZIO-streams",
+        "answer": "👍",
+        "count": 340,
+        "percentage": 0.251
+      },
+      {
+        "subq": "ZIO-optics",
+        "answer": "🚫",
+        "count": 335,
+        "percentage": 0.247
+      },
+      {
+        "subq": "ZIO-json",
+        "answer": "🚫",
+        "count": 331,
+        "percentage": 0.244
+      },
+      {
+        "subq": "ZIO-schema",
+        "answer": "🚫",
+        "count": 327,
+        "percentage": 0.242
+      },
+      {
+        "subq": "ZIO-quill",
+        "answer": "🤷",
+        "count": 323,
+        "percentage": 0.239
+      },
+      {
+        "subq": "ZIO-http",
+        "answer": "🚫",
+        "count": 321,
+        "percentage": 0.237
+      },
+      {
+        "subq": "ZIO-prelude",
+        "answer": "🚫",
+        "count": 317,
+        "percentage": 0.234
+      },
+      {
+        "subq": "ZIO-config",
+        "answer": "🚫",
+        "count": 317,
+        "percentage": 0.234
+      },
+      {
+        "subq": "ZIO-streams",
+        "answer": "🚫",
+        "count": 308,
+        "percentage": 0.227
+      },
+      {
+        "subq": "ZIO-json",
+        "answer": "🤷",
+        "count": 305,
+        "percentage": 0.225
+      },
+      {
+        "subq": "ZIO",
+        "answer": "🚫",
+        "count": 303,
+        "percentage": 0.224
+      },
+      {
+        "subq": "ZIO-http",
+        "answer": "🤷",
+        "count": 282,
+        "percentage": 0.208
+      },
+      {
+        "subq": "ZIO-http",
+        "answer": "👍",
+        "count": 262,
+        "percentage": 0.194
+      },
+      {
+        "subq": "caliban",
+        "answer": "🚫",
+        "count": 245,
+        "percentage": 0.181
+      },
+      {
+        "subq": "ZIO-json",
+        "answer": "👍",
+        "count": 243,
+        "percentage": 0.179
+      },
+      {
+        "subq": "ZIO-config",
+        "answer": "👍",
+        "count": 216,
+        "percentage": 0.16
+      },
+      {
+        "subq": "ZIO-streams",
+        "answer": "🤷",
+        "count": 186,
+        "percentage": 0.137
+      },
+      {
+        "subq": "ZIO-quill",
+        "answer": "👍",
+        "count": 171,
+        "percentage": 0.126
+      },
+      {
+        "subq": "ZIO-prelude",
+        "answer": "👍",
+        "count": 154,
+        "percentage": 0.114
+      },
+      {
+        "subq": "caliban",
+        "answer": "👍",
+        "count": 143,
+        "percentage": 0.106
+      },
+      {
+        "subq": "ZIO-schema",
+        "answer": "👍",
+        "count": 83,
+        "percentage": 0.061
+      },
+      {
+        "subq": "ZIO",
+        "answer": "🤷",
+        "count": 78,
+        "percentage": 0.058
+      },
+      {
+        "subq": "ZIO-quill",
+        "answer": "👎",
+        "count": 69,
+        "percentage": 0.051
+      },
+      {
+        "subq": "ZIO-sql",
+        "answer": "👍",
+        "count": 55,
+        "percentage": 0.041
+      },
+      {
+        "subq": "ZIO",
+        "answer": "👎",
+        "count": 45,
+        "percentage": 0.033
+      },
+      {
+        "subq": "ZIO-optics",
+        "answer": "👍",
+        "count": 41,
+        "percentage": 0.03
+      },
+      {
+        "subq": "ZIO-streams",
+        "answer": "👎",
+        "count": 40,
+        "percentage": 0.03
+      },
+      {
+        "subq": "ZIO-http",
+        "answer": "👎",
+        "count": 39,
+        "percentage": 0.029
+      },
+      {
+        "subq": "ZIO-sql",
+        "answer": "👎",
+        "count": 35,
+        "percentage": 0.026
+      },
+      {
+        "subq": "ZIO-json",
+        "answer": "👎",
+        "count": 34,
+        "percentage": 0.025
+      },
+      {
+        "subq": "ZIO-config",
+        "answer": "👎",
+        "count": 34,
+        "percentage": 0.025
+      },
+      {
+        "subq": "ZIO-actors",
+        "answer": "👎",
+        "count": 34,
+        "percentage": 0.025
+      },
+      {
+        "subq": "ZIO-prelude",
+        "answer": "👎",
+        "count": 34,
+        "percentage": 0.025
+      },
+      {
+        "subq": "caliban",
+        "answer": "👎",
+        "count": 28,
+        "percentage": 0.021
+      },
+      {
+        "subq": "ZIO-actors",
+        "answer": "👍",
+        "count": 23,
+        "percentage": 0.017
+      },
+      {
+        "subq": "ZIO-schema",
+        "answer": "👎",
+        "count": 22,
+        "percentage": 0.016
+      },
+      {
+        "subq": "ZIO-optics",
+        "answer": "👎",
+        "count": 21,
+        "percentage": 0.016
+      }
+    ]
+  },
+  {
+    "question": "Typelevel ecosystem",
+    "tpe": "M",
+    "nonEmptyResponses": 1368,
+    "answers": [
+      {
+        "subq": "droste",
+        "answer": "🤷",
+        "count": 986,
+        "percentage": 0.721
+      },
+      {
+        "subq": "Mouse",
+        "answer": "🤷",
+        "count": 859,
+        "percentage": 0.628
+      },
+      {
+        "subq": "Cats-core",
+        "answer": "👍",
+        "count": 835,
+        "percentage": 0.61
+      },
+      {
+        "subq": "Alleycats",
+        "answer": "🤷",
+        "count": 825,
+        "percentage": 0.603
+      },
+      {
+        "subq": "Spire",
+        "answer": "🤷",
+        "count": 756,
+        "percentage": 0.553
+      },
+      {
+        "subq": "Cats-effect",
+        "answer": "👍",
+        "count": 748,
+        "percentage": 0.547
+      },
+      {
+        "subq": "Skunk",
+        "answer": "🤷",
+        "count": 715,
+        "percentage": 0.523
+      },
+      {
+        "subq": "Scodec",
+        "answer": "🤷",
+        "count": 711,
+        "percentage": 0.52
+      },
+      {
+        "subq": "http4s",
+        "answer": "👍",
+        "count": 663,
+        "percentage": 0.485
+      },
+      {
+        "subq": "FS2",
+        "answer": "👍",
+        "count": 573,
+        "percentage": 0.419
+      },
+      {
+        "subq": "Cats MTL",
+        "answer": "🤷",
+        "count": 527,
+        "percentage": 0.385
+      },
+      {
+        "subq": "doobie",
+        "answer": "👍",
+        "count": 521,
+        "percentage": 0.381
+      },
+      {
+        "subq": "Cats Collections",
+        "answer": "🤷",
+        "count": 424,
+        "percentage": 0.31
+      },
+      {
+        "subq": "Shapeless",
+        "answer": "✅",
+        "count": 410,
+        "percentage": 0.3
+      },
+      {
+        "subq": "Cats Collections",
+        "answer": "✅",
+        "count": 393,
+        "percentage": 0.287
+      },
+      {
+        "subq": "Monocle",
+        "answer": "👍",
+        "count": 389,
+        "percentage": 0.284
+      },
+      {
+        "subq": "Monocle",
+        "answer": "✅",
+        "count": 384,
+        "percentage": 0.281
+      },
+      {
+        "subq": "Monix",
+        "answer": "🚫",
+        "count": 381,
+        "percentage": 0.279
+      },
+      {
+        "subq": "Shapeless",
+        "answer": "👍",
+        "count": 362,
+        "percentage": 0.265
+      },
+      {
+        "subq": "FS2",
+        "answer": "✅",
+        "count": 350,
+        "percentage": 0.256
+      },
+      {
+        "subq": "Cats MTL",
+        "answer": "✅",
+        "count": 346,
+        "percentage": 0.253
+      },
+      {
+        "subq": "Monocle",
+        "answer": "🤷",
+        "count": 333,
+        "percentage": 0.243
+      },
+      {
+        "subq": "doobie",
+        "answer": "✅",
+        "count": 332,
+        "percentage": 0.243
+      },
+      {
+        "subq": "http4s",
+        "answer": "✅",
+        "count": 331,
+        "percentage": 0.242
+      },
+      {
+        "subq": "Monix",
+        "answer": "✅",
+        "count": 330,
+        "percentage": 0.241
+      },
+      {
+        "subq": "Skunk",
+        "answer": "✅",
+        "count": 318,
+        "percentage": 0.232
+      },
+      {
+        "subq": "Monix",
+        "answer": "🤷",
+        "count": 316,
+        "percentage": 0.231
+      },
+      {
+        "subq": "Cats-effect",
+        "answer": "✅",
+        "count": 316,
+        "percentage": 0.231
+      },
+      {
+        "subq": "Cats Collections",
+        "answer": "👍",
+        "count": 288,
+        "percentage": 0.211
+      },
+      {
+        "subq": "Spire",
+        "answer": "✅",
+        "count": 277,
+        "percentage": 0.202
+      },
+      {
+        "subq": "Cats-core",
+        "answer": "✅",
+        "count": 270,
+        "percentage": 0.197
+      },
+      {
+        "subq": "Cats MTL",
+        "answer": "🚫",
+        "count": 250,
+        "percentage": 0.183
+      },
+      {
+        "subq": "Scodec",
+        "answer": "✅",
+        "count": 246,
+        "percentage": 0.18
+      },
+      {
+        "subq": "doobie",
+        "answer": "🤷",
+        "count": 244,
+        "percentage": 0.178
+      },
+      {
+        "subq": "Alleycats",
+        "answer": "✅",
+        "count": 236,
+        "percentage": 0.173
+      },
+      {
+        "subq": "Mouse",
+        "answer": "✅",
+        "count": 231,
+        "percentage": 0.169
+      },
+      {
+        "subq": "Shapeless",
+        "answer": "🚫",
+        "count": 229,
+        "percentage": 0.167
+      },
+      {
+        "subq": "FS2",
+        "answer": "🤷",
+        "count": 205,
+        "percentage": 0.15
+      },
+      {
+        "subq": "Cats Collections",
+        "answer": "🚫",
+        "count": 195,
+        "percentage": 0.143
+      },
+      {
+        "subq": "Shapeless",
+        "answer": "👎",
+        "count": 189,
+        "percentage": 0.138
+      },
+      {
+        "subq": "Scodec",
+        "answer": "👍",
+        "count": 187,
+        "percentage": 0.137
+      },
+      {
+        "subq": "doobie",
+        "answer": "🚫",
+        "count": 178,
+        "percentage": 0.13
+      },
+      {
+        "subq": "Monocle",
+        "answer": "🚫",
+        "count": 177,
+        "percentage": 0.129
+      },
+      {
+        "subq": "droste",
+        "answer": "✅",
+        "count": 168,
+        "percentage": 0.123
+      },
+      {
+        "subq": "Monix",
+        "answer": "👍",
+        "count": 167,
+        "percentage": 0.122
+      },
+      {
+        "subq": "Spire",
+        "answer": "🚫",
+        "count": 165,
+        "percentage": 0.121
+      },
+      {
+        "subq": "Skunk",
+        "answer": "👍",
+        "count": 159,
+        "percentage": 0.116
+      },
+      {
+        "subq": "Scodec",
+        "answer": "🚫",
+        "count": 158,
+        "percentage": 0.115
+      },
+      {
+        "subq": "FS2",
+        "answer": "🚫",
+        "count": 157,
+        "percentage": 0.115
+      },
+      {
+        "subq": "Alleycats",
+        "answer": "🚫",
+        "count": 156,
+        "percentage": 0.114
+      },
+      {
+        "subq": "Shapeless",
+        "answer": "🤷",
+        "count": 154,
+        "percentage": 0.113
+      },
+      {
+        "subq": "Cats-effect",
+        "answer": "🚫",
+        "count": 145,
+        "percentage": 0.106
+      },
+      {
+        "subq": "Mouse",
+        "answer": "🚫",
+        "count": 141,
+        "percentage": 0.103
+      },
+      {
+        "subq": "Monix",
+        "answer": "👎",
+        "count": 140,
+        "percentage": 0.102
+      },
+      {
+        "subq": "Cats MTL",
+        "answer": "👍",
+        "count": 138,
+        "percentage": 0.101
+      },
+      {
+        "subq": "droste",
+        "answer": "🚫",
+        "count": 129,
+        "percentage": 0.094
+      },
+      {
+        "subq": "Cats-core",
+        "answer": "🚫",
+        "count": 127,
+        "percentage": 0.093
+      },
+      {
+        "subq": "http4s",
+        "answer": "🚫",
+        "count": 125,
+        "percentage": 0.091
+      },
+      {
+        "subq": "Skunk",
+        "answer": "🚫",
+        "count": 124,
+        "percentage": 0.091
+      },
+      {
+        "subq": "http4s",
+        "answer": "👎",
+        "count": 123,
+        "percentage": 0.09
+      },
+      {
+        "subq": "Spire",
+        "answer": "👍",
+        "count": 111,
+        "percentage": 0.081
+      },
+      {
+        "subq": "http4s",
+        "answer": "🤷",
+        "count": 105,
+        "percentage": 0.077
+      },
+      {
+        "subq": "Alleycats",
+        "answer": "👍",
+        "count": 99,
+        "percentage": 0.072
+      },
+      {
+        "subq": "Mouse",
+        "answer": "👍",
+        "count": 90,
+        "percentage": 0.066
+      },
+      {
+        "subq": "Cats-effect",
+        "answer": "👎",
+        "count": 87,
+        "percentage": 0.064
+      },
+      {
+        "subq": "Cats MTL",
+        "answer": "👎",
+        "count": 73,
+        "percentage": 0.053
+      },
+      {
+        "subq": "doobie",
+        "answer": "👎",
+        "count": 73,
+        "percentage": 0.053
+      },
+      {
+        "subq": "Cats-core",
+        "answer": "🤷",
+        "count": 69,
+        "percentage": 0.05
+      },
+      {
+        "subq": "FS2",
+        "answer": "👎",
+        "count": 63,
+        "percentage": 0.046
+      },
+      {
+        "subq": "Cats-effect",
+        "answer": "🤷",
+        "count": 61,
+        "percentage": 0.045
+      },
+      {
+        "subq": "Cats-core",
+        "answer": "👎",
+        "count": 60,
+        "percentage": 0.044
+      },
+      {
+        "subq": "Monocle",
+        "answer": "👎",
+        "count": 55,
+        "percentage": 0.04
+      },
+      {
+        "subq": "Cats Collections",
+        "answer": "👎",
+        "count": 40,
+        "percentage": 0.029
+      },
+      {
+        "subq": "droste",
+        "answer": "👍",
+        "count": 30,
+        "percentage": 0.022
+      },
+      {
+        "subq": "Scodec",
+        "answer": "👎",
+        "count": 22,
+        "percentage": 0.016
+      },
+      {
+        "subq": "Skunk",
+        "answer": "👎",
+        "count": 18,
+        "percentage": 0.013
+      },
+      {
+        "subq": "Alleycats",
+        "answer": "👎",
+        "count": 17,
+        "percentage": 0.012
+      },
+      {
+        "subq": "Spire",
+        "answer": "👎",
+        "count": 17,
+        "percentage": 0.012
+      },
+      {
+        "subq": "Mouse",
+        "answer": "👎",
+        "count": 16,
+        "percentage": 0.012
+      },
+      {
+        "subq": "droste",
+        "answer": "👎",
+        "count": 16,
+        "percentage": 0.012
+      }
+    ]
+  },
+  {
+    "question": "com.lihaoyi ecosystem",
+    "tpe": "M",
+    "nonEmptyResponses": 1369,
+    "answers": [
+      {
+        "subq": "Cask",
+        "answer": "🤷",
+        "count": 708,
+        "percentage": 0.517
+      },
+      {
+        "subq": "PPrint",
+        "answer": "🤷",
+        "count": 676,
+        "percentage": 0.494
+      },
+      {
+        "subq": "Requests",
+        "answer": "🤷",
+        "count": 631,
+        "percentage": 0.461
+      },
+      {
+        "subq": "OS-Lib",
+        "answer": "🤷",
+        "count": 622,
+        "percentage": 0.454
+      },
+      {
+        "subq": "ScalaTags",
+        "answer": "🤷",
+        "count": 616,
+        "percentage": 0.45
+      },
+      {
+        "subq": "Fastparse",
+        "answer": "🤷",
+        "count": 591,
+        "percentage": 0.432
+      },
+      {
+        "subq": "uPickle",
+        "answer": "🤷",
+        "count": 424,
+        "percentage": 0.31
+      },
+      {
+        "subq": "Cask",
+        "answer": "🚫",
+        "count": 319,
+        "percentage": 0.233
+      },
+      {
+        "subq": "uPickle",
+        "answer": "🚫",
+        "count": 303,
+        "percentage": 0.221
+      },
+      {
+        "subq": "uPickle",
+        "answer": "✅",
+        "count": 297,
+        "percentage": 0.217
+      },
+      {
+        "subq": "Requests",
+        "answer": "🚫",
+        "count": 296,
+        "percentage": 0.216
+      },
+      {
+        "subq": "Fastparse",
+        "answer": "✅",
+        "count": 292,
+        "percentage": 0.213
+      },
+      {
+        "subq": "uPickle",
+        "answer": "👍",
+        "count": 261,
+        "percentage": 0.191
+      },
+      {
+        "subq": "ScalaTags",
+        "answer": "✅",
+        "count": 261,
+        "percentage": 0.191
+      },
+      {
+        "subq": "ScalaTags",
+        "answer": "🚫",
+        "count": 255,
+        "percentage": 0.186
+      },
+      {
+        "subq": "Fastparse",
+        "answer": "🚫",
+        "count": 253,
+        "percentage": 0.185
+      },
+      {
+        "subq": "OS-Lib",
+        "answer": "👍",
+        "count": 250,
+        "percentage": 0.183
+      },
+      {
+        "subq": "OS-Lib",
+        "answer": "✅",
+        "count": 244,
+        "percentage": 0.178
+      },
+      {
+        "subq": "Cask",
+        "answer": "✅",
+        "count": 242,
+        "percentage": 0.177
+      },
+      {
+        "subq": "Requests",
+        "answer": "✅",
+        "count": 236,
+        "percentage": 0.172
+      },
+      {
+        "subq": "PPrint",
+        "answer": "🚫",
+        "count": 234,
+        "percentage": 0.171
+      },
+      {
+        "subq": "PPrint",
+        "answer": "👍",
+        "count": 232,
+        "percentage": 0.169
+      },
+      {
+        "subq": "OS-Lib",
+        "answer": "🚫",
+        "count": 217,
+        "percentage": 0.159
+      },
+      {
+        "subq": "PPrint",
+        "answer": "✅",
+        "count": 204,
+        "percentage": 0.149
+      },
+      {
+        "subq": "ScalaTags",
+        "answer": "👍",
+        "count": 195,
+        "percentage": 0.142
+      },
+      {
+        "subq": "Fastparse",
+        "answer": "👍",
+        "count": 192,
+        "percentage": 0.14
+      },
+      {
+        "subq": "Requests",
+        "answer": "👍",
+        "count": 153,
+        "percentage": 0.112
+      },
+      {
+        "subq": "uPickle",
+        "answer": "👎",
+        "count": 65,
+        "percentage": 0.047
+      },
+      {
+        "subq": "Cask",
+        "answer": "👍",
+        "count": 50,
+        "percentage": 0.037
+      },
+      {
+        "subq": "Requests",
+        "answer": "👎",
+        "count": 30,
+        "percentage": 0.022
+      },
+      {
+        "subq": "Fastparse",
+        "answer": "👎",
+        "count": 27,
+        "percentage": 0.02
+      },
+      {
+        "subq": "Cask",
+        "answer": "👎",
+        "count": 26,
+        "percentage": 0.019
+      },
+      {
+        "subq": "ScalaTags",
+        "answer": "👎",
+        "count": 24,
+        "percentage": 0.018
+      },
+      {
+        "subq": "OS-Lib",
+        "answer": "👎",
+        "count": 17,
+        "percentage": 0.012
+      },
+      {
+        "subq": "PPrint",
+        "answer": "👎",
+        "count": 11,
+        "percentage": 0.008
+      }
+    ]
+  },
+  {
+    "question": "If applicable, how often do you use the following Scala 3 features?",
+    "tpe": "M",
+    "nonEmptyResponses": 666,
+    "answers": [
+      {
+        "subq": "enum",
+        "answer": "5",
+        "count": 260,
+        "percentage": 0.39
+      },
+      {
+        "subq": "Extension methods",
+        "answer": "4",
+        "count": 234,
+        "percentage": 0.351
+      },
+      {
+        "subq": "enum",
+        "answer": "4",
+        "count": 218,
+        "percentage": 0.327
+      },
+      {
+        "subq": "Union types",
+        "answer": "3",
+        "count": 199,
+        "percentage": 0.299
+      },
+      {
+        "subq": "Extension methods",
+        "answer": "5",
+        "count": 191,
+        "percentage": 0.287
+      },
+      {
+        "subq": "export",
+        "answer": "1",
+        "count": 179,
+        "percentage": 0.269
+      },
+      {
+        "subq": "Opaque type aliases",
+        "answer": "3",
+        "count": 175,
+        "percentage": 0.263
+      },
+      {
+        "subq": "Top-level definitions",
+        "answer": "4",
+        "count": 161,
+        "percentage": 0.242
+      },
+      {
+        "subq": "Opaque type aliases",
+        "answer": "4",
+        "count": 157,
+        "percentage": 0.236
+      },
+      {
+        "subq": "Top-level definitions",
+        "answer": "3",
+        "count": 142,
+        "percentage": 0.213
+      },
+      {
+        "subq": "Top-level definitions",
+        "answer": "5",
+        "count": 135,
+        "percentage": 0.203
+      },
+      {
+        "subq": "export",
+        "answer": "🤷",
+        "count": 133,
+        "percentage": 0.2
+      },
+      {
+        "subq": "Extension methods",
+        "answer": "3",
+        "count": 133,
+        "percentage": 0.2
+      },
+      {
+        "subq": "export",
+        "answer": "3",
+        "count": 131,
+        "percentage": 0.197
+      },
+      {
+        "subq": "export",
+        "answer": "2",
+        "count": 124,
+        "percentage": 0.186
+      },
+      {
+        "subq": "Union types",
+        "answer": "4",
+        "count": 123,
+        "percentage": 0.185
+      },
+      {
+        "subq": "Union types",
+        "answer": "2",
+        "count": 111,
+        "percentage": 0.167
+      },
+      {
+        "subq": "Opaque type aliases",
+        "answer": "5",
+        "count": 105,
+        "percentage": 0.158
+      },
+      {
+        "subq": "enum",
+        "answer": "3",
+        "count": 101,
+        "percentage": 0.152
+      },
+      {
+        "subq": "Union types",
+        "answer": "1",
+        "count": 90,
+        "percentage": 0.135
+      },
+      {
+        "subq": "Opaque type aliases",
+        "answer": "1",
+        "count": 80,
+        "percentage": 0.12
+      },
+      {
+        "subq": "Top-level definitions",
+        "answer": "2",
+        "count": 79,
+        "percentage": 0.119
+      },
+      {
+        "subq": "Top-level definitions",
+        "answer": "🤷",
+        "count": 78,
+        "percentage": 0.117
+      },
+      {
+        "subq": "Union types",
+        "answer": "5",
+        "count": 76,
+        "percentage": 0.114
+      },
+      {
+        "subq": "Opaque type aliases",
+        "answer": "2",
+        "count": 76,
+        "percentage": 0.114
+      },
+      {
+        "subq": "Opaque type aliases",
+        "answer": "🤷",
+        "count": 67,
+        "percentage": 0.101
+      },
+      {
+        "subq": "Top-level definitions",
+        "answer": "1",
+        "count": 63,
+        "percentage": 0.095
+      },
+      {
+        "subq": "export",
+        "answer": "4",
+        "count": 59,
+        "percentage": 0.089
+      },
+      {
+        "subq": "Union types",
+        "answer": "🤷",
+        "count": 58,
+        "percentage": 0.087
+      },
+      {
+        "subq": "Extension methods",
+        "answer": "2",
+        "count": 48,
+        "percentage": 0.072
+      },
+      {
+        "subq": "enum",
+        "answer": "2",
+        "count": 31,
+        "percentage": 0.047
+      },
+      {
+        "subq": "export",
+        "answer": "5",
+        "count": 30,
+        "percentage": 0.045
+      },
+      {
+        "subq": "Extension methods",
+        "answer": "1",
+        "count": 30,
+        "percentage": 0.045
+      },
+      {
+        "subq": "Extension methods",
+        "answer": "🤷",
+        "count": 28,
+        "percentage": 0.042
+      },
+      {
+        "subq": "enum",
+        "answer": "🤷",
+        "count": 26,
+        "percentage": 0.039
+      },
+      {
+        "subq": "enum",
+        "answer": "1",
+        "count": 25,
+        "percentage": 0.038
+      }
+    ]
+  },
+  {
+    "question": "How often do you use the following language features?",
+    "tpe": "M",
+    "nonEmptyResponses": 1386,
+    "answers": [
+      {
+        "subq": "Case classes",
+        "answer": "5",
+        "count": 1122,
+        "percentage": 0.81
+      },
+      {
+        "subq": "Pattern matching",
+        "answer": "5",
+        "count": 1060,
+        "percentage": 0.765
+      },
+      {
+        "subq": "For / yield",
+        "answer": "5",
+        "count": 830,
+        "percentage": 0.599
+      },
+      {
+        "subq": "throw and try/catch",
+        "answer": "2",
+        "count": 525,
+        "percentage": 0.379
+      },
+      {
+        "subq": "Metaprogramming",
+        "answer": "1",
+        "count": 503,
+        "percentage": 0.363
+      },
+      {
+        "subq": "Implicit / given abstractions",
+        "answer": "4",
+        "count": 471,
+        "percentage": 0.34
+      },
+      {
+        "subq": "Implicit conversions",
+        "answer": "2",
+        "count": 432,
+        "percentage": 0.312
+      },
+      {
+        "subq": "Implicit / given abstractions",
+        "answer": "5",
+        "count": 380,
+        "percentage": 0.274
+      },
+      {
+        "subq": "Metaprogramming",
+        "answer": "2",
+        "count": 375,
+        "percentage": 0.271
+      },
+      {
+        "subq": "throw and try/catch",
+        "answer": "1",
+        "count": 363,
+        "percentage": 0.262
+      },
+      {
+        "subq": "Interop with other languages",
+        "answer": "2",
+        "count": 359,
+        "percentage": 0.259
+      },
+      {
+        "subq": "extends AnyVal",
+        "answer": "1",
+        "count": 353,
+        "percentage": 0.255
+      },
+      {
+        "subq": "extends AnyVal",
+        "answer": "2",
+        "count": 345,
+        "percentage": 0.249
+      },
+      {
+        "subq": "Implicit conversions",
+        "answer": "3",
+        "count": 344,
+        "percentage": 0.248
+      },
+      {
+        "subq": "For / yield",
+        "answer": "4",
+        "count": 343,
+        "percentage": 0.247
+      },
+      {
+        "subq": "Interop with other languages",
+        "answer": "1",
+        "count": 335,
+        "percentage": 0.242
+      },
+      {
+        "subq": "Implicit / given abstractions",
+        "answer": "3",
+        "count": 304,
+        "percentage": 0.219
+      },
+      {
+        "subq": "extends AnyVal",
+        "answer": "3",
+        "count": 302,
+        "percentage": 0.218
+      },
+      {
+        "subq": "Implicit conversions",
+        "answer": "1",
+        "count": 292,
+        "percentage": 0.211
+      },
+      {
+        "subq": "Interop with other languages",
+        "answer": "3",
+        "count": 275,
+        "percentage": 0.198
+      },
+      {
+        "subq": "Pattern matching",
+        "answer": "4",
+        "count": 274,
+        "percentage": 0.198
+      },
+      {
+        "subq": "throw and try/catch",
+        "answer": "3",
+        "count": 232,
+        "percentage": 0.167
+      },
+      {
+        "subq": "Case classes",
+        "answer": "4",
+        "count": 228,
+        "percentage": 0.165
+      },
+      {
+        "subq": "Metaprogramming",
+        "answer": "3",
+        "count": 223,
+        "percentage": 0.161
+      },
+      {
+        "subq": "extends AnyVal",
+        "answer": "4",
+        "count": 188,
+        "percentage": 0.136
+      },
+      {
+        "subq": "Interop with other languages",
+        "answer": "4",
+        "count": 186,
+        "percentage": 0.134
+      },
+      {
+        "subq": "Implicit conversions",
+        "answer": "4",
+        "count": 181,
+        "percentage": 0.131
+      },
+      {
+        "subq": "Implicit / given abstractions",
+        "answer": "2",
+        "count": 175,
+        "percentage": 0.126
+      },
+      {
+        "subq": "throw and try/catch",
+        "answer": "4",
+        "count": 136,
+        "percentage": 0.098
+      },
+      {
+        "subq": "Metaprogramming",
+        "answer": "🤷",
+        "count": 136,
+        "percentage": 0.098
+      },
+      {
+        "subq": "For / yield",
+        "answer": "3",
+        "count": 125,
+        "percentage": 0.09
+      },
+      {
+        "subq": "Metaprogramming",
+        "answer": "4",
+        "count": 115,
+        "percentage": 0.083
+      },
+      {
+        "subq": "Interop with other languages",
+        "answer": "🤷",
+        "count": 107,
+        "percentage": 0.077
+      },
+      {
+        "subq": "Interop with other languages",
+        "answer": "5",
+        "count": 105,
+        "percentage": 0.076
+      },
+      {
+        "subq": "extends AnyVal",
+        "answer": "5",
+        "count": 92,
+        "percentage": 0.066
+      },
+      {
+        "subq": "extends AnyVal",
+        "answer": "🤷",
+        "count": 92,
+        "percentage": 0.066
+      },
+      {
+        "subq": "throw and try/catch",
+        "answer": "5",
+        "count": 78,
+        "percentage": 0.056
+      },
+      {
+        "subq": "Implicit conversions",
+        "answer": "5",
+        "count": 65,
+        "percentage": 0.047
+      },
+      {
+        "subq": "Implicit conversions",
+        "answer": "🤷",
+        "count": 55,
+        "percentage": 0.04
+      },
+      {
+        "subq": "For / yield",
+        "answer": "2",
+        "count": 51,
+        "percentage": 0.037
+      },
+      {
+        "subq": "Pattern matching",
+        "answer": "3",
+        "count": 39,
+        "percentage": 0.028
+      },
+      {
+        "subq": "Implicit / given abstractions",
+        "answer": "1",
+        "count": 38,
+        "percentage": 0.027
+      },
+      {
+        "subq": "throw and try/catch",
+        "answer": "🤷",
+        "count": 38,
+        "percentage": 0.027
+      },
+      {
+        "subq": "For / yield",
+        "answer": "1",
+        "count": 23,
+        "percentage": 0.017
+      },
+      {
+        "subq": "Case classes",
+        "answer": "3",
+        "count": 22,
+        "percentage": 0.016
+      },
+      {
+        "subq": "Metaprogramming",
+        "answer": "5",
+        "count": 21,
+        "percentage": 0.015
+      },
+      {
+        "subq": "Implicit / given abstractions",
+        "answer": "🤷",
+        "count": 10,
+        "percentage": 0.007
+      },
+      {
+        "subq": "Case classes",
+        "answer": "2",
+        "count": 7,
+        "percentage": 0.005
+      },
+      {
+        "subq": "Pattern matching",
+        "answer": "2",
+        "count": 6,
+        "percentage": 0.004
+      },
+      {
+        "subq": "For / yield",
+        "answer": "🤷",
+        "count": 5,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Case classes",
+        "answer": "🤷",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Pattern matching",
+        "answer": "🤷",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Case classes",
+        "answer": "1",
+        "count": 2,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "What paradigms of Scala do you use?",
+    "tpe": "M",
+    "nonEmptyResponses": 1385,
+    "answers": [
+      {
+        "subq": "Immutable structures",
+        "answer": "5",
+        "count": 1008,
+        "percentage": 0.728
+      },
+      {
+        "subq": "Mutable structures",
+        "answer": "2",
+        "count": 651,
+        "percentage": 0.47
+      },
+      {
+        "subq": "Mutable structures",
+        "answer": "1",
+        "count": 435,
+        "percentage": 0.314
+      },
+      {
+        "subq": "Purely functional with libraries",
+        "answer": "5",
+        "count": 412,
+        "percentage": 0.297
+      },
+      {
+        "subq": "Purely functional with libraries",
+        "answer": "4",
+        "count": 407,
+        "percentage": 0.294
+      },
+      {
+        "subq": "Object-oriented programming",
+        "answer": "4",
+        "count": 374,
+        "percentage": 0.27
+      },
+      {
+        "subq": "Object-oriented programming",
+        "answer": "3",
+        "count": 350,
+        "percentage": 0.253
+      },
+      {
+        "subq": "Purely functional by hand",
+        "answer": "3",
+        "count": 333,
+        "percentage": 0.24
+      },
+      {
+        "subq": "Immutable structures",
+        "answer": "4",
+        "count": 323,
+        "percentage": 0.233
+      },
+      {
+        "subq": "Object-oriented programming",
+        "answer": "2",
+        "count": 313,
+        "percentage": 0.226
+      },
+      {
+        "subq": "Purely functional by hand",
+        "answer": "4",
+        "count": 302,
+        "percentage": 0.218
+      },
+      {
+        "subq": "Purely functional by hand",
+        "answer": "2",
+        "count": 281,
+        "percentage": 0.203
+      },
+      {
+        "subq": "Purely functional with libraries",
+        "answer": "3",
+        "count": 254,
+        "percentage": 0.183
+      },
+      {
+        "subq": "Purely functional by hand",
+        "answer": "1",
+        "count": 211,
+        "percentage": 0.152
+      },
+      {
+        "subq": "Object-oriented programming",
+        "answer": "5",
+        "count": 191,
+        "percentage": 0.138
+      },
+      {
+        "subq": "Purely functional by hand",
+        "answer": "5",
+        "count": 150,
+        "percentage": 0.108
+      },
+      {
+        "subq": "Purely functional with libraries",
+        "answer": "2",
+        "count": 148,
+        "percentage": 0.107
+      },
+      {
+        "subq": "Purely functional with libraries",
+        "answer": "1",
+        "count": 116,
+        "percentage": 0.084
+      },
+      {
+        "subq": "Mutable structures",
+        "answer": "3",
+        "count": 114,
+        "percentage": 0.082
+      },
+      {
+        "subq": "Object-oriented programming",
+        "answer": "1",
+        "count": 108,
+        "percentage": 0.078
+      },
+      {
+        "subq": "Purely functional by hand",
+        "answer": "🤷",
+        "count": 75,
+        "percentage": 0.054
+      },
+      {
+        "subq": "Mutable structures",
+        "answer": "4",
+        "count": 57,
+        "percentage": 0.041
+      },
+      {
+        "subq": "Mutable structures",
+        "answer": "5",
+        "count": 44,
+        "percentage": 0.032
+      },
+      {
+        "subq": "Purely functional with libraries",
+        "answer": "🤷",
+        "count": 38,
+        "percentage": 0.027
+      },
+      {
+        "subq": "Mutable structures",
+        "answer": "🤷",
+        "count": 37,
+        "percentage": 0.027
+      },
+      {
+        "subq": "Immutable structures",
+        "answer": "3",
+        "count": 31,
+        "percentage": 0.022
+      },
+      {
+        "subq": "Object-oriented programming",
+        "answer": "🤷",
+        "count": 20,
+        "percentage": 0.014
+      },
+      {
+        "subq": "Immutable structures",
+        "answer": "2",
+        "count": 6,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Immutable structures",
+        "answer": "1",
+        "count": 3,
+        "percentage": 0.002
+      },
+      {
+        "subq": "Immutable structures",
+        "answer": "🤷",
+        "count": 2,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "Which platforms do you develop Scala on?",
+    "tpe": "S",
+    "nonEmptyResponses": 1386,
+    "answers": [
+      {
+        "subq": "MacOS",
+        "answer": "MacOS",
+        "count": 919,
+        "percentage": 0.663
+      },
+      {
+        "subq": "Linux",
+        "answer": "Linux",
+        "count": 764,
+        "percentage": 0.551
+      },
+      {
+        "subq": "Windows",
+        "answer": "Windows",
+        "count": 263,
+        "percentage": 0.19
+      },
+      {
+        "subq": "BSD",
+        "answer": "BSD",
+        "count": 7,
+        "percentage": 0.005
+      },
+      {
+        "subq": "Other",
+        "answer": "WSL",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "wsl",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Aix, z/os",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "none",
+        "count": 1,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "What versions of ECMAScript/JavaScript do you target, if any?",
+    "tpe": "S",
+    "nonEmptyResponses": 258,
+    "answers": [
+      {
+        "subq": "I don't know",
+        "answer": "I don't know",
+        "count": 139,
+        "percentage": 0.539
+      },
+      {
+        "subq": "ECMAScript 2021+",
+        "answer": "ECMAScript 2021+",
+        "count": 64,
+        "percentage": 0.248
+      },
+      {
+        "subq": "ECMAScript 2015 (ES6)",
+        "answer": "ECMAScript 2015 (ES6)",
+        "count": 60,
+        "percentage": 0.233
+      },
+      {
+        "subq": "ECMAScript 2016-2020",
+        "answer": "ECMAScript 2016-2020",
+        "count": 40,
+        "percentage": 0.155
+      },
+      {
+        "subq": "ECMAScript 5.1",
+        "answer": "ECMAScript 5.1",
+        "count": 8,
+        "percentage": 0.031
+      },
+      {
+        "subq": "Other",
+        "answer": "none",
+        "count": 1,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Other",
+        "answer": "Whatever Scalajs targets.",
+        "count": 1,
+        "percentage": 0.004
+      }
+    ]
+  },
+  {
+    "question": "What versions of the JDK do you target, if any?",
+    "tpe": "S",
+    "nonEmptyResponses": 1378,
+    "answers": [
+      {
+        "subq": "JDK 17",
+        "answer": "JDK 17",
+        "count": 817,
+        "percentage": 0.593
+      },
+      {
+        "subq": "JDK 11",
+        "answer": "JDK 11",
+        "count": 698,
+        "percentage": 0.507
+      },
+      {
+        "subq": "JDK 8",
+        "answer": "JDK 8",
+        "count": 341,
+        "percentage": 0.247
+      },
+      {
+        "subq": "JDK 18-20",
+        "answer": "JDK 18-20",
+        "count": 341,
+        "percentage": 0.247
+      },
+      {
+        "subq": "JDK 12-16",
+        "answer": "JDK 12-16",
+        "count": 52,
+        "percentage": 0.038
+      },
+      {
+        "subq": "I don't know",
+        "answer": "I don't know",
+        "count": 41,
+        "percentage": 0.03
+      },
+      {
+        "subq": "JDK 9-10",
+        "answer": "JDK 9-10",
+        "count": 12,
+        "percentage": 0.009
+      },
+      {
+        "subq": "Other",
+        "answer": "JDK 21",
+        "count": 4,
+        "percentage": 0.003
+      },
+      {
+        "subq": "Other",
+        "answer": "21",
+        "count": 2,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "JDK21",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "jdk 21",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "JDK 1.6",
+        "count": 1,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "What platforms do you target",
+    "tpe": "S",
+    "nonEmptyResponses": 1387,
+    "answers": [
+      {
+        "subq": "Scala/JVM",
+        "answer": "Scala/JVM",
+        "count": 1379,
+        "percentage": 0.994
+      },
+      {
+        "subq": "Scala.js",
+        "answer": "Scala.js",
+        "count": 265,
+        "percentage": 0.191
+      },
+      {
+        "subq": "Scala Native",
+        "answer": "Scala Native",
+        "count": 115,
+        "percentage": 0.083
+      },
+      {
+        "subq": "Other",
+        "answer": "ScalaPy",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "wasm",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Android",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "I play with graalvm to do native so I can use java libs",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "none",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Scala on .NET via ikvm!",
+        "count": 1,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "What major versions of Scala are you using?",
+    "tpe": "S",
+    "nonEmptyResponses": 1387,
+    "answers": [
+      {
+        "subq": "Scala 2.13",
+        "answer": "Scala 2.13",
+        "count": 1031,
+        "percentage": 0.743
+      },
+      {
+        "subq": "Scala 3.x",
+        "answer": "Scala 3.x",
+        "count": 673,
+        "percentage": 0.485
+      },
+      {
+        "subq": "Scala 2.12",
+        "answer": "Scala 2.12",
+        "count": 378,
+        "percentage": 0.273
+      },
+      {
+        "subq": "Scala 2.11",
+        "answer": "Scala 2.11",
+        "count": 68,
+        "percentage": 0.049
+      },
+      {
+        "subq": "Scala 2.10",
+        "answer": "Scala 2.10",
+        "count": 5,
+        "percentage": 0.004
+      },
+      {
+        "subq": "Other",
+        "answer": "none",
+        "count": 1,
+        "percentage": 0.001
+      }
+    ]
+  },
+  {
+    "question": "Which of the following statements describe you?",
+    "tpe": "S",
+    "nonEmptyResponses": 1387,
+    "answers": [
+      {
+        "subq": "Scala developer",
+        "answer": "Scala developer",
+        "count": 1232,
+        "percentage": 0.888
+      },
+      {
+        "subq": "Scala hobbyist",
+        "answer": "Scala hobbyist",
+        "count": 671,
+        "percentage": 0.484
+      },
+      {
+        "subq": "Library maintainer",
+        "answer": "Library maintainer",
+        "count": 254,
+        "percentage": 0.183
+      },
+      {
+        "subq": "Scala teacher",
+        "answer": "Scala teacher",
+        "count": 138,
+        "percentage": 0.099
+      },
+      {
+        "subq": "Non-Scala developer",
+        "answer": "Non-Scala developer",
+        "count": 84,
+        "percentage": 0.061
+      },
+      {
+        "subq": "Scala student",
+        "answer": "Scala student",
+        "count": 25,
+        "percentage": 0.018
+      },
+      {
+        "subq": "Other",
+        "answer": "I manage a group of Scala developers",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "CTO Directing Technology Decisions",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Java developer",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Product Owner",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Managing Scala developers",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "I maintain Scala code written by previous developers",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "CTO",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "I used to use Scala in professional projects but now just Java",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "researcher",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Maintain scala work projects",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Managing Scala team",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "I don't write Scala code, but I work with a team of Scala developers",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "QA which using scala for testing",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "I Am learning scala",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "Use in non production project in my job",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "I uased to code with Scala a lot, now I have Scala in my project, but I rarely modify that code.",
+        "count": 1,
+        "percentage": 0.001
+      },
+      {
+        "subq": "Other",
+        "answer": "I use Scala in work projects",
+        "count": 1,
+        "percentage": 0.001
+      }
+    ]
+  }
+]

@@ -141,9 +141,42 @@
 
   <script>
     (async function () {
+
+      function mkSwatches(svg, colors, keys, descs, shiftX, shiftY) {
+        const r = 6
+        const dist = 3*r
+        svg.append("g")
+          .attr("font-family", "sans-serif")
+          .attr("font-size", 10)
+          .attr("text-anchor", "start")
+          .attr("transform", `translate(${shiftX}, ${shiftY})`)
+          .selectAll("g")
+          .data(keys).enter().append("circle").attr("cy", function(d,i){return 24 + i*dist}).attr("cx",shiftX + r).attr("r", r).attr("fill", function(d, i){return colors[i] })
+        svg
+          .append("g")
+          .attr("font-family", "sans-serif")
+          .attr("font-size", 10)
+          .attr("text-anchor", "start")
+          .attr("transform", `translate(${shiftX}, ${shiftY})`)
+          .selectAll("g")
+          .data(keys).enter()
+          .append("text").text(function(d, i){return descs[i] }).attr("fill", "white").attr("transform", function(d, i){return `translate(${shiftX + 2*r + 8}, ${24 + i*dist + r/2 + 2})`})
+          .attr("font-size", "12")
+
+
+        
+      }
+
       const data = await d3.json({{ (resources.Get "data/report.json").RelPermalink }})
       const QUESTIONS_NUM = {{ len .Site.Params.Data }}
       const blueprint = document.querySelector(".dataquestiondiv")
+      const likeKeys = ["🚫",  "👎", "🤷", "👍", "✅"]
+      const likeDescs = ["Would not use again", "Not interested", "Never heard of", "Would like to learn", "Would use again"]
+      const likeColors = ["#b41045", "#f47159", "#ffffdd", "#38a0bc", "#137cac"]
+      const numericColors = ["#35465E", "#b41045", "#f47159", "#ffffdd", "#38a0bc", "#00599b"]
+      const numericDescs = ["Never heard of", "1", "2", "3", "4", "5"]
+      
+      const numericKeys = ["🤷", "1", "2", "3", "4", "5"]
       for (let i = 0; i < data.length; i++) {
         const elem = blueprint.cloneNode(true)
         elem.querySelector(".dataquestion").innerHTML = data[i]["question"]
@@ -151,15 +184,29 @@
         blueprint.parentNode.insertBefore(elem, blueprint.nextSibling)
         let question = data[i]
         if (question.tpe == "S") {
-          const limitedAnswers = question.answers.slice(0, 5)
+          const limitedAnswers = question.answers.slice(0, 15).filter(a => a.percentage >= 0.01)
 
-          // Declare the chart dimensions and margins.
+          // Specify the chart’s dimensions, based on a bar’s height.
+          const barHeight = 25;
+          const marginTop = 30;
+          const marginRight = 100;
+          const marginBottom = 10;
+          const marginLeft = 200;
           const width = 928;
-          const height = 600;
-          const marginTop = 50;
-          const marginRight = 0;
-          const marginBottom = 80;
-          const marginLeft = 80;
+          const height = Math.ceil((limitedAnswers.length + 0.1) * barHeight) + marginTop + marginBottom;
+
+          // Create the scales.
+          const x = d3.scaleLinear()
+              .domain([0, 1.0])
+              .range([marginLeft, width - marginRight]);
+
+          const y = d3.scaleBand()
+              .domain(limitedAnswers.map(a => a.answer))
+              .rangeRound([marginTop, height - marginBottom])
+              .padding(0.1);
+
+          // Create a value format.
+          const format = x.tickFormat(20, "%");
 
           // append the svg object to the body of the page
           var svg = d3.select(`#diagramq${i}`)
@@ -169,106 +216,73 @@
             .attr("viewBox", [0, 0, width, height])
             .attr("style", "max-width: 100%; height: auto;");
 
-          // Declare the x (horizontal position) scale.
-          const x = d3.scaleBand()
-            .domain(limitedAnswers.map((d) => d.answer))
-            .padding(0.4)
-            .range([marginLeft, width - marginRight])
-
-
-          // Declare the y (vertical position) scale.
-          const y = d3.scaleLinear()
-            .domain([0, 1.0])
-            .range([height - marginBottom, marginTop]);
-
-          // Add a rect for each bar.
+          // Append a rect for each letter.
           svg.append("g")
-            .attr("fill", "steelblue")
+              .attr("fill", "steelblue")
             .selectAll()
             .data(limitedAnswers)
             .join("rect")
-            .attr("x", (d) => x(d.answer))
-            .attr("y", (d) => y(d.percentage))
-            .attr("height", (d) => y(0) - y(d.percentage))
-            .attr("width", x.bandwidth());
-          var additionalWidthI = 0
-          // Add the x-axis and label.
+              .attr("x", x(0))
+              .attr("y", (d) => y(d.answer))
+              .attr("width", (d) => x(d.percentage) - x(0))
+              .attr("height", y.bandwidth());
+          
+          // Append a label for each letter.
           svg.append("g")
-            .attr("transform", `translate(0,${height - marginBottom})`)
-            .call(d3.axisBottom(x).tickSizeOuter(0))
-            .selectAll("text")
-            .call(function (t) {
-              t.each(function (d) { // for each one
-                var self = d3.select(this);
-                if (self.text().length > 20) {
+              .attr("fill", "white")
+              .attr("text-anchor", "end")
+            .selectAll()
+            .data(limitedAnswers)
+            .join("text")
+              .attr("x", (d) => x(d.percentage))
+              .attr("y", (d) => y(d.answer) + y.bandwidth() / 2)
+              .attr("dy", "0.35em")
+              .attr("dx", -4)
+              .attr("class", "text-black")
+              .text((d) => format(d.percentage))
+            .call((text) => text.filter(d => d.percentage < 0.09) // short bars
+              .attr("dx", +4)
+              .attr("fill", "black")
+              .attr("class", "text-white")
+              .attr("text-anchor", "start"));
 
-                  var textLeft = self.text()
-                  var splitElems = []
-                  var lines = 0
-                  while (textLeft.length > 15) {
-                    var splitAt = 12
-                    for (var i = splitAt - 3; i < textLeft.length; i++) {
-                      splitAt = i + 1
-                      if (textLeft.charAt(i) == " ") {
-                        break
-                      }
-                    }
-                    splitElems.push(textLeft.slice(0, splitAt))
-                    textLeft = textLeft.slice(splitAt)
-                    lines += 1
-                  }
-                  splitElems.push(textLeft)
-
-                  var s = [self.text().slice(0, splitAt), self.text().slice(splitAt)]
-                  self.text(''); // clear it out
-                  for (var i = 0; i < splitElems.length; i++) {
-                    self.append("tspan") // insert two tspans
-                      .attr("x", 0)
-                      .attr("dy", "1.1em")
-                      .text(splitElems[i]);
-                  }
-                }
-              })
-            })
-
-
-          // Add the y-axis and label, and remove the domain line.
+          // Create the axes.
           svg.append("g")
-            .attr("transform", `translate(${marginLeft},0)`)
-            .call(d3.axisLeft(y).tickValues([0.2, 0.4, 0.6, 0.8, 1.0]).tickFormat((y) => (y * 100).toFixed() + "%"))
-            .call(g => g.append("text")
-              .attr("x", -marginLeft)
-              .attr("y", 10)
-              .attr("fill", "currentColor")
-              .attr("text-anchor", "start"))
+              .attr("transform", `translate(0,${marginTop})`)
+              .call(d3.axisTop(x).ticks(width / 80, "%"))
+              .call(g => g.select(".domain").remove());
 
+          svg.append("g")
+              .attr("transform", `translate(${marginLeft},0)`)
+              .call(d3.axisLeft(y).tickSizeOuter(0));
 
-          // append the bar rectangles to the svg element
-          svg.selectAll("rect")
-            .style("fill", "#FFFFFF")
           svg.selectAll("text")
             .attr("font-size", "18")
             .style("fill", "#FFFFFF")
+          svg.selectAll(".text-black")
+            .style("fill", "#000000")
           svg.selectAll("path")
             .style("stroke", "#FFFFFF")
           svg.selectAll("line")
             .style("stroke", "#FFFFFF")
+          svg.selectAll("rect")
+            .style("fill", "#ffffdd")
         } else {
           const width = 928;
-          const marginTop = 30;
-          const marginRight = 20;
-          const marginBottom = 0;
-          const marginLeft = 30;
-
+          const marginTop = 50;
+          const marginRight = 30;
+          const marginBottom = 16;
+          const marginLeft = 400;
           // Determine the series that need to be stacked.
+          const isLikeScale = question.answers.map(d => d.answer).every(d => likeKeys.includes(d))
+          const keys = isLikeScale ? likeKeys : numericKeys
+
           const series = d3.stack()
-              .keys(d3.union(question.answers.map(d => d.answer))) // distinct series keys, in input order
-              .value(([, D], key) => (D.get(key) == undefined ? 10 : D.get(key).percentage)) // get value for each series key and stack
+              .keys(keys) // distinct series keys, in input order
+              .value(([, D], key) => (D.get(key) == undefined ? 0 : D.get(key).percentage)) // get value for each series key and stack
               .offset(d3.stackOffsetExpand)
             (d3.index(question.answers, d => d.subq, d => d.answer)); // group by stack then series key
-
-          console.log(series)
-          // Compute the height from the number of stacks.
+                    // Compute the height from the number of stacks.
           const height = series[0].length * 25 + marginTop + marginBottom;
 
           // Prepare the scales for positional and color encodings.
@@ -277,13 +291,16 @@
               .range([marginLeft, width - marginRight]);
 
           const y = d3.scaleBand()
-              .domain(question.answers.map(d => d.answer))
+              .domain(d3.groupSort(question.answers, (D) => {
+                console.log(D);
+                if(isLikeScale) return D.find(d => d.answer == "✅") == undefined ? 0 : -D.find(d => d.answer == "✅").percentage / d3.sum(D, d => d.percentage);
+                else return D.find(d => d.answer == "5") == undefined ? 0 : -D.find(d => d.answer == "5").percentage / d3.sum(D, d => d.percentage);
+              }, d => d.subq))
               .range([marginTop, height - marginBottom])
               .padding(0.08);
-
           const color = d3.scaleOrdinal()
               .domain(series.map(d => d.key))
-              .range(d3.schemeSpectral[series.length])
+              .range(isLikeScale ? likeColors : numericColors)
               .unknown("#ccc");
 
           // A function to format the value in the tooltip.
@@ -291,10 +308,11 @@
 
           // Create the SVG container.
           const svg = d3.select(`#diagramq${i}`)
+              .append("svg")
               .attr("width", width)
               .attr("height", height)
               .attr("viewBox", [0, 0, width, height])
-              .attr("style", "max-width: 100%; height: auto;");
+              .attr("style", `max-width: 100%; height: auto; transform: translate(-240px, 0px)`);
 
           // Append a group for each series, and a rect for each element in the series.
           svg.append("g")
@@ -323,6 +341,22 @@
               .attr("transform", `translate(${marginLeft},0)`)
               .call(d3.axisLeft(y).tickSizeOuter(0))
               .call(g => g.selectAll(".domain").remove());
+
+          svg.selectAll("text")
+            .attr("font-size", "18")
+            .style("fill", "#FFFFFF")
+          svg.selectAll("path")
+            .style("stroke", "#FFFFFF")
+          svg.selectAll("line")
+            .style("stroke", "#FFFFFF")
+
+          const newSvg = d3.select(`#diagramq${i}`)
+              .append("svg")
+              .attr("width", 256)
+              .attr("height", 128)
+              .attr("viewBox", [0, 0, 36, 128])
+              .attr("style", `max-width: 100%; height: auto;`);
+          mkSwatches(newSvg, isLikeScale ? likeColors : numericColors, keys, isLikeScale ? likeDescs : numericDescs, 0, 0)
         }
     }
 
