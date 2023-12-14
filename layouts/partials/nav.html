@@ -10,6 +10,7 @@
                      class="mt-1 ml-3 text-xl font-black tracking-tight text-gray-100 uppercase transition-colors group-hover:text-gray-400/60 titleText">
                     {{ .Site.Title }}</div>
             </a>
+            {{ with site.Menus.main }}
             <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open" role="navigation" aria-expanded="false" aria-label="Main" aria-controls="menuItems">
                 <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
                     <path x-show="!open" fill-rule="evenodd"
@@ -20,6 +21,7 @@
                           clip-rule="evenodd"></path>
                 </svg>
             </button>
+            {{ end }}
         </div>
         <nav :class="{'flex': open, 'hidden': !open}"
              class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">

@@ -2,8 +2,8 @@
 <main>
   <div class="bg-gray-200 dark:bg-gray-900">
     <div class="max-w-screen-xl px-4 py-8 mx-auto">
-      <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
-        <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">
+      <div class="grid items-center gap-1 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
+        <div class="col-span-6 px-4 text-center lg:text-left">
           <h1
             class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
             {{ .Site.Title }}
@@ -34,7 +34,7 @@
   <!-- More main page content here... -->
 
   <!-- Our mission section -->
-  <div class="relative my-4">
+  <div class="relative my-4 pb-4 overflow-hidden">
     <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
       <div class="relative sm:py-8 lg:py-0">
         <div aria-hidden="true" class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
@@ -86,17 +86,17 @@
     </div>
   </div>
 
-  <div class="relative my-4 dataquestiondiv">
-    <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
-      <div class="md:pt-12 sm:pt-6 lg:pt-20">
-        <h2 class="dataquestion text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
-        </h2>
-        <div class="datadiagram"></div>
+  <div class="relative overflow-hidden my-8 dataquestiondiv">
+    <div class="mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:items-start lg:gap-24 lg:px-8">
+      <div class="py-4 md:py-6 lg:py-8">
+        <h2 class="dataquestion mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 md:mb-4 md:text-3xl lg:mb-5 lg:text-4xl"></h2>
+        <div class="relative datadiagram"></div>
       </div>
     </div>
   </div>
 
   <!-- CTA section -->
+  {{ if .Site.Params.P5.Enabled }}
   <div class="relative pb-16 mt-6">
     <div class="max-w-md mx-auto px-7 sm:max-w-3xl lg:max-w-7xl">
       <div class="relative px-6 py-10 overflow-hidden shadow-xl bg-primary-500 rounded-2xl sm:px-12 sm:py-20">
@@ -138,6 +138,7 @@
       </div>
     </div>
   </div>
+  {{ end }}
 
   <script>
     (async function () {
@@ -214,7 +215,8 @@
             .attr("width", width)
             .attr("height", height)
             .attr("viewBox", [0, 0, width, height])
-            .attr("style", "max-width: 100%; height: auto;");
+            // .attr("style", "max-width: 100%; height: auto;")
+            .attr("class", `poll-mono`);
 
           // Append a rect for each letter.
           svg.append("g")
@@ -292,7 +294,7 @@
 
           const y = d3.scaleBand()
               .domain(d3.groupSort(question.answers, (D) => {
-                console.log(D);
+                // console.log(D);
                 if(isLikeScale) return D.find(d => d.answer == "✅") == undefined ? 0 : -D.find(d => d.answer == "✅").percentage / d3.sum(D, d => d.percentage);
                 else return D.find(d => d.answer == "5") == undefined ? 0 : -D.find(d => d.answer == "5").percentage / d3.sum(D, d => d.percentage);
               }, d => d.subq))
@@ -312,7 +314,8 @@
               .attr("width", width)
               .attr("height", height)
               .attr("viewBox", [0, 0, width, height])
-              .attr("style", `max-width: 100%; height: auto; transform: translate(-240px, 0px)`);
+              // .attr("style", `max-width: 100%; height: auto;`)
+              .attr("class", `poll-multi`);
 
           // Append a group for each series, and a rect for each element in the series.
           svg.append("g")
@@ -355,7 +358,8 @@
               .attr("width", 256)
               .attr("height", 128)
               .attr("viewBox", [0, 0, 36, 128])
-              .attr("style", `max-width: 100%; height: auto;`);
+              // .attr("style", `max-width: 100%; height: auto;`)
+              .attr("class", `poll-legend`);
           mkSwatches(newSvg, isLikeScale ? likeColors : numericColors, keys, isLikeScale ? likeDescs : numericDescs, 0, 0)
         }
     }
