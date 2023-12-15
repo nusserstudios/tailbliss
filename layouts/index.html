@@ -72,11 +72,10 @@
             <div class="mt-6 space-y-6 text-gray-900 dark:text-white">
 
               <p class="text-lg text-gray-900 dark:text-white">
-                In the Scala Survey of 2023, a comprehensive analysis was conducted to gauge the prevailing trends
-                within the Scala community. With a total of 1387 insightful responses, the survey achieved a notable
-                completion rate of 63%, reflecting a robust engagement from Scala developers and enthusiasts. The data
-                collected offers a rich tapestry of information, detailing aspects such as preferred coding patterns,
-                favorite libraries, and the overall satisfaction with Scala's ecosystem.
+                Scala Survey 2023 was conducted to help the Scala community understand itself better. The survey consists
+                of 36 questions in the areas of demographics, Scala language and its ecosystem. It received 1387 responses
+                and totalled a 63.2% completion rate. Over 50% of the drop-off happened in the first question. On this page,
+                we present the results of the survey in a visual form.
               </p>
 
             </div>
@@ -171,11 +170,11 @@
       const data = await d3.json({{ (resources.Get "data/report.json").RelPermalink }})
       const QUESTIONS_NUM = {{ len .Site.Params.Data }}
       const blueprint = document.querySelector(".dataquestiondiv")
-      const likeKeys = ["🚫",  "👎", "🤷", "👍", "✅"]
+      const likeKeys = ["👎",  "🚫", "🤷", "✅", "👍"]
       const likeDescs = ["Would not use again", "Not interested", "Never heard of", "Would like to learn", "Would use again"]
       const likeColors = ["#b41045", "#f47159", "#ffffdd", "#38a0bc", "#137cac"]
       const numericColors = ["#35465E", "#b41045", "#f47159", "#ffffdd", "#38a0bc", "#00599b"]
-      const numericDescs = ["Never heard of", "1", "2", "3", "4", "5"]
+      const numericDescs = ["Never heard of", "Never", "Rarely", "From time to time", "Often", "Very often"]
       
       const numericKeys = ["🤷", "1", "2", "3", "4", "5"]
       for (let i = 0; i < data.length; i++) {
@@ -295,7 +294,7 @@
           const y = d3.scaleBand()
               .domain(d3.groupSort(question.answers, (D) => {
                 // console.log(D);
-                if(isLikeScale) return D.find(d => d.answer == "✅") == undefined ? 0 : -D.find(d => d.answer == "✅").percentage / d3.sum(D, d => d.percentage);
+                if(isLikeScale) return D.find(d => d.answer == "👍") == undefined ? 0 : -D.find(d => d.answer == "👍").percentage / d3.sum(D, d => d.percentage);
                 else return D.find(d => d.answer == "5") == undefined ? 0 : -D.find(d => d.answer == "5").percentage / d3.sum(D, d => d.percentage);
               }, d => d.subq))
               .range([marginTop, height - marginBottom])

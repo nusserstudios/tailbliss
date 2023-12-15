@@ -105,18 +105,6 @@ params:
     button: "Notify me"
 
   social_media:
-    github:
-      enabled: true
-      url: 'https://github.com/nusserstudios'
-    facebook:
-      enabled: true
-      url: 'https://facebook.com/nusserstudios'
-    instagram:
-      enabled: true
-      url: 'https://instagram.com/nusserstudios'
-    twitter:
-      enabled: true
-      url: '@nusserstudios'
     
 
 menu:
@@ -154,26 +142,18 @@ menu:
       url: "#"
       weight: 30
   footer:
-    - identifier: about
-      name: About
-      url: /about/
+    - identifier: scalalang
+      name: Scala Language
+      url: https://www.scala-lang.org/
       weight: 10
-    - identifier: blog
-      name: Blog
-      url: /categories/blog/
+    - identifier: virtuslab
+      name: VirtusLab
+      url: https://virtuslab.com/
       weight: 20
-    - identifier: news
-      name: News
-      url: /categories/news/
+    - identifier: scalacenter
+      name: ScalaCenter
+      url: https://scala.epfl.ch/
       weight: 30
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 40
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 50
 
 markup:
   goldmark:
