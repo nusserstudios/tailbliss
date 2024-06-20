@@ -48,10 +48,9 @@
                                 {{ .Params.author }}
                             </p>
                             <div class="flex space-x-1 text-sm text-gray-500 dark:text-white">
-                                <time datetime="{{.Date.Format 2020-02-12}}">{{.Date.Format "2006-01-02"}}</time>
+                                <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006-01-02" }}</time>
                                 <span aria-hidden="true">&middot;</span>
-                                <span>{{ math.Round (div (countwords .Content) 220.0) }}
-                                    min read</span>
+                                <span>{{ math.Round (div (countwords .Content) 220.0) }} min read</span>
                             </div>
                         </div>
                     </div>
