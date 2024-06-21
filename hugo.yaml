@@ -107,7 +107,7 @@ params:
       url: 'https://instagram.com/nusserstudios'
     twitter:
       enabled: true
-      url: '@nusserstudios'
+      url: 'https://twitter.com/nusserstudios'
     
 
 menu:
