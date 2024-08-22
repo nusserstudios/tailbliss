@@ -1,7 +1,7 @@
-baseURL: ''
-title: TailBliss
-languageCode: en-us
-DefaultContentLanguage: en
+baseURL: 'https://algoritmiaUS.github.io'
+title: Club Algoritmia US
+languageCode: es-es
+DefaultContentLanguage: es
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
