@@ -1,4 +1,4 @@
-baseURL: 'https://algoritmiaus.github.io/caus-web/'
+# baseURL: ''
 title: Club Algoritmia US
 languageCode: es-es
 DefaultContentLanguage: es
