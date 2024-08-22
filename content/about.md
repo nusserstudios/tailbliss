@@ -1,242 +1,57 @@
 ---
-title: "About"
-date: 2021-12-18T11:10:36+08:00
+title: "Sobre nosotros"
+date: 2024-08-22T11:18:36+08:00
+
 draft: false
-language: en
+language: es
 description: About Us
-featured_image: ../assets/images/featured/featured-img-placeholder.png
+# featured_image: ../assets/images/featured/featured-img-placeholder.png
+categories: About
+tags: About
 ---
 
-# h1 Heading :blush:
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+Bienvenidos al **Club de Algoritmia**, un equipo fundado por estudiantes de la Universidad de Sevilla con el objetivo de aprender y perfeccionar habilidades en programación a través de la colaboración y la competencia.
+
+Originalmente creado para los estudiantes de la Escuela Técnica Superior de Ingeniería Informática y la Facultad de Matemáticas, nuestro club se ha expandido para incluir miembros de diversas facultades y escuelas, así como entusiastas de la programación provenientes incluso del bachillerato. Esta diversidad enriquece nuestras sesiones y competencias, creando un entorno dinámico y estimulante.
 
 
-## Horizontal Rules
+En el Club de Algoritmia, creemos firmemente en el valor de enfrentar desafíos algorítmicos y problemas de programación. Este tipo de habilidades no solo son cruciales para las competiciones técnicas, sino que también son altamente valoradas en las pruebas técnicas de muchas empresas. Nuestro objetivo es ofrecer una plataforma donde los miembros puedan mejorar sus capacidades, compartir conocimientos y prepararse para el futuro profesional en un ambiente colaborativo y enriquecedor.
 
-***
+Únete a nosotros y forma parte de una comunidad apasionada por la programación, donde cada desafío es una oportunidad para aprender y crecer juntos.
 
 ---
 
-___
+# Académico
 
+## Charlas de Estudiantes y de la Industria
 
-## Typographic replacements
+Organizamos sesiones cada viernes sobre temas relacionados con la programación competitiva. Este año, además, introducimos una nueva serie de charlas con ponentes de la academia, la industria y exalumnos, quienes abordarán una amplia gama de temas. Si estás interesado en participar, estaremos encantados de contar contigo.
 
-Enable typographer option to see result.
 
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+<!-- TODO: NO SE SI AL FINAL SE VAN A HACER CURSOS, Descomentar y modificar eto -->
+<!-- ## Cursos y Talleres
+-->
 
-test.. test... test..... test?..... test!....
 
-!!!!!! ???? ,,  -- ---
+## Competencias de Programación
 
-"Smartypants, double quotes" and 'single quotes'
+Participamos en eventos anuales como Advent of Code y el Concurso Universitario de Programación Ada Byron. Además, organizamos nuestros propios desafíos de programación en la universidad aproximadamente cada seis meses, para mantenernos en constante práctica y aprendizaje.
 
+<!-- Deberíamos añadir algo sobre acepta el reto y demás plataformas increíbles -->
+<!-- Las preguntas anteriores se pueden encontrar en nuestro portal de progcomp o en nuestro archivo -->
+---
 
-## Emphasis
+# Social
 
-**This is bold text**
+## Comida Trimestral en un Lugar Exótico
+Cada trimestre, organizamos una comida especial en un lugar más exótico para celebrar nuestros logros y disfrutar de una experiencia culinaria diferente. Esta es una excelente oportunidad para explorar nuevos restaurantes y compartir una comida memorable con el grupo.
 
-__This is bold text__
+## Rocódromo
 
-*This is italic text*
+También nos gusta mantenernos activos, así que organizamos salidas al rocódromo después de las sesiones de los viernes para escalar y disfrutar de un buen rato en equipo. Es una excelente oportunidad para desafiarse a uno mismo y fortalecer el espíritu de grupo!
 
-_This is italic text_
 
-~~Strikethrough~~
+<!-- # Patrocinadores
 
 
-## Blockquotes
-
-
-> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-> > > ...or with spaces between arrows.
-
-
-## Lists
-
-Unordered
-
-+ Create a list by starting a line with `+`, `-`, or `*`
-+ Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-+ Very easy!
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
-
-Start numbering with offset:
-
-57. foo
-1. bar
-
-
-## Code
-
-Inline `code`
-
-Indented code
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-
-Block code "fences"
-
-```
-Sample text here...
-```
-
-Syntax highlighting
-
-``` js
-var foo = function (bar) {
-  return bar++;
-};
-
-console.log(foo(5));
-```
-
-## Tables
-
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-Right aligned columns
-
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-
-## Links
-
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
-
-## Images
-
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-
-Like links, Images also have a footnote style syntax
-
-![Alt text][id]
-
-With a reference later in the document defining the URL location:
-
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-
-
-## Plugins
-
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
-
-
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
-
-> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
->
-> Shortcuts (emoticons): :-) :-( 8-) ;)
-
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
-
-
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
-
-- 19^th^
-- H~2~O
-
-
-### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
-
-++Inserted text++
-
-
-### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
-
-==Marked text==
-
-
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
-
-Footnote 1 link[^first].
-
-Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
-
-Duplicated footnote reference[^second].
-
-[^first]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^second]: Footnote text.
-
-
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
-
-Term 1
-
-:   Definition 1
-with lazy continuation.
-
-Term 2 with *inline markup*
-
-:   Definition 2
-
-        { some code, part of Definition 2 }
-
-    Third paragraph of definition 2.
-
-_Compact style:_
-
-Term 1
-  ~ Definition 1
-
-Term 2
-  ~ Definition 2a
-  ~ Definition 2b
-
-
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
-
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-*[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-::: warning
-*here be dragons*
-:::
+We'd like to thank our sponsors for the current academic year. -->
