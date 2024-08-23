@@ -49,7 +49,8 @@ $ sudo hugo --gc --minify
 ```
 
 
-## Credits
-nusserstudios - TailBliss theme
-https://github.com/nusserstudios/tailbliss
+## Agradecimientos
+
+- [nusserstudios - TailBliss theme](https://github.com/nusserstudios/tailbliss)
+- [University of Warwick Computing Society](https://uwcs.co.uk/)
 

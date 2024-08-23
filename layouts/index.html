@@ -15,7 +15,7 @@
                     </p>
                 </div>
                 <div class="col-span-6">
-                    {{ $hero := resources.GetMatch "images/pages/tailbliss-rocket-indigo.png" }}
+                    {{ $hero := resources.GetMatch "images/pages/logo_CAUS.png" }}
 
                     {{ $thumb := ($hero.Fill "400x400 webp q90") }}
                     {{ $large := ($hero.Fill "576x576 webp q90") }}
@@ -155,7 +155,7 @@
         </div>
     </div>
 
-    <!-- Blog section -->
+    <!-- Events section -->
     <div class="relative px-1 pt-8 pb-4 bg-transparent lg:px-8 lg:pt-12 lg:mb-4 md:mt-12">
         <div class="absolute inset-0">
             <div class="bg-gray-200 dark:bg-gray-900/50 h-1/3 sm:h-2/3"></div>
@@ -175,7 +175,7 @@
             <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50 md:px-1.5">
                 <div class="px-4 text-gray-900 dark:text-white not-prose dark:text-zinc-200">
                     <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
-                        {{ range (.Paginator 3).Pages }}
+                        {{ range (first 3 (where .Site.RegularPages "Section" "news")).ByDate }}
                         
                         <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
                             <a href="{{.Permalink}}">

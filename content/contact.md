@@ -4,8 +4,6 @@ date: 2024-08-22T11:18:36+08:00
 draft: false
 language: es
 description: A test with @tailwindcss/typography & Prose
-categories: Contact
-tags: Contact
 ---
 
 <!-- @format -->
