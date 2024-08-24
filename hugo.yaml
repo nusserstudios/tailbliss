@@ -1,4 +1,4 @@
-baseURL: 'https://algoritmiaus.github.io/'
+# baseURL: 'https://algoritmiaus.github.io/'
 title: CAUS
 languageCode: es-es
 DefaultContentLanguage: es
