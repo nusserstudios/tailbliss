@@ -1,4 +1,4 @@
-# baseURL: 'https://algoritmiaus.github.io/'
+baseURL: 'https://clubalgoritmiaus.es'
 title: CAUS
 languageCode: es-es
 DefaultContentLanguage: es
@@ -152,6 +152,10 @@ menu:
       name: Nuestro Github
       url: https://github.com/algoritmiaUS
       weight: 20
+    # - identifier: discord
+    #   name: Nuestro Discord
+    #   url: https://discord.gg/gEbbJrzEYZ
+    #   weight: 20
     
   # dropdown:
   #   - identifier: appearance
