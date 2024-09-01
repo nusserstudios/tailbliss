@@ -46,7 +46,7 @@ markup:
       xhtml: false
 
 params:
-  author: Nusser Studios
+  author: Club Algoritmia
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
   moto: "Club de Algoritmia de la Universidad de Sevilla (CAUS)"
