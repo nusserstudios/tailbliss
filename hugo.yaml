@@ -65,7 +65,7 @@ params:
 
   p2:
     heading: "Desafíos, Comunidad y Diversión en CAUS"
-    image: "images/pages/hacktoberfest.jpg"
+    image: "images/pages/comida_OIE.jpg"
     content:
       - text: "En el Club de Algoritmia de la Universidad de Sevilla (CAUS), no todo es programación competitiva. Además de nuestras charlas y competiciones, organizamos actividades sociales como salidas al rocódromo y comidas trimestrales. Creemos que el equilibrio entre el aprendizaje técnico y la diversión es clave para el crecimiento personal y profesional. ¡Únete a nosotros y disfruta de un ambiente donde el código y la comunidad van de la mano!"
   p3:
@@ -109,13 +109,13 @@ params:
 
 menu:
   main:
+    - identifier: init
+      name: Inicio
+      url: /
+      weight: 10
     - identifier: about
       name: Sobre nosotros
       url: /about/
-      weight: 10
-    - identifier: events
-      name: Eventos
-      url: /events/
       weight: 20
     - identifier: news
       name: Noticias
@@ -152,10 +152,10 @@ menu:
       name: Nuestro Github
       url: https://github.com/algoritmiaUS
       weight: 20
-    # - identifier: discord
-    #   name: Nuestro Discord
-    #   url: https://discord.gg/gEbbJrzEYZ
-    #   weight: 20
+    - identifier: discord
+      name: Nuestro Discord
+      url: https://discord.gg/gEbbJrzEYZ
+      weight: 30
     
   # dropdown:
   #   - identifier: appearance
@@ -181,26 +181,22 @@ menu:
       name: Sobre nosotros
       url: /about/
       weight: 10
-    - identifier: events
-      name: Eventos
-      url: /events/
-      weight: 20
     - identifier: news
       name: Noticias
       url: /news/
-      weight: 30
+      weight: 20
     - identifier: resources
       name: Recursos
       url: /resources/
-      weight: 40
+      weight: 30
     - identifier: community-partners
       name: Patrocinadores
       url: /community-partners/
-      weight: 50
+      weight: 40
     - identifier: contact
       name: Contacto
       url: /contact/
-      weight: 60
+      weight: 50
 
     # - identifier: blog
     #   name: Blog

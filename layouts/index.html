@@ -22,7 +22,8 @@
 
                     <img srcset="
                         {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
-                        {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}" width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" />
+                        {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}" width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" 
+                        />
                 </div>
             </div>
         </div>
@@ -175,7 +176,7 @@
             <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50 md:px-1.5">
                 <div class="px-4 text-gray-900 dark:text-white not-prose dark:text-zinc-200">
                     <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
-                        {{ range (first 3 (where .Site.RegularPages "Section" "news")).ByDate }}
+                        {{ range (first 3 (where .Site.RegularPages "Section" "news")).ByDate.Reverse }}
                         
                         <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
                             <a href="{{.Permalink}}">
