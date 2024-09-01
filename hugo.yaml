@@ -47,8 +47,8 @@ markup:
 
 params:
   author: Club Algoritmia
-  authorimage: ../assets/images/global/author.webp
-  og_image: /images/tailbliss-cover.png
+  authorimage: ../assets/images/global/author-CAUS.webp  # caus-web/assets/images/global/author-CAUS.webp
+  og_image: /images/logo-CAUS.png # caus-web/static/images/logo-CAUS.png
   moto: "Club de Algoritmia de la Universidad de Sevilla (CAUS)"
   description: "Grupo fundado por estudiantes de la US para aprender y mejorar habilidades en programación mediante la colaboración y la competencia."
   disable_theme_toggle: false

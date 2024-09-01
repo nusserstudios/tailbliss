@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Script para generar los iconos a partir de nuestro .svg
-# Es importante tener instalado la herramienta Inkscape
+# Es importante tener instalado la herramienta Inkscape y ImageMagick
 # Instalar en Ubuntu: sudo apt-get install inkscape
+#                     sudo apt install imagemagick
 
-
-# Determina el directorio donde se encuentra el script
+# Define el directorio donde se encuentra el script
 script_dir="$(dirname "$(realpath "$0")")"
 
 # Define el archivo SVG original con una ruta relativa
@@ -17,21 +17,35 @@ if [ ! -f "$input_file" ]; then
   exit 1
 fi
 
-# Define el directorio de salida relativo
-output_dir="$script_dir"
+# Define las resoluciones deseadas
+declare -a res=(16 32)
 
-# Convierte a PNG con diferentes resoluciones
-inkscape "$input_file" --export-filename="$output_dir/android-chrome-192x192.png" --export-width=192 --export-height=192
-inkscape "$input_file" --export-filename="$output_dir/android-chrome-256x256.png" --export-width=256 --export-height=256
-inkscape "$input_file" --export-filename="$output_dir/favicon-32x32.png" --export-width=32 --export-height=32
-inkscape "$input_file" --export-filename="$output_dir/favicon-16x16.png" --export-width=16 --export-height=16
-inkscape "$input_file" --export-filename="$output_dir/mstile-150x150.png" --export-width=150 --export-height=150
+# Genera imágenes PNG en las resoluciones especificadas
+for r in "${res[@]}"; do
+  inkscape "$input_file" --export-type=png --export-filename="$script_dir/favicon-${r}x${r}.png" --export-width=$r --export-height=$r --export-area-drawing
+done
 
-# Convierte a ICO (usando ImageMagick para la conversión a ICO)
-inkscape "$input_file" --export-filename="$output_dir/favicon.png" --export-width=256 --export-height=256
-convert "$output_dir/favicon.png" -define icon:auto-resize=64,48,32,16 "$output_dir/favicon.ico"
+# Genera imágenes PNG para otros tamaños específicos
+inkscape "$input_file" --export-type=png --export-filename="$script_dir/android-chrome-192x192.png" --export-width=192 --export-height=192 --export-area-drawing
+inkscape "$input_file" --export-type=png --export-filename="$script_dir/mstile-150x150.png" --export-width=150 --export-height=150 --export-area-drawing
+inkscape "$input_file" --export-type=png --export-filename="$script_dir/android-chrome-256x256.png" --export-width=256 --export-height=256 --export-area-drawing
+inkscape "$input_file" --export-type=png --export-filename="$script_dir/apple-touch-icon.png" --export-width=180 --export-height=180 --export-area-drawing
 
-# Convierte a SVG para Safari Pinned Tab
-inkscape "$input_file" --export-filename="$output_dir/safari-pinned-tab.svg" --export-width=256 --export-height=256
+inkscape "$input_file" --export-type=png --export-filename="$script_dir/favicon.png" --export-width=64 --export-height=64 --export-area-drawing
 
+
+# Genera un favicon de tamaño 50x50 píxeles
+inkscape "$input_file" --export-type=png --export-filename="$script_dir/favicon-50x50.png" --export-width=50 --export-height=50 --export-area-drawing
+
+# Combina el PNG de 50x50 en un archivo ICO usando ImageMagick
+convert "$script_dir/favicon-50x50.png" "$script_dir/favicon.ico"
+
+# Elimina el archivo PNG de 50x50
+rm -f "$script_dir/favicon-50x50.png"
+
+# Copia el archivo SVG para Safari Pinned Tab
+cp -f "$input_file" "$script_dir/safari-pinned-tab.svg"
+
+# Mensaje de finalización
 echo "Conversión completada."
+
