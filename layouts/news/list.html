@@ -1,0 +1,41 @@
+{{ define "main" }}
+<main>
+    <article>
+        <header class="mb-4 bg-primary-600">
+            <span class="py-96">
+                <h1 class="py-16 text-5xl font-black text-center text-white capitalize">
+                    Noticias
+                </h1>
+            </span>
+        </header>
+        <section class="calendar-iframe my-8">
+            <h2 class="text-center text-3xl font-semibold text-gray-800 dark:text-white">Próximas Novedades</h2>
+
+            <p class="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">
+                <br><br>
+                Consulta los próximos eventos en el calendario: 
+              </p>
+            <div class="flex justify-center mt-4">
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FMadrid&bgcolor=%23ffffff&title=Club%20de%20Algoritmia%20de%20la%20Universidad%20de%20Sevilla&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=Y2x1YmFsZ29yaXRtaWF1c0BnbWFpbC5jb20&color=%238E24AA" 
+                style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </section>
+        
+        <section class="calendar-iframe my-8">
+            <br><br>
+            <h2 class="text-center text-3xl font-semibold text-gray-800 dark:text-white">Noticias Archivadas</h2>
+
+        </section>
+
+        {{ with .Content }}
+        <div class="max-w-2xl px-6 mx-auto mt-6 prose dark:prose-invert dark:text-white">
+            {{- . -}}
+        </div>
+        {{ end }}
+        {{ partial "posts-template.html" . }}
+    </article>
+    <div class="max-w-xl mx-auto my-16">
+        {{ partial "pagination" . }}
+    </div>
+</main>
+{{ end }}
