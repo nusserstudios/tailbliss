@@ -4,8 +4,8 @@ date: 2024-05-29T11:10:00+00:00
 draft: false
 language: es
 featured_image: ../assets/images/featured/AdaByron-Regional-I.jpg
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero.
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero. Vestibulum vel convallis felis. Ut finibus lorem vestibulum lobortis rhoncus.
+summary: La primera edición regional del concurso Ada Byron en Andalucía reunió a 33 equipos de diversas universidades andaluzas en un evento de programación para impulsar la participación en el ICPC. El certamen se desarrolló simultáneamente en varias sedes universitarias, con una competencia intensa que duró 4 horas. Dos equipos del CAUS se clasificaron para la final en Madrid.
+description: La I Edición Regional de Andalucía del concurso Ada Byron se celebró con la participación de 33 equipos de universidades andaluzas en un emocionante certamen de programación. Durante 4 horas, los estudiantes enfrentaron 11 problemas complejos, destacando los equipos BoquerO(n³), LosdelDobleBueno y TuringIncomplete en sus respectivas categorías. Además, dos equipos del Club de Algoritmia se clasificaron para la gran final en Madrid. La competición fue posible gracias a la colaboración de las sedes universitarias y la dedicación de los jueces del CAUS.
 author: Administradores CAUS
 authorimage: ../assets/images/global/author-CAUS.webp
 categories: Eventos
