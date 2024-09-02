@@ -65,7 +65,7 @@ params:
 
   p2:
     heading: "Desafíos, Comunidad y Diversión en CAUS"
-    image: "images/pages/comida_OIE.jpg"
+    image: "images/pages/comida_OIE.webp"
     content:
       - text: "En el Club de Algoritmia de la Universidad de Sevilla (CAUS), no todo es programación competitiva. Además de nuestras charlas y competiciones, organizamos actividades sociales como salidas al rocódromo y comidas trimestrales. Creemos que el equilibrio entre el aprendizaje técnico y la diversión es clave para el crecimiento personal y profesional. ¡Únete a nosotros y disfruta de un ambiente donde el código y la comunidad van de la mano!"
   p3:
