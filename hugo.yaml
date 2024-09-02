@@ -217,4 +217,4 @@ privacy:
 module:
   hugoVersion:
     extended: true
-    min: "0.104.0"
+    min: "0.114.0"
