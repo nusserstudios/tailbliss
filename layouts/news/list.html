@@ -1,5 +1,20 @@
 {{ define "main" }}
 <main>
+    <style>
+        /* Estilo general del iframe */
+        .styled-calendar-container {
+            width: 50%;
+            border: none;
+        }
+    
+        /* Media query para pantallas pequeñas (móviles) */
+        @media (max-width: 768px) {
+            .styled-calendar-container {
+                width: 100%; /* Ancho del 100% en móviles */
+                min-width: 300px; /* Ajusta el mínimo según sea necesario */
+            }
+        }
+    </style>
     <article>
         <header class="mb-4 bg-primary-600">
             <span class="py-96">
@@ -16,8 +31,14 @@
                 Consulta los próximos eventos en el calendario: 
               </p>
             <div class="flex justify-center mt-4">
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FMadrid&bgcolor=%23ffffff&title=Club%20de%20Algoritmia%20de%20la%20Universidad%20de%20Sevilla&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=Y2x1YmFsZ29yaXRtaWF1c0BnbWFpbC5jb20&color=%238E24AA" 
-                style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                <iframe 
+                        src="https://embed.styledcalendar.com/#fWYVcvwalx9ov1ub9JO4" 
+                        title="Styled Calendar" 
+                        class="styled-calendar-container" 
+                        style="width: 50%; border: none;" 
+                        data-cy="calendar-embed-iframe">
+                </iframe>                
+            <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
             </div>
         </section>
         
