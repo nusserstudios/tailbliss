@@ -18,7 +18,8 @@
     }
 </script>
 {{ $styles := resources.Get "/css/style.css" | postCSS }}
-{{ if hugo.IsServer }}
+
+{{ if hugo.IsProduction }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ else }}
 {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
