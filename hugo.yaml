@@ -1,5 +1,5 @@
-baseURL: ''
-title: TailBliss
+baseURL: 'https://pgraverdy.github.io/maestro-website/'
+title: Maestro
 languageCode: en-us
 DefaultContentLanguage: en
 enableEmoji: true
