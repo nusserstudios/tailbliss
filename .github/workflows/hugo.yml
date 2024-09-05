@@ -65,7 +65,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "https://pgraverdy.github.io/"
+            --baseURL "https://pgraverdy.github.io/maestro-website/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -75,7 +75,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: "https://pgraverdy.github.io/maestro-website/""
     runs-on: ubuntu-latest
     needs: build
     steps:
