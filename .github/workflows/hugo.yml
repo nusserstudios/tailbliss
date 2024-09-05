@@ -65,7 +65,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "https://pgraverdy.github.io/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -86,7 +86,7 @@ jobs:
       - name: Dump step context
         env:
           STEP_CONTEXT: ${{ toJson(steps) }}
-        run: echo "$STEP_CONTEXT"
+        run: echo "$STEP_CONTEXT $url $name"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
