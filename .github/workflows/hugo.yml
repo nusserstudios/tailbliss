@@ -49,7 +49,7 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true" 
       - name: Install global Node.js dependencies
-        run: sudo npm install -g postcss-cli && sudo npm install -g npx --force
+        run: sudo npm install -g postcss-cli && sudo npm install -g npx --force && npm install tailwindcss@latest
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
