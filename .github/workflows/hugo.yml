@@ -75,7 +75,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://pgraverdy.github.io/maestro-website/
+      url: https://pgraverdy.github.io/maestro-website/toto/
     runs-on: ubuntu-latest
     needs: build
     steps:
