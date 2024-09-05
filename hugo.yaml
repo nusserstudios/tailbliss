@@ -1,4 +1,4 @@
-baseURL: 'https://pgraverdy.github.io/'
+baseURL: '/maestro-website/'
 title: Maestro
 languageCode: en-us
 DefaultContentLanguage: en
