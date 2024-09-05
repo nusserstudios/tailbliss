@@ -33,6 +33,8 @@ jobs:
     env:
       HUGO_VERSION: 0.128.0
     steps:
+      - name: Display info 1
+        run: echo "${{ steps.pages.outputs.base_url }}"
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
@@ -71,6 +73,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Display info 2
+        run: echo "$url ${{ teps.deployment.outputs.page_url }}"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
