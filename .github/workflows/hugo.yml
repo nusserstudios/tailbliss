@@ -64,7 +64,6 @@ jobs:
           HUGO_ENVIRONMENT: production
         run: |
           hugo \
-            --minify \
             --baseURL "https://pgraverdy.github.io/maestro-website/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
