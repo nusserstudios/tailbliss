@@ -31,7 +31,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.114.0
+#      HUGO_VERSION: 0.114.0
+      HUGO_VERSION: 0.134.1
     steps:
       - name: Dump GitHub context
         env:
