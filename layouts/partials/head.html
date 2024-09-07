@@ -19,6 +19,12 @@
 </script>
 {{ $styles := resources.Get "/css/style.css" | postCSS }}
 
+{{ with resources.Get "/css/style.css" | postCSS }}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }}
+
+
+
 {{ if hugo.IsProduction }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ else }}
