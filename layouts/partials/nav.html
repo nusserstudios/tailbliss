@@ -2,8 +2,8 @@
     <div x-data="{ open: false }"
          class="flex flex-col max-w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="flex flex-row items-center justify-between p-4">
-            <a href="/" class="flex text-gray-100 transition duration-1000 ease-in-out group">
-                <img src="/images/site-logo.svg"
+            <a href="{{ .Site.BaseURL }}" class="flex text-gray-100 transition duration-1000 ease-in-out group">
+                <img src="{{ .Site.BaseURL }}/images/site-logo.svg"
                      class="transition-opacity h-9 w-9 group-hover:opacity-50 group-focus:opacity-70"
                      alt="{{ .Site.Title }} Logo" />
                 <div
