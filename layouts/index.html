@@ -5,7 +5,7 @@
             <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
                 <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">
                     <h1 class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
-                        {{ .Site.Title }}
+                        {{ .Site.Params.Title_Short }}
                     </h1>
                     <h2 class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
                         {{ .Site.Params.Moto }}
@@ -22,7 +22,7 @@
 
                     <img srcset="
                         {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
-                        {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}" width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" 
+                        {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}" width="100%" height="" class="w-full max-w-xl mx-auto rounded-lg" 
                         />
                 </div>
             </div>
