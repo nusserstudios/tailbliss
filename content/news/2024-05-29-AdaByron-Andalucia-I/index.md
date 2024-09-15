@@ -4,7 +4,7 @@ date: 2024-05-29T11:10:00+00:00
 draft: false
 language: es
 featured_image: ../assets/images/featured/AdaByron-Regional-I.jpg
-summary: La primera edición regional del concurso Ada Byron en Andalucía reunió a 33 equipos de diversas universidades andaluzas en un evento de programación para impulsar la participación en el ICPC. El certamen se desarrolló simultáneamente en varias sedes universitarias, con una competencia intensa que duró 4 horas. Dos equipos del CAUS se clasificaron para la final en Madrid.
+summary: La primera edición regional del concurso Ada Byron en Andalucía reunió a 33 equipos de diversas universidades andaluzas en un evento de programación para impulsar la participación en el ICPC. El certamen se desarrolló simultáneamente en varias sedes universitarias, con una competición intensa que duró 4 horas. Dos equipos del CAUS se clasificaron para la final en Madrid.
 description: La I Edición Regional de Andalucía del concurso Ada Byron se celebró con la participación de 33 equipos de universidades andaluzas en un emocionante certamen de programación. Durante 4 horas, los estudiantes enfrentaron 11 problemas complejos, destacando los equipos BoquerO(n³), LosdelDobleBueno y TuringIncomplete en sus respectivas categorías. Además, dos equipos del Club de Algoritmia se clasificaron para la gran final en Madrid. La competición fue posible gracias a la colaboración de las sedes universitarias y la dedicación de los jueces del CAUS.
 author: Administradores CAUS
 authorimage: ../assets/images/global/author-CAUS.webp
@@ -34,9 +34,9 @@ En total, **33 equipos** de las universidades andaluzas participaron en esta edi
 - Universidad de Sevilla: 7 equipos
 - Universidad Nacional de Educación a Distancia (UNED): 1 equipo
 
-## Competencia y Resultados
+## Competición y resultados
 
-Durante las 4 horas de competición, los equipos se enfrentaron a la resolución de 11 desafiantes problemas, lo que generó una competencia sumamente reñida. A pesar de la alta exigencia, los equipos **BoquerO(n<sup>3</sup>)** (modalidad C), **LosdelDobleBueno** (modalidad B) y **TuringIncomplete** (modalidad A) se alzaron como ganadores en sus respectivas categorías. ¡Enhorabuena a ellos y a todos los participantes por su esfuerzo y dedicación!
+Durante las 4 horas de competición, los equipos se enfrentaron a la resolución de 11 desafiantes problemas, en una competición sumamente reñida. A pesar de la alta exigencia, los equipos **BoquerO(n<sup>3</sup>)** (modalidad C), **LosdelDobleBueno** (modalidad B) y **TuringIncomplete** (modalidad A) se alzaron como ganadores en sus respectivas categorías ¡Enhorabuena a ellos y a todos los participantes por su esfuerzo y dedicación!
 
 Además de los ganadores, dos equipos pertenecientes al **Club de Algoritmia** lograron clasificarse para la gran final del **Ada Byron**, que se celebrará en Madrid. Estos equipos fueron:
 
@@ -52,7 +52,7 @@ Este equipo obtuvo el **tercer lugar** en la clasificación global del regional.
 
 Este equipo consiguió el **sexto lugar** en la clasificación global del regional. ¡Felicidades!
 
-- **Carlos Fernández - Llebrez Acedo**
+- **Carlos Fernández-Llebrez Acedo**
 - **Pablo Moreno Moreu**
 - **Arnau Neches Vilà**
 
@@ -60,10 +60,10 @@ Todos ellos estudiantes del doble Grado en Ingeniería Informática – Tecnolog
 
 ### Otros equipos pertenecientes al CAUS
 
-Queremos agradecer también a los equipos **Los Rebujitos 33**, **The Gaussians**, **Por la cara** y **Virtem** por participar en este certamen. Aunque no lograron clasificar a la fase nacional, se divirtieron mucho y ¡aprendieron una infinidad de cosas!
+Queremos agradecer también a los equipos **Los Rebujitos 33**, **The Gaussians**, **Por la cara** y **Virtem** por participar en este certamen. No nos cabe duda de que se divirtieron aprendieron mucho.
 	
 
-## Jueces y Agradecimientos
+## Jueces y agradecimientos
 
 Los encargados de resolver dudas y verificar los resultados proporcionados por el juez automático fueron miembros del **Club de Algoritmia**. Agradecemos profundamente su dedicación y trabajo durante la competición. Ellos son:
 
@@ -71,10 +71,10 @@ Los encargados de resolver dudas y verificar los resultados proporcionados por e
 - **Pablo Reina Jiménez**
 - **Kenny Jesús Flores Huamán**
 
-Las soluciones a los problemas de la competencia están disponibles en nuestro [repositorio de GitHub](https://github.com/algoritmiaUS/ada-byron). Además, puedes consultar una [guía detallada para resolver los problemas planteados](Soluciones-Regional-Andalucía.pdf).
+Las soluciones a los problemas de la competición están disponibles en nuestro [repositorio de GitHub](https://github.com/algoritmiaUS/ada-byron). Además, puedes consultar una [guía detallada para resolver los problemas planteados](Soluciones-Regional-Andalucía.pdf).
 
 
-Finalmente, desde el **CAUS** (Consejo de Alumnos de la Universidad de Sevilla), queremos expresar nuestro agradecimiento a la **Escuela Técnica Superior de Ingeniería Informática de Sevilla** por cedernos la sede para los equipos de esta ciudad, así como a los organizadores de **Ada Byron Madrid** y **Galicia** por hacer posible esta primera edición andaluza.
+Finalmente, desde el **CAUS**, queremos expresar nuestro agradecimiento a la **Escuela Técnica Superior de Ingeniería Informática de Sevilla** por hacer de sede para la fase regional, así como a los organizadores de **Ada Byron Madrid** y **Galicia** por hacer posible esta primera edición andaluza.
 
 
 <!-- 
@@ -86,11 +86,9 @@ Aunque diferentes provincias de Andalucía ya han participado previamente en en 
 
 Ada Byron es un concurso de programación que nace en la Comunidad de Madrid, con el objetivo de incentivar la participación de los estudiantes de informática al concurso internacional de programación ICPC y que a lo largo de estos años, se ha ido abriendo a otras universidades españolas pertenecientes a diferentes comunidades autónomas. En esta regional se tenían que resolver 11 problemas durante 4 horas.
 
-
 En esta primera edición han participado 33 equipos de las Universidades andaluzas de Almería (3 equipos), Cádiz (2), Granada (7), Málaga (13) y Sevilla (7) y un equipo de la Universidad de Educación a Distancia (UNED).
 
 Hubo mucha competencia durante esas 4 horas sin embargo, se pudieron clasificar dos equipos a la gran final que será en Madrid, esos equipos pertenecientes al club de algoritmia son:
-
 
 Equipo lemaTécnico formado por:	
 Carlos Fernández - Llebrez Acedo
@@ -101,7 +99,6 @@ Los 3 pertenecientes al grado del doble Grado Ingeniería Informática – Tecno
 
 La Cabeza de Turing, está formado por los estudiantes Julio Ojeda Infantes, del Grado de Matemáticas, Pablo Puerto Muñoz, del Grado de Matemáticas y Álvaro Luque Buzón, del Grado de Ingeniería Informática – Ingeniería del Software.
 
-
 Los jueces que han estado resolviendo dudas, revisando si el veredicto dado por el juez automático están correctas fueron miembros del club de algoritmia, los cuales fueron:
 
 - Pablo Dávila Herrero
@@ -109,6 +106,4 @@ Los jueces que han estado resolviendo dudas, revisando si el veredicto dado por 
 - Kenny Jesús Flores Huamán
 
 Desde el CAUS queremos agradecer a la Escuela Técnica Superior de Ingeniería Informática por darnos la sede para los equipos de Sevilla y a los organizadores de Ada Byron Madrid y Galicia por hacer posible esta primera edición.
-
-
  -->

@@ -22,16 +22,13 @@ Entre los participantes, hubo representación de estudiantes de distintos cursos
 ![CompliCAUS-1](CompliCAUS-I-1.jpg)
 
 
-La competición se mantuvo reñida desde el comienzo, con una fuerte competencia durante la primera hora en la que los primeros puestos cambiaban constantemente. Sin embargo, al finalizar el evento, los tres primeros lugares quedaron definidos:
+La competición se mantuvo reñida desde el comienzo, con una primera hora durante la que los primeros puestos cambiaban constantemente. Sin embargo, al finalizar el evento, los tres primeros lugares quedaron definidos:
 
 <!-- - **Primer puesto:** Pablo Moreno Moreu
 - **Segundo puesto:** Jaime Argilés Pérez
 - **Tercer puesto:** Nicolás Sibello Litrán -->
 
 # Premios Principales
-
-
-
 
 | Pos. | Participante           | Puntos  | Ver Imagen                                                                 |
 |------|------------------------|---------|----------------------------------------------------------------------------|

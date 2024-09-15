@@ -8,9 +8,9 @@ description: About Us
 # featured_image: ../assets/images/featured/featured-img-placeholder.png
 ---
 
-Bienvenidos al **Club de Algoritmia**, un equipo fundado por estudiantes de la Universidad de Sevilla con el objetivo de aprender y perfeccionar habilidades en programación a través de la colaboración y la competencia.
+Bienvenidos al **Club de Algoritmia**, un grupo fundado por estudiantes de la Universidad de Sevilla con el objetivo de aprender y perfeccionar habilidades en programación a través de la colaboración y la participación en competiciones.
 
-Originalmente creado para los estudiantes de la Escuela Técnica Superior de Ingeniería Informática y la Facultad de Matemáticas, nuestro club se ha expandido para incluir miembros de diversas facultades y escuelas, así como entusiastas de la programación provenientes incluso del bachillerato. Esta diversidad enriquece nuestras sesiones y competencias, creando un entorno dinámico y estimulante.
+Originalmente creado para los estudiantes de la Escuela Técnica Superior de Ingeniería Informática y la Facultad de Matemáticas, nuestro club se ha expandido para incluir miembros de diversas facultades y escuelas, así como entusiastas de la programación provenientes incluso del bachillerato. Esta diversidad enriquece nuestras sesiones y competicioness, creando un entorno dinámico y estimulante.
 
 
 En el Club de Algoritmia, creemos firmemente en el valor de enfrentar desafíos algorítmicos y problemas de programación. Este tipo de habilidades no solo son cruciales para las competiciones técnicas, sino que también son altamente valoradas en las pruebas técnicas de muchas empresas. Nuestro objetivo es ofrecer una plataforma donde los miembros puedan mejorar sus capacidades, compartir conocimientos y prepararse para el futuro profesional en un ambiente colaborativo y enriquecedor.
@@ -31,7 +31,7 @@ Organizamos sesiones cada viernes sobre temas relacionados con la programación 
 -->
 
 
-## Competencias de Programación
+## Competiciones de Programación
 
 Participamos en eventos anuales como Advent of Code y el Concurso Universitario de Programación Ada Byron. Además, organizamos nuestros propios desafíos de programación en la universidad aproximadamente cada seis meses, para mantenernos en constante práctica y aprendizaje.
 

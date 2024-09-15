@@ -7,10 +7,11 @@ description: A test with @tailwindcss/typography & Prose
 ---
 
 <p class="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">
-       Si te interesa mejorar tus habilidades en programación competitiva, aquí te dejamos una lista de recursos donde podrás practicar y participar en competencias. Existen diversas plataformas online con jueces automáticos que te permitirán resolver problemas en diferentes lenguajes, además de competiciones a todos los niveles. ¡Explora estas opciones y comienza a desafiarte!
+  Si te interesa mejorar tus habilidades en programación competitiva, aquí te dejamos una lista de recursos donde podrás practicar y participar en competiciones. Existen diversas plataformas online con jueces automáticos que te permitirán resolver problemas en diferentes lenguajes, además de competiciones a todos los niveles. ¡Explora estas opciones y comienza a desafiarte!
 </p>
 
 ---
+
 
 # ¿Dónde prácticar?
 
@@ -29,6 +30,7 @@ Mini-retos de programación en tiempo real:
 - [CodinGame](https://www.codingame.com/multiplayer/clashofcode) (Recomiendo especialmente el juego "Clash of code")
 
 IDE online ya preparado para la entrada y salida: https://ide.usaco.guide/
+
 
 # Competiciones de programación 
 
@@ -57,6 +59,7 @@ También hay bastantes y a todos los niveles! Además de las competiciones que o
 
 _RIP competiciones de Google en 2023_
 
+
 # Materiales
 
 - 📎 [Enunciados de ediciones anteriores de AdaByron](https://drive.google.com/drive/folders/1xleZ_-1_LyoHV7SDbyXg_fQ2m_BMrO82?usp=sharing)
@@ -68,8 +71,8 @@ _RIP competiciones de Google en 2023_
 
 - 📎 [Competitive Programming Initiative](https://joincpi.org/): son una organización sin ánimo de lucro compuesto finalistas y los mejores competidores de USACO (Olimpiadas de Informáticas de EE.UU.) dedicadas a promover la programación competitiva entre los estudiantes mediante cursos, clases, actividades de divulgación y concursos
 
-# Libros y guías
 
+# Libros y guías
 
 <!-- - [The Algorithm Design Manual](https://www.inf.ufpr.br/andre/textos-CI1355-CI355/TheAlgorithmDesignManual.pdf) -->
 - [Competitive Programmer’s Handbook](https://cses.fi/book/book.pdf)

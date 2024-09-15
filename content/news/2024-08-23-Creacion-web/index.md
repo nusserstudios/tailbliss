@@ -16,19 +16,22 @@ tags: ["Noticias"]
 
 ¡Hola a todos!
 
-Estamos emocionados de presentar nuestra nueva página web del **Club de Algoritmia de la Universidad de Sevilla**. Fundado por estudiantes de la Escuela Técnica Superior de Ingeniería Informática y la Facultad de Matemáticas, nuestro club ha crecido para incluir a miembros de diversas facultades y escuelas, así como a entusiastas de la programación provenientes incluso del bachillerato. Esta diversidad enriquece nuestras sesiones y competencias, creando un entorno dinámico y estimulante.
+Estamos emocionados de presentar nuestra nueva página web del **Club de Algoritmia de la Universidad de Sevilla**. Fundado por estudiantes de la Escuela Técnica Superior de Ingeniería Informática y la Facultad de Matemáticas, nuestro club ha crecido para incluir a miembros de diversas facultades y escuelas, así como a entusiastas de la programación provenientes incluso del bachillerato. Esta diversidad enriquece nuestras sesiones y competiciones, creando un entorno dinámico y estimulante.
+
 
 ### ¿Quiénes Somos?
 
-En el Club de Algoritmia, nuestro objetivo es aprender y perfeccionar habilidades en programación a través de la colaboración y la competencia. Creemos en el valor de enfrentar desafíos algorítmicos, habilidades que son cruciales tanto para las competiciones técnicas como para las pruebas técnicas de muchas empresas.
+En el Club de Algoritmia, nuestro objetivo es aprender y perfeccionar habilidades en programación a través de la colaboración y la participación en competiciones. Creemos en el valor de enfrentar desafíos algorítmicos, habilidades que son cruciales tanto para las competiciones técnicas como para las pruebas técnicas de muchas empresas.
+
 
 ### ¿Qué Ofrecemos?
 
-- **Charlas Académicas y de la Industria:** Cada viernes, organizamos sesiones sobre programación competitiva y, este año, hemos introducido una serie de charlas con ponentes de la academia, la industria y exalumnos.
+- **Charlas académicas y de la industria:** Cada viernes, organizamos sesiones sobre programación competitiva y, este año, hemos introducido una serie de charlas con ponentes de la academia, la industria y exalumnos.
 
-- **Competencias de Programación:** Participamos en eventos anuales como Advent of Code y el Concurso Universitario de Programación Ada Byron, además de organizar desafíos de programación en la universidad cada seis meses.
+- **Competiciones de programación:** Participamos en eventos anuales como Advent of Code y el Concurso Universitario de Programación Ada Byron, además de organizar desafíos de programación en la universidad cada seis meses.
 
-- **Eventos Sociales:** Cada trimestre, organizamos una comida especial en un lugar exótico para celebrar nuestros logros. También disfrutamos de salidas al rocódromo después de las sesiones para escalar y fortalecer el espíritu de grupo.
+- **Eventos sociales:** Cada trimestre, organizamos una comida especial en un lugar exótico para celebrar nuestros logros. También disfrutamos de salidas al rocódromo después de las sesiones para escalar y fortalecer el espíritu de grupo.
+
 
 ### Únete a Nosotros
 

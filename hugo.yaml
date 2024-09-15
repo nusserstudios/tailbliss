@@ -51,7 +51,7 @@ params:
   authorimage: ../assets/images/global/author-CAUS.webp  # caus-web/assets/images/global/author-CAUS.webp
   og_image: /images/logo-CAUS.png # caus-web/static/images/logo-CAUS.png
   moto: "Club de Algoritmia de la Universidad de Sevilla (CAUS)"
-  description: "Grupo fundado por estudiantes de la US para aprender y mejorar habilidades en programación mediante la colaboración y la competencia."
+  description: "Grupo fundado por estudiantes de la US para aprender y mejorar habilidades en programación mediante la colaboración y la participación en competiciones."
   disable_theme_toggle: false
   disable_stay_uptodate: false
 
@@ -59,12 +59,12 @@ params:
     heading: "Nuestra misión"
     image: "images/pages/foto_complicaus.jpg" 
     content:
-      - text: "Nuestro objetivo es crear una comunidad colaborativa e inclusiva donde los miembros puedan aprender, perfeccionar sus habilidades en programación y enfrentar desafíos algorítmicos. A través de la resolución de problemas y competencias, promovemos el crecimiento técnico y profesional, preparando a los estudiantes para los retos académicos, laborales y competiciones, mientras compartimos libremente el conocimiento para que todos, sin importar su nivel, puedan aprender y contribuir"
+      - text: "Nuestro objetivo es crear una comunidad colaborativa e inclusiva donde los miembros puedan aprender, perfeccionar sus habilidades en programación y enfrentar desafíos algorítmicos. A través de la resolución de problemas y competiciones, promovemos el crecimiento técnico y profesional, preparando a los estudiantes para los retos académicos, laborales y competiciones, mientras compartimos libremente el conocimiento para que todos, sin importar su nivel, puedan aprender y contribuir"
       # - text: "Creemos en el valor de enfrentar desafíos que fortalezcan las capacidades lógicas y algorítmicas, competencias clave en las pruebas técnicas de muchas empresas. Fomentamos un ambiente inclusivo en el que el conocimiento se comparte libremente, permitiendo que cada miembro, sin importar su nivel, aprenda y contribuya al grupo."
       # - text: "Nuestro enfoque está en el crecimiento individual y colectivo, con la misión de prepararnos no solo para competiciones de programación, sino también para futuras carreras, creando una comunidad donde cada reto es una oportunidad para aprender juntos."
 
   p2:
-    heading: "Desafíos, Comunidad y Diversión en CAUS"
+    heading: "Desafíos, comunidad y diversión en el CAUS"
     image: "images/pages/comida_OIE.webp"
     content:
       - text: "En el Club de Algoritmia de la Universidad de Sevilla (CAUS), no todo es programación competitiva. Además de nuestras charlas y competiciones, organizamos actividades sociales como salidas al rocódromo y comidas trimestrales. Creemos que el equilibrio entre el aprendizaje técnico y la diversión es clave para el crecimiento personal y profesional. ¡Únete a nosotros y disfruta de un ambiente donde el código y la comunidad van de la mano!"
