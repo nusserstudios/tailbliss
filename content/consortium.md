@@ -9,6 +9,8 @@ featured_image: ../assets/images/featured/featured-img-placeholder.png
 
 # Towards a Consortium for a Robotic Software Stack :blush:
 
+
+
 ## Mission statement and application domains
 
 The goal of the Maestro Consortium is to construct and maintain a robotics software stack focused on motion and manipulation tasks, and keep the ecosystem around it thriving. The consortium’s software stack has both research and industrial significance.
