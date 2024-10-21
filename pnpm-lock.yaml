@@ -12,8 +12,8 @@ importers:
         specifier: ^0.5.15
         version: 0.5.15(tailwindcss@3.4.10)
       alpinejs:
-        specifier: ^3.14.1
-        version: 3.14.1
+        specifier: ^3.14.3
+        version: 3.14.3
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.45)
@@ -89,8 +89,8 @@ packages:
   '@vue/shared@3.1.5':
     resolution: {integrity: sha512-oJ4F3TnvpXaQwZJNF3ZK+kLPHKarDmJjJ6jyzVNDKH9md1dptjC7lWR//jrGuLdek/U6iltWxqAnYOu8gCiOvA==}
 
-  alpinejs@3.14.1:
-    resolution: {integrity: sha512-ICar8UsnRZAYvv/fCNfNeKMXNoXGUfwHrjx7LqXd08zIP95G2d9bAOuaL97re+1mgt/HojqHsfdOLo/A5LuWgQ==}
+  alpinejs@3.14.3:
+    resolution: {integrity: sha512-cL8JBEDAm4UeVjTN5QnFl8QgMGUwxFn1GvQvu3RtfAHUrAPRahGihrsWpKnEK9L0QMqsAPk/R8MylMWKHaK33A==}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -720,7 +720,7 @@ snapshots:
 
   '@vue/shared@3.1.5': {}
 
-  alpinejs@3.14.1:
+  alpinejs@3.14.3:
     dependencies:
       '@vue/reactivity': 3.1.5
 
