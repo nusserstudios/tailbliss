@@ -1,4 +1,4 @@
-baseURL: ''
+baseURL: 'https://tailbliss.nsnode.dev'
 title: TailBliss
 languageCode: en-us
 DefaultContentLanguage: en
