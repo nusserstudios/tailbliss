@@ -1,4 +1,4 @@
-baseURL: ''
+baseURL: 'http://tailbliss.test'
 title: TailBliss
 languageCode: en-us
 DefaultContentLanguage: en
