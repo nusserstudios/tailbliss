@@ -1,8 +1,12 @@
 [phases.setup]
 aptPkgs = ["hugo"]
+nixPkgs = ["nodejs_22"]
+
+[ phases.build ]
+cmds = ["hugo --minify"]
 
 [ environment ]
-HUGO_VERSION = "0.112.3"
+HUGO_VERSION = "0.133.1"
 
 [[ nixpacks.included_files ]]
 paths = ["/public"]
