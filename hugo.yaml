@@ -1,4 +1,4 @@
-baseURL: 'http://tailbliss.test'
+baseURL: ''
 title: TailBliss
 languageCode: en-us
 DefaultContentLanguage: en
@@ -6,7 +6,8 @@ enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
 canonifyURLs: true
-paginate: 9
+pagination:
+  pagerSize: 6
 darkmode_js:
   - assets/js/darkmode.js
 enableInlineShortcodes: true
