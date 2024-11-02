@@ -1,0 +1,8 @@
+[phases.setup]
+aptPkgs = ["hugo"]
+
+[ environment ]
+HUGO_VERSION = "0.112.3"
+
+[[ nixpacks.included_files ]]
+paths = ["/public"]
