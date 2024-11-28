@@ -69,14 +69,6 @@ menu:
       name: Consortium
       url: /consortium/
       weight: 10
-    - identifier: softwarestack
-      name: Software stack
-      url: /softwarestack/
-      weight: 20
-    - identifier: categories
-      pre: dropdown
-      name: Categories
-      weight: 30
     - identifier: software
       pre: dropdown
       name: Software stack
@@ -106,6 +98,10 @@ menu:
       name: Aligator
       url: /aligator/
       weight: 60
+    - identifier: eigenpy
+      name: Eigenpy
+      url: /eigenpy/
+      weight: 60      
   categories:
     - identifier: consortium
       name: Consortium
