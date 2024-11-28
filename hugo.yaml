@@ -52,51 +52,9 @@ params:
   author: Inria
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
-  moto: "Super Fast, and Flexible"
-  description: "A robotics software stack focused on motion and manipulation tasks, with both research and industrial significance.."
+
   disable_theme_toggle: false
   disable_stay_uptodate: false
-
-  p1:
-    heading: "Our mission"
-    image: "images/pages/our-mission.png"
-    content:
-      - text: "The goal of the Maestro Consortium is to construct and maintain a robotics software stack focused on motion and manipulation tasks, and keep the ecosystem around it thriving. The consortium’s software stack has both research and industrial significance."
-      - text: "On the research side, the stack’s components supports advanced research on:"
-      - text: "Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra."
-  p2:
-    heading: "Just in time for Hacktoberfest with JIT Tailwind."
-    image: "images/pages/hacktoberfest.jpg"
-    content:
-      - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at purus non enim commodo tincidunt vel in nulla. Aenean pretium dolor non ultricies bibendum. Etiam quis blandit enim. Nunc condimentum ut lorem in faucibus. Phasellus varius ligula et commodo tristique. Nunc sodales nisl nec laoreet vehicula. Donec velit nibh, sollicitudin at nulla a, egestas dignissim eros. Sed lacinia hendrerit interdum. Vestibulum pellentesque sem venenatis nisl tempor accumsan sit amet tempus felis. Mauris leo diam, porttitor nec bibendum id, tempus ac nulla. Etiam congue ornare erat at convallis. Donec in nisi dapibus, mattis risus vel, imperdiet enim. Donec fermentum sit amet tortor nec tincidunt. Nam nec lectus tortor. Nunc sit amet laoreet orci, porta ornare massa. Phasellus eget lorem mi. Nam eleifend ultricies sapien, quis mollis leo bibendum at. Quisque viverra lorem sit amet magna aliquet, et dignissim arcu eleifend."
-  p3:
-    heading: "Backed by world-renowned investors"
-    content:
-      - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
-    links:
-      - text: Meet our investors and advisors
-        url: "#"
-    logos:
-      - identifier: a
-        image: "images/global/sample-logo.svg"
-        alt: "a"
-      - identifier: b
-      - identifier: c
-      - identifier: d
-      - identifier: e
-      - identifier: f
-  p4:
-    heading: "From the blog"
-    content:
-      - text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed."
-  p5:
-    heading: "Stay Up to Date"
-    content:
-      - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque."
-    action: "#"
-    label: "Email address"
-    placeholder: "Enter your email"
-    button: "Notify me"
 
   social_media:
     github:
@@ -112,6 +70,11 @@ params:
       enabled: true
       url: 'https://twitter.com/nusserstudios'
     
+
+  # text in first block on the homepage
+  homepage:
+    title: "Mastering Motion"
+    description: "Coming soon..."
 
 menu:
   main:
