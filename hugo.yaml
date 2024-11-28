@@ -57,19 +57,6 @@ params:
   disable_stay_uptodate: false
 
   social_media:
-    github:
-      enabled: true
-      url: 'https://github.com/nusserstudios'
-    facebook:
-      enabled: true
-      url: 'https://facebook.com/nusserstudios'
-    instagram:
-      enabled: true
-      url: 'https://instagram.com/nusserstudios'
-    twitter:
-      enabled: true
-      url: 'https://twitter.com/nusserstudios'
-    
 
   # text in first block on the homepage
   homepage:
