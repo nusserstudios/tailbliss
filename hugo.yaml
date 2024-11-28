@@ -127,14 +127,35 @@ menu:
       pre: dropdown
       name: Categories
       weight: 30
-    - identifier: dropdown
-      pre: complexdropdown
-      name: Dropdown
+    - identifier: software
+      pre: dropdown
+      name: Software stack
       weight: 40
     - identifier: contact
       name: Contact
       url: /contact/
       weight: 50
+  software:
+    - identifier: pinocchio
+      name: Pinocchio
+      url: /pinocchio/
+      weight: 20
+    - identifier: coal
+      name: Coal
+      url: /coal/
+      weight: 30
+    - identifier: proxsuite
+      name: Proxsuite
+      url: /proxsuite/
+      weight: 40
+    - identifier: crocoddyl
+      name: Crocoddyl
+      url: /crocoddyl/
+      weight: 50
+    - identifier: aligator
+      name: Aligator
+      url: /aligator/
+      weight: 60
   categories:
     - identifier: consortium
       name: Consortium
@@ -148,7 +169,7 @@ menu:
     - identifier: appearance
       pre: stars # can be stars, comments or piechart
       name: Appearance
-      post: "Easy customization"
+      post: "Easy customizationxx"
       url: "#"
       weight: 10
     - identifier: comments
@@ -183,7 +204,7 @@ markup:
       unsafe: true
 
 taxonomies:
-  category: Categories
+  category: software
   tag: Tags
 
 privacy:

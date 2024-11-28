@@ -6,4 +6,4 @@ public/
 yarn-error.log
 # Local Netlify folder
 .netlify
-yarn-error.log
+/maestro-website.code-workspace
