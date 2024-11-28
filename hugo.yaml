@@ -135,14 +135,6 @@ menu:
       url: "#"
       weight: 30
   footer:
-    - identifier: blog
-      name: Blog
-      url: /categories/blog/
-      weight: 20
-    - identifier: news
-      name: News
-      url: /categories/news/
-      weight: 30
     - identifier: contact
       name: Contact
       url: /contact/
