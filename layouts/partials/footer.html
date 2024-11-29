@@ -52,12 +52,26 @@
             </a>
             {{ end }}
         </div>
+        <div class="flex justify-center mt-8 space-x-6">
+            {{ if .Site.Params.Sponsors.Inria.Enabled }}
+            <a href="{{ $.Site.Params.Sponsors.Inria.Url }}" class="text-gray-400 hover:text-gray-300">
+                <span class="sr-only">Inria</span>
+                <img src="{{ .Site.BaseURL }}/images/logos/inria_logo_blanc.png"
+                     class="transition-opacity h-9 group-hover:opacity-50 group-focus:opacity-70"
+                     alt="{{ .Site.Title }} Logo" />
+            </a>            
+            {{ end }}
+            {{ if .Site.Params.Sponsors.Cnrs.Enabled }}
+            <a href="{{ $.Site.Params.Sponsors.Cnrs.Url }}" class="text-gray-400 hover:text-gray-300">
+                <span class="sr-only">CNRS</span>
+                <img src="{{ .Site.BaseURL }}/images/logos/cnrs_logo.png"
+                     class="transition-opacity h-9 group-hover:opacity-50 group-focus:opacity-70"
+                     alt="{{ .Site.Title }} Logo" />
+            </a>
+            {{ end }}
+        </div>        
         <p class="mt-8 text-base text-center text-gray-400">&copy; {{ now.Format "2006" }}
             {{ .Site.Title }}. All rights
             reserved.</p>
-        <p class="mt-2 text-base text-center text-gray-400">Made with &#x2764;&#xfe0f; by <a
-               href="https://nusserstudios.com" class="hover:underline hover:text-primary-600"><span
-                      class="font-black uppercase">Nusser</span> <span class="font-light uppercase">Studios.</span></a>
-        </p>
     </div>
 </footer>

@@ -1,15 +1,11 @@
 ---
-title: "Maestro Consortium"
-date: 2021-12-18T11:10:36+08:00
+title: "Consortium 101"
+date: 2024-11-28T11:10:36+08:00
 draft: false
 language: en
 description: Maestro consortium overview
-featured_image: ../assets/images/featured/featured-img-placeholder.png
+featured_image: 
 ---
-
-# Towards a Consortium for a Robotic Software Stack :blush:
-
-
 
 ## Mission statement and application domains
 

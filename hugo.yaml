@@ -49,8 +49,9 @@ markup:
       xhtml: false
 
 params:
-  author: Inria
-  authorimage: ../assets/images/global/author.webp
+  author: Maestro Consortium
+  authorimage: ../assets/images/global/
+  # default image when none avail in subsections here
   og_image: /images/tailbliss-cover.png
 
   disable_theme_toggle: false
