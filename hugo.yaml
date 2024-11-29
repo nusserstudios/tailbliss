@@ -84,10 +84,6 @@ menu:
       name: Consortium
       url: /consortium/
       weight: 10
-    - identifier: software
-      pre: dropdown
-      name: Software stack
-      weight: 40
     - identifier: contact
       name: Contact
       url: /contact/
