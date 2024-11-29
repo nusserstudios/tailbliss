@@ -56,7 +56,21 @@ params:
   disable_theme_toggle: false
   disable_stay_uptodate: false
 
+  # to enable/disable sections in layouts/partials/footer.html
   social_media:
+    twitter:
+      enabled: false
+    github:
+      enabled: false
+    instagram:
+      enabled: false
+  sponsors:
+    inria:
+      enabled: true
+      url: "https://www.inria.fr"
+    cnrs:
+      enabled: true
+      url: "https://www.cnrs.fr"
 
   # text in first block on the homepage
   homepage:
