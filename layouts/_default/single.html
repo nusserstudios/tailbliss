@@ -11,10 +11,10 @@
     <div class="px-6">
       {{ with .Params.featured_image }}
       {{ with resources.Get . }}
-      {{ $small := (.Resize "400x webp q80").RelPermalink }}
-      {{ $medium := (.Resize "550x webp q80").RelPermalink }}
-      {{ $large := (.Resize "900x webp q80").RelPermalink }}
-      {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+      {{ $small := replace ((.Resize "400x webp q80").RelPermalink) "../" "" }}
+      {{ $medium := replace ((.Resize "550x webp q80").RelPermalink) "../" "" }}
+      {{ $large := replace ((.Resize "900x webp q80").RelPermalink) "../" "" }}
+      {{ $featuredimage := replace ((.Resize "1500x webp q80").RelPermalink) "../" "" }}
       <img src="{{ $featuredimage }}" srcset="
         {{- with $small -}}, {{.}} 400w{{- end -}}
         {{- with $medium -}}, {{.}} 550w{{- end -}}

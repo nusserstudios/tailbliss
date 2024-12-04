@@ -1,11 +1,10 @@
-baseURL: ''
+baseURL: 'https://handmatt.github.io/handy-dev-website/'
 title: TailBliss
 languageCode: en-us
 DefaultContentLanguage: en
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
-canonifyURLs: true
 pagination:
   pagerSize: 6
 darkmode_js:

@@ -180,7 +180,7 @@
                             <a href="{{.Permalink}}">
                                 {{ with .Params.featured_image }}
                                 {{ with resources.Get . }}
-                                {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
+                                {{ $postimage := replace ((.Resize "500x webp q90").RelPermalink) "../" "" }}
                                 <img src="{{ $postimage }}" class="object-fill overflow-hidden rounded-t-lg" width="100%" height="" loading="lazy" alt="{{ .Title }}" />
 
                                 {{ end }}
@@ -207,7 +207,7 @@
                                         <span class="sr-only">{{ .Params.author }}</span>
                                         {{ with .Params.authorimage }}
                                         {{ with resources.Get . }}
-                                        {{ $authorimage := (.Resize "400x webp").RelPermalink }}
+                                        {{ $authorimage := replace ((.Resize "400x webp").RelPermalink) "../" "" }}
                                         <img class="w-10 h-10 rounded-full" src="{{ $authorimage }}" alt="">
                                         {{ end }}
                                         {{ end }}
