@@ -1,5 +1,5 @@
 baseURL: 'https://handmatt.github.io/handy-dev-website/'
-title: TailBliss
+title: Handy Development
 languageCode: en-us
 DefaultContentLanguage: en
 enableEmoji: true
@@ -49,8 +49,8 @@ params:
   author: Nusser Studios
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
-  moto: "Super Fast, and Flexible"
-  description: "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
+  moto: "Code in Hand, Future in Mind"
+  description: "Bringing your visionary ideas to life with functional web applications that make a difference in the world."
   disable_theme_toggle: false
   disable_stay_uptodate: false
 

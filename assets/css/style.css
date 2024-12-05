@@ -3549,24 +3549,24 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-font-family: ui-sans-serif,
-system-ui,
--apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-"Helvetica Neue",
-Arial,
-"Noto Sans",
-sans-serif,
-Apple Color Emoji,
-Segoe UI Emoji,
-NotoColorEmoji,
-Segoe UI Symbol,
-Android Emoji,
-EmojiSymbols;
+@font-face {
+  font-family: "Quicksand";
+
+  src: url("../fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol,
+    Android Emoji, EmojiSymbols;
+}
 
 /* Custom CSS */
+
+#logo {
+  font-family: "Quicksand";
+}
 
 .prose :where(h1):not(:where([class~="not-prose"] *)) {
   color: white !important;
