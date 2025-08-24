@@ -12,7 +12,7 @@ demosite = "https://tailbliss.netlify.app/"
 tags = ["blog", "tailwind", "tailwindcss", "dark", "light", "responsive", "minimal", "portfolio", "company", "gallery", "personal" ]
 features = ["blog", "categories", "webp", "tailwind3", "alpinejs"]
 
-min_version = "0.148.2"
+min_version = "0.148.2buil"
 
 # If the theme has a single author
 [author]

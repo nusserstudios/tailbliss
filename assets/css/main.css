@@ -2,12 +2,16 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@utility prose-2xl {
+  max-width: 120ch;
+}
+
 @theme {
   /* Content paths for Hugo */
   --content: "layouts/**/*.html", "content/**/*.md", "assets/**/*.js";
   
   /* Safelist for classes that might not be detected */
-  --safelist: "bg-gray-50", "bg-gray-950", "dark:bg-gray-950";
+  --safelist: "bg-gray-50", "bg-gray-950", "dark:bg-gray-950", "prose-2xl";
   
   /* Primary Colors - Indigo with OKLCH */
   --color-primary: oklch(58.5% .233 277.117);

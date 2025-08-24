@@ -7,7 +7,7 @@
       </h1>
     </span>
   </header>
-  <div class="max-w-4xl mx-auto mt-8 mb-2">
+  <div class="mx-auto mt-8 mb-2 max-w-5xl">
     <div class="px-6">
       {{ with .Params.featured_image }}
       {{ with resources.Get . }}
@@ -20,14 +20,14 @@
         {{- with $medium -}}, {{.}} 550w{{- end -}}
         {{- with $large -}}, {{.}} 768w{{- end -}}
         {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
-           class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
+           class="object-fill overflow-hidden rounded-lg ring-4 shadow-lg ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
            width="100%" alt="{{ .Params.title }}" />
       {{ end }}
       {{ end }}
     </div>
   </div>
   <!-- " {{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-  <div class="max-w-2xl px-6 pt-6 pb-16 mx-auto prose dark:prose-invert dark:text-white">
+  <div class="px-6 pt-6 pb-16 mx-auto max-w-3xl prose prose-h1:text-2xl dark:prose-invert dark:text-white">
     {{.Content}}
   </div>
 </article>
