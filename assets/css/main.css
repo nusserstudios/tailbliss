@@ -3,7 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @utility prose-2xl {
-  max-width: 120ch;
+  max-width: 80ch !important;
+  font-size: 110%;
 }
 
 @theme {
