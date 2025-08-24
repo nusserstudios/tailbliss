@@ -5,13 +5,18 @@ nixPkgs = ["nodejs_22"]
 [environment]
 HUGO_VERSION = "0.148.2"
 
-[variables]  
+[variables]
 HUGO_ENABLEGITINFO = 'false'
+
+[phases.install]
+cmds = [
+  'npm install -g pnpm@latest',
+  'pnpm install'
+]
 
 [phases.build]
 cmds = [
-  'npm install',
-  'npm run build'
+  'pnpm run build'
 ]
 
 [[nixpacks.included_files]]
