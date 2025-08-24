@@ -250,7 +250,7 @@
   border-radius: 0;
   padding: 0;
   font-weight: inherit;
-  color: inherit;
+  color: var(--color-indigo-400);
   font-size: inherit;
   font-family: inherit;
   line-height: inherit;
@@ -337,6 +337,10 @@
 .dark .prose pre {
   color: var(--color-zinc-200);
   background-color: var(--color-zinc-900);
+}
+
+.dark .prose pre code {
+  color: var(--color-indigo-300);
 }
 
 .dark .prose thead {
