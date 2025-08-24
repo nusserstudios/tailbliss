@@ -1,7 +1,7 @@
 name = "TailBliss"
 license = "Apache-2.0"
 licenselink = "https://github.com/nusserstudios/tailbliss/blob/main/LICENSE"
-description = "TailBliss is an Hugo Starter with Tailwind CSS 3.2 and Alpine.js with light and dark modes. Submitted for Hacktoberfest 2022."
+description = "TailBliss is an Hugo Starter with Tailwind CSS 4.1 and Alpine.js with light and dark modes. Submitted for Hacktoberfest 2022."
 
 # The home page of the theme, where the source can be found.
 homepage = "https://github.com/nusserstudios/tailbliss"
@@ -12,7 +12,7 @@ demosite = "https://tailbliss.netlify.app/"
 tags = ["blog", "tailwind", "tailwindcss", "dark", "light", "responsive", "minimal", "portfolio", "company", "gallery", "personal" ]
 features = ["blog", "categories", "webp", "tailwind3", "alpinejs"]
 
-min_version = "0.104.0"
+min_version = "0.148.2"
 
 # If the theme has a single author
 [author]
