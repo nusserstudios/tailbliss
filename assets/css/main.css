@@ -1,26 +1,111 @@
-/* assets */ 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-font-family: ui-sans-serif,
-system-ui,
--apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-"Helvetica Neue",
-Arial,
-"Noto Sans",
-sans-serif,
-Apple Color Emoji,
-Segoe UI Emoji,
-NotoColorEmoji,
-Segoe UI Symbol,
-Android Emoji,
-EmojiSymbols;
+@theme {
+  /* Content paths for Hugo */
+  --content: "./layouts/**/*.html", "./content/**/*.md";
+  
+  /* Dark mode */
+  --dark-mode: class;
+  
+  /* Custom Colors */
+  --color-primary: #6366F1;
+  --color-primary-50: #FFFFFF;
+  --color-primary-100: #F9F9FE;
+  --color-primary-200: #D3D4FB;
+  --color-primary-300: #AEAFF8;
+  --color-primary-400: #888BF4;
+  --color-primary-500: #6366F1;
+  --color-primary-600: #3034EC;
+  --color-primary-700: #1317D1;
+  --color-primary-800: #0E119E;
+  --color-primary-900: #0A0C6A;
+
+  --color-secondary: #EC4899;
+  --color-secondary-50: #FDEEF6;
+  --color-secondary-100: #FBDCEB;
+  --color-secondary-200: #F8B7D7;
+  --color-secondary-300: #F492C2;
+  --color-secondary-400: #F06DAE;
+  --color-secondary-500: #EC4899;
+  --color-secondary-600: #E4187D;
+  --color-secondary-700: #B11261;
+  --color-secondary-800: #7F0D45;
+  --color-secondary-900: #4C0829;
+
+  --color-neutral: #6B7280;
+  --color-neutral-50: #CDD0D5;
+  --color-neutral-100: #C2C5CC;
+  --color-neutral-200: #ACB0BA;
+  --color-neutral-300: #969BA7;
+  --color-neutral-400: #7F8694;
+  --color-neutral-500: #6B7280;
+  --color-neutral-600: #515761;
+  --color-neutral-700: #383C43;
+  --color-neutral-800: #1E2024;
+  --color-neutral-900: #050506;
+
+  /* Custom line heights */
+  --line-height-extra-loose: 2.5;
+  --line-height-12: 3rem;
+
+  /* Typography plugin prose styles */
+  --prose-body: theme(colors.zinc.800);
+  --prose-headings: theme(colors.zinc.900);
+  --prose-lead: theme(colors.zinc.700);
+  --prose-links: theme(colors.zinc.900);
+  --prose-bold: theme(colors.zinc.900);
+  --prose-counters: theme(colors.zinc.600);
+  --prose-bullets: theme(colors.zinc.400);
+  --prose-hr: theme(colors.zinc.300);
+  --prose-quotes: theme(colors.zinc.900);
+  --prose-quote-borders: theme(colors.zinc.300);
+  --prose-captions: theme(colors.zinc.700);
+  --prose-code: theme(colors.indigo.500);
+  --prose-pre-code: theme(colors.indigo.300);
+  --prose-pre-bg: theme(colors.gray.900);
+  --prose-th-borders: theme(colors.zinc.300);
+  --prose-td-borders: theme(colors.zinc.200);
+
+  /* Dark mode prose styles */
+  --prose-invert-body: theme(colors.zinc.200);
+  --prose-invert-headings: theme(colors.white);
+  --prose-invert-lead: theme(colors.zinc.300);
+  --prose-invert-links: theme(colors.indigo.400);
+  --prose-invert-bold: theme(colors.white);
+  --prose-invert-counters: theme(colors.zinc.400);
+  --prose-invert-bullets: theme(colors.zinc.200);
+  --prose-invert-hr: theme(colors.zinc.500);
+  --prose-invert-quotes: theme(colors.zinc.100);
+  --prose-invert-quote-borders: theme(colors.zinc.700);
+  --prose-invert-captions: theme(colors.zinc.400);
+  --prose-invert-code: theme(colors.indigo.400);
+  --prose-invert-pre-code: theme(colors.indigo.300);
+  --prose-invert-pre-bg: theme(colors.gray.900);
+  --prose-invert-th-borders: theme(colors.zinc.100);
+  --prose-invert-td-borders: theme(colors.zinc.500);
+}
+
+/* Font family configuration */
+:root {
+  font-family: ui-sans-serif,
+  system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  "Noto Sans",
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Noto Color Emoji",
+  "Segoe UI Symbol",
+  "Android Emoji",
+  "EmojiSymbols";
+}
+
 /* Custom CSS */
-
 .prose :where(h1):not(:where([class~="not-prose"] *)) {
     color: white !important;
 }
