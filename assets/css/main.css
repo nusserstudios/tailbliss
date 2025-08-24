@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Content paths for Hugo */
   --content: "layouts/**/*.html", "content/**/*.md", "assets/**/*.js";
@@ -7,58 +9,60 @@
   /* Safelist for classes that might not be detected */
   --safelist: "bg-gray-50", "bg-gray-950", "dark:bg-gray-950";
   
-  /* Dark mode */
-  --dark-mode: class;
-  
-  /* Custom Colors */
-  --color-primary: #6366F1;
-  --color-primary-50: #FFFFFF;
-  --color-primary-100: #F9F9FE;
-  --color-primary-200: #D3D4FB;
-  --color-primary-300: #AEAFF8;
-  --color-primary-400: #888BF4;
-  --color-primary-500: #6366F1;
-  --color-primary-600: #3034EC;
-  --color-primary-700: #1317D1;
-  --color-primary-800: #0E119E;
-  --color-primary-900: #0A0C6A;
+  /* Primary Colors - Indigo with OKLCH */
+  --color-primary: oklch(58.5% .233 277.117);
+  --color-primary-50: oklch(96.2% .018 272.314);
+  --color-primary-100: oklch(93% .034 272.788);
+  --color-primary-200: oklch(87% .065 274.039);
+  --color-primary-300: oklch(78.5% .115 274.713);
+  --color-primary-400: oklch(67.3% .182 276.935);
+  --color-primary-500: oklch(58.5% .233 277.117);
+  --color-primary-600: oklch(51.1% .262 276.966);
+  --color-primary-700: oklch(45.7% .24 277.023);
+  --color-primary-800: oklch(39.8% .195 277.366);
+  --color-primary-900: oklch(35.9% .144 278.697);
+  --color-primary-950: oklch(25.7% .09 281.288);
 
-  --color-secondary: #EC4899;
-  --color-secondary-50: #FDEEF6;
-  --color-secondary-100: #FBDCEB;
-  --color-secondary-200: #F8B7D7;
-  --color-secondary-300: #F492C2;
-  --color-secondary-400: #F06DAE;
-  --color-secondary-500: #EC4899;
-  --color-secondary-600: #E4187D;
-  --color-secondary-700: #B11261;
-  --color-secondary-800: #7F0D45;
-  --color-secondary-900: #4C0829;
+  /* Secondary Colors - Pink with OKLCH */
+  --color-secondary: oklch(65.6% .241 354.308);
+  --color-secondary-50: oklch(97.1% .014 343.198);
+  --color-secondary-100: oklch(94.8% .028 342.258);
+  --color-secondary-200: oklch(89.9% .061 343.231);
+  --color-secondary-300: oklch(82.3% .12 346.018);
+  --color-secondary-400: oklch(71.8% .202 349.761);
+  --color-secondary-500: oklch(65.6% .241 354.308);
+  --color-secondary-600: oklch(59.2% .249 .584);
+  --color-secondary-700: oklch(52.5% .223 3.958);
+  --color-secondary-800: oklch(45.9% .187 3.815);
+  --color-secondary-900: oklch(40.8% .153 2.432);
+  --color-secondary-950: oklch(28.4% .109 3.907);
 
-  --color-neutral: #6B7280;
-  --color-neutral-50: #CDD0D5;
-  --color-neutral-100: #C2C5CC;
-  --color-neutral-200: #ACB0BA;
-  --color-neutral-300: #969BA7;
-  --color-neutral-400: #7F8694;
-  --color-neutral-500: #6B7280;
-  --color-neutral-600: #515761;
-  --color-neutral-700: #383C43;
-  --color-neutral-800: #1E2024;
-  --color-neutral-900: #050506;
+  /* Neutral Colors - Neutral with OKLCH */
+  --color-neutral: oklch(55.6% 0 0);
+  --color-neutral-50: oklch(98.5% 0 0);
+  --color-neutral-100: oklch(97% 0 0);
+  --color-neutral-200: oklch(92.2% 0 0);
+  --color-neutral-300: oklch(87% 0 0);
+  --color-neutral-400: oklch(70.8% 0 0);
+  --color-neutral-500: oklch(55.6% 0 0);
+  --color-neutral-600: oklch(43.9% 0 0);
+  --color-neutral-700: oklch(37.1% 0 0);
+  --color-neutral-800: oklch(26.9% 0 0);
+  --color-neutral-900: oklch(20.5% 0 0);
+  --color-neutral-950: oklch(14.5% 0 0);
 
-  /* Gray color scale */
-  --color-gray-50: #f9fafb;
-  --color-gray-100: #f3f4f6;
-  --color-gray-200: #e5e7eb;
-  --color-gray-300: #d1d5db;
-  --color-gray-400: #9ca3af;
-  --color-gray-500: #6b7280;
-  --color-gray-600: #4b5563;
-  --color-gray-700: #374151;
-  --color-gray-800: #1f2937;
-  --color-gray-900: #111827;
-  --color-gray-950: #030712;
+  /* Gray color scale with OKLCH */
+  --color-gray-50: oklch(98.5% .002 247.839);
+  --color-gray-100: oklch(96.7% .003 264.542);
+  --color-gray-200: oklch(92.8% .006 264.531);
+  --color-gray-300: oklch(87.2% .01 258.338);
+  --color-gray-400: oklch(70.7% .022 261.325);
+  --color-gray-500: oklch(55.1% .027 264.364);
+  --color-gray-600: oklch(44.6% .03 256.802);
+  --color-gray-700: oklch(37.3% .034 259.733);
+  --color-gray-800: oklch(27.8% .033 256.848);
+  --color-gray-900: oklch(21% .034 264.665);
+  --color-gray-950: oklch(13% .028 261.692);
 
   /* Custom line heights */
   --line-height-extra-loose: 2.5;
@@ -127,12 +131,3 @@
 }
 
 /* Custom CSS end */
-
-/* Temporary fix for missing gray-950 */
-.bg-gray-950 {
-  background-color: #030712;
-}
-
-.dark\:bg-gray-950:is(.dark *) {
-  background-color: #030712;
-}
