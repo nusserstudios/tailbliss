@@ -20,8 +20,6 @@ __Advertisement :smile:__
 
 You will like those projects!
 
----
-
 # h1 Heading :blush:
 ## h2 Heading
 ### h3 Heading
@@ -31,11 +29,6 @@ You will like those projects!
 
 
 ## Horizontal Rules
-
-***
-
----
-
 ___
 
 
@@ -107,11 +100,12 @@ Inline `code`
 
 Indented code
 
+``` js
     // Some comments
     line 1 of code
     line 2 of code
     line 3 of code
-
+```
 
 Block code "fences"
 

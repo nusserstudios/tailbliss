@@ -6,7 +6,8 @@ enableEmoji: true
 enableGitInfo: false
 enableRobotsTXT: true
 canonifyURLs: true
-paginate: 9
+pagination:
+  pagerSize: 6
 darkmode_js:
   - assets/js/darkmode.js
 enableInlineShortcodes: true
@@ -119,7 +120,7 @@ params:
       url: 'https://instagram.com/nusserstudios'
     twitter:
       enabled: true
-      url: '@nusserstudios'
+      url: 'https://twitter.com/nusserstudios'
     
 
 menu:
@@ -229,4 +230,4 @@ privacy:
 module:
   hugoVersion:
     extended: true
-    min: "0.104.0"
+    min: "0.148.2"

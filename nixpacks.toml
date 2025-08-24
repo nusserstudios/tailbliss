@@ -1,4 +1,5 @@
 [phases.setup]
+<<<<<<< HEAD
 aptPkgs = ["hugo"]
 nixPkgs = ["nodejs_22"]
 
@@ -10,3 +11,19 @@ HUGO_VERSION = "0.133.1"
 
 [[ nixpacks.included_files ]]
 paths = ["/public"]
+=======
+nixPkgs = [
+  'nodejs_22',
+  'pnpm-10_x',
+  'hugo'
+]
+
+[variables]
+HUGO_ENABLEGITINFO = 'false'
+
+[phases.build]
+cmds = [
+  'pnpm install',
+  'pnpm run build'
+]
+>>>>>>> main

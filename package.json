@@ -1,22 +1,26 @@
 {
   "name": "TailBliss",
-  "version": "0.1.1",
+  "version": "1.0.1",
   "description": "Hugo + Alpine.js + TailwindCSS",
   "main": "index.js",
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.15",
-    "alpinejs": "^3.14.3",
-    "autoprefixer": "^10.4.20",
-    "concurrently": "^8.2.2",
-    "postcss": "^8.4.47",
-    "postcss-cli": "^11.0.0",
-    "tailwindcss": "^3.4.14"
+    "@tailwindcss/postcss": "^4.1.12",
+    "@tailwindcss/vite": "^4.1.12",
+    "alpinejs": "^3.14.9",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.2.0",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4.1.12",
+    "vite": "^7.1.3"
   },
   "scripts": {
     "start": "concurrently npm:watch:*",
-    "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
+    "watch:css": "vite build --watch",
     "watch:hugo": "hugo server",
-    "build": "hugo --config hugo.yaml --minify",
+    "dev": "concurrently \"npm run watch:css\" \"npm run watch:hugo\"",
+    "build:css": "vite build",
+    "build": "npm run build:css && hugo --minify",
     "test": "hugo"
   },
   "repository": {
@@ -26,7 +30,7 @@
   "keywords": [
     "hugo",
     "tailwind",
-    "tailwindcss",
+    "tailwindcsgits",
     "alpinejs",
     "minimal",
     "responsive",
