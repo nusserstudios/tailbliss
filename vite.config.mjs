@@ -9,8 +9,10 @@ export default defineConfig({
   build: {
     // Output to Hugo's static directory
     outDir: 'static/css',
-    // Don't clear the entire static directory
-    emptyOutDir: false,
+    // Clear only the output directory
+    emptyOutDir: true,
+    // Don't copy public directory
+    copyPublicDir: false,
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'assets/css/main.css'),
