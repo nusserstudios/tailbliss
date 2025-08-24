@@ -12,7 +12,10 @@
   --content: "layouts/**/*.html", "content/**/*.md", "assets/**/*.js";
   
   /* Safelist for classes that might not be detected */
-  --safelist: "bg-gray-50", "bg-gray-950", "dark:bg-gray-950", "prose-2xl";
+  --safelist: "bg-gray-50", "bg-gray-950", "dark:bg-gray-950", "prose-2xl", 
+              "text-indigo-400", "text-indigo-500", "text-indigo-600", 
+              "text-zinc-800", "text-zinc-900", "bg-zinc-100", "bg-zinc-800",
+              "border-zinc-200", "border-zinc-300", "border-zinc-600", "border-zinc-700";
   
   /* Primary Colors - Indigo with OKLCH */
   --color-primary: oklch(58.5% .233 277.117);
