@@ -2,7 +2,10 @@
 
 @theme {
   /* Content paths for Hugo */
-  --content: "./layouts/**/*.html", "./content/**/*.md";
+  --content: "layouts/**/*.html", "content/**/*.md", "assets/**/*.js";
+  
+  /* Safelist for classes that might not be detected */
+  --safelist: "bg-gray-50", "bg-gray-950", "dark:bg-gray-950";
   
   /* Dark mode */
   --dark-mode: class;
@@ -43,6 +46,19 @@
   --color-neutral-700: #383C43;
   --color-neutral-800: #1E2024;
   --color-neutral-900: #050506;
+
+  /* Gray color scale */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-gray-950: #030712;
 
   /* Custom line heights */
   --line-height-extra-loose: 2.5;
@@ -111,3 +127,12 @@
 }
 
 /* Custom CSS end */
+
+/* Temporary fix for missing gray-950 */
+.bg-gray-950 {
+  background-color: #030712;
+}
+
+.dark\:bg-gray-950:is(.dark *) {
+  background-color: #030712;
+}

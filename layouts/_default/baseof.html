@@ -5,7 +5,8 @@
     {{ partial "head.html" . }}
 </head>
 
-<body class="bg-zinc-100 dark:bg-gray-800">
+<body class="bg-gray-50 dark:bg-gray-950">
+    <!-- Force Tailwind to detect: bg-gray-950 dark:bg-gray-950 -->
     {{ partial "nav.html" . }}
     {{ block "main" . }}{{ end }}
     {{ partial "footer" . }}
