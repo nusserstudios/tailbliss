@@ -17,11 +17,26 @@
         document.documentElement.classList.remove('dark')
     }
 </script>
-{{ $styles := resources.Get "/css/style.css" | postCSS }}
+{{/* Use Vite-generated CSS files with cache busting hashes */}}
+{{ $cssFiles := readDir "static/css" }}
+{{ $mainCSS := "" }}
+{{ range $cssFiles }}
+  {{ if strings.Contains .Name "main." }}
+    {{ if strings.HasSuffix .Name ".css" }}
+      {{ $mainCSS = .Name }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 
+{{ if $mainCSS }}
+<link rel="stylesheet" href="/css/{{ $mainCSS }}" />
+{{ else }}
+{{/* Fallback to Hugo PostCSS processing if Vite file not found */}}
+{{ $styles := resources.Get "/css/main.css" | postCSS }}
 {{ if hugo.IsProduction }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ else }}
 {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
+{{ end }}
 {{ end }}

@@ -1,0 +1,15 @@
+[phases.setup]
+nixPkgs = [
+  'nodejs_22',
+  'pnpm-10_x',
+  'hugo'
+]
+
+[variables]
+HUGO_ENABLEGITINFO = 'false'
+
+[phases.build]
+cmds = [
+  'pnpm install',
+  'pnpm run build'
+]
