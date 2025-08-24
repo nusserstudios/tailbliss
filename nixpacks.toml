@@ -5,6 +5,9 @@ nixPkgs = [
   'hugo'
 ]
 
+[variables]
+HUGO_ENABLEGITINFO = 'false'
+
 [phases.build]
 cmds = [
   'pnpm install',
