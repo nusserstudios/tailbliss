@@ -2,18 +2,21 @@
 aptPkgs = ["hugo"]
 nixPkgs = ["nodejs_22"]
 
+[environment]
+HUGO_VERSION = "0.148.2"
+
 [variables]
 HUGO_ENABLEGITINFO = 'false'
 
-[phases.install] 
+[phases.install]
 cmds = [
-  'npm install -g pnpm@latest && pnpm install'  # ← Same shell session!
+  'cd tailbliss && npm install'
 ]
 
 [phases.build]
 cmds = [
-  'npx pnpm run build'  # ← npx finds globally installed pnpm
+  'cd tailbliss && npm run build'
 ]
 
 [[nixpacks.included_files]]
-paths = ["/public"]
+paths = ["/tailbliss/public"]
