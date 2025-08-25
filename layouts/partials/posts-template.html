@@ -1,8 +1,8 @@
-<div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50">
+<div class="mx-auto max-w-7xl text-gray-900 dark:text-gray-50">
     <div class="px-4 not-prose">
         <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
             {{ range .Paginator.Pages }}
-            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
+            <div class="flex overflow-hidden flex-col bg-gray-50 rounded-lg shadow-lg dark:bg-gray-900">
                 <a href="{{.Permalink}}">
                     {{ with .Params.featured_image }}
                     {{ with resources.Get . }}
@@ -29,7 +29,7 @@
                         {{ range $elem_index, $elem_val := (.GetTerms "tags") }}
                         {{- if gt $elem_index 0 }}, {{ end -}}
                         <a href="{{ .Permalink }}"
-                           class="inline-flex items-center rounded-md bg-gray-300 hover:bg-primary-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 capitalize">{{ .LinkTitle }}</a>
+                           class="inline-flex items-center px-2.5 py-0.5 text-sm font-medium text-gray-900 capitalize bg-gray-300 rounded-md hover:bg-primary-200 hover:text-black">{{ .LinkTitle }}</a>
                         {{- end -}}
                         </span>
                     </div>
