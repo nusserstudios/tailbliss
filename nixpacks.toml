@@ -11,13 +11,12 @@ HUGO_ENABLEGITINFO = 'false'
 [phases.install]
 cmds = [
   'npm install -g pnpm@latest',
-  'pnpm i',
-  'pnpm build'
+  'pnpm i'
 ]
 
 [phases.build]
 cmds = [
-  'pnpm run build'
+  'pnpm build'
 ]
 
 [[nixpacks.included_files]]
