@@ -1,7 +1,5 @@
 node_modules/
 resources/
-package-lock.json
-pnpm-lock.yaml
 public/
 .hugo_build.lock
 .vercel
