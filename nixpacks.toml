@@ -15,9 +15,8 @@ cmds = [
 
 [phases.build]
 cmds = [
-  'ls -la',
-  'find . -name "hugo.yaml" -o -name "config.yaml" -o -name "package.json"',
-  'npm run build'
+  'npm run build:css',
+  'hugo --config hugo.yaml --minify'
 ]
 
 [[nixpacks.included_files]]
