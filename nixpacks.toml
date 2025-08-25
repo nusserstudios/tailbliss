@@ -10,9 +10,8 @@ HUGO_ENABLEGITINFO = 'false'
 
 [phases.install]
 cmds = [
-  'npm install -g pnpm@latest',
-  'pnpm i',
-  'pnpm build'
+  'npm i',
+  'npm run build'
 ]
 
 [phases.build]
