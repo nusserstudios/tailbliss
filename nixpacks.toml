@@ -10,13 +10,13 @@ HUGO_ENABLEGITINFO = 'false'
 
 [phases.install]
 cmds = [
-  'cd tailbliss && npm install'
+  'npm install'
 ]
 
 [phases.build]
 cmds = [
-  'cd tailbliss && npm run build'
+  'npm run build'
 ]
 
 [[nixpacks.included_files]]
-paths = ["/tailbliss/public"]
+paths = ["/public"]
