@@ -1,29 +1,23 @@
 [phases.setup]
-<<<<<<< HEAD
 aptPkgs = ["hugo"]
 nixPkgs = ["nodejs_22"]
 
-[ phases.build ]
-cmds = ["hugo --minify"]
-
-[ environment ]
-HUGO_VERSION = "0.133.1"
-
-[[ nixpacks.included_files ]]
-paths = ["/public"]
-=======
-nixPkgs = [
-  'nodejs_22',
-  'pnpm-10_x',
-  'hugo'
-]
+[environment]
+HUGO_VERSION = "0.148.2"
 
 [variables]
 HUGO_ENABLEGITINFO = 'false'
 
+[phases.install]
+cmds = [
+  'npm install'
+]
+
 [phases.build]
 cmds = [
-  'pnpm install',
-  'pnpm run build'
+  'npm run build:css',
+  'hugo --config hugo.yaml --minify'
 ]
->>>>>>> main
+
+[[nixpacks.included_files]]
+paths = ["/public"]

@@ -1,4 +1,4 @@
-baseURL: ''
+baseURL: 'https://tailbliss.nusserstudios.com/'
 title: TailblissSite
 languageCode: en-us
 DefaultContentLanguage: en
