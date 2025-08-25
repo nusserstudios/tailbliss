@@ -1,22 +1,18 @@
 [phases.setup]
 aptPkgs = ["hugo"]
 nixPkgs = ["nodejs_22"]
-cmds = ["npm install -g pnpm@latest"]
-
-[environment]
-HUGO_VERSION = "0.148.2"
 
 [variables]
 HUGO_ENABLEGITINFO = 'false'
 
-[phases.install]
+[phases.install] 
 cmds = [
-  'pnpm install'
+  'npm install -g pnpm@latest && pnpm install'  # ← Same shell session!
 ]
 
 [phases.build]
 cmds = [
-  'pnpm run build'
+  'npx pnpm run build'  # ← npx finds globally installed pnpm
 ]
 
 [[nixpacks.included_files]]
