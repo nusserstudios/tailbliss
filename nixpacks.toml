@@ -1,6 +1,7 @@
 [phases.setup]
 aptPkgs = ["hugo"]
 nixPkgs = ["nodejs_22"]
+cmds = ["npm install -g pnpm@latest"]
 
 [environment]
 HUGO_VERSION = "0.148.2"
@@ -10,13 +11,12 @@ HUGO_ENABLEGITINFO = 'false'
 
 [phases.install]
 cmds = [
-  'npm install -g pnpm@latest',
-  'pnpm i'
+  'pnpm install'
 ]
 
 [phases.build]
 cmds = [
-  'pnpm build'
+  'pnpm run build'
 ]
 
 [[nixpacks.included_files]]
