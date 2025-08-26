@@ -4867,6 +4867,3 @@ EmojiSymbols;
     line-height: 1.75rem;
   }
 }
-
-/* Hide Alpine.js [x-cloak] elements until Alpine initializes to prevent flicker */
-[x-cloak] { display: none !important; }

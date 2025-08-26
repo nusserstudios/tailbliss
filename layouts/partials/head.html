@@ -9,6 +9,13 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 {{ partial "meta" . }}
+
+{{/* Hide Alpine.js [x-cloak] elements until Alpine initializes to prevent nav menu flicker.
+     The x-cloak directive is located in the head partial to prevent rollup from Vite. */}}
+<style>
+    [x-cloak] { display: none !important; }
+</style>
+
 <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
