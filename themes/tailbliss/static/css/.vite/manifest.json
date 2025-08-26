@@ -1,7 +1,7 @@
 {
-  "assets/css/main.css": {
+  "themes/tailbliss/assets/css/main.css": {
     "file": "main.Ds221w5F.css",
-    "src": "assets/css/main.css",
+    "src": "themes/tailbliss/assets/css/main.css",
     "isEntry": true,
     "names": [
       "main.css"

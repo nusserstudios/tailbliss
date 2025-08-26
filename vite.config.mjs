@@ -7,15 +7,16 @@ export default defineConfig({
     tailwindcss(),
   ],
   build: {
-    // Output to Hugo's static directory
-    outDir: 'static/css',
+    // Output to Hugo's theme static directory
+    outDir: 'themes/tailbliss/static/css',
     // Clear only the output directory
     emptyOutDir: true,
     // Don't copy public directory
     copyPublicDir: false,
+
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'assets/css/main.css'),
+        main: resolve(__dirname, 'themes/tailbliss/assets/css/main.css'),
       },
       output: {
         // Generate hashed CSS files

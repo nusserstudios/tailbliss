@@ -18,7 +18,7 @@
     }
 </script>
 {{/* Use Vite-generated CSS files with cache busting hashes */}}
-{{ $cssFiles := readDir "static/css" }}
+{{ $cssFiles := readDir "themes/tailbliss/static/css" }}
 {{ $mainCSS := "" }}
 {{ range $cssFiles }}
   {{ if strings.Contains .Name "main." }}
@@ -32,11 +32,18 @@
 <link rel="stylesheet" href="/css/{{ $mainCSS }}" />
 {{ else }}
 {{/* Fallback to Hugo PostCSS processing if Vite file not found */}}
-{{ $styles := resources.Get "/css/main.css" | postCSS }}
+{{ $styles := resources.Get "css/main.css" }}
+{{ if $styles }}
+{{ $styles := $styles | postCSS }}
 {{ if hugo.IsProduction }}
+{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+{{ end }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ else }}
-{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
+{{/* Final fallback - try to load from theme assets */}}
+{{ $styles := resources.Get "css/main.css" }}
+{{ if $styles }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+{{ end }}
 {{ end }}
 {{ end }}
