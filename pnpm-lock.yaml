@@ -21,8 +21,8 @@ importers:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.6)
       concurrently:
-        specifier: ^9.2.0
-        version: 9.2.0
+        specifier: ^9.2.1
+        version: 9.2.1
       postcss:
         specifier: ^8.5.6
         version: 8.5.6
@@ -481,8 +481,8 @@ packages:
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
 
-  concurrently@9.2.0:
-    resolution: {integrity: sha512-IsB/fiXTupmagMW4MNp2lx2cdSN2FfZq78vF90LBB+zZHArbIQZjQtzXCiXnvTxCZSvXanTqFLWBjw2UkLx1SQ==}
+  concurrently@9.2.1:
+    resolution: {integrity: sha512-fsfrO0MxV64Znoy8/l1vVIjjHa29SZyyqPgQBwhiDcaW8wJc2W3XWVOGx4M3oJBnv/zdUZIIp1gDeS98GzP8Ng==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -647,9 +647,6 @@ packages:
   lilconfig@3.1.3:
     resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
     engines: {node: '>=14'}
-
-  lodash@4.17.21:
-    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
   magic-string@0.30.18:
     resolution: {integrity: sha512-yi8swmWbO17qHhwIBNeeZxTceJMeBvWJaId6dyvTSOwTipqeHhMhOrz6513r1sOKnpvQ7zkhlG8tPrpilwTxHQ==}
@@ -1211,10 +1208,9 @@ snapshots:
 
   color-name@1.1.4: {}
 
-  concurrently@9.2.0:
+  concurrently@9.2.1:
     dependencies:
       chalk: 4.1.2
-      lodash: 4.17.21
       rxjs: 7.8.2
       shell-quote: 1.8.3
       supports-color: 8.1.1
@@ -1362,8 +1358,6 @@ snapshots:
       lightningcss-win32-x64-msvc: 1.30.1
 
   lilconfig@3.1.3: {}
-
-  lodash@4.17.21: {}
 
   magic-string@0.30.18:
     dependencies:
