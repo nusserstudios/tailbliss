@@ -7,6 +7,41 @@
   font-size: 110%;
 }
 
+/* Prevent layout shifts during image loading */
+img {
+  /* Ensure images maintain their aspect ratio during loading */
+  height: auto;
+  max-width: 100%;
+  /* Prevent layout shifts by ensuring dimensions are respected */
+  display: block;
+}
+
+/* Optimize image loading performance */
+img[loading="lazy"] {
+  /* Use content-visibility for better performance where supported */
+  content-visibility: auto;
+  /* Fallback for browsers that don't support content-visibility */
+  contain: layout style paint;
+}
+
+/* Hero image specific optimizations */
+.hero-image {
+  /* Ensure consistent sizing and prevent shifts */
+  width: 100%;
+  height: auto;
+  /* Reserve space to prevent layout shifts */
+  min-height: 300px;
+}
+
+/* Specific aspect ratio containers for common image sizes */
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
 @theme {
   /* Content paths for Hugo */
   --content: "layouts/**/*.html", "content/**/*.md", "assets/**/*.js";

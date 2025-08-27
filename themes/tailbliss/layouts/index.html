@@ -143,10 +143,14 @@
                 <div class="flex col-span-1 justify-center px-8 py-8 bg-gray-50 dark:bg-gray-900/10">
                     {{ if .image }}
                     {{ $sponsor := resources.Get .image }}
-                    <img src="{{ $sponsor.RelPermalink }}" class="max-h-12 dark:invert" alt="{{ .alt }}" loading="lazy" />
+                    {{ if eq $sponsor.MediaType.SubType "svg" }}
+                    <img src="{{ $sponsor.RelPermalink }}" width="138" height="48" class="max-h-12 dark:invert" alt="{{ .alt }}" loading="lazy" />
+                    {{ else }}
+                    <img src="{{ $sponsor.RelPermalink }}" width="{{ $sponsor.Width }}" height="{{ $sponsor.Height }}" class="max-h-12 dark:invert" alt="{{ .alt }}" loading="lazy" />
+                    {{ end }}
                     {{ else }}
                     {{ $sponsor := resources.Get "images/global/sample-logo.svg" }}
-                    <img src="{{ $sponsor.RelPermalink }}" class="max-h-12 dark:invert" alt="{{ .alt }}" loading="lazy" />
+                    <img src="{{ $sponsor.RelPermalink }}" width="138" height="48" class="max-h-12 dark:invert" alt="{{ .alt }}" loading="lazy" />
                     {{ end }}
                 </div>
                 {{ end }}
@@ -196,8 +200,8 @@
                             <a href="{{.Permalink}}">
                                 {{ with .Params.featured_image }}
                                 {{ with resources.Get . }}
-                                {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
-                                <img src="{{ $postimage }}" class="object-fill overflow-hidden rounded-t-lg" width="100%" height="" loading="lazy" alt="{{ .Title }}" />
+                                {{ $resized := .Resize "500x webp q90" }}
+                                <img src="{{ $resized.RelPermalink }}" class="object-fill overflow-hidden rounded-t-lg" width="{{ $resized.Width }}" height="{{ $resized.Height }}" loading="lazy" alt="{{ .Title }}" />
 
                                 {{ end }}
                                 {{ end }}
@@ -223,8 +227,8 @@
                                         <span class="sr-only">{{ .Params.author }}</span>
                                         {{ with .Params.authorimage }}
                                         {{ with resources.Get . }}
-                                        {{ $authorimage := (.Resize "40x40 webp q75").RelPermalink }}
-                                        <img class="w-10 h-10 rounded-full" src="{{ $authorimage }}" alt="" loading="lazy">
+                                        {{ $authorresized := .Resize "40x40 webp q75" }}
+                                        <img class="w-10 h-10 rounded-full" src="{{ $authorresized.RelPermalink }}" width="40" height="40" alt="" loading="lazy">
                                         {{ end }}
                                         {{ end }}
                                     </div>

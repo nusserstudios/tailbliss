@@ -15,7 +15,7 @@
     "vite": "^7.1.3"
   },
   "scripts": {
-    "setup": "node install.js",
+    "install": "node install.js",
     "start": "npm run build:css && hugo server --disableFastRender",
     "build:css": "vite build",
     "build": "npm run build:css && hugo --minify --gc --cleanDestinationDir",
