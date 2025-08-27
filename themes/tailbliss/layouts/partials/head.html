@@ -10,21 +10,30 @@
 <meta name="theme-color" content="#ffffff">
 {{ partial "meta" . }}
 
+{{/* DNS prefetch and preconnect for external resources */}}
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="dns-prefetch" href="//static.cloudflareinsights.com">
+<link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin>
+
 {{/* Preload critical hero image for better LCP performance */}}
 {{ if .IsHome }}
+{{ $heroImage := resources.Get "images/pages/tailbliss-rocket-indigo.png" }}
+{{ if $heroImage }}
+{{ $heroWebP := $heroImage.Resize "576x576 webp q85" }}
+<link rel="preload" as="image" href="{{ $heroWebP.RelPermalink }}" fetchpriority="high">
+{{ else }}
 <link rel="preload" as="image" href="/images/tailbliss-rocket-indigo.webp" fetchpriority="high">
 {{ end }}
+{{ end }}
+
+{{/* Preload critical fonts if any */}}
+<link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js" crossorigin>
 
 {{/* Hide Alpine.js [x-cloak] elements until Alpine initializes to prevent nav menu flicker.
- The x-cloak directive is located in the head partial to prevent rollup from Vite. */}}
+The x-cloak directive is located in the head partial to prevent rollup from Vite. */}}
 <style>
  [x-cloak] { display: none !important; }
- 
- /* Critical CSS for above-the-fold content */
- .hero-section { min-height: 50vh; }
- .hero-text { font-size: 2.25rem; line-height: 2.5rem; font-weight: 800; }
- .hero-image { max-width: 36rem; width: 100%; height: auto; border-radius: 0.5rem; }
- @media (min-width: 640px) { .hero-text { font-size: 3rem; line-height: 1; } }
 </style>
 
 <script>
@@ -47,6 +56,7 @@
 {{ end }}
 
 {{ if $mainCSS }}
+{{/* Preload and load CSS asynchronously for better performance */}}
 <link rel="preload" href="/css/{{ $mainCSS }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/css/{{ $mainCSS }}"></noscript>
 {{ else }}
@@ -57,7 +67,9 @@
 {{ if hugo.IsProduction }}
 {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
 {{ end }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+{{/* Use async loading for non-critical CSS */}}
+<link rel="preload" href="{{ $styles.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ $styles.RelPermalink }}" /></noscript>
 {{ else }}
 {{/* Final fallback - try to load from theme assets */}}
 {{ $styles := resources.Get "css/main.css" }}

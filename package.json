@@ -15,11 +15,12 @@
     "vite": "^7.1.3"
   },
   "scripts": {
-    "start": "npm run build:css && hugo server",
+    "start": "npm run build:css && hugo server --disableFastRender",
     "build:css": "vite build",
-    "build": "npm run build:css && hugo --minify",
+    "build": "npm run build:css && hugo --minify --gc --cleanDestinationDir",
     "rebuild": "npm run build:css",
-    "test": "hugo"
+    "test": "hugo",
+    "optimize": "npm run build && echo 'Build optimized for production'"
   },
   "repository": {
     "type": "git",

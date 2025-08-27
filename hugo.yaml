@@ -1,4 +1,4 @@
-baseURL: 'https://tailbliss.com/'
+baseURL: 'http://localhost:1313/'
 title: TailBliss
 languageCode: en-us
 theme: tailbliss
@@ -232,3 +232,27 @@ module:
   hugoVersion:
     extended: true
     min: "0.148.2"
+
+# Performance optimizations
+caches:
+  assets:
+    dir: :cacheDir/assets
+    maxAge: 8760h # 1 year
+  getcsv:
+    dir: :cacheDir/getcsv
+    maxAge: 3600s # 1 hour
+  getjson:
+    dir: :cacheDir/getjson
+    maxAge: 3600s # 1 hour
+  images:
+    dir: :cacheDir/images
+    maxAge: 8760h # 1 year
+  modules:
+    dir: :cacheDir/modules
+    maxAge: 8760h # 1 year
+
+# Image processing defaults
+imaging:
+  quality: 85
+  resampleFilter: lanczos
+  anchor: smart

@@ -9,6 +9,15 @@
     {{ partial "nav.html" . }}
     {{ block "main" . }}{{ end }}
     {{ partial "footer" . }}
+    
+    {{/* Load JavaScript asynchronously to prevent main thread blocking */}}
+    {{ if not .Site.Params.Disable_theme_toggle }}
+    {{ $js := resources.Get "js/darkmode.js" | js.Build }}
+    <script defer src="{{ $js.RelPermalink }}"></script>
+    {{ end }}
+    
+    {{/* Load Alpine.js with defer to prevent blocking */}}
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
 </body>
 
 </html>
