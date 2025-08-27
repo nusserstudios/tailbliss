@@ -48,6 +48,18 @@ function extractContentFromGit(dest) {
 }
 
 /**
+ * Check if we're in a deployment/build environment
+ */
+function isDeploymentEnvironment() {
+  return process.env.CI === 'true' || 
+         process.env.NODE_ENV === 'production' ||
+         process.env.NIXPACKS_METADATA ||
+         process.env.RAILWAY_ENVIRONMENT ||
+         process.env.VERCEL ||
+         process.env.NETLIFY;
+}
+
+/**
  * Main install function
  */
 function install() {
@@ -64,12 +76,24 @@ function install() {
     return;
   }
 
+  // In deployment environments, skip content extraction
+  if (isDeploymentEnvironment()) {
+    console.log('🏗️  Deployment environment detected');
+    console.log('   Skipping content extraction - content should be included in deployment');
+    console.log('   If you need example content, run this script locally first:');
+    console.log('   npm run install');
+    console.log('');
+    console.log('✅ Install script completed for deployment');
+    return;
+  }
+
   // Check if we're in a git repository
   try {
     execSync('git rev-parse --git-dir', { stdio: 'ignore' });
   } catch (error) {
     console.error('❌ Error: This doesn\'t appear to be a git repository.');
     console.error('   Make sure you\'re running this from the TailBliss root directory.');
+    console.error('   Or run this in a deployment environment where content is pre-included.');
     process.exit(1);
   }
 

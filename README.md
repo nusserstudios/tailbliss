@@ -105,11 +105,14 @@ pnpm run dev
 git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
 cd my-site
 
-# Install dependencies and setup example content automatically
+# Install dependencies
 pnpm install
 
+# Setup example content (optional)
+npm run setup
+
 # Start developing
-pnpm run dev
+npm start
 ```
 
 ### 🎯 **Automatic Content Setup**
@@ -117,9 +120,8 @@ pnpm run dev
 TailBliss includes an intelligent installation script that automatically sets up example content for you:
 
 ```bash
-# The install script runs automatically with pnpm install
-# Or run it manually:
-npm run install
+# Run the setup script to add example content:
+npm run setup
 # or
 node install.js
 ```
@@ -151,8 +153,8 @@ pnpm install  # recommended
 # or
 npm install
 
-# Manual content setup (if needed)
-npm run install
+# Setup example content (optional)
+npm run setup
 # or
 node install.js
 ```
@@ -311,9 +313,9 @@ npm start
 **Alternative: Use the install script for fresh content**
 If you want to start with fresh example content instead of migrating:
 ```bash
-# Remove existing content and let install script create fresh examples
+# Remove existing content and let setup script create fresh examples
 rm -rf content/
-npm run install  # Creates fresh example content from main branch
+npm run setup  # Creates fresh example content from main branch
 ```
 
 #### **Common Migration Issues**
@@ -334,8 +336,9 @@ If you prefer to start fresh:
 # Clone and let the install script handle content setup automatically
 git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
 cd my-site
-pnpm install  # Automatically runs install script and sets up content
-npm start     # Start developing immediately
+pnpm install  # Install dependencies
+npm run setup # Setup example content (optional)
+npm start     # Start developing
 ```
 
 **Manual approach** (if you prefer manual control):
