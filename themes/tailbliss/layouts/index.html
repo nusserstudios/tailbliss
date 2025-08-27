@@ -19,7 +19,7 @@
                     <img 
                         src="/images/tailbliss-rocket-indigo.webp" 
                         alt="TailBliss Hero" 
-                        class="mx-auto w-full max-w-xl rounded-lg"
+                        class="hero-image mx-auto"
                         width="576" 
                         height="576"
                         loading="eager"
@@ -48,8 +48,8 @@
                     <div class="overflow-hidden rounded-2xl shadow-xl">
                         {{ $p1image := resources.Get .Site.Params.P1.Image }}
                         {{ with $p1image }}
-                        {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
-                        <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
+                        {{ with .Resize "600x600 webp q85" }}
+                        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
                         {{ end }}
                         {{ end }}
                     </div>
@@ -107,8 +107,8 @@
                 <div class="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
                     {{ $p2image := resources.Get .Site.Params.P2.Image }}
                     {{ with $p2image }}
-                    {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
-                    <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="p2" class="w-full rounded-lg shadow-xl lg:h-full lg:w-auto lg:max-w-none" loading="lazy" />
+                    {{ with .Resize "800x600 webp q85" }}
+                    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="p2" class="w-full rounded-lg shadow-xl lg:h-full lg:w-auto lg:max-w-none" loading="lazy" />
                     {{ end }}
                     {{ end }}
 
@@ -206,8 +206,8 @@
                                         <span class="sr-only">{{ .Params.author }}</span>
                                         {{ with .Params.authorimage }}
                                         {{ with resources.Get . }}
-                                        {{ $authorimage := (.Resize "400x webp").RelPermalink }}
-                                        <img class="w-10 h-10 rounded-full" src="{{ $authorimage }}" alt="">
+                                        {{ $authorimage := (.Resize "40x40 webp q75").RelPermalink }}
+                                        <img class="w-10 h-10 rounded-full" src="{{ $authorimage }}" alt="" loading="lazy">
                                         {{ end }}
                                         {{ end }}
                                     </div>

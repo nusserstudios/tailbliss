@@ -38,8 +38,8 @@
                             <span class="sr-only">{{ .Params.author }}</span>
                             {{ with .Params.authorimage }}
                             {{ with resources.Get . }}
-                            {{ $authorimage := (.Resize "40x webp").RelPermalink }}
-                            <img class="w-10 h-10 rounded-full" src="{{ $authorimage }}" alt="">
+                            {{ $authorimage := (.Resize "40x40 webp q75").RelPermalink }}
+                            <img class="w-10 h-10 rounded-full" src="{{ $authorimage }}" alt="" loading="lazy">
                             {{ end }}
                             {{ end }}
                         </div>
