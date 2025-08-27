@@ -50,6 +50,7 @@
 ## 📚 **Table of Contents**
 - [🚨 Breaking Changes](#-breaking-changes---new-theme-structure)
 - [🚀 Quick Start](#-quick-start)
+- [⚙️ Configuration](#%EF%B8%8F-configuration)
 - [🔄 Migration Guide](#-migration-guide)
 - [✨ What's New in Tailwind CSS 4](#-whats-new-in-tailwind-css-4-migration)
 - [✨ Features](#-features)
@@ -137,6 +138,26 @@ npm run build
 ```
 
 **`pnpm run dev`** runs Vite CSS processing with cache busting alongside Hugo server with hot reloading.
+
+---
+
+## ⚙️ **Configuration**
+
+### **Basic Setup**
+After installation, update your `hugo.yaml` configuration:
+
+```yaml
+baseURL: 'https://yourdomain.com/'  # Replace with your actual domain
+title: Your Site Title
+theme: tailbliss
+```
+
+### **Important Configuration Notes**
+- **baseURL**: Set this to your actual domain for proper canonical URLs and social sharing
+- **theme**: Must be set to `tailbliss` when using as a Hugo theme
+- **Example**: The demo site uses `https://tailbliss.com/`
+
+---
 
 ## 🚀 What's New in Tailwind CSS 4 Migration
 
@@ -228,8 +249,9 @@ cp ../my-old-tailbliss-backup/hugo.yaml ./hugo.yaml
 ```
 
 #### **Step 4: Update Configuration**
-Edit your `hugo.yaml` to include the theme:
+Edit your `hugo.yaml` to include the theme and your domain:
 ```yaml
+baseURL: 'https://yourdomain.com/'
 theme: tailbliss
 ```
 
