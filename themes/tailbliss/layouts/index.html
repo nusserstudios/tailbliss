@@ -15,14 +15,15 @@
                     </p>
                 </div>
                 <div class="col-span-6">
-                    {{ $hero := resources.GetMatch "images/pages/tailbliss-rocket-indigo.png" }}
-
-                    {{ $thumb := ($hero.Fill "400x400 webp q90") }}
-                    {{ $large := ($hero.Fill "576x576 webp q90") }}
-
-                    <img srcset="
-                        {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
-                        {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}" width="100%" height="" alt="TailBliss Hero" class="mx-auto w-full max-w-xl rounded-lg" />
+                    {{/* Use pre-optimized WebP image for better LCP performance */}}
+                    <img 
+                        src="/images/tailbliss-rocket-indigo.webp" 
+                        alt="TailBliss Hero" 
+                        class="mx-auto w-full max-w-xl rounded-lg"
+                        width="576" 
+                        height="576"
+                        loading="eager"
+                        fetchpriority="high" />
                 </div>
             </div>
         </div>
