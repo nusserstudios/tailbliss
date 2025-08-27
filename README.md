@@ -1,7 +1,8 @@
 <p align="center" style="padding-top:20px">
- <img width="100px" src="images/logo-tailbliss-round.svg" align="center" alt="GitHub Readme Stats" />
+ <img width="100px" src="images/logo-tailbliss-round.svg" align="center" alt="TailBliss Logo" />
  <h1 align="center">TailBliss</h1>
- <p align="center">TailBliss is an opinionated Hugo Starter with Tailwind CSS 4.x, Vite integration, and Alpine.js with light/dark modes.</p>
+ <p align="center">TailBliss is an opinionated Hugo theme with Tailwind CSS 4.x, Vite integration, and Alpine.js with light/dark modes.</p>
+ <p align="center"><strong>Current Version: 2.0+ (Hugo Theme Structure)</strong></p>
 </p>
   <p align="center">
     <a href="https://github.com/nusserstudios/tailbliss/actions/">
@@ -46,38 +47,92 @@
 <img src="https://raw.githubusercontent.com/nusserstudios/tailbliss/main/images/tailbliss-lighthouse-11-03-22.png" alt="Tailbliss Google Lighthouse Score" style="margin: 25px auto; max-width: 830px" width="100%" height="" />
 </p>
 
-**Install to VS Code with:**  
+## 📚 **Table of Contents**
+- [🚨 Breaking Changes](#-breaking-changes---new-theme-structure)
+- [🚀 Quick Start](#-quick-start)
+- [🔄 Migration Guide](#-migration-guide)
+- [✨ What's New in Tailwind CSS 4](#-whats-new-in-tailwind-css-4-migration)
+- [✨ Features](#-features)
+- [📧 Contact Form Setup](#-contact-form-setup)
+- [Credits](#credits)
+
+---
+
+## 🚨 **BREAKING CHANGES** - New Theme Structure
+
+**TailBliss has been restructured as a proper Hugo theme!** This is a **breaking change** that affects how you install and use TailBliss.
+
+### 📁 **New Structure (v2.0+)**
+TailBliss now follows the standard Hugo theme convention:
+- **Theme files**: Located in the root directory
+- **Example content**: Located in `exampleSite/` directory
+- **User sites**: Must be created separately using `hugo new site` command
+
+### 🔄 **Migration Required**
+If you're upgrading from v1.x, you'll need to migrate your content. See the [Migration Guide](#migration-guide) below.
+
+### 🌳 **Branch Information**
+- **`exampleSite`** branch: Contains the new theme structure (recommended)
+- **`main`** branch: Contains the legacy v1.x structure (deprecated)
+
+---
+
+## 🚀 **Quick Start**
+
+### Option 1: Use as Hugo Theme (Recommended)
 ```bash
-git clone git@github.com:nusserstudios/tailbliss your-name
-cd your-name
+# Create a new Hugo site
+hugo new site my-tailbliss-site
+cd my-tailbliss-site
+
+# Add TailBliss as a theme
+git submodule add -b exampleSite https://github.com/nusserstudios/tailbliss.git themes/tailbliss
+
+# Copy example content (optional)
+cp -r themes/tailbliss/exampleSite/* .
+
+# Install dependencies
+pnpm install
+
+# Start developing
+pnpm run dev
 ```
 
-##### Install with pnpm (recommended)
+### Option 2: Clone and Customize
 ```bash
+# Clone the repository
+git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
+cd my-site
+
+# Copy example content to root
+cp -r exampleSite/* .
+
+# Install dependencies
 pnpm install
+
+# Start developing
+pnpm run dev
 ```
-##### Install with NPM 
+
+### 📋 **Available Commands**
+##### Install dependencies
 ```bash
+pnpm install  # recommended
+# or
 npm install
 ```
 
-**To start developing:**
-##### Develop with pnpm (recommended)
+##### Development
 ```bash
-pnpm run dev
-```
-##### Develop with NPM 
-```bash
+pnpm run dev  # recommended
+# or 
 npm run dev
 ```
 
-**To generate the site HTML:**
-##### Build with pnpm (recommended)
+##### Production Build
 ```bash
-pnpm run build
-```
-##### Build with NPM 
-```bash
+pnpm run build  # recommended
+# or
 npm run build
 ```
 
@@ -137,6 +192,83 @@ pnpm run watch:hugo   # Hugo server only
 - Added: `@tailwindcss/vite`, `@tailwindcss/postcss`, `vite`
 - Removed: `@tailwindcss/typography` (replaced with custom styles)
 
+---
+
+## 🔄 **Migration Guide**
+
+### Migrating from TailBliss v1.x to v2.0+
+
+If you have an existing TailBliss v1.x site, follow these steps to migrate:
+
+#### **Step 1: Backup Your Content**
+```bash
+# Create a backup of your current site
+cp -r my-old-tailbliss-site my-old-tailbliss-backup
+```
+
+#### **Step 2: Create New Hugo Site Structure**
+```bash
+# Create a new Hugo site
+hugo new site my-new-tailbliss-site
+cd my-new-tailbliss-site
+
+# Add TailBliss v2.0 as a theme
+git submodule add -b exampleSite https://github.com/nusserstudios/tailbliss.git themes/tailbliss
+```
+
+#### **Step 3: Copy Your Content**
+```bash
+# Copy your existing content
+cp -r ../my-old-tailbliss-backup/content/* ./content/
+cp -r ../my-old-tailbliss-backup/static/* ./static/
+cp -r ../my-old-tailbliss-backup/assets/* ./assets/
+
+# Copy your Hugo configuration (and merge with new theme settings)
+cp ../my-old-tailbliss-backup/hugo.yaml ./hugo.yaml
+```
+
+#### **Step 4: Update Configuration**
+Edit your `hugo.yaml` to include the theme:
+```yaml
+theme: tailbliss
+```
+
+#### **Step 5: Install Dependencies & Test**
+```bash
+# Install dependencies
+pnpm install
+
+# Test your site
+pnpm run dev
+```
+
+#### **Common Migration Issues**
+
+1. **Missing Theme Reference**: Make sure `theme: tailbliss` is in your `hugo.yaml`
+2. **CSS Not Loading**: Ensure you've run `pnpm install` in your site root
+3. **Images Not Displaying**: Check that images are in the correct `/assets` or `/static` directories
+4. **Custom Layouts**: If you customized layouts, copy them to your site's `layouts/` directory
+5. **Quick Setup**: You can copy the entire `exampleSite` content to your root directory:
+   ```bash
+   # Copy all exampleSite content to root
+   cp -r exampleSite/* .
+   ```
+
+#### **Fresh Start Option**
+If you prefer to start fresh:
+```bash
+# Use the exampleSite as a starting point
+git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
+cd my-site
+cp -r exampleSite/* .
+pnpm install
+pnpm run dev
+```
+
+---
+
+## ✨ **Features**
+
 Has paginated Categories and Tags. Markdown files will automatically convert images put into `/assets` folder to .webp images. 
 
 ## Image shortcodes for webp as well.
@@ -146,8 +278,15 @@ Has paginated Categories and Tags. Markdown files will automatically convert ima
 
 <a href="https://www.buymeacoffee.com/nusserstudios" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="41" width="174" /></a>
 
-## Form
-To use the form, visit [FormSubmit.Co](https://formsubmit.co/). Locate the contact form in "content/contact.md", and update the form action with the email address you want on this line: **action="https://formsubmit.co/your@email.com" method="POST"**
+## 📧 **Contact Form Setup**
+To use the contact form:
+
+1. Visit [FormSubmit.Co](https://formsubmit.co/)
+2. Locate the contact form in `content/contact.md` (or `exampleSite/content/contact.md` if using as reference)
+3. Update the form action with your email address:
+   ```html
+   action="https://formsubmit.co/your@email.com" method="POST"
+   ```
 
 
 ## Credits
