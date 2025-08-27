@@ -62,18 +62,18 @@
 
 **TailBliss has been restructured as a proper Hugo theme!** This is a **breaking change** that affects how you install and use TailBliss.
 
-### 📁 **New Structure (v2.0+)**
+### 📁 **New Structure (v1.1+)**
 TailBliss now follows the standard Hugo theme convention:
 - **Theme files**: Located in the root directory
 - **Example content**: Located in `exampleSite/` directory
 - **User sites**: Must be created separately using `hugo new site` command
 
 ### 🔄 **Migration Required**
-If you're upgrading from v1.x, you'll need to migrate your content. See the [Migration Guide](#migration-guide) below.
+If you're upgrading from v0.5, you'll need to migrate your content. See the [Migration Guide](#migration-guide) below.
 
 ### 🌳 **Branch Information**
 - **`exampleSite`** branch: Contains the new theme structure (recommended)
-- **`main`** branch: Contains the legacy v1.x structure (deprecated)
+- **`main`** branch: Contains the legacy v0.5 structure (deprecated)
 
 ---
 
@@ -196,9 +196,9 @@ pnpm run watch:hugo   # Hugo server only
 
 ## 🔄 **Migration Guide**
 
-### Migrating from TailBliss v1.x to v2.0+
+### Migrating from TailBliss v0.5 to v1.1+
 
-If you have an existing TailBliss v1.x site, follow these steps to migrate:
+If you have an existing TailBliss v0.5 site, follow these steps to migrate:
 
 #### **Step 1: Backup Your Content**
 ```bash
@@ -212,7 +212,7 @@ cp -r my-old-tailbliss-site my-old-tailbliss-backup
 hugo new site my-new-tailbliss-site
 cd my-new-tailbliss-site
 
-# Add TailBliss v2.0 as a theme
+# Add TailBliss v1.1 as a theme
 git submodule add -b exampleSite https://github.com/nusserstudios/tailbliss.git themes/tailbliss
 ```
 
