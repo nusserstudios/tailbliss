@@ -92,7 +92,7 @@ git submodule add -b exampleSite https://github.com/nusserstudios/tailbliss.git 
 # Copy example content (optional)
 cp -r themes/tailbliss/exampleSite/* .
 
-# Install dependencies
+# Install dependencies and setup content
 pnpm install
 
 # Start developing
@@ -105,39 +105,83 @@ pnpm run dev
 git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
 cd my-site
 
-# Copy example content to root
-cp -r exampleSite/* .
-
-# Install dependencies
+# Install dependencies and setup example content automatically
 pnpm install
 
 # Start developing
 pnpm run dev
 ```
 
-### 📋 **Available Commands**
-##### Install dependencies
+### 🎯 **Automatic Content Setup**
+
+TailBliss includes an intelligent installation script that automatically sets up example content for you:
+
 ```bash
+# The install script runs automatically with pnpm install
+# Or run it manually:
+npm run install
+# or
+node install.js
+```
+
+**What the install script does:**
+- ✅ **Checks for existing content** - Won't overwrite your existing content
+- ✅ **Extracts from git repository** - Gets the latest example content from the main branch
+- ✅ **Creates complete structure** - Sets up `content/` directory with:
+  - Sample pages (`about.md`, `contact.md`, `prose.md`)
+  - 14 example blog and news posts
+  - Proper directory structure (`posts/` subdirectory)
+- ✅ **Safe operation** - Only runs if no `content/` directory exists
+- ✅ **Clear feedback** - Shows progress and next steps
+
+**First-time setup:**
+```bash
+git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
+cd my-site
+pnpm install  # Automatically runs the install script
+pnpm run dev  # Start developing immediately
+```
+
+### 📋 **Available Commands**
+
+##### Setup & Installation
+```bash
+# Install dependencies (automatically runs content setup)
 pnpm install  # recommended
 # or
 npm install
+
+# Manual content setup (if needed)
+npm run install
+# or
+node install.js
 ```
 
 ##### Development
 ```bash
-pnpm run dev  # recommended
-# or 
-npm run dev
+# Start development server with hot reloading
+npm start
+# or
+pnpm run start
+
+# Build CSS and start Hugo server
+npm run build:css && hugo server --disableFastRender
 ```
 
 ##### Production Build
 ```bash
-pnpm run build  # recommended
-# or
+# Full production build
 npm run build
+# or
+pnpm run build
+
+# Build CSS only
+npm run build:css
+# or
+pnpm run build:css
 ```
 
-**`pnpm run dev`** runs Vite CSS processing with cache busting alongside Hugo server with hot reloading.
+**Development workflow:** The `npm start` command builds CSS with Vite (including cache busting) then starts Hugo server with hot reloading and fast render disabled for better development experience.
 
 ---
 
@@ -255,13 +299,21 @@ baseURL: 'https://yourdomain.com/'
 theme: tailbliss
 ```
 
-#### **Step 5: Install Dependencies & Test**
+#### **Step 5: Install Dependencies & Setup Content**
 ```bash
-# Install dependencies
+# Install dependencies and automatically setup example content
 pnpm install
 
 # Test your site
-pnpm run dev
+npm start
+```
+
+**Alternative: Use the install script for fresh content**
+If you want to start with fresh example content instead of migrating:
+```bash
+# Remove existing content and let install script create fresh examples
+rm -rf content/
+npm run install  # Creates fresh example content from main branch
 ```
 
 #### **Common Migration Issues**
@@ -279,12 +331,20 @@ pnpm run dev
 #### **Fresh Start Option**
 If you prefer to start fresh:
 ```bash
-# Use the exampleSite as a starting point
+# Clone and let the install script handle content setup automatically
 git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
 cd my-site
-cp -r exampleSite/* .
+pnpm install  # Automatically runs install script and sets up content
+npm start     # Start developing immediately
+```
+
+**Manual approach** (if you prefer manual control):
+```bash
+git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
+cd my-site
+cp -r exampleSite/* .  # Copy example files manually
 pnpm install
-pnpm run dev
+npm start
 ```
 
 ---
