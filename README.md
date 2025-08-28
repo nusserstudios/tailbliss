@@ -20,7 +20,7 @@
     <br />
     <br />
     <a href="https://gohugo.io/">
-      <img src="https://img.shields.io/badge/Hugo%20-0.105.0%20-gray.svg?colorA=c9177e&colorB=FF4088&style=for-the-badge"/>
+      <img src="https://img.shields.io/badge/Hugo%20-0.148.2%20-gray.svg?colorA=c9177e&colorB=FF4088&style=for-the-badge"/>
     </a>
     <a href="https://tailwindcss.com/">
       <img src="https://img.shields.io/badge/TailwindCSS%20-V4-gray.svg?colorA=0284c7&colorB=38bdf8&style=for-the-badge"/>
