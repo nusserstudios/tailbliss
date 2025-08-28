@@ -27,8 +27,6 @@ img[loading="lazy"] {
 /* Hero container and image optimizations */
 .hero-container {
   /* Reserve space immediately to prevent layout shifts */
-  min-height: 576px;
-  max-height: 576px;
   width: 100%;
   max-width: 576px;
   /* Fixed aspect ratio to prevent any shifts */
@@ -40,10 +38,10 @@ img[loading="lazy"] {
 }
 
 .hero-image {
-  /* Fixed dimensions to match container */
-  width: 576px !important;
-  height: 576px !important;
-  max-width: 100%;
+  /* Responsive width that respects container constraints */
+  width: 100%;
+  height: auto;
+  max-width: 576px;
   /* Fixed aspect ratio */
   aspect-ratio: 1 / 1;
   /* Prevent any layout shifts during loading */
