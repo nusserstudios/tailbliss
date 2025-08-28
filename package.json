@@ -16,7 +16,7 @@
   },
   "scripts": {
     "install": "node install.js",
-    "start": "npm run build:css && hugo server --disableFastRender",
+    "dev": "npm run build:css && hugo server --disableFastRender",
     "build:css": "vite build",
     "build": "npm run build:css && hugo --minify --gc --cleanDestinationDir",
     "rebuild": "npm run build:css",

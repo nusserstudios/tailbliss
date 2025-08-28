@@ -24,13 +24,24 @@ img[loading="lazy"] {
   contain: layout style paint;
 }
 
-/* Hero image specific optimizations */
+/* Hero container and image optimizations */
+.hero-container {
+  /* Reserve space immediately to prevent layout shifts */
+  min-height: 320px;
+  /* Ensure proper containment */
+  contain: layout;
+}
+
 .hero-image {
   /* Ensure consistent sizing and prevent shifts */
   width: 100%;
   height: auto;
-  /* Reserve space to prevent layout shifts */
-  min-height: 300px;
+  /* Reserve space to prevent layout shifts with proper aspect ratio */
+  aspect-ratio: 1 / 1;
+  /* Prevent any layout shifts during loading */
+  contain: layout;
+  /* Ensure image fits within container */
+  object-fit: cover;
 }
 
 /* Specific aspect ratio containers for common image sizes */

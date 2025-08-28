@@ -15,32 +15,34 @@
                     </p>
                 </div>
                 <div class="col-span-6">
-                    {{/* Use Hugo's image processing for optimized responsive images */}}
-                    {{ $heroImage := resources.Get "images/pages/tailbliss-rocket-indigo.png" }}
-                    {{ if $heroImage }}
-                        {{ $heroWebP := $heroImage.Resize "576x576 webp q85" }}
-                        {{ $heroWebPSmall := $heroImage.Resize "320x320 webp q85" }}
-                        <img 
-                            src="{{ $heroWebP.RelPermalink }}" 
-                            srcset="{{ $heroWebPSmall.RelPermalink }} 320w, {{ $heroWebP.RelPermalink }} 576w"
-                            sizes="(max-width: 640px) 320px, 576px"
-                            alt="TailBliss Hero" 
-                            class="overflow-hidden mx-auto rounded-2xl shadow-xl hero-image"
-                            width="{{ $heroWebP.Width }}" 
-                            height="{{ $heroWebP.Height }}"
-                            loading="eager"
-                            fetchpriority="high" />
-                    {{ else }}
-                        {{/* Fallback to static image */}}
-                        <img 
-                            src="/images/tailbliss-rocket-indigo.webp" 
-                            alt="TailBliss Hero" 
-                            class="overflow-hidden mx-auto rounded-2xl shadow-xl hero-image"
-                            width="576" 
-                            height="576"
-                            loading="eager"
-                            fetchpriority="high" />
-                    {{ end }}
+                    <div class="mx-auto w-full max-w-lg hero-container" style="aspect-ratio: 1 / 1;">
+                        {{/* Use Hugo's image processing for optimized responsive images */}}
+                        {{ $heroImage := resources.Get "images/pages/tailbliss-rocket-indigo.png" }}
+                        {{ if $heroImage }}
+                            {{ $heroWebP := $heroImage.Resize "576x576 webp q85" }}
+                            {{ $heroWebPSmall := $heroImage.Resize "320x320 webp q85" }}
+                            <img 
+                                src="{{ $heroWebP.RelPermalink }}" 
+                                srcset="{{ $heroWebPSmall.RelPermalink }} 320w, {{ $heroWebP.RelPermalink }} 576w"
+                                sizes="(max-width: 640px) 320px, 576px"
+                                alt="TailBliss Hero" 
+                                class="overflow-hidden mx-auto rounded-2xl shadow-xl hero-image"
+                                width="576" 
+                                height="576"
+                                loading="eager"
+                                fetchpriority="high" />
+                        {{ else }}
+                            {{/* Fallback to static image */}}
+                            <img 
+                                src="/images/tailbliss-rocket-indigo.webp" 
+                                alt="TailBliss Hero" 
+                                class="overflow-hidden mx-auto rounded-2xl shadow-xl hero-image"
+                                width="576" 
+                                height="576"
+                                loading="eager"
+                                fetchpriority="high" />
+                        {{ end }}
+                    </div>
                 </div>
             </div>
         </div>
