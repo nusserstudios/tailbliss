@@ -58,3 +58,12 @@
         </p>
     </div>
 </footer>
+
+{{/* Load JavaScript at the end for better performance and CLS prevention */}}
+{{ if not .Site.Params.Disable_theme_toggle }}
+{{ $js := resources.Get "js/darkmode.js" | js.Build }}
+<script defer src="{{ $js.RelPermalink }}"></script>
+{{ end }}
+
+{{/* Load Alpine.js after DOM is ready to prevent layout shifts */}}
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js" crossorigin="anonymous"></script>

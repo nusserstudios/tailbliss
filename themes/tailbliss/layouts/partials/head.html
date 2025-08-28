@@ -45,40 +45,8 @@ The x-cloak directive is located in the head partial to prevent rollup from Vite
  html.dark { background-color: rgb(3 7 18); } /* bg-gray-950 */
  body { background-color: inherit !important; }
  
- /* Prevent CLS by reserving space for navigation elements */
- nav img { width: 36px !important; height: 36px !important; }
- 
- /* Ensure consistent spacing for navigation container */
- .nav-container { 
-   min-height: 80px; 
-   /* Prevent layout shifts during Alpine.js initialization */
-   contain: layout style;
- }
- 
- /* Prevent layout shifts from Alpine.js transitions and dynamic content */
- [x-cloak] { 
-   display: none !important; 
-   /* Ensure no space is taken during cloaking */
-   visibility: hidden !important;
-   opacity: 0 !important;
- }
- 
- /* Stabilize navigation menu items during Alpine.js loading */
- nav [x-data] {
-   /* Reserve space to prevent shifts */
-   contain: layout style;
- }
- 
- /* Prevent transition-based layout shifts */
- .transition, [class*="transition"] {
-   /* Ensure transitions don't affect layout */
-   will-change: auto;
- }
- 
- /* Force immediate layout for critical above-the-fold content */
- body > * {
-   contain: layout style;
- }
+ /* Basic CLS prevention - only essential fixes */
+ [x-cloak] { display: none !important; }
 </style>
 
 <script>
@@ -101,9 +69,8 @@ The x-cloak directive is located in the head partial to prevent rollup from Vite
 {{ end }}
 
 {{ if $mainCSS }}
-{{/* Preload and load CSS asynchronously for better performance */}}
-<link rel="preload" href="/css/{{ $mainCSS }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="/css/{{ $mainCSS }}"></noscript>
+{{/* Load CSS normally for better CLS prevention */}}
+<link rel="stylesheet" href="/css/{{ $mainCSS }}">
 {{ else }}
 {{/* Fallback to Hugo PostCSS processing if Vite file not found */}}
 {{ $styles := resources.Get "css/main.css" }}
@@ -112,9 +79,7 @@ The x-cloak directive is located in the head partial to prevent rollup from Vite
 {{ if hugo.IsProduction }}
 {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
 {{ end }}
-{{/* Use async loading for non-critical CSS */}}
-<link rel="preload" href="{{ $styles.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="{{ $styles.RelPermalink }}" /></noscript>
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ else }}
 {{/* Final fallback - try to load from theme assets */}}
 {{ $styles := resources.Get "css/main.css" }}
