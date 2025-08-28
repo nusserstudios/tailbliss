@@ -36,6 +36,11 @@
 The x-cloak directive is located in the head partial to prevent rollup from Vite. */}}
 <style>
  [x-cloak] { display: none !important; }
+ 
+ /* Prevent layout shift by pre-setting background colors */
+ html { background-color: rgb(249 250 251); } /* bg-gray-50 */
+ html.dark { background-color: rgb(3 7 18); } /* bg-gray-950 */
+ body { background-color: inherit !important; }
 </style>
 
 <script>
