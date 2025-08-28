@@ -18,5 +18,8 @@ cmds = [
   'npm run build'
 ]
 
+[start]
+cmd = 'nginx -g "daemon off;"'
+
 [[nixpacks.included_files]]
 paths = ["/public"]
