@@ -160,7 +160,7 @@ node install.js
 ##### Development
 ```bash
 # Start development server with hot reloading
-npm start
+npm dev
 # or
 pnpm run start
 
@@ -181,7 +181,7 @@ npm run build:css
 pnpm run build:css
 ```
 
-**Development workflow:** The `npm start` command builds CSS with Vite (including cache busting) then starts Hugo server with hot reloading and fast render disabled for better development experience.
+**Development workflow:** The `npm dev` command builds CSS with Vite (including cache busting) then starts Hugo server with hot reloading and fast render disabled for better development experience.
 
 ---
 
@@ -305,7 +305,7 @@ theme: tailbliss
 pnpm install
 
 # Test your site
-npm start
+npm dev
 ```
 
 **Alternative: Use the install script for fresh content**
@@ -335,7 +335,7 @@ If you prefer to start fresh:
 git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
 cd my-site
 pnpm install  # Automatically runs install script and sets up content
-npm start     # Start developing immediately
+npm dev     # Start developing immediately
 ```
 
 **Manual approach** (if you prefer manual control):
@@ -344,7 +344,7 @@ git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
 cd my-site
 cp -r exampleSite/* .  # Copy example files manually
 pnpm install
-npm start
+npm dev
 ```
 
 ---
