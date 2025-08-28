@@ -27,21 +27,31 @@ img[loading="lazy"] {
 /* Hero container and image optimizations */
 .hero-container {
   /* Reserve space immediately to prevent layout shifts */
-  min-height: 320px;
+  min-height: 576px;
+  max-height: 576px;
+  width: 100%;
+  max-width: 576px;
+  /* Fixed aspect ratio to prevent any shifts */
+  aspect-ratio: 1 / 1;
   /* Ensure proper containment */
-  contain: layout;
+  contain: layout style;
+  /* Prevent any overflow issues */
+  overflow: hidden;
 }
 
 .hero-image {
-  /* Ensure consistent sizing and prevent shifts */
-  width: 100%;
-  height: auto;
-  /* Reserve space to prevent layout shifts with proper aspect ratio */
+  /* Fixed dimensions to match container */
+  width: 576px !important;
+  height: 576px !important;
+  max-width: 100%;
+  /* Fixed aspect ratio */
   aspect-ratio: 1 / 1;
   /* Prevent any layout shifts during loading */
-  contain: layout;
+  contain: layout style paint;
   /* Ensure image fits within container */
   object-fit: cover;
+  /* Prevent any size changes */
+  flex-shrink: 0;
 }
 
 /* Specific aspect ratio containers for common image sizes */
