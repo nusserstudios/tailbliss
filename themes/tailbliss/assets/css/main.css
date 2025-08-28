@@ -401,4 +401,18 @@ img[loading="lazy"] {
   border-bottom-color: var(--color-zinc-700);
 }
 
+/* Dark mode placeholder text fix */
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: var(--color-gray-300);
+  opacity: 1;
+}
+
+/* Light mode placeholder text */
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-gray-500);
+  opacity: 1;
+}
+
 /* Custom CSS end */
