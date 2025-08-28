@@ -16,8 +16,8 @@
     <script defer src="{{ $js.RelPermalink }}"></script>
     {{ end }}
     
-    {{/* Load Alpine.js with defer to prevent blocking */}}
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js" crossorigin="anonymous"></script>
+    {{/* Load Alpine.js with high priority to minimize CLS from x-cloak elements */}}
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -49,7 +49,36 @@ The x-cloak directive is located in the head partial to prevent rollup from Vite
  nav img { width: 36px !important; height: 36px !important; }
  
  /* Ensure consistent spacing for navigation container */
- .nav-container { min-height: 80px; }
+ .nav-container { 
+   min-height: 80px; 
+   /* Prevent layout shifts during Alpine.js initialization */
+   contain: layout style;
+ }
+ 
+ /* Prevent layout shifts from Alpine.js transitions and dynamic content */
+ [x-cloak] { 
+   display: none !important; 
+   /* Ensure no space is taken during cloaking */
+   visibility: hidden !important;
+   opacity: 0 !important;
+ }
+ 
+ /* Stabilize navigation menu items during Alpine.js loading */
+ nav [x-data] {
+   /* Reserve space to prevent shifts */
+   contain: layout style;
+ }
+ 
+ /* Prevent transition-based layout shifts */
+ .transition, [class*="transition"] {
+   /* Ensure transitions don't affect layout */
+   will-change: auto;
+ }
+ 
+ /* Force immediate layout for critical above-the-fold content */
+ body > * {
+   contain: layout style;
+ }
 </style>
 
 <script>
