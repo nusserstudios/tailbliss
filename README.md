@@ -1,7 +1,8 @@
 <p align="center" style="padding-top:20px">
- <img width="100px" src="images/logo-tailbliss-round.svg" align="center" alt="GitHub Readme Stats" />
+ <img width="100px" src="images/logo-tailbliss-round.svg" align="center" alt="TailBliss Logo" />
  <h1 align="center">TailBliss</h1>
- <p align="center">TailBliss is an opinionated Hugo Starter with Tailwind CSS 4.x, Vite integration, and Alpine.js with light/dark modes.</p>
+ <p align="center">TailBliss is an opinionated Hugo theme with Tailwind CSS 4.x, Vite integration, and Alpine.js with light/dark modes.</p>
+ <p align="center"><strong>Current Version: 2.0+ (Hugo Theme Structure)</strong></p>
 </p>
   <p align="center">
     <a href="https://github.com/nusserstudios/tailbliss/actions/">
@@ -19,7 +20,7 @@
     <br />
     <br />
     <a href="https://gohugo.io/">
-      <img src="https://img.shields.io/badge/Hugo%20-0.105.0%20-gray.svg?colorA=c9177e&colorB=FF4088&style=for-the-badge"/>
+      <img src="https://img.shields.io/badge/Hugo%20-0.148.2%20-gray.svg?colorA=c9177e&colorB=FF4088&style=for-the-badge"/>
     </a>
     <a href="https://tailwindcss.com/">
       <img src="https://img.shields.io/badge/TailwindCSS%20-V4-gray.svg?colorA=0284c7&colorB=38bdf8&style=for-the-badge"/>
@@ -46,42 +47,225 @@
 <img src="https://raw.githubusercontent.com/nusserstudios/tailbliss/main/images/tailbliss-lighthouse-11-03-22.png" alt="Tailbliss Google Lighthouse Score" style="margin: 25px auto; max-width: 830px" width="100%" height="" />
 </p>
 
-**Install to VS Code with:**  
-```bash
-git clone git@github.com:nusserstudios/tailbliss your-name
-cd your-name
-```
+## 📚 **Table of Contents**
+- [🚨 Breaking Changes](#-breaking-changes---new-theme-structure)
+- [🚀 Quick Start](#-quick-start)
+- [⚙️ Configuration](#%EF%B8%8F-configuration)
+- [🔄 Migration Guide](#-migration-guide)
+- [✨ What's New in Tailwind CSS 4](#-whats-new-in-tailwind-css-4-migration)
+- [✨ Features](#-features)
+- [📧 Contact Form Setup](#-contact-form-setup)
+- [Credits](#credits)
 
-##### Install with pnpm (recommended)
+---
+
+## 🚨 **BREAKING CHANGES** - New Theme Structure
+
+**TailBliss has been restructured as a proper Hugo theme!** This is a **breaking change** that affects how you install and use TailBliss.
+
+### 📁 **New Structure (v1.1+)**
+TailBliss now follows the standard Hugo theme convention:
+- **Theme files**: Located in the root directory
+- **Example content**: Located in `exampleSite/` directory
+- **User sites**: Must be created separately using `hugo new site` command
+
+### 🔄 **Migration Required**
+If you're upgrading from v0.5, you'll need to migrate your content. See the [Migration Guide](#migration-guide) below.
+
+### 🌳 **Branch Information**
+- **`exampleSite`** branch: Contains the new theme structure (recommended)
+- **`main`** branch: Contains the legacy v0.5 structure (deprecated)
+
+---
+
+## 🚀 **Quick Start**
+
+### Option 1: Use as Hugo Theme (Recommended)
 ```bash
+# Create a new Hugo site
+hugo new site my-tailbliss-site
+cd my-tailbliss-site
+
+# Add TailBliss as a theme
+git submodule add -b exampleSite https://github.com/nusserstudios/tailbliss.git themes/tailbliss
+
+# Copy example content (optional)
+cp -r themes/tailbliss/exampleSite/* .
+
+# Install dependencies and setup content
 pnpm install
-```
-##### Install with NPM 
-```bash
-npm install
-```
 
-**To start developing:**
-##### Develop with pnpm (recommended)
-```bash
+# Start developing
 pnpm run dev
 ```
-##### Develop with NPM 
+
+### Option 2: Clone and Customize
+```bash
+# Clone the repository
+git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
+cd my-site
+
+# Install dependencies and setup example content automatically
+pnpm install
+
+# Start developing
+pnpm run dev
+```
+
+### 🎯 **Automatic Content Setup**
+
+TailBliss includes an intelligent installation script that automatically sets up example content for you:
+
+```bash
+# The install script runs automatically with pnpm install
+# Or run it manually:
+npm run install
+# or
+node install.js
+```
+
+**What the install script does:**
+- ✅ **Checks for existing content** - Won't overwrite your existing content
+- ✅ **Extracts from git repository** - Gets the latest example content from the main branch
+- ✅ **Creates complete structure** - Sets up `content/` directory with:
+  - Sample pages (`about.md`, `contact.md`, `prose.md`)
+  - 14 example blog and news posts
+  - Proper directory structure (`posts/` subdirectory)
+- ✅ **Safe operation** - Only runs if no `content/` directory exists
+- ✅ **Clear feedback** - Shows progress and next steps
+
+**First-time setup:**
+```bash
+git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
+cd my-site
+pnpm install  # Automatically runs the install script
+pnpm run dev  # Start developing immediately
+```
+
+### 📋 **Available Commands**
+
+##### Setup & Installation
+```bash
+# Install dependencies (automatically runs content setup)
+pnpm install  # recommended
+# or
+npm install
+
+# Manual content setup (if needed)
+npm run install
+# or
+node install.js
+```
+
+##### Development
+```bash
+# Start development server (recommended)
+npm run dev
+# or
+pnpm run dev
+
+# When you change colors or CSS variables
+npm run rebuild
+# or
+pnpm run rebuild
+```
+
+##### Production Build
+```bash
+# Full production build
+npm run build
+# or
+pnpm run build
+```
+
+### 🔄 **Development Workflow Explained**
+
+TailBliss uses a streamlined development workflow designed to eliminate caching issues:
+
+#### **Starting Development**
 ```bash
 npm run dev
 ```
+This command:
+1. Builds CSS in development mode (creates `main.css` without hash)
+2. Starts Hugo server with caching disabled
+3. Opens your site at `http://localhost:1313`
 
-**To generate the site HTML:**
-##### Build with pnpm (recommended)
-```bash
-pnpm run build
-```
-##### Build with NPM 
-```bash
-npm run build
+#### **Making Changes**
+
+**✅ When changing HTML/Tailwind classes:**
+- Edit your `.html` files in `themes/tailbliss/layouts/`
+- Hugo automatically detects changes and reloads
+- **No rebuild needed!**
+
+**🔄 When changing colors/CSS variables:**
+- Edit `themes/tailbliss/assets/css/main.css`
+- Run: `npm run rebuild`
+- Hugo automatically detects the new CSS and reloads
+
+#### **What Each Command Does**
+
+| Command | Purpose | When to Use |
+|---------|---------|-------------|
+| `npm run dev` | Start development server | Beginning of dev session |
+| `npm run rebuild` | Rebuild CSS only | After changing colors/CSS variables |
+| `npm run build` | Production build | Deploying to production |
+
+#### **Why This Approach?**
+
+- **⚡ Fast rebuilds**: Timestamp-based filenames ensure instant cache busting
+- **🚫 No cache issues**: Every rebuild generates a unique CSS filename
+- **🔄 Auto-reload**: Hugo detects CSS changes instantly and reloads browser
+- **🎯 Explicit control**: You decide when CSS rebuilds happen
+- **🧹 Auto-cleanup**: Old CSS files are automatically removed
+
+**Pro tip**: The `rebuild` command uses timestamp-based filenames in development (e.g., `main.abc123def.css`) which completely eliminates browser caching issues, while production builds still use content-based hashes for optimal caching.
+
+### 🔧 **Troubleshooting Development Issues**
+
+#### **CSS Changes Not Showing**
+With the new timestamp-based approach, this should rarely happen, but if it does:
+
+1. **Run rebuild**: `npm run rebuild`
+2. **Check the CSS file**: Look in `themes/tailbliss/static/css/` - you should see a new `main.xxxxxxxxx.css` file with a unique timestamp
+3. **Hard refresh browser**: `Cmd+Shift+R` (Mac) or `Ctrl+Shift+R` (Windows) if needed
+
+#### **Infinite Build Loops**
+This has been completely eliminated with the new approach! If you somehow encounter it:
+- **Stop the process**: `Ctrl+C`
+- **Use the simple workflow**: `npm run dev` → make changes → `npm run rebuild`
+
+#### **Old CSS Still Loading**
+This is automatically handled now:
+- **Old CSS files are automatically deleted** when you run `npm run rebuild`
+- **Each rebuild generates a unique filename** (e.g., `main.abc123def.css`)
+- **Browser cache is bypassed** because the filename is always different
+
+#### **When to Use Each Command**
+- **Starting work**: `npm run dev` (once per session)
+- **Changed HTML classes**: No action needed (auto-reload)
+- **Changed CSS colors/variables**: `npm run rebuild`
+- **Deploying**: `npm run build`
+
+---
+
+## ⚙️ **Configuration**
+
+### **Basic Setup**
+After installation, update your `hugo.yaml` configuration:
+
+```yaml
+baseURL: 'https://yourdomain.com/'  # Replace with your actual domain
+title: Your Site Title
+theme: tailbliss
 ```
 
-**`pnpm run dev`** runs Vite CSS processing with cache busting alongside Hugo server with hot reloading.
+### **Important Configuration Notes**
+- **baseURL**: Set this to your actual domain for proper canonical URLs and social sharing
+- **theme**: Must be set to `tailbliss` when using as a Hugo theme
+- **Example**: The demo site uses `https://tailbliss.com/`
+
+---
 
 ## 🚀 What's New in Tailwind CSS 4 Migration
 
@@ -112,22 +296,22 @@ TailBliss has been completely upgraded from Tailwind CSS 3.2 to 4.x with signifi
 
 #### Available Scripts:
 ```bash
-pnpm run dev          # Development: Concurrent Vite + Hugo
-pnpm run build        # Production: Build CSS then Hugo
-pnpm run build:css    # Build CSS only with Vite
-pnpm run watch:css    # Watch CSS changes only
-pnpm run watch:hugo   # Hugo server only
+npm run dev          # Start development server
+npm run rebuild      # Rebuild CSS after changes
+npm run build        # Production build
 ```
 
 #### Build Process:
-1. **Vite** processes `assets/css/main.css` with Tailwind CSS 4
-2. **Generates** hashed CSS files in `static/css/`
-3. **Hugo** automatically references the latest hashed CSS
-4. **Browser cache** is invalidated on every change
+1. **Development**: Vite processes `assets/css/main.css` and generates timestamped files like `main.abc123def.css`
+2. **Production**: Vite generates content-hashed CSS files like `main.xyz789.css`
+3. **Hugo template** automatically detects and references the latest CSS file
+4. **Cache busting** handled automatically in both development and production
+5. **Auto-cleanup** removes old CSS files during development rebuilds
 
 ### 🎯 **Key Benefits**
-- **Faster Development**: Vite's lightning-fast hot reloading
-- **Better Caching**: Automatic cache busting eliminates stale CSS
+- **Zero Cache Issues**: Timestamp-based filenames eliminate all CSS caching problems
+- **Faster Development**: Vite's lightning-fast processing with instant cache busting
+- **Auto-Cleanup**: Old CSS files are automatically removed during rebuilds
 - **Modern Colors**: OKLCH provides more accurate colors across devices  
 - **Simplified Config**: CSS-first configuration is more maintainable
 - **Enhanced Typography**: Custom prose styles with better performance
@@ -136,6 +320,100 @@ pnpm run watch:hugo   # Hugo server only
 - `tailwindcss`: `^3.2.x` → `^4.1.x`
 - Added: `@tailwindcss/vite`, `@tailwindcss/postcss`, `vite`
 - Removed: `@tailwindcss/typography` (replaced with custom styles)
+
+---
+
+## 🔄 **Migration Guide**
+
+### Migrating from TailBliss v0.5 to v1.1+
+
+If you have an existing TailBliss v0.5 site, follow these steps to migrate:
+
+#### **Step 1: Backup Your Content**
+```bash
+# Create a backup of your current site
+cp -r my-old-tailbliss-site my-old-tailbliss-backup
+```
+
+#### **Step 2: Create New Hugo Site Structure**
+```bash
+# Create a new Hugo site
+hugo new site my-new-tailbliss-site
+cd my-new-tailbliss-site
+
+# Add TailBliss v1.1 as a theme
+git submodule add -b exampleSite https://github.com/nusserstudios/tailbliss.git themes/tailbliss
+```
+
+#### **Step 3: Copy Your Content**
+```bash
+# Copy your existing content
+cp -r ../my-old-tailbliss-backup/content/* ./content/
+cp -r ../my-old-tailbliss-backup/static/* ./static/
+cp -r ../my-old-tailbliss-backup/assets/* ./assets/
+
+# Copy your Hugo configuration (and merge with new theme settings)
+cp ../my-old-tailbliss-backup/hugo.yaml ./hugo.yaml
+```
+
+#### **Step 4: Update Configuration**
+Edit your `hugo.yaml` to include the theme and your domain:
+```yaml
+baseURL: 'https://yourdomain.com/'
+theme: tailbliss
+```
+
+#### **Step 5: Install Dependencies & Setup Content**
+```bash
+# Install dependencies and automatically setup example content
+pnpm install
+
+# Test your site
+npm dev
+```
+
+**Alternative: Use the install script for fresh content**
+If you want to start with fresh example content instead of migrating:
+```bash
+# Remove existing content and let install script create fresh examples
+rm -rf content/
+npm run install  # Creates fresh example content from main branch
+```
+
+#### **Common Migration Issues**
+
+1. **Missing Theme Reference**: Make sure `theme: tailbliss` is in your `hugo.yaml`
+2. **CSS Not Loading**: Ensure you've run `pnpm install` in your site root
+3. **Images Not Displaying**: Check that images are in the correct `/assets` or `/static` directories
+4. **Custom Layouts**: If you customized layouts, copy them to your site's `layouts/` directory
+5. **Quick Setup**: You can copy the entire `exampleSite` content to your root directory:
+   ```bash
+   # Copy all exampleSite content to root
+   cp -r exampleSite/* .
+   ```
+
+#### **Fresh Start Option**
+If you prefer to start fresh:
+```bash
+# Clone and let the install script handle content setup automatically
+git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
+cd my-site
+pnpm install  # Automatically runs install script and sets up content
+npm dev     # Start developing immediately
+```
+
+**Manual approach** (if you prefer manual control):
+```bash
+git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
+cd my-site
+cp -r exampleSite/* .  # Copy example files manually
+pnpm install
+npm dev
+```
+
+---
+
+## ✨ **Features**
 
 Has paginated Categories and Tags. Markdown files will automatically convert images put into `/assets` folder to .webp images. 
 
@@ -146,8 +424,15 @@ Has paginated Categories and Tags. Markdown files will automatically convert ima
 
 <a href="https://www.buymeacoffee.com/nusserstudios" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="41" width="174" /></a>
 
-## Form
-To use the form, visit [FormSubmit.Co](https://formsubmit.co/). Locate the contact form in "content/contact.md", and update the form action with the email address you want on this line: **action="https://formsubmit.co/your@email.com" method="POST"**
+## 📧 **Contact Form Setup**
+To use the contact form:
+
+1. Visit [FormSubmit.Co](https://formsubmit.co/)
+2. Locate the contact form in `content/contact.md` (or `exampleSite/content/contact.md` if using as reference)
+3. Update the form action with your email address:
+   ```html
+   action="https://formsubmit.co/your@email.com" method="POST"
+   ```
 
 
 ## Credits

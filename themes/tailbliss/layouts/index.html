@@ -15,14 +15,34 @@
                     </p>
                 </div>
                 <div class="col-span-6">
-                    {{ $hero := resources.GetMatch "images/pages/tailbliss-rocket-indigo.png" }}
-
-                    {{ $thumb := ($hero.Fill "400x400 webp q90") }}
-                    {{ $large := ($hero.Fill "576x576 webp q90") }}
-
-                    <img srcset="
-                        {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
-                        {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}" width="100%" height="" alt="TailBliss Hero" class="mx-auto w-full max-w-xl rounded-lg" />
+                    <div class="mx-auto w-full max-w-sm sm:max-w-md lg:max-w-lg hero-container">
+                        {{/* Use Hugo's image processing for optimized responsive images */}}
+                        {{ $heroImage := resources.Get "images/pages/tailbliss-rocket-indigo.png" }}
+                        {{ if $heroImage }}
+                            {{ $heroWebP := $heroImage.Resize "576x576 webp q85" }}
+                            {{ $heroWebPSmall := $heroImage.Resize "320x320 webp q85" }}
+                            <img 
+                                src="{{ $heroWebP.RelPermalink }}" 
+                                srcset="{{ $heroWebPSmall.RelPermalink }} 320w, {{ $heroWebP.RelPermalink }} 576w"
+                                sizes="(max-width: 640px) 320px, 576px"
+                                alt="TailBliss Hero" 
+                                class="overflow-hidden mx-auto rounded-2xl shadow-xl hero-image"
+                                width="576" 
+                                height="576"
+                                loading="eager"
+                                fetchpriority="high" />
+                        {{ else }}
+                            {{/* Fallback to static image */}}
+                            <img 
+                                src="/images/tailbliss-rocket-indigo.webp" 
+                                alt="TailBliss Hero" 
+                                class="overflow-hidden mx-auto rounded-2xl shadow-xl hero-image"
+                                width="576" 
+                                height="576"
+                                loading="eager"
+                                fetchpriority="high" />
+                        {{ end }}
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,8 +67,8 @@
                     <div class="overflow-hidden rounded-2xl shadow-xl">
                         {{ $p1image := resources.Get .Site.Params.P1.Image }}
                         {{ with $p1image }}
-                        {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
-                        <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
+                        {{ with .Resize "600x600 webp q85" }}
+                        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
                         {{ end }}
                         {{ end }}
                     </div>
@@ -106,8 +126,8 @@
                 <div class="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
                     {{ $p2image := resources.Get .Site.Params.P2.Image }}
                     {{ with $p2image }}
-                    {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
-                    <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="p2" class="w-full rounded-lg shadow-xl lg:h-full lg:w-auto lg:max-w-none" loading="lazy" />
+                    {{ with .Resize "800x600 webp q85" }}
+                    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="p2" class="w-full rounded-lg shadow-xl lg:h-full lg:w-auto lg:max-w-none" loading="lazy" />
                     {{ end }}
                     {{ end }}
 
@@ -125,10 +145,14 @@
                 <div class="flex col-span-1 justify-center px-8 py-8 bg-gray-50 dark:bg-gray-900/10">
                     {{ if .image }}
                     {{ $sponsor := resources.Get .image }}
-                    <img src="{{ $sponsor.RelPermalink }}" class="max-h-12 dark:invert" alt="{{ .alt }}" loading="lazy" />
+                    {{ if eq $sponsor.MediaType.SubType "svg" }}
+                    <img src="{{ $sponsor.RelPermalink }}" width="138" height="48" class="max-h-12 dark:invert" alt="{{ .alt }}" loading="lazy" />
+                    {{ else }}
+                    <img src="{{ $sponsor.RelPermalink }}" width="{{ $sponsor.Width }}" height="{{ $sponsor.Height }}" class="max-h-12 dark:invert" alt="{{ .alt }}" loading="lazy" />
+                    {{ end }}
                     {{ else }}
                     {{ $sponsor := resources.Get "images/global/sample-logo.svg" }}
-                    <img src="{{ $sponsor.RelPermalink }}" class="max-h-12 dark:invert" alt="{{ .alt }}" loading="lazy" />
+                    <img src="{{ $sponsor.RelPermalink }}" width="138" height="48" class="max-h-12 dark:invert" alt="{{ .alt }}" loading="lazy" />
                     {{ end }}
                 </div>
                 {{ end }}
@@ -178,8 +202,8 @@
                             <a href="{{.Permalink}}">
                                 {{ with .Params.featured_image }}
                                 {{ with resources.Get . }}
-                                {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
-                                <img src="{{ $postimage }}" class="object-fill overflow-hidden rounded-t-lg" width="100%" height="" loading="lazy" alt="{{ .Title }}" />
+                                {{ $resized := .Resize "500x webp q90" }}
+                                <img src="{{ $resized.RelPermalink }}" class="object-fill overflow-hidden rounded-t-lg" width="{{ $resized.Width }}" height="{{ $resized.Height }}" loading="lazy" alt="{{ .Title }}" />
 
                                 {{ end }}
                                 {{ end }}
@@ -205,8 +229,8 @@
                                         <span class="sr-only">{{ .Params.author }}</span>
                                         {{ with .Params.authorimage }}
                                         {{ with resources.Get . }}
-                                        {{ $authorimage := (.Resize "400x webp").RelPermalink }}
-                                        <img class="w-10 h-10 rounded-full" src="{{ $authorimage }}" alt="">
+                                        {{ $authorresized := .Resize "40x40 webp q75" }}
+                                        <img class="w-10 h-10 rounded-full" src="{{ $authorresized.RelPermalink }}" width="40" height="40" alt="" loading="lazy">
                                         {{ end }}
                                         {{ end }}
                                     </div>

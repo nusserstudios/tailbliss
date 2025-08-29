@@ -1,0 +1,14 @@
+# Netlify/Cloudflare redirects and rules
+
+# Force HTTPS
+http://tailbliss.nusserstudios.com/* https://tailbliss.nusserstudios.com/:splat 301!
+
+# Cache static assets
+/css/* /css/:splat 200
+  Cache-Control: public, max-age=31536000, immutable
+  
+/js/* /js/:splat 200
+  Cache-Control: public, max-age=31536000, immutable
+  
+/images/* /images/:splat 200
+  Cache-Control: public, max-age=31536000, immutable

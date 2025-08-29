@@ -1,7 +1,4 @@
 <!-- Footer section -->
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-{{ $js := resources.Get "js/darkmode.js" | js.Build }}
-<script src="{{ $js.RelPermalink }}" defer></script>
 <footer class="bg-gray-900">
     <div class="max-w-md px-4 py-12 mx-auto overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
@@ -83,3 +80,12 @@
         </p>
     </div>
 </footer>
+
+{{/* Load JavaScript at the end for better performance and CLS prevention */}}
+{{ if not .Site.Params.Disable_theme_toggle }}
+{{ $js := resources.Get "js/darkmode.js" | js.Build }}
+<script defer src="{{ $js.RelPermalink }}"></script>
+{{ end }}
+
+{{/* Load Alpine.js after DOM is ready to prevent layout shifts */}}
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js" crossorigin="anonymous"></script>

@@ -15,9 +15,11 @@ cmds = [
 
 [phases.build]
 cmds = [
-  'npm run build:css',
-  'hugo --config hugo.yaml --minify'
+  'npm run build'
 ]
+
+[start]
+cmd = 'nginx -g "daemon off;"'
 
 [[nixpacks.included_files]]
 paths = ["/public"]

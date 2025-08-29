@@ -7,9 +7,63 @@
   font-size: 110%;
 }
 
+/* Prevent layout shifts during image loading */
+img {
+  /* Ensure images maintain their aspect ratio during loading */
+  height: auto;
+  max-width: 100%;
+  /* Prevent layout shifts by ensuring dimensions are respected */
+  display: block;
+}
+
+/* Optimize image loading performance */
+img[loading="lazy"] {
+  /* Use content-visibility for better performance where supported */
+  content-visibility: auto;
+  /* Fallback for browsers that don't support content-visibility */
+  contain: layout style paint;
+}
+
+/* Hero container and image optimizations */
+.hero-container {
+  /* Reserve space immediately to prevent layout shifts */
+  width: 100%;
+  max-width: 576px;
+  /* Fixed aspect ratio to prevent any shifts */
+  aspect-ratio: 1 / 1;
+  /* Ensure proper containment */
+  contain: layout style;
+  /* Prevent any overflow issues */
+  overflow: hidden;
+}
+
+.hero-image {
+  /* Responsive width that respects container constraints */
+  width: 100%;
+  height: auto;
+  max-width: 576px;
+  /* Fixed aspect ratio */
+  aspect-ratio: 1 / 1;
+  /* Prevent any layout shifts during loading */
+  contain: layout style paint;
+  /* Ensure image fits within container */
+  object-fit: cover;
+  /* Prevent any size changes */
+  flex-shrink: 0;
+}
+
+/* Specific aspect ratio containers for common image sizes */
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
 @theme {
   /* Content paths for Hugo */
-  --content: "layouts/**/*.html", "content/**/*.md", "assets/**/*.js";
+  --content: "themes/tailbliss/layouts/**/*.html", "content/**/*.md", "themes/tailbliss/assets/**/*.js";
   
   /* Safelist for classes that might not be detected */
   --safelist: "bg-gray-50", "bg-gray-950", "dark:bg-gray-950", "prose-2xl", 
@@ -353,6 +407,20 @@
 
 .dark .prose tbody tr {
   border-bottom-color: var(--color-zinc-700);
+}
+
+/* Dark mode placeholder text fix */
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: var(--color-gray-300);
+  opacity: 1;
+}
+
+/* Light mode placeholder text */
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-gray-500);
+  opacity: 1;
 }
 
 /* Custom CSS end */
