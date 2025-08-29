@@ -237,7 +237,7 @@ module:
 caches:
   assets:
     dir: :cacheDir/assets
-    maxAge: 8760h # 1 year
+    maxAge: "0s" # Disable caching in development
   getcsv:
     dir: :cacheDir/getcsv
     maxAge: 3600s # 1 hour

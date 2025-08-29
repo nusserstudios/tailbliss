@@ -16,10 +16,11 @@
   },
   "scripts": {
     "install": "node install.js",
-    "dev": "npm run build:css && hugo server --disableFastRender",
-    "build:css": "vite build",
+    "dev": "npm run build:css:dev && hugo server --disableFastRender --noHTTPCache --disableBrowserError",
+    "build:css": "vite build --mode production",
+    "build:css:dev": "vite build --mode development --no-watch",
     "build": "npm run build:css && hugo --minify --gc --cleanDestinationDir",
-    "rebuild": "npm run build:css",
+    "rebuild": "find themes/tailbliss/static/css/ -name 'main.*.css' -delete 2>/dev/null || true && npm run build:css:dev",
     "test": "hugo",
     "optimize": "npm run build && echo 'Build optimized for production'"
   },

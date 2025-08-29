@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 import { resolve } from 'path'
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [
     tailwindcss(),
   ],
@@ -19,27 +19,35 @@ export default defineConfig({
         main: resolve(__dirname, 'themes/tailbliss/assets/css/main.css'),
       },
       output: {
-        // Generate hashed CSS files
+        // Use timestamp-based naming for better cache busting during development
         assetFileNames: (assetInfo) => {
           if (assetInfo.name && assetInfo.name.endsWith('.css')) {
-            return '[name].[hash].css'
+            const timestamp = Date.now().toString(36)
+            return mode === 'development' ? `[name].${timestamp}.css` : '[name].[hash].css'
           }
-          return '[name].[hash].[ext]'
+          return mode === 'development' ? `[name].${Date.now().toString(36)}.[ext]` : '[name].[hash].[ext]'
         },
         // Don't create JS files for CSS-only builds
         entryFileNames: () => {
-          return '[name].[hash].js'
+          const timestamp = Date.now().toString(36)
+          return mode === 'development' ? `[name].${timestamp}.js` : '[name].[hash].js'
         }
       }
     },
-    // Generate manifest for Hugo to read
-    manifest: true,
+    // Only generate manifest in production
+    manifest: mode === 'production',
+    // Don't use watch mode - causes infinite loops with Hugo
+    watch: null,
   },
   // For development hot reloading
   server: {
     port: 5173,
     hmr: {
       port: 5173,
+    },
+    watch: {
+      // Also ignore output directories in dev server
+      ignored: ['**/themes/tailbliss/static/css/**', '**/public/**']
     }
   }
-})
+}))

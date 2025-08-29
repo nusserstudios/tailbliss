@@ -63,7 +63,7 @@ img[loading="lazy"] {
 
 @theme {
   /* Content paths for Hugo */
-  --content: "layouts/**/*.html", "content/**/*.md", "assets/**/*.js";
+  --content: "themes/tailbliss/layouts/**/*.html", "content/**/*.md", "themes/tailbliss/assets/**/*.js";
   
   /* Safelist for classes that might not be detected */
   --safelist: "bg-gray-50", "bg-gray-950", "dark:bg-gray-950", "prose-2xl", 

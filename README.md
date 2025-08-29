@@ -159,13 +159,15 @@ node install.js
 
 ##### Development
 ```bash
-# Start development server with hot reloading
-npm dev
+# Start development server (recommended)
+npm run dev
 # or
-pnpm run start
+pnpm run dev
 
-# Build CSS and start Hugo server
-npm run build:css && hugo server --disableFastRender
+# When you change colors or CSS variables
+npm run rebuild
+# or
+pnpm run rebuild
 ```
 
 ##### Production Build
@@ -174,14 +176,76 @@ npm run build:css && hugo server --disableFastRender
 npm run build
 # or
 pnpm run build
-
-# Build CSS only
-npm run build:css
-# or
-pnpm run build:css
 ```
 
-**Development workflow:** The `npm dev` command builds CSS with Vite (including cache busting) then starts Hugo server with hot reloading and fast render disabled for better development experience.
+### 🔄 **Development Workflow Explained**
+
+TailBliss uses a streamlined development workflow designed to eliminate caching issues:
+
+#### **Starting Development**
+```bash
+npm run dev
+```
+This command:
+1. Builds CSS in development mode (creates `main.css` without hash)
+2. Starts Hugo server with caching disabled
+3. Opens your site at `http://localhost:1313`
+
+#### **Making Changes**
+
+**✅ When changing HTML/Tailwind classes:**
+- Edit your `.html` files in `themes/tailbliss/layouts/`
+- Hugo automatically detects changes and reloads
+- **No rebuild needed!**
+
+**🔄 When changing colors/CSS variables:**
+- Edit `themes/tailbliss/assets/css/main.css`
+- Run: `npm run rebuild`
+- Hugo automatically detects the new CSS and reloads
+
+#### **What Each Command Does**
+
+| Command | Purpose | When to Use |
+|---------|---------|-------------|
+| `npm run dev` | Start development server | Beginning of dev session |
+| `npm run rebuild` | Rebuild CSS only | After changing colors/CSS variables |
+| `npm run build` | Production build | Deploying to production |
+
+#### **Why This Approach?**
+
+- **⚡ Fast rebuilds**: Timestamp-based filenames ensure instant cache busting
+- **🚫 No cache issues**: Every rebuild generates a unique CSS filename
+- **🔄 Auto-reload**: Hugo detects CSS changes instantly and reloads browser
+- **🎯 Explicit control**: You decide when CSS rebuilds happen
+- **🧹 Auto-cleanup**: Old CSS files are automatically removed
+
+**Pro tip**: The `rebuild` command uses timestamp-based filenames in development (e.g., `main.abc123def.css`) which completely eliminates browser caching issues, while production builds still use content-based hashes for optimal caching.
+
+### 🔧 **Troubleshooting Development Issues**
+
+#### **CSS Changes Not Showing**
+With the new timestamp-based approach, this should rarely happen, but if it does:
+
+1. **Run rebuild**: `npm run rebuild`
+2. **Check the CSS file**: Look in `themes/tailbliss/static/css/` - you should see a new `main.xxxxxxxxx.css` file with a unique timestamp
+3. **Hard refresh browser**: `Cmd+Shift+R` (Mac) or `Ctrl+Shift+R` (Windows) if needed
+
+#### **Infinite Build Loops**
+This has been completely eliminated with the new approach! If you somehow encounter it:
+- **Stop the process**: `Ctrl+C`
+- **Use the simple workflow**: `npm run dev` → make changes → `npm run rebuild`
+
+#### **Old CSS Still Loading**
+This is automatically handled now:
+- **Old CSS files are automatically deleted** when you run `npm run rebuild`
+- **Each rebuild generates a unique filename** (e.g., `main.abc123def.css`)
+- **Browser cache is bypassed** because the filename is always different
+
+#### **When to Use Each Command**
+- **Starting work**: `npm run dev` (once per session)
+- **Changed HTML classes**: No action needed (auto-reload)
+- **Changed CSS colors/variables**: `npm run rebuild`
+- **Deploying**: `npm run build`
 
 ---
 
@@ -232,22 +296,22 @@ TailBliss has been completely upgraded from Tailwind CSS 3.2 to 4.x with signifi
 
 #### Available Scripts:
 ```bash
-pnpm run dev          # Development: Concurrent Vite + Hugo
-pnpm run build        # Production: Build CSS then Hugo
-pnpm run build:css    # Build CSS only with Vite
-pnpm run watch:css    # Watch CSS changes only
-pnpm run watch:hugo   # Hugo server only
+npm run dev          # Start development server
+npm run rebuild      # Rebuild CSS after changes
+npm run build        # Production build
 ```
 
 #### Build Process:
-1. **Vite** processes `assets/css/main.css` with Tailwind CSS 4
-2. **Generates** hashed CSS files in `static/css/`
-3. **Hugo** automatically references the latest hashed CSS
-4. **Browser cache** is invalidated on every change
+1. **Development**: Vite processes `assets/css/main.css` and generates timestamped files like `main.abc123def.css`
+2. **Production**: Vite generates content-hashed CSS files like `main.xyz789.css`
+3. **Hugo template** automatically detects and references the latest CSS file
+4. **Cache busting** handled automatically in both development and production
+5. **Auto-cleanup** removes old CSS files during development rebuilds
 
 ### 🎯 **Key Benefits**
-- **Faster Development**: Vite's lightning-fast hot reloading
-- **Better Caching**: Automatic cache busting eliminates stale CSS
+- **Zero Cache Issues**: Timestamp-based filenames eliminate all CSS caching problems
+- **Faster Development**: Vite's lightning-fast processing with instant cache busting
+- **Auto-Cleanup**: Old CSS files are automatically removed during rebuilds
 - **Modern Colors**: OKLCH provides more accurate colors across devices  
 - **Simplified Config**: CSS-first configuration is more maintainable
 - **Enhanced Typography**: Custom prose styles with better performance
