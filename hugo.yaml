@@ -13,6 +13,10 @@ darkmode_js:
   - assets/js/darkmode.js
 enableInlineShortcodes: true
 
+# Ignore directories
+ignoreFiles:
+  - "exampleSite/content/.*"
+
 markup:
   goldmark:
     extensions:
