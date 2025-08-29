@@ -1,4 +1,4 @@
-baseURL: ''
+baseURL: 'https://tailbliss.com'
 title: TailBliss
 languageCode: en-us
 theme: tailbliss
@@ -12,10 +12,6 @@ pagination:
 darkmode_js:
   - assets/js/darkmode.js
 enableInlineShortcodes: true
-
-# Ignore directories
-ignoreFiles:
-  - "exampleSite/content/.*"
 
 markup:
   goldmark:

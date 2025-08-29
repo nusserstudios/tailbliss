@@ -1,4 +1,4 @@
-baseURL: ''
+baseURL: 'http://localhost:1313/'
 title: TailBliss
 languageCode: en-us
 theme: tailbliss
