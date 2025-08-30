@@ -2,7 +2,7 @@
  <img width="100px" src="images/logo-tailbliss-round.svg" align="center" alt="TailBliss Logo" />
  <h1 align="center">TailBliss</h1>
  <p align="center">TailBliss is an opinionated Hugo theme with Tailwind CSS 4.x, Vite integration, and Alpine.js with light/dark modes.</p>
- <p align="center"><strong>Current Version: 2.0+ (Hugo Theme Structure)</strong></p>
+ <p align="center"><strong>Current Version: 1.1.0+ (Hugo Theme Structure)</strong></p>
 </p>
   <p align="center">
     <a href="https://github.com/nusserstudios/tailbliss/actions/">
