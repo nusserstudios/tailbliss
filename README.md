@@ -72,9 +72,10 @@ TailBliss now follows the standard Hugo theme convention:
 ### 🔄 **Migration Required**
 If you're upgrading from v0.5, you'll need to migrate your content. See the [Migration Guide](#migration-guide) below.
 
-### 🌳 **Branch Information**
-- **`exampleSite`** branch: Contains the new theme structure (recommended)
-- **`main`** branch: Contains the legacy v0.5 structure (deprecated)
+### 🌳 **Current Structure**
+- **`main`** branch: Contains the complete theme structure with example content
+- **Theme files**: Located in the root directory and `themes/tailbliss/`
+- **Example content**: Located in `exampleSite/` directory for reference
 
 ---
 
@@ -87,7 +88,7 @@ hugo new site my-tailbliss-site
 cd my-tailbliss-site
 
 # Add TailBliss as a theme
-git submodule add -b exampleSite https://github.com/nusserstudios/tailbliss.git themes/tailbliss
+git submodule add https://github.com/nusserstudios/tailbliss.git themes/tailbliss
 
 # Copy example content (optional)
 cp -r themes/tailbliss/exampleSite/* .
@@ -102,7 +103,7 @@ pnpm run dev
 ### Option 2: Clone and Customize
 ```bash
 # Clone the repository
-git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
+git clone https://github.com/nusserstudios/tailbliss.git my-site
 cd my-site
 
 # Install dependencies and setup example content automatically
@@ -126,7 +127,7 @@ node install.js
 
 **What the install script does:**
 - ✅ **Checks for existing content** - Won't overwrite your existing content
-- ✅ **Extracts from git repository** - Gets the latest example content from the main branch
+- ✅ **Extracts from git repository** - Gets the latest example content from the repository
 - ✅ **Creates complete structure** - Sets up `content/` directory with:
   - Sample pages (`about.md`, `contact.md`, `prose.md`)
   - 14 example blog and news posts
@@ -136,7 +137,7 @@ node install.js
 
 **First-time setup:**
 ```bash
-git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
+git clone https://github.com/nusserstudios/tailbliss.git my-site
 cd my-site
 pnpm install  # Automatically runs the install script
 pnpm run dev  # Start developing immediately
@@ -342,7 +343,7 @@ hugo new site my-new-tailbliss-site
 cd my-new-tailbliss-site
 
 # Add TailBliss v1.1 as a theme
-git submodule add -b exampleSite https://github.com/nusserstudios/tailbliss.git themes/tailbliss
+git submodule add https://github.com/nusserstudios/tailbliss.git themes/tailbliss
 ```
 
 #### **Step 3: Copy Your Content**
@@ -377,7 +378,7 @@ If you want to start with fresh example content instead of migrating:
 ```bash
 # Remove existing content and let install script create fresh examples
 rm -rf content/
-npm run install  # Creates fresh example content from main branch
+npm run install  # Creates fresh example content from repository
 ```
 
 #### **Common Migration Issues**
@@ -396,7 +397,7 @@ npm run install  # Creates fresh example content from main branch
 If you prefer to start fresh:
 ```bash
 # Clone and let the install script handle content setup automatically
-git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
+git clone https://github.com/nusserstudios/tailbliss.git my-site
 cd my-site
 pnpm install  # Automatically runs install script and sets up content
 npm dev     # Start developing immediately
@@ -404,7 +405,7 @@ npm dev     # Start developing immediately
 
 **Manual approach** (if you prefer manual control):
 ```bash
-git clone -b exampleSite https://github.com/nusserstudios/tailbliss.git my-site
+git clone https://github.com/nusserstudios/tailbliss.git my-site
 cd my-site
 cp -r exampleSite/* .  # Copy example files manually
 pnpm install
