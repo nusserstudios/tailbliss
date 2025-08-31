@@ -275,7 +275,7 @@ This is automatically handled now:
 After installation, update your `hugo.yaml` configuration:
 
 ```yaml
-baseURL: 'https://yourdomain.com/'  # Replace with your actual domain
+baseURL: 'https://tailbliss.netlify.app'  # Replace with your actual domain
 title: Your Site Title
 theme: tailbliss
 ```

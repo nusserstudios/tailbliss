@@ -1,4 +1,4 @@
-baseURL: 'https://tailbliss.com'
+baseURL: 'https://tailbliss.netlify.app/'
 title: TailBliss
 languageCode: en-us
 theme: tailbliss
