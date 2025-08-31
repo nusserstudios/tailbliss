@@ -1,6 +1,6 @@
 <!-- Footer section -->
 <footer class="bg-gray-900">
-    <div class="max-w-md px-4 py-12 mx-auto overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="overflow-hidden px-4 py-12 mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
             {{ range site.Menus.footer }}
             <div class="px-5 py-2">
@@ -89,3 +89,6 @@
 
 {{/* Load Alpine.js after DOM is ready to prevent layout shifts */}}
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js" crossorigin="anonymous"></script>
+
+<script defer data-domain="tailbliss.netlify.app" src="https://analytics.nusserstudios.com/js/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
