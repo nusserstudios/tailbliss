@@ -483,4 +483,8 @@ textarea::placeholder {
   opacity: 1;
 }
 
+#github-follows span {
+  @apply mr-0.5 mb-2;
+}
+
 /* Custom CSS end */
