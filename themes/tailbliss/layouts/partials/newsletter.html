@@ -1,0 +1,38 @@
+{{/* Newsletter signup section - CTA */}}
+{{ if .Site.Params.newsletter_signup }}
+<div class="relative pb-16 mt-6 lg:my-32">
+    <div class="px-7 mx-auto max-w-md sm:max-w-3xl lg:max-w-7xl">
+        <div class="overflow-hidden relative px-6 py-10 rounded-2xl shadow-xl bg-primary-500 sm:px-12 sm:py-20">
+            <div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
+                <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 360" loading="lazy">
+                    <path class="text-opacity-40 text-primary-600" fill="currentColor" d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z" />
+                    <path class="text-opacity-40 text-primary-600" fill="currentColor" d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z" />
+                </svg>
+            </div>
+            <div class="relative">
+                <div class="sm:text-center">
+                    <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                        {{ .Site.Params.P5.Heading }}
+                    </h2>
+                    {{ range .Site.Params.P5.Content }}
+                    <p class="mx-auto mt-6 max-w-2xl text-lg text-primary-100">
+                        {{ .text }}
+                    </p>
+                    {{ end }}
+                </div>
+                <form action="{{ .Site.Params.P5.Action }}" class="mt-12 sm:mx-auto sm:flex sm:max-w-lg">
+                    <div class="flex-1 min-w-0">
+                        <label for="cta-email" class="sr-only">{{ .Site.Params.P5.Label }}</label>
+                        <input id="cta-email" type="email" class="block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm placeholder:text-gray-950 text-md focus:ring-white focus:border-white" placeholder="{{ .Site.Params.P5.Placeholder }}">
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:ml-3">
+                        <button type="submit" class="block px-5 py-3 w-full text-base font-medium text-white bg-gray-900 rounded-md border border-transparent shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10">
+                            {{ .Site.Params.P5.Button }}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

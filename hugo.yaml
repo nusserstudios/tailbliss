@@ -54,7 +54,7 @@ params:
   moto: "Super Fast, and Flexible"
   description: "A Hugo theme built with love, using TailwindCSS, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
   disable_theme_toggle: false
-  disable_stay_uptodate: true
+  newsletter_signup: true
 
   p1:
     heading: "Our mission"

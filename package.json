@@ -17,6 +17,9 @@
   "scripts": {
     "install": "node install.js",
     "dev": "npm run build:css:dev && hugo server --disableFastRender --noHTTPCache --disableBrowserError",
+    "dev:watch": "concurrently \"npm run css:watch\" \"npm run hugo:watch\"",
+    "css:watch": "vite build --mode development --watch",
+    "hugo:watch": "hugo server --disableFastRender --noHTTPCache --disableBrowserError",
     "build:css": "vite build --mode production",
     "build:css:dev": "vite build --mode development --no-watch",
     "build": "npm run build:css && hugo --minify --gc --cleanDestinationDir",

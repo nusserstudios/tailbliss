@@ -160,12 +160,17 @@ node install.js
 
 ##### Development
 ```bash
-# Start development server (recommended)
+# Start development server with auto CSS rebuilding (RECOMMENDED)
+npm run dev:watch
+# or
+pnpm run dev:watch
+
+# Alternative: Traditional approach
 npm run dev
 # or
 pnpm run dev
 
-# When you change colors or CSS variables
+# Manual CSS rebuild (when not using dev:watch)
 npm run rebuild
 # or
 pnpm run rebuild
@@ -181,16 +186,27 @@ pnpm run build
 
 ### 🔄 **Development Workflow Explained**
 
-TailBliss uses a streamlined development workflow designed to eliminate caching issues:
+TailBliss offers two development approaches - choose the one that fits your workflow:
 
-#### **Starting Development**
+#### **🚀 Recommended: Auto-Watch Mode**
+```bash
+npm run dev:watch
+```
+This command:
+1. Starts CSS watcher (automatically rebuilds when Tailwind classes change)
+2. Starts Hugo server with caching disabled  
+3. Opens your site at `http://localhost:1313`
+4. **No manual rebuilding needed** - changes appear instantly!
+
+#### **📦 Traditional: Manual Mode**
 ```bash
 npm run dev
 ```
 This command:
-1. Builds CSS in development mode (creates `main.css` without hash)
+1. Builds CSS once in development mode
 2. Starts Hugo server with caching disabled
 3. Opens your site at `http://localhost:1313`
+4. Requires manual rebuild when changing Tailwind classes
 
 #### **Making Changes**
 
@@ -208,8 +224,9 @@ This command:
 
 | Command | Purpose | When to Use |
 |---------|---------|-------------|
-| `npm run dev` | Start development server | Beginning of dev session |
-| `npm run rebuild` | Rebuild CSS only | After changing colors/CSS variables |
+| `npm run dev:watch` | **Auto-watch development** (RECOMMENDED) | Best for active development - auto-rebuilds CSS |
+| `npm run dev` | Traditional development server | When you prefer manual control |
+| `npm run rebuild` | Rebuild CSS only | After changing colors/CSS variables (manual mode) |
 | `npm run build` | Production build | Deploying to production |
 
 #### **Why This Approach?**
@@ -243,9 +260,11 @@ This is automatically handled now:
 - **Browser cache is bypassed** because the filename is always different
 
 #### **When to Use Each Command**
-- **Starting work**: `npm run dev` (once per session)
-- **Changed HTML classes**: No action needed (auto-reload)
-- **Changed CSS colors/variables**: `npm run rebuild`
+- **Starting work**: `npm run dev:watch` (RECOMMENDED - auto-rebuilds everything)
+- **Alternative start**: `npm run dev` (manual mode)
+- **Changed HTML/Tailwind classes**: No action needed with `dev:watch` (auto-rebuild)
+- **Changed CSS colors/variables**: No action needed with `dev:watch` (auto-rebuild)
+- **Manual rebuild**: `npm run rebuild` (only needed in manual mode)
 - **Deploying**: `npm run build`
 
 ---

@@ -65,11 +65,59 @@ img[loading="lazy"] {
   /* Content paths for Hugo */
   --content: "themes/tailbliss/layouts/**/*.html", "content/**/*.md", "themes/tailbliss/assets/**/*.js";
   
-  /* Safelist for classes that might not be detected */
-  --safelist: "bg-gray-50", "bg-gray-950", "dark:bg-gray-950", "prose-2xl", 
-              "text-indigo-400", "text-indigo-500", "text-indigo-600", 
-              "text-zinc-800", "text-zinc-900", "bg-zinc-100", "bg-zinc-800",
-              "border-zinc-200", "border-zinc-300", "border-zinc-600", "border-zinc-700";
+  /* Efficient safelist using Tailwind patterns for development */
+  --safelist: 
+    /* Layout & Spacing patterns */
+    "container", "mx-auto",
+    "p-*", "px-*", "py-*", "pt-*", "pb-*", "pl-*", "pr-*",
+    "m-*", "mx-*", "my-*", "mt-*", "mb-*", "ml-*", "mr-*",
+    "space-x-*", "space-y-*",
+    
+    /* Flexbox & Grid patterns */
+    "flex", "flex-*", "items-*", "justify-*", "content-*",
+    "grid", "grid-cols-*", "col-span-*", "row-span-*",
+    "gap-*", "gap-x-*", "gap-y-*",
+    
+    /* Sizing patterns */
+    "w-*", "h-*", "max-w-*", "max-h-*", "min-w-*", "min-h-*",
+    
+    /* Color patterns */
+    "bg-*", "text-*", "border-*", "ring-*", "divide-*",
+    
+    /* Typography patterns */
+    "text-*", "font-*", "leading-*", "tracking-*",
+    
+    /* Border & Radius patterns */
+    "border", "border-*", "rounded", "rounded-*",
+    
+    /* Shadow patterns */
+    "shadow", "shadow-*",
+    
+    /* Display & Layout */
+    "block", "inline-block", "inline", "flex", "inline-flex", "grid", "inline-grid", "hidden",
+    "overflow-*", "object-*",
+    
+    /* Position patterns */
+    "static", "fixed", "absolute", "relative", "sticky",
+    "inset-*", "top-*", "right-*", "bottom-*", "left-*",
+    "z-*",
+    
+    /* Responsive patterns */
+    "sm:*", "md:*", "lg:*", "xl:*", "2xl:*",
+    
+    /* State patterns */
+    "hover:*", "focus:*", "active:*", "disabled:*", "visited:*",
+    "dark:*", "group-hover:*", "group-focus:*",
+    
+    /* Form & Interaction patterns */
+    "placeholder:*", "focus-within:*", "focus-visible:*",
+    
+    /* Animation & Transition patterns */
+    "transition", "transition-*", "duration-*", "delay-*", "ease-*",
+    "animate-*", "transform", "transform-*",
+    
+    /* Custom classes */
+    "prose-2xl";
   
   /* Primary Colors - Indigo with OKLCH */
   --color-primary: oklch(58.5% .233 277.117);
@@ -416,10 +464,22 @@ img[loading="lazy"] {
   opacity: 1;
 }
 
+#cta-email .dark input::placeholder,
+#cta-email .dark textarea::placeholder {
+  color: var(--color-gray-950);
+  opacity: 1;
+}
+
 /* Light mode placeholder text */
 input::placeholder,
 textarea::placeholder {
   color: var(--color-gray-500);
+  opacity: 1;
+}
+
+/* CTA email placeholder - light mode */
+#cta-email::placeholder {
+  color: var(--color-gray-950);
   opacity: 1;
 }
 

@@ -10,8 +10,8 @@ const { execSync } = require('child_process');
  */
 function extractContentFromGit(dest) {
   try {
-    // Get list of content files from main branch
-    const contentFiles = execSync('git ls-tree -r main | grep "content/"', { encoding: 'utf8' })
+    // Get list of content files from origin/exampleSite branch
+    const contentFiles = execSync('git ls-tree -r origin/exampleSite | grep "exampleSite/content/"', { encoding: 'utf8' })
       .trim()
       .split('\n')
       .filter(line => line.length > 0)
@@ -24,7 +24,7 @@ function extractContentFromGit(dest) {
 
     // Create content files from git
     for (const filePath of contentFiles) {
-      const destPath = path.join(dest, filePath.replace('content/', ''));
+      const destPath = path.join(dest, filePath.replace('exampleSite/content/', ''));
       const destDir = path.dirname(destPath);
 
       // Create directory if it doesn't exist
@@ -33,7 +33,7 @@ function extractContentFromGit(dest) {
       }
 
       // Extract file content from git
-      const fileContent = execSync(`git show main:${filePath}`, { encoding: 'utf8' });
+      const fileContent = execSync(`git show origin/exampleSite:${filePath}`, { encoding: 'utf8' });
       
       // Write file to destination
       fs.writeFileSync(destPath, fileContent);
@@ -97,17 +97,17 @@ function install() {
     process.exit(1);
   }
 
-  // Check if main branch exists
+  // Check if origin/exampleSite branch exists
   try {
-    execSync('git show-ref --verify --quiet refs/heads/main', { stdio: 'ignore' });
+    execSync('git show-ref --verify --quiet refs/remotes/origin/exampleSite', { stdio: 'ignore' });
   } catch (error) {
-    console.error('❌ Error: Main branch not found.');
-    console.error('   Make sure you have the main branch available locally.');
+    console.error('❌ Error: origin/exampleSite branch not found.');
+    console.error('   Make sure you have fetched the remote branches: git fetch origin');
     process.exit(1);
   }
 
   console.log('📁 Extracting example content from git repository...');
-  console.log('   Source: main branch content/ directory');
+  console.log('   Source: origin/exampleSite branch exampleSite/content/ directory');
   console.log('   Destination:', contentDir);
   console.log('');
 
