@@ -466,7 +466,7 @@ img[loading="lazy"] {
 
 #cta-email .dark input::placeholder,
 #cta-email .dark textarea::placeholder {
-  color: var(--color-gray-950);
+  color: var(--color-gray-400);
   opacity: 1;
 }
 
@@ -479,7 +479,7 @@ textarea::placeholder {
 
 /* CTA email placeholder - light mode */
 #cta-email::placeholder {
-  color: var(--color-gray-950);
+  color: var(--color-gray-400);
   opacity: 1;
 }
 
