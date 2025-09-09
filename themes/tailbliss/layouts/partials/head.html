@@ -11,29 +11,29 @@
 {{ partial "meta" . }}
 
 {{/* DNS prefetch and preconnect for external resources */}}
-<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="//cdn.jsdelivr.net" rel="dns-prefetch">
+<link href="https://cdn.jsdelivr.net" rel="preconnect" crossorigin="anonymous">
 {{/* Cloudflare Insights prefetch - Note: StorageType.persistent warnings in console 
      are from Cloudflare's automatic injection and cannot be controlled by theme */}}
-<link rel="dns-prefetch" href="https://static.cloudflareinsights.com">
-<link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin>
+<link href="https://static.cloudflareinsights.com" rel="preconnect" rel="dns-prefetch">
+<link href="https://static.cloudflareinsights.com" crossorigin="anonymous" rel="preconnect">
 
 {{/* Preload critical hero image for better LCP performance */}}
 {{ if .IsHome }}
 {{ $heroImage := resources.Get "images/pages/tailbliss-rocket-indigo.png" }}
 {{ if $heroImage }}
 {{ $heroWebP := $heroImage.Resize "576x576 webp q85" }}
-<link rel="preload" as="image" href="{{ $heroWebP.RelPermalink }}" fetchpriority="high">
+<link href="{{ $heroWebP.RelPermalink }}" rel="preload" as="image" fetchpriority="high" loading="eager">
 {{ else }}
-<link rel="preload" as="image" href="/images/tailbliss-rocket-indigo.webp" fetchpriority="high">
+<link as="image" href="/images/tailbliss-rocket-indigo.webp" rel="preload" fetchpriority="high" loading="eager">
 {{ end }}
 {{ end }}
 
 {{/* Preload critical navigation logo to prevent CLS */}}
-<link rel="preload" as="image" href="/images/site-logo.svg" fetchpriority="high">
+<link href="/images/site-logo.svg" rel="preload" as="image" fetchpriority="high" loading="eager">
 
 {{/* Preload Alpine.js script for better performance */}}
-<link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js" as="script" rel="preconnect" rel="dns-prefetch">
 
 {{/* Hide Alpine.js [x-cloak] elements until Alpine initializes to prevent nav menu flicker.
 The x-cloak directive is located in the head partial to prevent rollup from Vite. */}}
