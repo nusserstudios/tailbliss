@@ -465,5 +465,4 @@ https://github.com/jan-heise/responsive-navbar-with-dropdown
 
 **TailBliss Team** - Tailwind CSS 4 Migration, Vite Integration & OKLCH Colors
 
-
 Made for Hacktoberfest, with ❤️ by NusserStudios.
