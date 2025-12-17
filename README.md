@@ -94,6 +94,7 @@ git submodule add https://github.com/nusserstudios/tailbliss.git themes/tailblis
 cp -r themes/tailbliss/exampleSite/* .
 
 # Install dependencies and setup content
+cd themes/tailbliss
 pnpm install
 
 # Start developing
@@ -463,5 +464,6 @@ https://github.com/4044ever/Hugo-Tailwind-3.0.git
 https://github.com/jan-heise/responsive-navbar-with-dropdown
 
 **TailBliss Team** - Tailwind CSS 4 Migration, Vite Integration & OKLCH Colors
+
 
 Made for Hacktoberfest, with ❤️ by NusserStudios.
