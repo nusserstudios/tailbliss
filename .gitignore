@@ -8,3 +8,5 @@ yarn-error.log
 # Local Netlify folder
 .netlify
 yarn-error.log
+# npm lockfile (project uses pnpm)
+package-lock.json
