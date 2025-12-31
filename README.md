@@ -174,7 +174,7 @@ TailBliss includes an intelligent installation script that automatically sets up
 ```bash
 # The install script runs automatically with pnpm install
 # Or run it manually:
-npm run install
+pnpm run install
 # or
 node install.js
 ```
@@ -202,12 +202,10 @@ pnpm run dev  # Start developing immediately
 ##### Setup & Installation
 ```bash
 # Install dependencies (automatically runs content setup)
-pnpm install  # recommended
-# or
-npm install
+pnpm install
 
 # Manual content setup (if needed)
-npm run install
+pnpm run install
 # or
 node install.js
 ```
@@ -215,26 +213,18 @@ node install.js
 ##### Development
 ```bash
 # Start development server with auto CSS rebuilding (RECOMMENDED)
-npm run dev:watch
-# or
 pnpm run dev:watch
 
 # Alternative: Traditional approach
-npm run dev
-# or
 pnpm run dev
 
 # Manual CSS rebuild (when not using dev:watch)
-npm run rebuild
-# or
 pnpm run rebuild
 ```
 
 ##### Production Build
 ```bash
 # Full production build
-npm run build
-# or
 pnpm run build
 ```
 
@@ -244,7 +234,7 @@ TailBliss offers two development approaches - choose the one that fits your work
 
 #### **🚀 Recommended: Auto-Watch Mode**
 ```bash
-npm run dev:watch
+pnpm run dev:watch
 ```
 This command:
 1. Starts CSS watcher (automatically rebuilds when Tailwind classes change)
@@ -254,7 +244,7 @@ This command:
 
 #### **📦 Traditional: Manual Mode**
 ```bash
-npm run dev
+pnpm run dev
 ```
 This command:
 1. Builds CSS once in development mode
@@ -271,17 +261,17 @@ This command:
 
 **🔄 When changing colors/CSS variables:**
 - Edit `assets/css/main.css`
-- Run: `npm run rebuild`
+- Run: `pnpm run rebuild`
 - Hugo automatically detects the new CSS and reloads
 
 #### **What Each Command Does**
 
 | Command | Purpose | When to Use |
 |---------|---------|-------------|
-| `npm run dev:watch` | **Auto-watch development** (RECOMMENDED) | Best for active development - auto-rebuilds CSS |
-| `npm run dev` | Traditional development server | When you prefer manual control |
-| `npm run rebuild` | Rebuild CSS only | After changing colors/CSS variables (manual mode) |
-| `npm run build` | Production build | Deploying to production |
+| `pnpm run dev:watch` | **Auto-watch development** (RECOMMENDED) | Best for active development - auto-rebuilds CSS |
+| `pnpm run dev` | Traditional development server | When you prefer manual control |
+| `pnpm run rebuild` | Rebuild CSS only | After changing colors/CSS variables (manual mode) |
+| `pnpm run build` | Production build | Deploying to production |
 
 #### **Why This Approach?**
 
@@ -298,28 +288,28 @@ This command:
 #### **CSS Changes Not Showing**
 With the new timestamp-based approach, this should rarely happen, but if it does:
 
-1. **Run rebuild**: `npm run rebuild`
+1. **Run rebuild**: `pnpm run rebuild`
 2. **Check the CSS file**: Look in `static/css/` - you should see a new `main.xxxxxxxxx.css` file with a unique timestamp
 3. **Hard refresh browser**: `Cmd+Shift+R` (Mac) or `Ctrl+Shift+R` (Windows) if needed
 
 #### **Infinite Build Loops**
 This has been completely eliminated with the new approach! If you somehow encounter it:
 - **Stop the process**: `Ctrl+C`
-- **Use the simple workflow**: `npm run dev` → make changes → `npm run rebuild`
+- **Use the simple workflow**: `pnpm run dev` → make changes → `pnpm run rebuild`
 
 #### **Old CSS Still Loading**
 This is automatically handled now:
-- **Old CSS files are automatically deleted** when you run `npm run rebuild`
+- **Old CSS files are automatically deleted** when you run `pnpm run rebuild`
 - **Each rebuild generates a unique filename** (e.g., `main.abc123def.css`)
 - **Browser cache is bypassed** because the filename is always different
 
 #### **When to Use Each Command**
-- **Starting work**: `npm run dev:watch` (RECOMMENDED - auto-rebuilds everything)
-- **Alternative start**: `npm run dev` (manual mode)
+- **Starting work**: `pnpm run dev:watch` (RECOMMENDED - auto-rebuilds everything)
+- **Alternative start**: `pnpm run dev` (manual mode)
 - **Changed HTML/Tailwind classes**: No action needed with `dev:watch` (auto-rebuild)
 - **Changed CSS colors/variables**: No action needed with `dev:watch` (auto-rebuild)
-- **Manual rebuild**: `npm run rebuild` (only needed in manual mode)
-- **Deploying**: `npm run build`
+- **Manual rebuild**: `pnpm run rebuild` (only needed in manual mode)
+- **Deploying**: `pnpm run build`
 
 ---
 
@@ -370,9 +360,9 @@ TailBliss has been completely upgraded from Tailwind CSS 3.2 to 4.x with signifi
 
 #### Available Scripts:
 ```bash
-npm run dev          # Start development server
-npm run rebuild      # Rebuild CSS after changes
-npm run build        # Production build
+pnpm run dev          # Start development server
+pnpm run rebuild      # Rebuild CSS after changes
+pnpm run build        # Production build
 ```
 
 #### Build Process:
@@ -443,7 +433,7 @@ theme: tailbliss
 pnpm install
 
 # Test your site
-npm dev
+pnpm run dev
 ```
 
 **Alternative: Use the install script for fresh content**
@@ -451,7 +441,7 @@ If you want to start with fresh example content instead of migrating:
 ```bash
 # Remove existing content and let install script create fresh examples
 rm -rf content/
-npm run install  # Creates fresh example content from repository
+pnpm run install  # Creates fresh example content from repository
 ```
 
 #### **Common Migration Issues**
@@ -473,7 +463,7 @@ If you prefer to start fresh:
 git clone https://github.com/nusserstudios/tailbliss.git my-site
 cd my-site
 pnpm install  # Automatically runs install script and sets up content
-npm dev     # Start developing immediately
+pnpm run dev  # Start developing immediately
 ```
 
 **Manual approach** (if you prefer manual control):
@@ -482,7 +472,7 @@ git clone https://github.com/nusserstudios/tailbliss.git my-site
 cd my-site
 cp -r exampleSite/* .  # Copy example files manually
 pnpm install
-npm dev
+pnpm run dev
 ```
 
 ---
