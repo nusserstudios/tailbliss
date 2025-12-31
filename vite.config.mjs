@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => ({
   ],
   build: {
     // Output to Hugo's theme static directory
-    outDir: 'themes/tailbliss/static/css',
+    outDir: 'static/css',
     // Clear only the output directory
     emptyOutDir: true,
     // Don't copy public directory
@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => ({
 
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'themes/tailbliss/assets/css/main.css'),
+        main: resolve(__dirname, 'assets/css/main.css'),
       },
       output: {
         // Use timestamp-based naming for better cache busting during development
@@ -47,7 +47,7 @@ export default defineConfig(({ mode }) => ({
     },
     watch: {
       // Also ignore output directories in dev server
-      ignored: ['**/themes/tailbliss/static/css/**', '**/public/**']
+      ignored: ['**/static/css/**', '**/public/**']
     }
   }
 }))

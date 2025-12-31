@@ -48,7 +48,7 @@
 </p>
 
 ## 📚 **Table of Contents**
-- [🚨 Breaking Changes](#-breaking-changes---new-theme-structure)
+- [📁 Theme Structure](#-theme-structure)
 - [🚀 Quick Start](#-quick-start)
 - [⚙️ Configuration](#%EF%B8%8F-configuration)
 - [🔄 Migration Guide](#-migration-guide)
@@ -59,59 +59,113 @@
 
 ---
 
-## 🚨 **BREAKING CHANGES** - New Theme Structure
+## 📁 **Theme Structure**
 
-**TailBliss has been restructured as a proper Hugo theme!** This is a **breaking change** that affects how you install and use TailBliss.
+**TailBliss follows the standard Hugo theme structure**, making it easy to use in any Hugo site.
 
-### 📁 **New Structure (v1.1+)**
-TailBliss now follows the standard Hugo theme convention:
-- **Theme files**: Located in the root directory
-- **Example content**: Located in `exampleSite/` directory
-- **User sites**: Must be created separately using `hugo new site` command
+### 🎯 **Standard Hugo Theme Structure**
 
-### 🔄 **Migration Required**
+TailBliss is structured as a proper Hugo theme following Hugo's conventions:
+
+- **Theme files in root**: All theme files (`layouts/`, `static/`, `assets/`, `archetypes/`, `theme.toml`) are located in the root directory
+- **Example content**: Located in `exampleSite/` directory for reference and testing
+- **Symlink setup**: The `exampleSite/themes/tailbliss` symlink points to the parent directory (the theme itself)
+
+### 🔧 **Using TailBliss in Your Hugo Site**
+
+When you add TailBliss to your Hugo site, it goes in the `themes/` directory:
+
+```bash
+# Your Hugo site structure will look like:
+my-hugo-site/
+├── content/
+├── themes/
+│   └── tailbliss/          # ← TailBliss theme here
+│       ├── layouts/
+│       ├── static/
+│       ├── assets/
+│       ├── archetypes/
+│       └── theme.toml
+├── hugo.yaml
+└── ...
+```
+
+This is the standard way Hugo themes work - you reference the theme in your site's `hugo.yaml` with `theme: tailbliss`, and Hugo looks for it in the `themes/tailbliss/` directory.
+
+### 📦 **How It Works**
+
+1. **Theme Repository Structure** (this repo):
+   - Theme files (`layouts/`, `static/`, `assets/`, etc.) are in the root
+   - `exampleSite/` contains example content for testing
+   - This follows Hugo's standard theme structure
+
+2. **Using in Your Hugo Site**:
+   - Clone or add as submodule to `themes/tailbliss/` in your site
+   - Reference it in your site's `hugo.yaml` with `theme: tailbliss`
+   - Hugo automatically finds and uses the theme from `themes/tailbliss/`
+
+3. **Why This Structure?**:
+   - ✅ Standard Hugo convention - works with all Hugo tooling
+   - ✅ Easy to update - just update the submodule
+   - ✅ Clean separation - your content stays separate from theme files
+   - ✅ Multiple themes - you can use multiple themes if needed
+
+### 🔄 **Migration from v0.5**
 If you're upgrading from v0.5, you'll need to migrate your content. See the [Migration Guide](#migration-guide) below.
-
-### 🌳 **Current Structure**
-- **`main`** branch: Contains the complete theme structure with example content
-- **Theme files**: Located in the root directory and `themes/tailbliss/`
-- **Example content**: Located in `exampleSite/` directory for reference
 
 ---
 
 ## 🚀 **Quick Start**
 
 ### Option 1: Use as Hugo Theme (Recommended)
+
+This is the standard way to use TailBliss in your Hugo site. The theme will be placed in your site's `themes/` directory:
+
 ```bash
 # Create a new Hugo site
 hugo new site my-tailbliss-site
 cd my-tailbliss-site
 
-# Add TailBliss as a theme
+# Add TailBliss as a theme (places it in themes/tailbliss/)
 git submodule add https://github.com/nusserstudios/tailbliss.git themes/tailbliss
 
-# Copy example content (optional)
-cp -r themes/tailbliss/exampleSite/* .
+# Copy example content (optional, excluding themes folder)
+rsync -av --exclude='themes' themes/tailbliss/exampleSite/ .
+# Or manually copy specific directories:
+# cp -r themes/tailbliss/exampleSite/content themes/tailbliss/exampleSite/hugo.yaml themes/tailbliss/exampleSite/i18n .
 
 # Install dependencies and setup content
+cd themes/tailbliss
 pnpm install
+cd ../..
 
 # Start developing
-pnpm run dev
+hugo server
 ```
 
-### Option 2: Clone and Customize
+**Note**: Your site's `hugo.yaml` should reference the theme:
+```yaml
+theme: tailbliss
+```
+
+### Option 2: Clone for Development/Contributing
+
+If you want to develop or contribute to the theme itself, clone the repository:
+
 ```bash
 # Clone the repository
-git clone https://github.com/nusserstudios/tailbliss.git my-site
-cd my-site
+git clone https://github.com/nusserstudios/tailbliss.git tailbliss-theme
+cd tailbliss-theme
 
-# Install dependencies and setup example content automatically
+# Install dependencies
 pnpm install
 
-# Start developing
-pnpm run dev
+# Test the theme using exampleSite
+cd exampleSite
+hugo server --themesDir=..
 ```
+
+**Note**: This option is for theme development. For using the theme in your own site, use Option 1.
 
 ### 🎯 **Automatic Content Setup**
 
@@ -211,12 +265,12 @@ This command:
 #### **Making Changes**
 
 **✅ When changing HTML/Tailwind classes:**
-- Edit your `.html` files in `themes/tailbliss/layouts/`
+- Edit your `.html` files in `layouts/`
 - Hugo automatically detects changes and reloads
 - **No rebuild needed!**
 
 **🔄 When changing colors/CSS variables:**
-- Edit `themes/tailbliss/assets/css/main.css`
+- Edit `assets/css/main.css`
 - Run: `npm run rebuild`
 - Hugo automatically detects the new CSS and reloads
 
@@ -245,7 +299,7 @@ This command:
 With the new timestamp-based approach, this should rarely happen, but if it does:
 
 1. **Run rebuild**: `npm run rebuild`
-2. **Check the CSS file**: Look in `themes/tailbliss/static/css/` - you should see a new `main.xxxxxxxxx.css` file with a unique timestamp
+2. **Check the CSS file**: Look in `static/css/` - you should see a new `main.xxxxxxxxx.css` file with a unique timestamp
 3. **Hard refresh browser**: `Cmd+Shift+R` (Mac) or `Ctrl+Shift+R` (Windows) if needed
 
 #### **Infinite Build Loops**

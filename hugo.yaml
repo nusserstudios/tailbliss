@@ -1,7 +1,6 @@
 baseURL: 'https://tailbliss.netlify.app/'
 title: TailBliss
 languageCode: en-us
-theme: tailbliss
 DefaultContentLanguage: en
 enableEmoji: true
 enableGitInfo: false
@@ -195,11 +194,6 @@ menu:
       name: Contact
       url: /contact/
       weight: 50
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
 
 taxonomies:
   category: Categories

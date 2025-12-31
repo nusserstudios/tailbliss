@@ -52,7 +52,7 @@ The x-cloak directive is located in the head partial to prevent rollup from Vite
   }
 </script>
 {{/* Use Vite-generated CSS files with cache busting hashes */}}
-{{ $cssFiles := readDir "themes/tailbliss/static/css" }}
+{{ $cssFiles := readDir "static/css" }}
 {{ $mainCSS := "" }}
 
 {{/* Find the hashed main CSS file */}}

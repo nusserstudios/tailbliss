@@ -23,7 +23,7 @@
     "build:css": "vite build --mode production",
     "build:css:dev": "vite build --mode development --no-watch",
     "build": "npm run build:css && hugo --minify --gc --cleanDestinationDir",
-    "rebuild": "find themes/tailbliss/static/css/ -name 'main.*.css' -delete 2>/dev/null || true && npm run build:css:dev",
+    "rebuild": "find static/css/ -name 'main.*.css' -delete 2>/dev/null || true && npm run build:css:dev",
     "test": "hugo",
     "optimize": "npm run build && echo 'Build optimized for production'"
   },
