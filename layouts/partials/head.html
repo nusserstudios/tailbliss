@@ -51,36 +51,23 @@ The x-cloak directive is located in the head partial to prevent rollup from Vite
     document.documentElement.classList.remove('dark')
   }
 </script>
-{{/* Use Vite-generated CSS files with cache busting hashes */}}
-{{ $cssFiles := readDir "static/css" }}
+{{/* CSS: use Vite-built file from project static/css when present (e.g. after build + copy); else PostCSS from theme assets. readDir only checks project root. */}}
 {{ $mainCSS := "" }}
-
-{{/* Find the hashed main CSS file */}}
-{{ range $cssFiles }}
-{{ if strings.Contains .Name "main." }}
-{{ if strings.HasSuffix .Name ".css" }}
-{{ $mainCSS = .Name }}
-{{ end }}
-{{ end }}
+{{ if fileExists "static/css" }}
+  {{ range readDir "static/css" }}
+    {{ if and (strings.Contains .Name "main.") (strings.HasSuffix .Name ".css") }}{{ $mainCSS = .Name }}{{ end }}
+  {{ end }}
 {{ end }}
 
 {{ if $mainCSS }}
-{{/* Load CSS normally for better CLS prevention */}}
 <link rel="stylesheet" href="/css/{{ $mainCSS }}">
 {{ else }}
-{{/* Fallback to Hugo PostCSS processing if Vite file not found */}}
 {{ $styles := resources.Get "css/main.css" }}
 {{ if $styles }}
-{{ $styles := $styles | postCSS }}
-{{ if hugo.IsProduction }}
-{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-{{ end }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+  {{ $styles = $styles | postCSS }}
+  {{ if hugo.IsProduction }}{{ $styles = $styles | minify | fingerprint | resources.PostProcess }}{{ end }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ else }}
-{{/* Final fallback - try to load from theme assets */}}
-{{ $styles := resources.Get "css/main.css" }}
-{{ if $styles }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-{{ end }}
+  {{ $styles := resources.Get "css/main.css" }}{{ if $styles }}<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />{{ end }}
 {{ end }}
 {{ end }}

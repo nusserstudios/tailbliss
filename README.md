@@ -126,6 +126,9 @@ This is the standard way to use TailBliss in your Hugo site. The theme will be p
 hugo new site my-tailbliss-site
 cd my-tailbliss-site
 
+# Initialize git (required for submodule add)
+git init
+
 # Add TailBliss as a theme (places it in themes/tailbliss/)
 git submodule add https://github.com/nusserstudios/tailbliss.git themes/tailbliss
 
@@ -134,19 +137,23 @@ rsync -av --exclude='themes' themes/tailbliss/exampleSite/ .
 # Or manually copy specific directories:
 # cp -r themes/tailbliss/exampleSite/content themes/tailbliss/exampleSite/hugo.yaml themes/tailbliss/exampleSite/i18n .
 
-# Install dependencies and setup content
+# Install dependencies and build CSS (use pnpm or npm)
 cd themes/tailbliss
 pnpm install
+# or: npm install
+pnpm run build:css:dev
+cp static/css/main.*.css ../../static/css/
 cd ../..
+
+# If you see "no layout file" warnings: add theme = "tailbliss" to hugo.toml,
+# or remove hugo.toml so the rsync'd hugo.yaml (which has theme: tailbliss) is used.
 
 # Start developing
 hugo server
 ```
+(The rsync creates `static/css/` in your site; the theme uses the built file from there so Hugo does not need PostCSS in the project.)
 
-**Note**: Your site's `hugo.yaml` should reference the theme:
-```yaml
-theme: tailbliss
-```
+**Note**: Your site config must reference the theme. If you keep the default `hugo.toml` from `hugo new site`, add `theme = "tailbliss"` to it. The rsync'd `hugo.yaml` already has `theme: tailbliss`; if you remove `hugo.toml`, that file will be used.
 
 ### Option 2: Clone for Development/Contributing
 
@@ -284,6 +291,9 @@ This command:
 **Pro tip**: The `rebuild` command uses timestamp-based filenames in development (e.g., `main.abc123def.css`) which completely eliminates browser caching issues, while production builds still use content-based hashes for optimal caching.
 
 ### 🔧 **Troubleshooting Development Issues**
+
+#### **Error: `failed to read directory "static/css": no such file or directory`**
+Hugo's `readDir` only checks your **site root**. The theme uses the built CSS from your site's `static/css/`. **Fix**: (1) Use the latest TailBliss—`exampleSite` now includes `static/css/`, so `rsync` creates it. (2) After building CSS in the theme, copy it into your site: `cp themes/tailbliss/static/css/main.*.css static/css/`. Then run `hugo server`.
 
 #### **CSS Changes Not Showing**
 With the new timestamp-based approach, this should rarely happen, but if it does:
