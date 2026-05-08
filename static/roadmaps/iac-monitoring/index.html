@@ -1,13 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IaC & Monitoring Roadmap | Cloud Tinkerers</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Infrastructure as Code & Monitoring Roadmap for Beginners 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --accent: #0891b2;
+    --muted: #6b7280;
+    --light-bg: #f7f5f0;
+    --card-bg: #ffffff;
+    --border: #e5e0d8;
+    --step1: #e05c2a;
+    --step2: #d44d8a;
+    --step3: #7c3aed;
+    --step4: #2a7ae0;
+    --step5: #059669;
+    --step6: #b45309;
+    --step7: #0891b2;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--light-bg);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .page {
+    max-width: 780px;
+    margin: 0 auto;
+    background: white;
+    padding: 60px 64px 80px;
+  }
+
+  /* HEADER */
+  .header {
+    border-bottom: 3px solid var(--ink);
+    padding-bottom: 32px;
+    margin-bottom: 40px;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1.5px solid var(--accent);
+    padding: 3px 10px;
+    border-radius: 2px;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 44px;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  h1 em { font-style: italic; color: var(--accent); }
+  .subtitle {
+    font-size: 16px;
+    color: var(--muted);
+    max-width: 560px;
+    font-weight: 300;
+  }
+  .meta {
+    margin-top: 18px;
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* BREADCRUMB */
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--muted);
+    margin-bottom: 20px;
+    letter-spacing: 0.04em;
+  }
+  .breadcrumb .crumb-active { color: var(--accent); font-weight: 600; }
+  .breadcrumb .sep { color: var(--border); }
+
+  /* INTRO */
+  .intro {
+    background: var(--ink);
+    color: white;
+    padding: 28px 32px;
+    border-radius: 4px;
+    margin-bottom: 44px;
+  }
+  .intro p { font-size: 15px; line-height: 1.75; font-weight: 300; }
+  .intro strong { color: #f8b56a; font-weight: 600; }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 26px;
+    color: var(--ink);
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid var(--border);
+  }
+
+  /* STEPS */
+  .steps { display: flex; flex-direction: column; gap: 0; margin-bottom: 44px; }
+  .step { display: flex; gap: 0; position: relative; }
+  .step-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48px;
+    flex-shrink: 0;
+  }
+  .step-num {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+    z-index: 1;
+    margin-top: 2px;
+  }
+  .step-line {
+    width: 2px;
+    flex: 1;
+    min-height: 20px;
+    background: var(--border);
+    margin-top: 4px;
+  }
+  .step:last-child .step-line { display: none; }
+  .step-body { padding-left: 20px; padding-bottom: 32px; flex: 1; }
+  .step-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+  .step-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .step-badge {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 2px;
+    color: white;
+  }
+  .step-desc { color: #374151; font-size: 14.5px; line-height: 1.75; margin-bottom: 10px; }
+  .tools-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .tool-chip {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: var(--light-bg);
+    color: var(--ink);
+    border: 1px solid var(--border);
+  }
+  code {
+    background: #f0ede8;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-family: 'Courier New', monospace;
+  }
+
+  /* TIPS SECTION */
+  .tips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 44px;
+  }
+  .tip-card {
+    background: var(--light-bg);
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+    padding: 20px;
+  }
+  .tip-icon { font-size: 22px; margin-bottom: 8px; }
+  .tip-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: var(--ink);
+  }
+  .tip-text { font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+
+  /* TIMELINE */
+  .timeline-bar {
+    background: var(--light-bg);
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+    padding: 24px 28px;
+    margin-bottom: 44px;
+  }
+  .timeline-bar h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: var(--ink);
+  }
+  .timeline-track {
+    display: flex;
+    height: 36px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 14px;
+  }
+  .t-seg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.04em;
+  }
+  .timeline-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* COMPLETION BANNER */
+  .completion {
+    background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+    border-radius: 4px;
+    padding: 28px 32px;
+    margin-bottom: 44px;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .completion-badge {
+    font-size: 40px;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+  .completion-text { font-size: 14.5px; line-height: 1.75; font-weight: 300; }
+  .completion-text strong { color: #fde68a; font-weight: 600; }
+  .completion-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: white;
+  }
+
+  /* CLOSING */
+  .closing {
+    border-top: 3px solid var(--ink);
+    padding-top: 28px;
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+  }
+  .closing-quote {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    line-height: 1;
+    color: var(--border);
+    flex-shrink: 0;
+    margin-top: -8px;
+  }
+  .closing-text { font-size: 14.5px; color: var(--muted); line-height: 1.75; }
+  .closing-text strong { color: var(--ink); }
+
+  @media print {
+    body { background: white; }
+    .page { padding: 40px; max-width: 100%; box-shadow: none; }
+  }
+</style>
 </head>
 <body>
-  <h1>IaC & Monitoring Roadmap</h1>
-  <p>This roadmap is coming soon.</p>
-  <p><a href="/roadmaps/">Back to Roadmaps</a></p>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="breadcrumb">
+      <span>DevOps Roadmap</span>
+      <span class="sep">›</span>
+      <span>Stage 7 of 7</span>
+      <span class="sep">›</span>
+      <span class="crumb-active">Infrastructure as Code &amp; Monitoring</span>
+    </div>
+    <div class="tag">Stage 7 · Level Up</div>
+    <h1>Infrastructure as Code<br/>&amp; <em>Monitoring</em></h1>
+    <p class="subtitle">The final stage — a plain-English guide to writing code that builds entire cloud environments automatically, and watching over those environments so you know the instant something goes wrong.</p>
+    <div class="meta">Updated May 2025 &nbsp;·&nbsp; 7-Stage Deep Dive &nbsp;·&nbsp; 6–8 Week Journey</div>
+  </div>
+
+  <!-- INTRO BOX -->
+  <div class="intro">
+    <p>
+      <strong>You've made it to the final stage.</strong> Everything before this — Linux, Git, scripting, cloud, Docker, CI/CD — was about learning the tools of DevOps one by one. This stage is about thinking like a <em>senior</em> engineer: not just using infrastructure, but <strong>defining it as code</strong>, version-controlling it, and automating its creation from scratch. And once your infrastructure is running, you watch over it with monitoring tools that catch problems before your users do.
+      <br/><br/>
+      These two skills — Infrastructure as Code and Monitoring — are what separate a junior DevOps engineer from a mid-level one. Master them, and you are genuinely job-ready for roles that command strong salaries in any market in the world.
+    </p>
+  </div>
+
+  <!-- ROADMAP STEPS -->
+  <div class="section-title">Your 7-Stage IaC &amp; Monitoring Roadmap</div>
+
+  <div class="steps">
+
+    <!-- STEP 1 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step1);">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">What Is Infrastructure as Code?</span>
+          <span class="step-badge" style="background:var(--step1);">The Big Idea</span>
+        </div>
+        <p class="step-desc">
+          Imagine you need to set up 50 identical servers across three cloud regions. Doing it by hand — clicking through dashboards, configuring settings one by one — would take days and would inevitably produce 50 slightly different servers full of subtle inconsistencies. <strong>Infrastructure as Code</strong> (IaC) means you write a file that describes exactly what infrastructure you want, and a tool reads that file and builds it all automatically — identically, every time, in minutes. If something breaks, you delete everything and recreate it from the same file in seconds. Infrastructure becomes as reliable and repeatable as software.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">IaC concept & benefits</span>
+          <span class="tool-chip">Declarative vs imperative</span>
+          <span class="tool-chip">Idempotency (same result every run)</span>
+          <span class="tool-chip">Infrastructure drift problem</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step2);">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Terraform — Write Your First Infrastructure</span>
+          <span class="step-badge" style="background:var(--step2);">The Industry Standard</span>
+        </div>
+        <p class="step-desc">
+          <strong>Terraform</strong> is the most widely used IaC tool in the industry. You write simple configuration files in a language called HCL (which reads almost like plain English), then run <code>terraform apply</code> — and Terraform reaches into your cloud account and builds exactly what you described. Start small: write a Terraform file that creates one EC2 instance on AWS and one S3 bucket. Run it, verify the resources appear in your cloud console, then run <code>terraform destroy</code> to delete everything cleanly. That one exercise teaches you 80% of how Terraform works in the real world.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">Terraform install & init</span>
+          <span class="tool-chip">HCL (HashiCorp Config Language)</span>
+          <span class="tool-chip">terraform plan / apply / destroy</span>
+          <span class="tool-chip">Providers (AWS, Azure, GCP)</span>
+          <span class="tool-chip">State file (terraform.tfstate)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step3);">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Terraform Deeper — Variables, Modules & Remote State</span>
+          <span class="step-badge" style="background:var(--step3);">Build It Right</span>
+        </div>
+        <p class="step-desc">
+          Once you've written your first Terraform file, learn to write it <em>properly</em>. <strong>Variables</strong> let you reuse the same configuration across different environments — dev uses a small server, production uses a large one, same code. <strong>Modules</strong> are reusable blocks of Terraform — like functions in programming — so you don't repeat yourself. <strong>Remote state</strong> stores your state file in S3 instead of on your laptop, so a whole team can work on the same infrastructure safely. These three concepts take you from "Terraform beginner" to "Terraform practitioner."
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">Input variables & outputs</span>
+          <span class="tool-chip">Terraform modules</span>
+          <span class="tool-chip">Remote state (S3 backend)</span>
+          <span class="tool-chip">terraform.tfvars files</span>
+          <span class="tool-chip">Workspaces (dev/staging/prod)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 4 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step4);">4</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Ansible — Configure What Terraform Builds</span>
+          <span class="step-badge" style="background:var(--step4);">The Perfect Partner</span>
+        </div>
+        <p class="step-desc">
+          Terraform is brilliant at <em>creating</em> infrastructure — spinning up servers, networks, and databases. But once a server exists, someone needs to <em>configure</em> it: install software, set up users, copy config files, start services. That's where <strong>Ansible</strong> comes in. Ansible connects to your servers over SSH and runs a list of tasks defined in a YAML file called a <strong>Playbook</strong>. No agent software needed on the servers — Ansible is agentless. Together, Terraform and Ansible cover the full lifecycle: Terraform builds the infrastructure, Ansible configures everything inside it.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">Ansible Playbooks (YAML)</span>
+          <span class="tool-chip">Inventory files (list of servers)</span>
+          <span class="tool-chip">Modules (built-in tasks)</span>
+          <span class="tool-chip">Roles (reusable playbook bundles)</span>
+          <span class="tool-chip">Agentless over SSH</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 5 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step5);">5</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Prometheus — Collect Metrics From Everything</span>
+          <span class="step-badge" style="background:var(--step5);">Watch Your Systems</span>
+        </div>
+        <p class="step-desc">
+          Building and deploying infrastructure is only half the job. The other half is <strong>knowing what it's doing</strong> at all times. <strong>Prometheus</strong> is an open-source monitoring tool that scrapes metrics — CPU usage, memory, request counts, error rates — from your servers and applications every few seconds and stores them in a time-series database. It also has a powerful alerting system: define a rule like "alert me if CPU stays above 90% for 5 minutes" and Prometheus watches for it continuously. Run Prometheus locally using Docker and point it at a simple application to see your first real metrics flow in.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">Prometheus (via Docker)</span>
+          <span class="tool-chip">Metrics scraping & exporters</span>
+          <span class="tool-chip">PromQL (query language)</span>
+          <span class="tool-chip">Alertmanager</span>
+          <span class="tool-chip">Node Exporter (server metrics)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 6 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step6);">6</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Grafana — Turn Metrics Into Dashboards</span>
+          <span class="step-badge" style="background:var(--step6);">See Everything Clearly</span>
+        </div>
+        <p class="step-desc">
+          Prometheus collects the data — <strong>Grafana</strong> makes it beautiful and understandable. Grafana connects to Prometheus (and dozens of other data sources) and lets you build visual dashboards: live graphs of server CPU, memory usage over time, request rates, error counts, deployment frequency. These dashboards are what engineering teams stare at during incidents to understand what's happening. Run Grafana alongside Prometheus using Docker Compose, connect them together, and build your first dashboard. A well-built Grafana dashboard is also genuinely impressive to show in a job interview.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">Grafana (via Docker Compose)</span>
+          <span class="tool-chip">Connecting Prometheus as data source</span>
+          <span class="tool-chip">Building panels & dashboards</span>
+          <span class="tool-chip">Alert rules in Grafana</span>
+          <span class="tool-chip">Pre-built community dashboards</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 7 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step7);">7</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Datadog & Commercial Monitoring Platforms</span>
+          <span class="step-badge" style="background:var(--step7);">Enterprise Reality</span>
+        </div>
+        <p class="step-desc">
+          Prometheus and Grafana are powerful but require self-hosting and maintenance. In many companies — especially at scale — teams reach for managed platforms like <strong>Datadog</strong>, which combines metrics, logs, traces, and alerting into a single product with minimal setup. Datadog also offers <strong>APM</strong> (Application Performance Monitoring), which traces a request as it flows through every service in your system — invaluable for diagnosing slow or broken APIs. Sign up for Datadog's free trial, install its agent on a VM, and explore the auto-generated dashboards. Understanding both the open-source and commercial worlds makes you adaptable to any team.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">Datadog (free trial)</span>
+          <span class="tool-chip">Datadog Agent install</span>
+          <span class="tool-chip">APM & distributed tracing</span>
+          <span class="tool-chip">Log management</span>
+          <span class="tool-chip">Alternatives: New Relic, Dynatrace</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /steps -->
+
+  <!-- TIMELINE -->
+  <div class="timeline-bar">
+    <h3>Realistic Timeline (1 Hour a Day)</h3>
+    <div class="timeline-track">
+      <div class="t-seg" style="width:12%;background:var(--step1);">Day 1–4</div>
+      <div class="t-seg" style="width:15%;background:var(--step2);">Day 5–12</div>
+      <div class="t-seg" style="width:14%;background:var(--step3);">Day 13–20</div>
+      <div class="t-seg" style="width:14%;background:var(--step4);">Day 21–28</div>
+      <div class="t-seg" style="width:15%;background:var(--step5);">Day 29–36</div>
+      <div class="t-seg" style="width:15%;background:var(--step6);">Day 37–44</div>
+      <div class="t-seg" style="width:15%;background:var(--step7);">Day 45–56</div>
+    </div>
+    <div class="timeline-labels">
+      <span>IaC Concepts</span>
+      <span>Terraform</span>
+      <span>Tf Advanced</span>
+      <span>Ansible</span>
+      <span>Prometheus</span>
+      <span>Grafana</span>
+      <span>Datadog ✓</span>
+    </div>
+  </div>
+
+  <!-- COMPLETION BANNER -->
+  <div class="completion">
+    <div class="completion-badge">🏁</div>
+    <div>
+      <div class="completion-title">You've Completed the Full DevOps Roadmap</div>
+      <div class="completion-text">
+        Linux → Git → Scripting → Cloud → Docker → CI/CD → IaC &amp; Monitoring. Seven stages. Every foundational skill a working DevOps engineer uses daily. <strong>You are now job-ready.</strong> Polish your GitHub profile, build one end-to-end project that uses all seven skills together, and start applying. The industry needs people who know exactly what you now know.
+      </div>
+    </div>
+  </div>
+
+  <!-- TIPS GRID -->
+  <div class="section-title">4 Rules to Master IaC &amp; Monitoring Fast</div>
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-icon">🗂️</div>
+      <div class="tip-title">Put All Terraform in Git</div>
+      <p class="tip-text">Infrastructure code is still code. Every <code style="background:#ede9e3;padding:1px 5px;border-radius:2px;font-size:12px;">.tf</code> file belongs in a Git repository — versioned, reviewed, and tracked. This also lets you add Terraform runs to your CI/CD pipeline, so infrastructure changes go through the same review process as application code.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">⚠️</div>
+      <div class="tip-title">Always Run Plan Before Apply</div>
+      <p class="tip-text"><code style="background:#ede9e3;padding:1px 5px;border-radius:2px;font-size:12px;">terraform plan</code> shows you exactly what will be created, changed, or <em>destroyed</em> before anything actually happens. Never skip it. One careless <code style="background:#ede9e3;padding:1px 5px;border-radius:2px;font-size:12px;">terraform apply</code> without reviewing the plan can delete production databases. Read the plan every single time.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">📊</div>
+      <div class="tip-title">Monitor Before You Need To</div>
+      <p class="tip-text">Set up monitoring <em>before</em> something breaks — not after. Engineers who build dashboards and alerts proactively are the ones who catch problems before users notice. Reactive monitoring is firefighting; proactive monitoring is engineering.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">🎯</div>
+      <div class="tip-title">Build One Capstone Project</div>
+      <p class="tip-text">Use Terraform to provision cloud infrastructure, Ansible to configure it, deploy a Dockerised app via a CI/CD pipeline, and monitor it with Prometheus and Grafana. That single project demonstrates every skill in this roadmap and is worth more than any certificate on a CV.</p>
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <div class="closing">
+    <div class="closing-quote">"</div>
+    <p class="closing-text">
+      There's a moment every DevOps engineer remembers — when they run <code style="background:#ede9e3;padding:1px 5px;border-radius:2px;font-size:12px;">terraform apply</code> for the first time and watch an entire cloud environment materialise from a text file. Servers, networks, databases — all built in minutes from code they wrote. It feels like a superpower, because it is one.
+      <br/><br/>
+      <strong>You started with a blinking terminal cursor. You finish with infrastructure that builds itself. That's the DevOps journey — and you've walked every step of it.</strong>
+    </p>
+  </div>
+
+</div><!-- /page -->
 </body>
 </html>

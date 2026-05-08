@@ -1,13 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Version Control Roadmap | Cloud Tinkerers</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Git & Version Control Roadmap for Beginners 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --accent: #d44d8a;
+    --muted: #6b7280;
+    --light-bg: #f7f5f0;
+    --card-bg: #ffffff;
+    --border: #e5e0d8;
+    --step1: #e05c2a;
+    --step2: #d44d8a;
+    --step3: #7c3aed;
+    --step4: #2a7ae0;
+    --step5: #059669;
+    --step6: #b45309;
+    --step7: #0891b2;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--light-bg);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .page {
+    max-width: 780px;
+    margin: 0 auto;
+    background: white;
+    padding: 60px 64px 80px;
+  }
+
+  /* HEADER */
+  .header {
+    border-bottom: 3px solid var(--ink);
+    padding-bottom: 32px;
+    margin-bottom: 40px;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1.5px solid var(--accent);
+    padding: 3px 10px;
+    border-radius: 2px;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 44px;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  .subtitle {
+    font-size: 16px;
+    color: var(--muted);
+    max-width: 560px;
+    font-weight: 300;
+  }
+  .meta {
+    margin-top: 18px;
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* BREADCRUMB */
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--muted);
+    margin-bottom: 20px;
+    letter-spacing: 0.04em;
+  }
+  .breadcrumb .crumb-active {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .breadcrumb .sep { color: var(--border); }
+
+  /* INTRO */
+  .intro {
+    background: var(--ink);
+    color: white;
+    padding: 28px 32px;
+    border-radius: 4px;
+    margin-bottom: 44px;
+  }
+  .intro p {
+    font-size: 15px;
+    line-height: 1.75;
+    font-weight: 300;
+  }
+  .intro strong { color: #f8b56a; font-weight: 600; }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 26px;
+    color: var(--ink);
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid var(--border);
+  }
+
+  /* STEPS */
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 44px;
+  }
+  .step { display: flex; gap: 0; position: relative; }
+  .step-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48px;
+    flex-shrink: 0;
+  }
+  .step-num {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+    z-index: 1;
+    margin-top: 2px;
+  }
+  .step-line {
+    width: 2px;
+    flex: 1;
+    min-height: 20px;
+    background: var(--border);
+    margin-top: 4px;
+  }
+  .step:last-child .step-line { display: none; }
+  .step-body { padding-left: 20px; padding-bottom: 32px; flex: 1; }
+  .step-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+  .step-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .step-badge {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 2px;
+    color: white;
+  }
+  .step-desc {
+    color: #374151;
+    font-size: 14.5px;
+    line-height: 1.75;
+    margin-bottom: 10px;
+  }
+  .tools-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .tool-chip {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: var(--light-bg);
+    color: var(--ink);
+    border: 1px solid var(--border);
+  }
+  code {
+    background: #f0ede8;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-family: 'Courier New', monospace;
+  }
+
+  /* TIPS SECTION */
+  .tips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 44px;
+  }
+  .tip-card {
+    background: var(--light-bg);
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+    padding: 20px;
+  }
+  .tip-icon { font-size: 22px; margin-bottom: 8px; }
+  .tip-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: var(--ink);
+  }
+  .tip-text { font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+
+  /* TIMELINE */
+  .timeline-bar {
+    background: var(--light-bg);
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+    padding: 24px 28px;
+    margin-bottom: 44px;
+  }
+  .timeline-bar h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: var(--ink);
+  }
+  .timeline-track {
+    display: flex;
+    height: 36px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 14px;
+  }
+  .t-seg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.04em;
+  }
+  .timeline-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* CLOSING */
+  .closing {
+    border-top: 3px solid var(--ink);
+    padding-top: 28px;
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+  }
+  .closing-quote {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    line-height: 1;
+    color: var(--border);
+    flex-shrink: 0;
+    margin-top: -8px;
+  }
+  .closing-text { font-size: 14.5px; color: var(--muted); line-height: 1.75; }
+  .closing-text strong { color: var(--ink); }
+
+  @media print {
+    body { background: white; }
+    .page { padding: 40px; max-width: 100%; box-shadow: none; }
+  }
+</style>
 </head>
 <body>
-  <h1>Version Control Roadmap</h1>
-  <p>This roadmap is coming soon.</p>
-  <p><a href="/roadmaps/">Back to Roadmaps</a></p>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="breadcrumb">
+      <span>DevOps Roadmap</span>
+      <span class="sep">›</span>
+      <span>Stage 2 of 7</span>
+      <span class="sep">›</span>
+      <span class="crumb-active">Git &amp; Version Control</span>
+    </div>
+    <div class="tag">Stage 2 · Must-Have</div>
+    <h1>Git &amp; <em>Version Control</em></h1>
+    <p class="subtitle">The universal language of software teams — a plain-English guide to tracking code, collaborating with others, and never losing your work again.</p>
+    <div class="meta">Updated May 2025 &nbsp;·&nbsp; 7-Stage Deep Dive &nbsp;·&nbsp; 3–4 Week Journey</div>
+  </div>
+
+  <!-- INTRO BOX -->
+  <div class="intro">
+    <p>
+      <strong>Why Git?</strong> Imagine writing a 10-page document and accidentally deleting half of it — with no undo button. Now imagine that happening to thousands of lines of code on a live product used by millions. Git is the tool that makes sure that never happens. It keeps a <strong>complete history of every change</strong> ever made to a codebase, by everyone, forever.
+      <br/><br/>
+      As a DevOps engineer, Git is not optional — it is the starting point of every deployment pipeline, automation script, and infrastructure change you will ever touch. The good news: the basics take just a few days to learn, and the concepts will feel obvious once they click.
+    </p>
+  </div>
+
+  <!-- ROADMAP STEPS -->
+  <div class="section-title">Your 7-Stage Git Roadmap</div>
+
+  <div class="steps">
+
+    <!-- STEP 1 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step1);">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Understand What Git Actually Does</span>
+          <span class="step-badge" style="background:var(--step1);">Concept First</span>
+        </div>
+        <p class="step-desc">
+          Before typing a single command, get the mental model right. Git is a <strong>version control system</strong> — it takes snapshots of your code over time, like a photo album of your project at different moments. Each snapshot is called a <strong>commit</strong>. If you break something, you simply roll back to an earlier photo. Install Git on your machine, set your name and email (Git tags every commit with this), and you're ready.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">git --version</span>
+          <span class="tool-chip">git config (name & email)</span>
+          <span class="tool-chip">What is a repository?</span>
+          <span class="tool-chip">What is a commit?</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step2);">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Make Your First Repository & Commit</span>
+          <span class="step-badge" style="background:var(--step2);">Hands On</span>
+        </div>
+        <p class="step-desc">
+          A <strong>repository</strong> (or "repo") is just a folder that Git is watching. You initialise one with <code>git init</code>, and from that point Git tracks every file inside it. The workflow you'll repeat thousands of times in your career: make a change → stage it with <code>git add</code> → save a snapshot with <code>git commit</code>. That's the heartbeat of Git, and everything else builds on top of it.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">git init</span>
+          <span class="tool-chip">git add</span>
+          <span class="tool-chip">git commit -m "message"</span>
+          <span class="tool-chip">git status</span>
+          <span class="tool-chip">git log</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step3);">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Branching — Work Without Breaking Things</span>
+          <span class="step-badge" style="background:var(--step3);">Key Concept</span>
+        </div>
+        <p class="step-desc">
+          A <strong>branch</strong> is like a parallel universe for your code. You spin one off to try a new feature or fix a bug — without touching the main, working version. If your experiment works, you merge it back in. If it doesn't, you delete the branch and nothing is harmed. This is how every real development team works. Learn to create branches, switch between them, and understand what <code>main</code> (or <code>master</code>) means.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">git branch</span>
+          <span class="tool-chip">git checkout / git switch</span>
+          <span class="tool-chip">git merge</span>
+          <span class="tool-chip">main vs feature branches</span>
+          <span class="tool-chip">HEAD pointer</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 4 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step4);">4</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">GitHub — Put Your Code in the Cloud</span>
+          <span class="step-badge" style="background:var(--step4);">Go Remote</span>
+        </div>
+        <p class="step-desc">
+          Git lives on your laptop. <strong>GitHub</strong> is a website where you store that same Git history online — like Google Drive but for code. Create a free account, create a repository on GitHub, then <strong>push</strong> your local project up to it. Now your code is backed up, shareable, and ready to be part of a team. This is also where every CI/CD pipeline you'll ever build will start.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">github.com (free account)</span>
+          <span class="tool-chip">git remote add origin</span>
+          <span class="tool-chip">git push</span>
+          <span class="tool-chip">git pull</span>
+          <span class="tool-chip">git clone</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 5 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step5);">5</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Pull Requests — How Teams Review Code</span>
+          <span class="step-badge" style="background:var(--step5);">Team Workflow</span>
+        </div>
+        <p class="step-desc">
+          A <strong>Pull Request</strong> (PR) is a formal way of saying "I've made some changes on my branch — please review them and merge them into main." It's the backbone of team collaboration. You'll open PRs, review other people's PRs, leave comments, and approve or request changes. This workflow is used by every tech company in the world, from startups to Google. Practice it even on personal projects.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">Opening a Pull Request</span>
+          <span class="tool-chip">Code review comments</span>
+          <span class="tool-chip">Approving & merging</span>
+          <span class="tool-chip">Closing issues via PRs</span>
+          <span class="tool-chip">Draft PRs</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 6 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step6);">6</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">Handling Merge Conflicts</span>
+          <span class="step-badge" style="background:var(--step6);">Don't Panic</span>
+        </div>
+        <p class="step-desc">
+          A <strong>merge conflict</strong> happens when two people edit the same line of the same file and Git doesn't know which version to keep. It sounds scary, but it's just Git asking you to make a decision. Git marks the conflicting lines clearly in the file — you choose which version to keep, save it, and commit. Every developer encounters conflicts; the ones who stay calm and know how to resolve them stand out immediately.
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">Reading conflict markers</span>
+          <span class="tool-chip">Resolving conflicts manually</span>
+          <span class="tool-chip">git rebase (alternative to merge)</span>
+          <span class="tool-chip">VS Code conflict UI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 7 -->
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num" style="background:var(--step7);">7</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-body">
+        <div class="step-header">
+          <span class="step-title">GitLab & Git for DevOps Pipelines</span>
+          <span class="step-badge" style="background:var(--step7);">Level Up</span>
+        </div>
+        <p class="step-desc">
+          <strong>GitLab</strong> is GitHub's main alternative — heavily used in enterprises and DevOps environments because it has built-in CI/CD pipelines, container registries, and infrastructure tools all in one place. Learn how GitLab differs from GitHub and explore its pipeline features. Also get comfortable with a few power commands: <code>git stash</code> (temporarily shelve work), <code>git tag</code> (mark releases), and <code>git revert</code> (safely undo a commit without rewriting history).
+        </p>
+        <div class="tools-row">
+          <span class="tool-chip">GitLab (free account)</span>
+          <span class="tool-chip">git stash</span>
+          <span class="tool-chip">git tag</span>
+          <span class="tool-chip">git revert vs git reset</span>
+          <span class="tool-chip">.gitignore file</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /steps -->
+
+  <!-- TIMELINE -->
+  <div class="timeline-bar">
+    <h3>Realistic Timeline (1 Hour a Day)</h3>
+    <div class="timeline-track">
+      <div class="t-seg" style="width:14%;background:var(--step1);">Day 1–2</div>
+      <div class="t-seg" style="width:14%;background:var(--step2);">Day 3–6</div>
+      <div class="t-seg" style="width:14%;background:var(--step3);">Day 7–11</div>
+      <div class="t-seg" style="width:15%;background:var(--step4);">Day 12–15</div>
+      <div class="t-seg" style="width:14%;background:var(--step5);">Day 16–19</div>
+      <div class="t-seg" style="width:15%;background:var(--step6);">Day 20–23</div>
+      <div class="t-seg" style="width:14%;background:var(--step7);">Day 24–28</div>
+    </div>
+    <div class="timeline-labels">
+      <span>Concepts</span>
+      <span>First Commit</span>
+      <span>Branches</span>
+      <span>GitHub</span>
+      <span>Pull Requests</span>
+      <span>Conflicts</span>
+      <span>GitLab ✓</span>
+    </div>
+  </div>
+
+  <!-- TIPS GRID -->
+  <div class="section-title">4 Rules to Learn Git Fast</div>
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-icon">💾</div>
+      <div class="tip-title">Commit Early, Commit Often</div>
+      <p class="tip-text">Don't wait until a feature is finished to commit. Save small, meaningful snapshots often. A good rule: if you'd be upset losing the last hour of work, commit right now.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">✍️</div>
+      <div class="tip-title">Write Meaningful Messages</div>
+      <p class="tip-text">"Fixed stuff" tells no one anything. Write messages like "Fix login bug when password has special characters." Your future self — and your teammates — will thank you.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">🌿</div>
+      <div class="tip-title">Branch for Everything</div>
+      <p class="tip-text">Never work directly on <code style="background:#ede9e3;padding:1px 5px;border-radius:2px;font-size:12px;">main</code>. Make a branch even for tiny changes. It's a habit that prevents disasters and mirrors exactly how real teams operate.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">🗂️</div>
+      <div class="tip-title">Put Everything on GitHub</div>
+      <p class="tip-text">Every project — even small practice ones — should live on GitHub. It builds your profile, backs up your work, and gets you comfortable with the remote workflow that all jobs require.</p>
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <div class="closing">
+    <div class="closing-quote">"</div>
+    <p class="closing-text">
+      Git has a reputation for being confusing — but that's mostly because people try to learn all the commands before understanding the concepts. Flip that order: understand <em>why</em> branching exists, <em>why</em> commits are snapshots, <em>why</em> merging is needed. Once the concepts click, every command makes perfect sense.
+      <br/><br/>
+      <strong>Learn Git properly once, and you'll never have to learn it again.</strong>
+    </p>
+  </div>
+
+</div><!-- /page -->
 </body>
 </html>
