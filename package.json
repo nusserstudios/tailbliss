@@ -4,7 +4,7 @@
   "description": "Hugo + Alpine.js + TailwindCSS",
   "main": "index.js",
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.2.4",
+    "@tailwindcss/postcss": "^4.3.0",
     "@tailwindcss/vite": "^4.2.4",
     "alpinejs": "^3.15.12",
     "autoprefixer": "^10.5.0",
