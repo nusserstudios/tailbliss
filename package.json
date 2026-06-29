@@ -7,7 +7,7 @@
     "@tailwindcss/postcss": "^4.3.0",
     "@tailwindcss/vite": "^4.3.0",
     "alpinejs": "^3.15.12",
-    "autoprefixer": "^10.5.0",
+    "autoprefixer": "^10.5.2",
     "concurrently": "^10.0.3",
     "postcss": "^8.5.15",
     "postcss-cli": "^11.0.1",
