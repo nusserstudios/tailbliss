@@ -9,7 +9,7 @@
     "alpinejs": "^3.15.12",
     "autoprefixer": "^10.5.0",
     "concurrently": "^10.0.3",
-    "postcss": "^8.5.15",
+    "postcss": "^8.5.16",
     "postcss-cli": "^11.0.1",
     "tailwindcss": "^4.3.1",
     "vite": "^8.1.0"
