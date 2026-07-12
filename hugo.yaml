@@ -230,20 +230,14 @@ module:
 # Performance optimizations
 caches:
   assets:
-    dir: :cacheDir/assets
-    maxAge: "0s" # Disable caching in development
-  getcsv:
-    dir: :cacheDir/getcsv
-    maxAge: 3600s # 1 hour
-  getjson:
-    dir: :cacheDir/getjson
-    maxAge: 3600s # 1 hour
+    dir: ":cacheDir/assets"
+    maxAge: "0s"
   images:
-    dir: :cacheDir/images
-    maxAge: 8760h # 1 year
+    dir: ":cacheDir/images"
+    maxAge: "8760h"
   modules:
-    dir: :cacheDir/modules
-    maxAge: 8760h # 1 year
+    dir: ":cacheDir/modules"
+    maxAge: "8760h"
 
 # Image processing defaults
 imaging:

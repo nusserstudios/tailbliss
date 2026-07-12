@@ -12,16 +12,16 @@
   },
   "scripts": {
     "install": "node install.js",
-    "dev": "npm run build:css:dev && hugo server --disableFastRender --noHTTPCache --disableBrowserError",
-    "dev:watch": "concurrently \"npm run css:watch\" \"npm run hugo:watch\"",
+    "dev": "vite build --mode development --no-watch && hugo server --disableFastRender --noHTTPCache --disableBrowserError",
+    "dev:watch": "concurrently \"vite build --mode development --watch\" \"hugo server --disableFastRender --noHTTPCache --disableBrowserError\"",
     "css:watch": "vite build --mode development --watch",
     "hugo:watch": "hugo server --disableFastRender --noHTTPCache --disableBrowserError",
     "build:css": "vite build --mode production",
     "build:css:dev": "vite build --mode development --no-watch",
-    "build": "npm run build:css && hugo --minify --gc --cleanDestinationDir",
-    "rebuild": "find static/css/ -name 'main.*.css' -delete 2>/dev/null || true && npm run build:css:dev",
+    "build": "vite build --mode production && hugo --minify --gc --cleanDestinationDir",
+    "rebuild": "find static/css/ -name \"main.*.css\" -delete 2>/dev/null || true && vite build --mode development --no-watch",
     "test": "hugo",
-    "optimize": "npm run build && echo 'Build optimized for production'"
+    "optimize": "vite build --mode production && hugo --minify --gc --cleanDestinationDir && echo \"Build optimized for production\""
   },
   "repository": {
     "type": "git",
@@ -49,6 +49,13 @@
   "pnpm": {
     "overrides": {
       "tar": ">=7.5.2"
+    }
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.12.0",
+      "onFail": "download"
     }
   }
 }
