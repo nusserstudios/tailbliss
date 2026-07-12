@@ -1,17 +1,13 @@
 {
   "name": "TailBliss",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Hugo + Alpine.js + TailwindCSS",
   "main": "index.js",
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.3.0",
-    "@tailwindcss/vite": "^4.3.0",
+    "@tailwindcss/vite": "^4.3.2",
     "alpinejs": "^3.15.12",
-    "autoprefixer": "^10.5.0",
     "concurrently": "^10.0.3",
-    "postcss": "^8.5.15",
-    "postcss-cli": "^11.0.1",
-    "tailwindcss": "^4.3.1",
+    "tailwindcss": "^4.3.2",
     "vite": "^8.1.0"
   },
   "scripts": {

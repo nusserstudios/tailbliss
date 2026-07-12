@@ -151,7 +151,7 @@ cd ../..
 # Start developing
 hugo server
 ```
-(The rsync creates `static/css/` in your site; the theme uses the built file from there so Hugo does not need PostCSS in the project.)
+(The rsync creates `static/css/` in your site; the theme uses the built file from there so Hugo does not need PostCSS configuration or processing in the project. Tailwind v4 + the Vite plugin + lightningcss handles CSS processing and autoprefixing.)
 
 **Note**: Your site config must reference the theme. If you keep the default `hugo.toml` from `hugo new site`, add `theme = "tailbliss"` to it. The rsync'd `hugo.yaml` already has `theme: tailbliss`; if you remove `hugo.toml`, that file will be used.
 
@@ -392,7 +392,8 @@ pnpm run build        # Production build
 
 ### 📦 **Dependencies Updated**
 - `tailwindcss`: `^3.2.x` → `^4.1.x`
-- Added: `@tailwindcss/vite`, `@tailwindcss/postcss`, `vite`
+- Added: `@tailwindcss/vite`, `vite`
+- Removed (cleanup for #333): `@tailwindcss/postcss`, `postcss`, `autoprefixer`, `postcss-cli` (no longer required; Tailwind v4 + Vite + lightningcss is sufficient)
 - Removed: `@tailwindcss/typography` (replaced with custom styles)
 
 ---
