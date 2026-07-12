@@ -10,3 +10,4 @@ yarn-error.log
 yarn-error.log
 # npm lockfile (project uses pnpm)
 package-lock.json
+static/css/.vite/

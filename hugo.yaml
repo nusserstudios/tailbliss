@@ -1,6 +1,6 @@
 baseURL: 'https://tailbliss.netlify.app/'
 title: TailBliss
-languageCode: en-us
+locale: en-us
 DefaultContentLanguage: en
 enableEmoji: true
 enableGitInfo: false
@@ -225,7 +225,7 @@ privacy:
 module:
   hugoVersion:
     extended: true
-    min: "0.148.2"
+    min: "0.158.0"
 
 # Performance optimizations
 caches:

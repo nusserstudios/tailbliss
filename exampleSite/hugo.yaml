@@ -1,6 +1,6 @@
 baseURL: 'http://localhost:1313/'
 title: TailBliss
-languageCode: en-us
+locale: en-us
 theme: tailbliss
 DefaultContentLanguage: en
 enableEmoji: true
@@ -226,4 +226,4 @@ privacy:
 module:
   hugoVersion:
     extended: true
-    min: "0.148.2"
+    min: "0.158.0"
