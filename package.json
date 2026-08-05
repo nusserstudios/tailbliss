@@ -4,7 +4,7 @@
   "description": "Hugo + Alpine.js + TailwindCSS",
   "main": "index.js",
   "devDependencies": {
-    "@tailwindcss/vite": "^4.3.2",
+    "@tailwindcss/vite": "^4.3.3",
     "alpinejs": "^3.15.12",
     "concurrently": "^10.0.4",
     "tailwindcss": "^4.3.3",
