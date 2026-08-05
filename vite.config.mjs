@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => ({
 
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'assets/css/main.css'),
+        main: resolve(import.meta.dirname, 'assets/css/main.css'),
       },
       output: {
         // Use timestamp-based naming for better cache busting during development
