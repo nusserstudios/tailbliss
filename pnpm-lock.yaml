@@ -211,8 +211,8 @@ importers:
         specifier: ^4.3.3
         version: 4.3.3(vite@8.3.0(esbuild@0.27.2)(jiti@2.7.0)(yaml@2.8.2))
       alpinejs:
-        specifier: ^3.17.2
-        version: 3.17.2
+        specifier: ^3.17.3
+        version: 3.17.3
       concurrently:
         specifier: ^10.0.5
         version: 10.0.5
@@ -599,8 +599,8 @@ packages:
   '@vue/shared@3.5.41':
     resolution: {integrity: sha512-IOnwSCma8j+9xJT6b8H0dEYidC80NsYmNMlZxRsukYcSoGaDBohog5hDxzeUXdFeGWFA++vWvxqOmrr96VlqMA==}
 
-  alpinejs@3.17.2:
-    resolution: {integrity: sha512-xbnG3LlnmFkiNO49C+qhqjEDqOdB0snKqvT48ZVp8TakpZOpsoQbc/jAxpptQRjZi7c9rLeCfvwQ/XOSirIZFQ==}
+  alpinejs@3.17.3:
+    resolution: {integrity: sha512-hIfoRTBBeHMeMu6gXuKwwNoY6pJ7bwpZ91dXVrqRhUhHFOyGr4S21sUYqbxPY5Cnjo0RAmPZVRRZw1becRyV0Q==}
 
   ansi-regex@6.3.0:
     resolution: {integrity: sha512-WpDfL7NO6j7tH88IDBNVdUJxDh9nmCteAVW9dsep846XdwF4naCBK+/tGLX3KJgcpgMRXCFlTM2hKGoK9FsdrQ==}
@@ -1171,7 +1171,7 @@ snapshots:
 
   '@vue/shared@3.5.41': {}
 
-  alpinejs@3.17.2:
+  alpinejs@3.17.3:
     dependencies:
       '@vue/reactivity': 3.5.41
 
