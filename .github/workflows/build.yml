@@ -1,0 +1,48 @@
+# Verifies the Tailwind/Vite CSS build actually compiles on every PR and push to main.
+#
+# Why this exists: CodeQL is the only other workflow, and static analysis does not
+# run the build. Tailwind v4 / Vite are bumped by Dependabot weekly, and a broken
+# bump previously could land on main without any build ever running in CI.
+#
+# pnpm is resolved from the "packageManager" field in package.json via Corepack, so
+# the exact pinned pnpm version is used and no third-party pnpm action is required.
+
+name: "Build"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  css:
+    name: Build CSS
+    runs-on: ubuntu-latest
+    env:
+      COREPACK_ENABLE_DOWNLOAD_PROMPT: "0"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+
+      - name: Enable Corepack (pnpm pinned via packageManager)
+        run: corepack enable
+
+      - name: Report toolchain versions
+        run: |
+          node --version
+          pnpm --version
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build CSS
+        run: pnpm run build:css
