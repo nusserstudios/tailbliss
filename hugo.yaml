@@ -240,7 +240,14 @@ caches:
     maxAge: "8760h"
 
 # Image processing defaults
+# `imaging.quality` was deprecated in Hugo v0.163.0 in favour of per-format
+# settings; the global key is slated for removal in a future release.
 imaging:
-  quality: 85
+  jpeg:
+    quality: 85
+  webp:
+    quality: 85
+  avif:
+    quality: 85
   resampleFilter: lanczos
   anchor: smart
