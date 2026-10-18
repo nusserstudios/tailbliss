@@ -1,0 +1,50 @@
+name: Build
+
+# Production build gate: compiles the Vite/Tailwind CSS bundle and runs a full
+# Hugo build so dependency bumps (Dependabot) cannot land a broken tree.
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Hugo + Vite build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      # Version is read from package.json "packageManager" (pnpm 11.24.0).
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: pnpm
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          # Keep in sync with HUGO_VERSION in netlify.toml (production deploy).
+          hugo-version: "0.164.0"
+          extended: true
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build site (CSS + Hugo, minified)
+        run: pnpm run build
