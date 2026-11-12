@@ -209,7 +209,7 @@ importers:
     devDependencies:
       '@tailwindcss/vite':
         specifier: ^4.3.5
-        version: 4.3.5(vite@8.3.7(esbuild@0.27.2)(jiti@2.7.0)(yaml@2.9.1))
+        version: 4.3.5(vite@8.3.8(esbuild@0.27.2)(jiti@2.7.0)(yaml@2.9.1))
       alpinejs:
         specifier: ^3.17.5
         version: 3.17.5
@@ -220,8 +220,8 @@ importers:
         specifier: ^4.3.5
         version: 4.3.5
       vite:
-        specifier: ^8.3.7
-        version: 8.3.7(esbuild@0.27.2)(jiti@2.7.0)(yaml@2.9.1)
+        specifier: ^8.3.8
+        version: 8.3.8(esbuild@0.27.2)(jiti@2.7.0)(yaml@2.9.1)
 
 packages:
 
@@ -810,8 +810,8 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  vite@8.3.7:
-    resolution: {integrity: sha512-oxh0dMxrayBr33ScJvvBJ2HBQ2jc1TBrXKR2NyL/MJ9WPuX19mN2DXWUmywKdyw5RFVQBo8hmtb2FMC0LHrnng==}
+  vite@8.3.8:
+    resolution: {integrity: sha512-LzOn3h9rG/0vhLdXrV4yJ4QFA9eEoqCl+Yx+kGJd7aB9w6nfNgVHKSYwLPZUHrz4ZGa+t+kXjV9itvcHDLQouA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -1083,12 +1083,12 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.3.5
       '@tailwindcss/oxide-win32-x64-msvc': 4.3.5
 
-  '@tailwindcss/vite@4.3.5(vite@8.3.7(esbuild@0.27.2)(jiti@2.7.0)(yaml@2.9.1))':
+  '@tailwindcss/vite@4.3.5(vite@8.3.8(esbuild@0.27.2)(jiti@2.7.0)(yaml@2.9.1))':
     dependencies:
       '@tailwindcss/node': 4.3.5
       '@tailwindcss/oxide': 4.3.5
       tailwindcss: 4.3.5
-      vite: 8.3.7(esbuild@0.27.2)(jiti@2.7.0)(yaml@2.9.1)
+      vite: 8.3.8(esbuild@0.27.2)(jiti@2.7.0)(yaml@2.9.1)
 
   '@vue/reactivity@3.5.41':
     dependencies:
@@ -1296,7 +1296,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  vite@8.3.7(esbuild@0.27.2)(jiti@2.7.0)(yaml@2.9.1):
+  vite@8.3.8(esbuild@0.27.2)(jiti@2.7.0)(yaml@2.9.1):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.7
