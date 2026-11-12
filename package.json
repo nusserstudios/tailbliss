@@ -8,7 +8,7 @@
     "alpinejs": "^3.17.5",
     "concurrently": "^10.0.7",
     "tailwindcss": "^4.3.5",
-    "vite": "^8.3.7"
+    "vite": "^8.3.8"
   },
   "scripts": {
     "install": "node install.js",
