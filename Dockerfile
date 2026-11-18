@@ -11,10 +11,18 @@
 FROM node:22-bookworm-slim AS build
 ARG HUGO_VERSION=0.169.0
 
+# Hugo publishes per-architecture tarballs. Hardcoding linux-amd64 breaks every
+# arm64 build (Apple Silicon, Graviton, Ampere) at this layer: the installed
+# binary is the wrong architecture and `hugo version` dies with a dynamic loader
+# error. TARGETARCH is auto-populated by BuildKit with the platform being built;
+# declare it with no default so that value is not masked. The shell fallback
+# keeps non-BuildKit builders (which never set it) on amd64.
+ARG TARGETARCH
+
 RUN apt-get update \
  && apt-get install -y --no-install-recommends ca-certificates curl git \
  && rm -rf /var/lib/apt/lists/* \
- && curl -fsSL "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz" \
+ && curl -fsSL "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-${TARGETARCH:-amd64}.tar.gz" \
     | tar -xz -C /usr/local/bin hugo \
  && hugo version
 
