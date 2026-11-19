@@ -1,0 +1,105 @@
+name: "Docker image"
+
+# The Dockerfile is a supported way to deploy this theme, and it has broken
+# twice without anyone noticing: once with a `COPY --from=build` that referenced
+# a stage that did not exist, and once with a hardcoded linux-amd64 Hugo binary
+# that failed on every arm64 builder. Nothing in CI built the image, so both
+# shipped on main.
+#
+# This job builds it and pokes the running container. The curl assertions are
+# deliberately about status codes, not just "the image built": the nginx config
+# regression in #389 built fine and returned 301 on every route.
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - "Dockerfile"
+      - ".dockerignore"
+      - "nginx.conf"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - "vite.config.mjs"
+      - "hugo.yaml"
+      - ".github/workflows/docker-build.yml"
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - "Dockerfile"
+      - ".dockerignore"
+      - "nginx.conf"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - "vite.config.mjs"
+      - "hugo.yaml"
+      - ".github/workflows/docker-build.yml"
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build and smoke-test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Build image (amd64)
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          platforms: linux/amd64
+          load: true
+          tags: tailbliss:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Smoke-test the container
+        run: |
+          set -euo pipefail
+          docker run -d --name tailbliss-ci -p 8080:80 tailbliss:ci
+          for i in $(seq 1 30); do
+            if curl -fsS -o /dev/null http://127.0.0.1:8080/; then break; fi
+            sleep 1
+          done
+
+          fail=0
+          check() {
+            local path="$1" want="$2"
+            local got
+            # -o /dev/null: we only care about the status line here.
+            got=$(curl -s -o /dev/null -w '%{http_code}' "http://127.0.0.1:8080${path}")
+            if [ "$got" != "$want" ]; then
+              echo "::error::GET ${path} returned ${got}, expected ${want}"
+              fail=1
+            else
+              echo "ok  ${got}  ${path}"
+            fi
+          }
+
+          check / 200
+          check /posts/ 200
+          check /about/ 200
+          check /this-page-does-not-exist/ 404
+
+          # The stylesheet is fingerprinted by Hugo, so pull the real path out of
+          # the rendered page instead of guessing at a hash. Match the path only:
+          # no dependence on how the minifier quotes the attribute.
+          css=$(curl -s http://127.0.0.1:8080/ | grep -oE '/css/main\.[A-Za-z0-9_-]+\.css' | head -1)
+          if [ -z "$css" ]; then
+            echo "::error::no fingerprinted stylesheet link found on /"
+            fail=1
+          else
+            check "$css" 200
+          fi
+
+          exit $fail
+
+      - name: Dump container logs on failure
+        if: failure()
+        run: docker logs tailbliss-ci || true
