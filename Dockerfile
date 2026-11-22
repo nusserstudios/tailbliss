@@ -35,12 +35,13 @@ RUN apt-get update \
  && arch="${TARGETARCH:-amd64}" \
  && base="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}" \
  && asset="hugo_${HUGO_VERSION}_linux-${arch}.tar.gz" \
- && curl -fsSL -o /tmp/hugo.tar.gz "${base}/${asset}" \
- && curl -fsSL -o /tmp/hugo.checksums "${base}/hugo_${HUGO_VERSION}_checksums.txt" \
- && grep -q " ${asset}\$" /tmp/hugo.checksums \
- && (cd /tmp && grep " ${asset}\$" hugo.checksums | sha256sum -c -) \
- && tar -xz -C /usr/local/bin -f /tmp/hugo.tar.gz hugo \
- && rm -f /tmp/hugo.tar.gz /tmp/hugo.checksums \
+ && cd /tmp \
+ && curl -fsSL -o "${asset}" "${base}/${asset}" \
+ && curl -fsSL -o hugo.checksums "${base}/hugo_${HUGO_VERSION}_checksums.txt" \
+ && grep -q " ${asset}\$" hugo.checksums \
+ && grep " ${asset}\$" hugo.checksums | sha256sum -c - \
+ && tar -xz -C /usr/local/bin -f "${asset}" hugo \
+ && rm -f "${asset}" hugo.checksums \
  && hugo version
 
 WORKDIR /app
