@@ -3,7 +3,7 @@ aptPkgs = ["hugo"]
 nixPkgs = ["nodejs_22"]
 
 [environment]
-HUGO_VERSION = "0.164.0"
+HUGO_VERSION = "0.170.1"
 
 [variables]
 HUGO_ENABLEGITINFO = 'false'
